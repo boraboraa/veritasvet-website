@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VeritasVet — Science-Driven Animal Nutrition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--navy:#162d50;--navy-deep:#0c1e38;--navy-rich:#1a3a5c;
+--green:#8cbf2e;--green-light:#a4d444;--green-dark:#6a9a1a;
+--green-pale:#eaf4d4;--green-mist:#f2f8e6;
+--cream:#fafbf6;--warm-white:#f7f8f3;--ivory:#fffef9;
+--text-primary:#1a2b3d;--text-secondary:#4a5d72;--text-muted:#7e8fa2;
+--border-light:rgba(140,191,46,0.12);--border-subtle:#e8ecf0;
+--shadow-soft:0 4px 30px rgba(22,45,80,0.06);
+--shadow-medium:0 8px 40px rgba(22,45,80,0.1);
+--shadow-dramatic:0 20px 60px rgba(22,45,80,0.15);
+--radius-sm:8px;--radius-md:16px;--radius-lg:24px;--radius-xl:32px;
+--ease-out-expo:cubic-bezier(0.16,1,0.3,1);
+}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-primary);overflow-x:hidden;line-height:1.6}
+img{display:block;max-width:100%}a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+
+/* SCROLL REVEAL */
+.reveal{opacity:0;transform:translateY(60px);transition:opacity .9s var(--ease-out-expo),transform .9s var(--ease-out-expo)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-80px);transition:opacity .9s var(--ease-out-expo),transform .9s var(--ease-out-expo)}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(80px);transition:opacity .9s var(--ease-out-expo),transform .9s var(--ease-out-expo)}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+.reveal-scale{opacity:0;transform:scale(.92);transition:opacity .9s var(--ease-out-expo),transform .9s var(--ease-out-expo)}
+.reveal-scale.visible{opacity:1;transform:scale(1)}
+.delay-1{transition-delay:.1s}.delay-2{transition-delay:.2s}.delay-3{transition-delay:.3s}.delay-4{transition-delay:.4s}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:1.25rem 3rem;transition:all .5s var(--ease-out-expo)}
+.nav.scrolled{background:rgba(255,255,254,.92);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border-bottom:1px solid var(--border-subtle);padding:.9rem 3rem;box-shadow:0 1px 20px rgba(22,45,80,.05)}
+.nav-inner{max-width:1440px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.nav-logo img{height:46px;transition:.4s}
+.nav.scrolled .nav-logo img{height:40px}
+.nav:not(.scrolled) .nav-logo img{filter:brightness(0) invert(1)}
+.nav-links{display:flex;gap:2.5rem;align-items:center}
+.nav-link{font-size:14.5px;font-weight:500;letter-spacing:.02em;transition:.3s;position:relative;padding:.3rem 0}
+.nav:not(.scrolled) .nav-link{color:rgba(255,255,255,.85)}
+.nav.scrolled .nav-link{color:var(--text-secondary)}
+.nav-link::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1.5px;background:var(--green);transition:width .4s var(--ease-out-expo)}
+.nav-link:hover::after{width:100%}
+.nav-link:hover{color:var(--green-dark)}
+.nav:not(.scrolled) .nav-link:hover{color:var(--green-light)}
+.nav-cta-btn{background:var(--green);color:#fff;padding:.65rem 1.75rem;border-radius:8px;font-weight:600;font-size:13.5px;letter-spacing:.03em;transition:.35s;text-transform:uppercase}
+.nav-cta-btn:hover{background:var(--green-dark);transform:translateY(-1px);box-shadow:0 6px 20px rgba(140,191,46,.3)}
+.hamburger{display:none;width:28px;height:20px;flex-direction:column;justify-content:space-between;cursor:pointer;z-index:10001}
+.hamburger span{display:block;width:100%;height:2px;border-radius:2px;transition:.35s}
+.nav:not(.scrolled) .hamburger span{background:#fff}
+.nav.scrolled .hamburger span{background:var(--navy)}
+.hamburger.active span:nth-child(1){transform:translateY(9px) rotate(45deg)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+
+/* PAGE SYSTEM */
+.page-view{display:none}.page-view.active{display:block}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--navy-deep)}
+.hero-media{position:absolute;inset:0;z-index:1}
+.hero-media-img{width:100%;height:100%;object-fit:cover;opacity:.4;transform:scale(1.08);animation:heroZoom 20s ease-in-out infinite alternate}
+@keyframes heroZoom{0%{transform:scale(1.08)}100%{transform:scale(1.15)}}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,30,56,.4) 0%,rgba(12,30,56,.15) 40%,rgba(12,30,56,.7) 100%),linear-gradient(90deg,rgba(12,30,56,.65) 0%,transparent 60%);z-index:2}
+.hero-particles{position:absolute;inset:0;z-index:3;pointer-events:none;overflow:hidden}
+.hero-particle{position:absolute;width:3px;height:3px;background:var(--green-light);border-radius:50%;opacity:0;animation:pDrift 12s ease-in-out infinite}
+@keyframes pDrift{0%{opacity:0;transform:translateY(100vh) translateX(0)}10%{opacity:.35}90%{opacity:.35}100%{opacity:0;transform:translateY(-20vh) translateX(40px)}}
+.hero-content{position:relative;z-index:10;max-width:1440px;margin:0 auto;padding:0 3rem;width:100%}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:2rem;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .3s forwards}
+.hero-eyebrow-line{width:40px;height:1px;background:var(--green)}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6.5vw,5.8rem);font-weight:600;line-height:1.05;color:#fff;max-width:800px;margin-bottom:1.75rem;opacity:0;transform:translateY(40px);animation:hFade 1s var(--ease-out-expo) .5s forwards}
+.hero-title em{font-style:italic;color:var(--green-light)}
+.hero-sub{font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.8;color:rgba(255,255,255,.6);max-width:550px;margin-bottom:3rem;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .7s forwards}
+.hero-actions{display:flex;gap:1.25rem;flex-wrap:wrap;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .9s forwards}
+@keyframes hFade{to{opacity:1;transform:translateY(0)}}
+.btn-hp{background:var(--green);color:#fff;padding:1.1rem 2.75rem;border-radius:10px;font-weight:600;font-size:15px;letter-spacing:.03em;transition:.4s var(--ease-out-expo);position:relative;overflow:hidden}
+.btn-hp::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.15),transparent);opacity:0;transition:.3s}
+.btn-hp:hover::before{opacity:1}
+.btn-hp:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(140,191,46,.35)}
+.btn-hg{color:rgba(255,255,255,.8);padding:1.1rem 2.75rem;border-radius:10px;font-weight:600;font-size:15px;letter-spacing:.03em;border:1.5px solid rgba(255,255,255,.25);transition:.4s var(--ease-out-expo)}
+.btn-hg:hover{border-color:var(--green-light);color:var(--green-light);background:rgba(140,191,46,.08);transform:translateY(-2px)}
+.hero-scroll{position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);z-index:10;display:flex;flex-direction:column;align-items:center;gap:.75rem;opacity:0;animation:hFade 1s var(--ease-out-expo) 1.5s forwards}
+.hero-scroll span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);font-weight:500}
+.scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,rgba(140,191,46,.6),transparent);animation:sPulse 2s ease-in-out infinite}
+@keyframes sPulse{0%,100%{opacity:.3;transform:scaleY(.6)}50%{opacity:1;transform:scaleY(1)}}
+
+/* MARQUEE */
+.marquee-stats{background:var(--navy);padding:2.25rem 0;overflow:hidden}
+.marquee-track{display:flex;gap:4rem;animation:mScroll 30s linear infinite;width:max-content}
+@keyframes mScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.marquee-item{display:flex;align-items:center;gap:.75rem;white-space:nowrap;color:rgba(255,255,255,.7);font-size:14px;font-weight:500;letter-spacing:.03em}
+.marquee-item strong{color:var(--green-light);font-size:1.5rem;font-weight:700;font-family:'Cormorant Garamond',serif}
+.marquee-dot{width:4px;height:4px;background:rgba(255,255,255,.2);border-radius:50%;flex-shrink:0}
+
+/* SECTION BASICS */
+.section-pad{padding:7rem 3rem}
+.container{max-width:1440px;margin:0 auto}
+.sec-label{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--green-dark);margin-bottom:1.25rem}
+.sec-label-line{width:32px;height:1.5px;background:var(--green);border-radius:1px}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:600;line-height:1.1;color:var(--navy);margin-bottom:1rem}
+.sec-desc{font-size:1.1rem;color:var(--text-muted);max-width:560px;line-height:1.75}
+.sec-center{text-align:center}.sec-center .sec-desc{margin:0 auto}
+
+/* SPECIES PANELS */
+.species-panels{background:var(--warm-white)}
+.species-panel{display:grid;grid-template-columns:1fr 1fr;min-height:80vh;align-items:center;gap:4rem;padding:4rem 0}
+.species-panel.rev{direction:rtl}.species-panel.rev>*{direction:ltr}
+.sp-visual{position:relative;height:560px;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-dramatic)}
+.sp-visual img{width:100%;height:100%;object-fit:cover;transition:transform 8s ease}
+.sp-visual:hover img{transform:scale(1.05)}
+.sp-visual-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(12,30,56,.35),transparent 50%);pointer-events:none}
+.sp-badge{position:absolute;bottom:1.5rem;left:1.5rem;background:rgba(255,255,255,.93);backdrop-filter:blur(12px);padding:.5rem 1.25rem;border-radius:50px;font-size:11px;font-weight:700;color:var(--navy);letter-spacing:.06em;text-transform:uppercase}
+.sp-info{padding:2rem 0}
+.sp-heading{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,3.5vw,3.2rem);font-weight:600;color:var(--navy);margin-bottom:1.25rem;line-height:1.1}
+.sp-info p{font-size:1.05rem;color:var(--text-secondary);line-height:1.8;margin-bottom:2rem;max-width:480px}
+.sp-features{display:flex;flex-direction:column;gap:1rem;margin-bottom:2.5rem}
+.sp-feat{display:flex;align-items:center;gap:1rem}
+.sp-feat-icon{width:36px;height:36px;border-radius:10px;background:var(--green-pale);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--green-dark)}
+.sp-feat span{font-size:.95rem;font-weight:500;color:var(--text-secondary)}
+.btn-arrow{display:inline-flex;align-items:center;gap:.6rem;font-weight:600;font-size:14px;color:var(--green-dark);letter-spacing:.04em;text-transform:uppercase;transition:.3s}
+.btn-arrow:hover{color:var(--green);gap:.9rem}
+
+/* SOLUTION CARDS */
+.solutions-section{background:var(--ivory)}
+.sol-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3.5rem}
+.sol-card{background:#fff;border-radius:var(--radius-lg);padding:2.5rem 2rem;border:1px solid var(--border-subtle);transition:.5s var(--ease-out-expo);cursor:pointer;position:relative;overflow:hidden}
+.sol-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--green),var(--green-light));transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease-out-expo)}
+.sol-card:hover::before{transform:scaleX(1)}
+.sol-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-dramatic);border-color:transparent}
+.sol-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:1.75rem;font-size:1.6rem;transition:.4s}
+.sol-icon.ic-m{background:rgba(239,68,68,.08)}.sol-icon.ic-f{background:rgba(59,130,246,.08)}
+.sol-icon.ic-n{background:rgba(168,85,247,.08)}.sol-icon.ic-g{background:rgba(16,185,129,.08)}
+.sol-card:hover .sol-icon{transform:scale(1.08) rotate(-3deg)}
+.sol-card h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--navy);margin-bottom:.75rem}
+.sol-card p{font-size:.92rem;color:var(--text-muted);line-height:1.65;margin-bottom:1.5rem}
+.sol-count{font-size:12px;font-weight:700;color:var(--green-dark);letter-spacing:.06em;text-transform:uppercase}
+
+/* PARALLAX BANNER */
+.px-banner{position:relative;height:55vh;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.px-banner-img{position:absolute;inset:-15% 0;width:100%;height:130%;object-fit:cover}
+.px-banner-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(12,30,56,.75),rgba(22,45,80,.6))}
+.px-banner-content{position:relative;z-index:2;text-align:center;max-width:700px;padding:0 2rem}
+.px-banner-content h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:600;color:#fff;margin-bottom:1rem}
+.px-banner-content p{font-size:1.1rem;color:rgba(255,255,255,.6);margin-bottom:2rem;line-height:1.7}
+
+/* SHARED BUTTONS */
+.btn-green{background:var(--green);color:#fff;padding:1rem 2.5rem;border-radius:10px;font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase;transition:.4s;display:inline-flex;align-items:center;gap:.5rem}
+.btn-green:hover{background:var(--green-dark);transform:translateY(-2px);box-shadow:0 8px 25px rgba(140,191,46,.3)}
+
+/* INSIGHTS */
+.insights-section{background:#fff}
+.ins-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:1.5rem;margin-top:3.5rem}
+.ins-card{border-radius:var(--radius-lg);overflow:hidden;background:var(--cream);border:1px solid var(--border-subtle);transition:.5s var(--ease-out-expo);cursor:pointer}
+.ins-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-medium)}
+.ins-card.featured{grid-row:span 2;position:relative}
+.ins-card.featured .ins-img{height:100%;min-height:300px}
+.ins-img{width:100%;height:200px;overflow:hidden;position:relative}
+.ins-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease-out-expo)}
+.ins-card:hover .ins-img img{transform:scale(1.06)}
+.ins-tag{position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);padding:.3rem .85rem;border-radius:50px;font-size:11px;font-weight:700;color:var(--green-dark);letter-spacing:.06em;text-transform:uppercase}
+.ins-body{padding:1.75rem}
+.ins-body h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--navy);margin-bottom:.6rem;line-height:1.25}
+.ins-body p{font-size:.92rem;color:var(--text-muted);line-height:1.6}
+.ins-card.featured .ins-body{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(12,30,56,.9),transparent);padding:3rem 2rem 2rem}
+.ins-card.featured .ins-body h3{color:#fff;font-size:1.6rem}
+.ins-card.featured .ins-body p{color:rgba(255,255,255,.6)}
+
+/* CTA BLOCK */
+.cta-block{background:var(--navy);border-radius:var(--radius-xl);padding:5rem 4rem;text-align:center;position:relative;overflow:hidden}
+.cta-block-pat{position:absolute;inset:0;opacity:.04;background-image:radial-gradient(circle at 20% 30%,var(--green) 1px,transparent 1px),radial-gradient(circle at 80% 70%,var(--green) 1px,transparent 1px);background-size:50px 50px}
+.cta-block-glow{position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(140,191,46,.1),transparent 70%);border-radius:50%;top:-200px;right:-100px}
+.cta-block h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:600;color:#fff;margin-bottom:1rem;position:relative;z-index:2}
+.cta-block p{font-size:1.1rem;color:rgba(255,255,255,.55);margin-bottom:2.5rem;position:relative;z-index:2}
+
+/* FOOTER */
+footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
+.ft-top{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:4rem}
+.ft-brand img{height:44px;margin-bottom:1.25rem;filter:brightness(0) invert(1)}
+.ft-brand p{color:rgba(255,255,255,.4);font-size:.92rem;line-height:1.7;max-width:320px}
+.ft-col h5{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:var(--green-light);margin-bottom:1.25rem}
+.ft-col a{display:block;color:rgba(255,255,255,.4);font-size:.9rem;margin-bottom:.5rem;transition:.3s}
+.ft-col a:hover{color:var(--green-light);padding-left:3px}
+.ft-bottom{max-width:1440px;margin:0 auto;border-top:1px solid rgba(255,255,255,.06);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;color:rgba(255,255,255,.25);font-size:.85rem}
+
+/* PRODUCTS PAGE */
+.prod-hero{position:relative;padding:10rem 3rem 5rem;background:linear-gradient(135deg,var(--navy-deep),var(--navy));overflow:hidden}
+.prod-hero-pat{position:absolute;inset:0;opacity:.04;background-image:radial-gradient(circle,var(--green) 1px,transparent 1px);background-size:40px 40px}
+.prod-hero .container{position:relative;z-index:2}
+.filter-bar{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;margin:3rem 0 2rem;padding:0 1rem}
+.filter-btn{padding:.65rem 1.5rem;border-radius:50px;font-weight:600;font-size:13.5px;border:1.5px solid var(--border-subtle);color:var(--text-secondary);background:#fff;transition:.35s}
+.filter-btn:hover{border-color:var(--green);color:var(--green-dark)}
+.filter-btn.active{background:var(--green);border-color:var(--green);color:#fff;box-shadow:0 4px 15px rgba(140,191,46,.25)}
+.prods-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem;padding:1rem 0 4rem}
+
+/* PRODUCT CARD */
+.pc{background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;transition:.5s var(--ease-out-expo);cursor:pointer}
+.pc:hover{transform:translateY(-6px);box-shadow:var(--shadow-dramatic);border-color:transparent}
+.pc-vis{width:100%;height:180px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.pc-vis.bg-m{background:linear-gradient(135deg,#fef2f2,#fecaca30)}
+.pc-vis.bg-f{background:linear-gradient(135deg,#eff6ff,#bfdbfe30)}
+.pc-vis.bg-n{background:linear-gradient(135deg,#faf5ff,#e9d5ff30)}
+.pc-vis.bg-g{background:linear-gradient(135deg,#ecfdf5,#a7f3d030)}
+.pc-vis img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease-out-expo)}
+.pc:hover .pc-vis img{transform:scale(1.06)}
+.pc-cat{position:absolute;top:.75rem;right:.75rem;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);padding:.3rem .85rem;border-radius:50px;font-size:10.5px;font-weight:700;color:var(--navy);letter-spacing:.05em;text-transform:uppercase}
+.pc-body{padding:1.5rem}
+.pc-body h4{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:.4rem}
+.pc-body p{font-size:.9rem;color:var(--text-muted);line-height:1.55;margin-bottom:1.25rem}
+
+/* DETAIL PAGE */
+.det-page{padding:8rem 3rem 4rem;min-height:100vh;background:var(--cream)}
+.det-back{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:13px;color:var(--green-dark);text-transform:uppercase;letter-spacing:.05em;margin-bottom:2.5rem;transition:.3s}
+.det-back:hover{gap:.8rem;color:var(--green)}
+.det-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.1fr;gap:4rem;background:#fff;padding:3rem;border-radius:var(--radius-xl);border:1px solid var(--border-subtle);box-shadow:var(--shadow-soft)}
+.det-vis{width:100%;height:450px;border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.det-vis img{width:100%;height:100%;object-fit:cover}
+.det-info h1{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:var(--navy);margin-bottom:.75rem}
+.det-badge{display:inline-block;background:var(--green-pale);padding:.35rem 1.1rem;border-radius:50px;font-size:11px;font-weight:700;color:var(--green-dark);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.5rem}
+.det-desc{font-size:1.05rem;color:var(--text-secondary);line-height:1.8;margin-bottom:2rem}
+.det-benefits h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:1rem}
+.det-benefits li{padding:.5rem 0 .5rem 1.75rem;position:relative;color:var(--text-secondary);font-size:.95rem;list-style:none}
+.det-benefits li::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:8px;height:8px;border-radius:50%;background:var(--green)}
+.det-sp-box{background:var(--cream);padding:1.5rem;border-radius:var(--radius-md);margin:2rem 0}
+.det-sp-box h4{font-family:'Cormorant Garamond',serif;font-weight:700;color:var(--navy);margin-bottom:.75rem;font-size:15px}
+.det-tags{display:flex;gap:.5rem;flex-wrap:wrap}
+.det-tag{background:var(--green-pale);padding:.3rem .9rem;border-radius:50px;font-size:12px;font-weight:700;color:var(--green-dark);text-transform:uppercase;letter-spacing:.04em}
+
+/* ABOUT / CONTACT */
+.about-hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--navy-deep);overflow:hidden}
+.about-hero-img{position:absolute;inset:0}.about-hero-img img{width:100%;height:100%;object-fit:cover;opacity:.3}
+.about-hero-ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,30,56,.85),rgba(12,30,56,.4))}
+.about-hero-ct{position:relative;z-index:2;max-width:1440px;margin:0 auto;padding:8rem 3rem 4rem;width:100%}
+.contact-page{padding:8rem 3rem 4rem;min-height:100vh}
+.contact-form{max-width:620px;margin:2.5rem auto;background:#fff;padding:3rem;border-radius:var(--radius-xl);border:1px solid var(--border-subtle);box-shadow:var(--shadow-soft)}
+.form-row{margin-bottom:1.5rem}
+.form-row label{display:block;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);margin-bottom:.4rem}
+.form-row input,.form-row textarea{width:100%;padding:.85rem 1rem;border:1.5px solid var(--border-subtle);border-radius:var(--radius-sm);font-size:15px;font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-primary);transition:.3s}
+.form-row input:focus,.form-row textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 4px rgba(140,191,46,.1);background:#fff}
+.form-row textarea{min-height:130px;resize:vertical}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+.sol-grid{grid-template-columns:repeat(2,1fr)}
+.ins-grid{grid-template-columns:1fr}
+.ins-card.featured{grid-row:auto}
+.ins-card.featured .ins-img{height:260px}
+.ins-card.featured .ins-body{position:static;background:none}
+.ins-card.featured .ins-body h3{color:var(--navy);font-size:1.4rem}
+.ins-card.featured .ins-body p{color:var(--text-muted)}
+.ft-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:900px){
+.species-panel{grid-template-columns:1fr;min-height:auto}
+.species-panel.rev{direction:ltr}
+.sp-visual{height:380px}
+.det-grid{grid-template-columns:1fr;gap:2rem}
+.det-vis{height:280px}
+}
+@media(max-width:768px){
+.hamburger{display:flex}
+.nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);flex-direction:column;justify-content:center;gap:2rem;opacity:0;pointer-events:none;transition:opacity .4s ease;z-index:10000}
+.nav-links.open{opacity:1;pointer-events:all}
+.nav-links .nav-link{color:var(--navy)!important;font-size:1.25rem}
+.nav{padding:1rem 1.5rem}
+.section-pad{padding:4rem 1.5rem}
+.hero-content{padding:0 1.5rem}
+.sol-grid{grid-template-columns:1fr}
+.ft-top{grid-template-columns:1fr;gap:2rem}
+.ft-bottom{flex-direction:column;gap:1rem;text-align:center}
+.prod-hero{padding:8rem 1.5rem 3rem}
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* TRIPLE CTA */
+.cta-triple{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;position:relative;z-index:2;max-width:900px;margin:0 auto}
+.cta-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-md);padding:2rem 1.75rem;text-align:center;transition:.4s var(--ease-out-expo);cursor:pointer;backdrop-filter:blur(8px)}
+.cta-card:hover{background:rgba(140,191,46,.12);border-color:var(--green);transform:translateY(-6px);box-shadow:0 12px 40px rgba(140,191,46,.15)}
+.cta-card-icon{font-size:2rem;margin-bottom:1rem;display:block}
+.cta-card h4{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:.5rem}
+.cta-card p{font-size:.85rem;color:rgba(255,255,255,.5);line-height:1.5;margin-bottom:1.25rem}
+.cta-card-btn{background:var(--green);color:#fff;padding:.6rem 1.5rem;border-radius:8px;font-weight:600;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;transition:.3s;display:inline-block}
+.cta-card:hover .cta-card-btn{background:var(--green-dark);box-shadow:0 4px 15px rgba(140,191,46,.3)}
+@media(max-width:768px){.cta-triple{grid-template-columns:1fr;max-width:400px}}
+
+/* SOLUTION CARD PROOFS */
+.sol-proofs{margin-top:1rem;display:flex;flex-direction:column;gap:.5rem}
+.sol-proof{display:flex;align-items:flex-start;gap:.5rem;font-size:.82rem;color:var(--text-secondary);line-height:1.45}
+.sol-proof-icon{color:var(--green);font-weight:700;flex-shrink:0;margin-top:1px}
+.sol-proof strong{font-weight:600;color:var(--text-primary)}
+
+/* FORM SELECT */
+.form-row select{width:100%;padding:.85rem 1rem;border:1.5px solid var(--border-subtle);border-radius:var(--radius-sm);font-size:15px;font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-primary);transition:.3s;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237e8fa2' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center}
+.form-row select:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 4px rgba(140,191,46,.1);background-color:#fff}
+.form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:600px){.form-grid-2{grid-template-columns:1fr}}
+
+/* DETAIL PAGE TDS/QUOTE BUTTONS */
+.det-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
+.btn-green-outline{background:transparent;color:var(--green-dark);padding:.75rem 1.5rem;border-radius:8px;font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase;transition:.35s;display:inline-flex;align-items:center;gap:.4rem;border:1.5px solid var(--green)}
+.btn-green-outline:hover{background:var(--green-pale);border-color:var(--green-dark)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+<div class="nav-inner">
+<a href="#" class="nav-logo" onclick="goPage('home')"><img src="image_logo_VERITASVET.png" alt="VeritasVet"></a>
+<div class="nav-links" id="navLinks">
+<a class="nav-link" href="#" onclick="goPage('about')">About</a>
+<a class="nav-link" href="#" onclick="goPage('products')">Solutions</a>
+<a class="nav-link" href="#" onclick="goPage('news')">Research</a>
+<button class="nav-cta-btn" onclick="goPage('contact')">Contact Us</button>
+</div>
+<div class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
+</div>
+</nav>
+
+<!-- ═══ HOME ═══ -->
+<div class="page-view active" id="page-home">
+
+<section class="hero">
+<div class="hero-media"><img class="hero-media-img" src="/assets/images/hero.jpg" alt="Cattle grazing in lush green pasture at golden hour — VeritasVet animal nutrition"></div>
+<div class="hero-overlay"></div>
+<div class="hero-particles" id="heroP"></div>
+<div class="hero-content">
+<div class="hero-eyebrow"><span class="hero-eyebrow-line"></span>Trusted Partner in Animal Nutrition</div>
+<h1 class="hero-title">Science-Driven<br><em>Nutrition</em> Solutions</h1>
+<p class="hero-sub">VeritasVet develops and supplies premium feed additive solutions designed to support animal health, performance, and feed quality across poultry, ruminant, and aquaculture production systems.</p>
+<div class="hero-actions">
+<button class="btn-hp" onclick="goPage('products')">Explore Solutions</button>
+<button class="btn-hg" onclick="goPage('about')">Our Approach</button>
+</div>
+</div>
+<div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-stats">
+<div class="marquee-track">
+<div class="marquee-item"><strong>19+</strong> Products</div><div class="marquee-dot"></div>
+<div class="marquee-item"><strong>4</strong> Solution Categories</div><div class="marquee-dot"></div>
+<div class="marquee-item"><strong>50+</strong> Countries Served</div><div class="marquee-dot"></div>
+<div class="marquee-item"><strong>100%</strong> Science-Backed</div><div class="marquee-dot"></div>
+<div class="marquee-item"><strong>3</strong> Species Focus</div><div class="marquee-dot"></div>
+<div class="marquee-item"><strong>24/7</strong> Technical Support</div><div class="marquee-dot"></div>
+<div class="marquee-item"><strong>19+</strong> Products</div><div class="marquee-dot"></div>
+<div class="marquee-item"><strong>4</strong> Solution Categories</div><div class="marquee-dot"></div>
+<div class="marquee-item"><strong>50+</strong> Countries Served</div><div class="marquee-dot"></div>
+<div class="marquee-item"><strong>100%</strong> Science-Backed</div><div class="marquee-dot"></div>
+<div class="marquee-item"><strong>3</strong> Species Focus</div><div class="marquee-dot"></div>
+<div class="marquee-item"><strong>24/7</strong> Technical Support</div><div class="marquee-dot"></div>
+</div>
+</div>
+
+<!-- SPECIES -->
+<section class="section-pad species-panels">
+<div class="container">
+<div class="sec-center reveal">
+<div class="sec-label"><span class="sec-label-line"></span> By Species</div>
+<h2 class="sec-title">Tailored for Every Species</h2>
+<p class="sec-desc">Programs designed with species-specific physiology in mind, delivering targeted nutrition where it matters most.</p>
+</div>
+
+<div class="species-panel" style="margin-top:4rem">
+<div class="sp-visual reveal-left">
+<img src="/assets/images/species-poultry.jpg" alt="Free-range poultry flock in modern broiler house — VeritasVet poultry nutrition solutions">
+<div class="sp-visual-overlay"></div><div class="sp-badge">Poultry Division</div>
+</div>
+<div class="sp-info reveal-right">
+<div class="sec-label"><span class="sec-label-line"></span> Poultry</div>
+<h3 class="sp-heading">Poultry Nutrition Excellence</h3>
+<p>Advanced feed additive programs optimized for broiler, layer, and breeder performance. Our solutions support gut health, feed efficiency, and overall flock vitality.</p>
+<div class="sp-features">
+<div class="sp-feat"><div class="sp-feat-icon">✓</div><span>Broiler growth optimization</span></div>
+<div class="sp-feat"><div class="sp-feat-icon">✓</div><span>Layer productivity support</span></div>
+<div class="sp-feat"><div class="sp-feat-icon">✓</div><span>Mycotoxin risk reduction</span></div>
+</div>
+<a href="#" class="btn-arrow" onclick="goPage('products');return false">View Poultry Solutions →</a>
+</div>
+</div>
+
+<div class="species-panel rev">
+<div class="sp-visual reveal-right">
+<img src="/assets/images/species-ruminant.jpg" alt="Dairy cattle herd grazing on open pasture — VeritasVet ruminant nutrition solutions">
+<div class="sp-visual-overlay"></div><div class="sp-badge">Ruminant Division</div>
+</div>
+<div class="sp-info reveal-left">
+<div class="sec-label"><span class="sec-label-line"></span> Ruminant</div>
+<h3 class="sp-heading">Ruminant Health & Performance</h3>
+<p>Specialized additives for dairy and beef cattle, enhancing rumen function, nutrient utilization, and overall herd health across all production stages.</p>
+<div class="sp-features">
+<div class="sp-feat"><div class="sp-feat-icon">✓</div><span>Rumen function optimization</span></div>
+<div class="sp-feat"><div class="sp-feat-icon">✓</div><span>Milk yield enhancement</span></div>
+<div class="sp-feat"><div class="sp-feat-icon">✓</div><span>Feed conversion improvement</span></div>
+</div>
+<a href="#" class="btn-arrow" onclick="goPage('products');return false">View Ruminant Solutions →</a>
+</div>
+</div>
+
+<div class="species-panel">
+<div class="sp-visual reveal-left">
+<img src="/assets/images/species-aquaculture.jpg" alt="Fish school in clear aquaculture environment — VeritasVet aquaculture feed solutions">
+<div class="sp-visual-overlay"></div><div class="sp-badge">Aquaculture Division</div>
+</div>
+<div class="sp-info reveal-right">
+<div class="sec-label"><span class="sec-label-line"></span> Aquaculture</div>
+<h3 class="sp-heading">Aquaculture Innovation</h3>
+<p>Innovative feed solutions for fish and shrimp production, promoting growth, disease resistance, and sustainable aquaculture operations worldwide.</p>
+<div class="sp-features">
+<div class="sp-feat"><div class="sp-feat-icon">✓</div><span>Growth performance support</span></div>
+<div class="sp-feat"><div class="sp-feat-icon">✓</div><span>Disease resistance enhancement</span></div>
+<div class="sp-feat"><div class="sp-feat-icon">✓</div><span>Water quality management</span></div>
+</div>
+<a href="#" class="btn-arrow" onclick="goPage('products');return false">View Aquaculture Solutions →</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SOLUTIONS -->
+<section class="section-pad solutions-section">
+<div class="container">
+<div class="sec-center reveal">
+<div class="sec-label"><span class="sec-label-line"></span> Product Categories</div>
+<h2 class="sec-title">Feed Additive Portfolio</h2>
+<p class="sec-desc">Science-backed solutions addressing the core challenges of modern animal production.</p>
+</div>
+<div class="sol-grid">
+<div class="sol-card reveal delay-1" onclick="goPage('products')"><div class="sol-icon ic-m">🛡️</div><h3>Mycotoxin Control</h3><p>Advanced binders and deactivators protecting animals from harmful mycotoxin contamination in feed.</p>
+<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Typical inclusion:</strong> 0.5 – 2.0 kg/ton of feed</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Target outcomes:</strong> Supports liver function, helps improve flock uniformity &amp; litter quality</span></div></div>
+<span class="sol-count">4 Products →</span></div>
+<div class="sol-card reveal delay-2" onclick="goPage('products')"><div class="sol-icon ic-f">⚗️</div><h3>Feed Preservation & Stability</h3><p>Preservatives, antioxidants, and stabilizers maintaining feed freshness and nutritional integrity throughout the supply chain.</p>
+<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Typical inclusion:</strong> 0.5 – 3.0 kg/ton of feed</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Target outcomes:</strong> Helps reduce mold &amp; oxidation, supports vitamin retention &amp; shelf life</span></div></div>
+<span class="sol-count">4 Products →</span></div>
+<div class="sol-card reveal delay-3" onclick="goPage('products')"><div class="sol-icon ic-n">💊</div><h3>Performance & Productivity</h3><p>Premium vitamins, organic minerals, and amino acids engineered to support peak production and metabolic efficiency.</p>
+<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Typical inclusion:</strong> Species-specific premix rates</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Target outcomes:</strong> Supports FCR, helps improve milk yield, eggshell quality &amp; daily weight gain</span></div></div>
+<span class="sol-count">6 Products →</span></div>
+<div class="sol-card reveal delay-4" onclick="goPage('products')"><div class="sol-icon ic-g">🦠</div><h3>Digestive Performance</h3><p>Probiotics, enzymes, and gut barrier support for intestinal health, nutrient absorption, and immune resilience.</p>
+<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Typical inclusion:</strong> 0.1 – 1.0 kg/ton of feed</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Target outcomes:</strong> Supports gut integrity, helps improve FCR &amp; reduce antibiotic dependency</span></div></div>
+<span class="sol-count">5 Products →</span></div>
+</div>
+</div>
+</section>
+
+<!-- PARALLAX -->
+<div class="px-banner" id="pxBanner">
+<img class="px-banner-img" id="pxImg" src="/assets/images/banner-sustainability.jpg" alt="Vast agricultural field at sunrise representing sustainable animal production">
+<div class="px-banner-ov"></div>
+<div class="px-banner-content reveal">
+<h2>Committed to Sustainable Animal Production</h2>
+<p>Our solutions help producers achieve better performance while supporting animal welfare and environmental responsibility.</p>
+<button class="btn-green" onclick="goPage('products')">Discover Our Solutions →</button>
+</div>
+</div>
+
+<!-- INSIGHTS -->
+<section class="section-pad insights-section">
+<div class="container">
+<div class="sec-center reveal">
+<div class="sec-label"><span class="sec-label-line"></span> Latest Research</div>
+<h2 class="sec-title">Industry Insights</h2>
+<p class="sec-desc">Stay informed with our latest findings and research developments.</p>
+</div>
+<div class="ins-grid">
+<div class="ins-card featured reveal delay-1" onclick="goPage('news')">
+<div class="ins-img"><img src="/assets/images/insight-01.jpg" alt="Feed quality laboratory analysis for mycotoxin risk management"><span class="ins-tag">Research</span></div>
+<div class="ins-body"><h3>Mycotoxin Risk Management in Modern Feed Production</h3><p>Latest strategies for identifying and mitigating mycotoxin contamination across global supply chains.</p></div>
+</div>
+<div class="ins-card reveal delay-2" onclick="goPage('news')">
+<div class="ins-img"><img src="/assets/images/insight-02.jpg" alt="Healthy livestock in modern production facility — gut health innovation"><span class="ins-tag">Innovation</span></div>
+<div class="ins-body"><h3>Gut Health in Sustainable Production</h3><p>How advanced solutions improve feed efficiency and reduce environmental impact.</p></div>
+</div>
+<div class="ins-card reveal delay-3" onclick="goPage('news')">
+<div class="ins-img"><img src="/assets/images/insight-03.jpg" alt="Sustainable aquaculture operations — feed innovation"><span class="ins-tag">Sustainability</span></div>
+<div class="ins-body"><h3>Aquaculture Feed Innovation</h3><p>Recent advances supporting sustainable aquaculture operations worldwide.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="section-pad">
+<div class="container">
+<div class="cta-block reveal-scale">
+<div class="cta-block-pat"></div><div class="cta-block-glow"></div>
+<h2>Ready to Optimize Your Feed Program?</h2>
+<p>Choose the path that fits your needs — our technical team responds within 24 hours.</p>
+<div class="cta-triple">
+<div class="cta-card" onclick="goPage('contact');setTimeout(()=>{const s=document.getElementById('contactSubject');if(s)s.value='tds'},100)">
+<span class="cta-card-icon">📄</span>
+<h4>Request Technical Sheet</h4>
+<p>Get detailed TDS with composition, dosage, and compatibility data.</p>
+<span class="cta-card-btn">Get TDS →</span>
+</div>
+<div class="cta-card" onclick="goPage('contact');setTimeout(()=>{const s=document.getElementById('contactSubject');if(s)s.value='quote'},100)">
+<span class="cta-card-icon">💰</span>
+<h4>Request a Quote</h4>
+<p>Receive a competitive offer tailored to your volumes and species.</p>
+<span class="cta-card-btn">Get Quote →</span>
+</div>
+<div class="cta-card" onclick="goPage('contact');setTimeout(()=>{const s=document.getElementById('contactSubject');if(s)s.value='distributor'},100)">
+<span class="cta-card-icon">🤝</span>
+<h4>Become a Distributor</h4>
+<p>Join our growing network of trusted partners in animal nutrition.</p>
+<span class="cta-card-btn">Apply Now →</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- ═══ PRODUCTS PAGE ═══ -->
+<div class="page-view" id="page-products">
+<div class="prod-hero"><div class="prod-hero-pat"></div>
+<div class="container">
+<div class="sec-center">
+<div class="sec-label" style="color:var(--green-light)"><span class="sec-label-line"></span> Product Portfolio</div>
+<h2 class="sec-title" style="color:#fff">Our Solutions</h2>
+<p class="sec-desc" style="color:rgba(255,255,255,.55);margin:0 auto">Comprehensive feed additive portfolio built on science and proven in the field.</p>
+</div>
+</div>
+</div>
+<div class="section-pad" style="padding-top:2rem">
+<div class="container">
+<div class="filter-bar" id="filterBar">
+<button class="filter-btn active" onclick="filterP('all',this)">All Products</button>
+<button class="filter-btn" onclick="filterP('mycotoxin',this)">Mycotoxin Control</button>
+<button class="filter-btn" onclick="filterP('feed-quality',this)">Feed Preservation</button>
+<button class="filter-btn" onclick="filterP('nutrition',this)">Performance & Productivity</button>
+<button class="filter-btn" onclick="filterP('gut-health',this)">Digestive Performance</button>
+</div>
+<div class="prods-grid" id="prodsGrid"></div>
+</div>
+</div>
+</div>
+
+<!-- ═══ DETAIL ═══ -->
+<div class="page-view" id="page-detail">
+<div class="det-page"><div class="container">
+<a href="#" class="det-back" onclick="goPage('products');return false">← Back to Solutions</a>
+<div class="det-grid" id="detContent"></div>
+</div></div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<div class="page-view" id="page-about">
+<div class="about-hero">
+<div class="about-hero-img"><img src="/assets/images/about-hero.jpg" alt="Green agricultural landscape representing VeritasVet commitment to animal nutrition"></div>
+<div class="about-hero-ov"></div>
+<div class="about-hero-ct">
+<div class="hero-eyebrow" style="animation-delay:.2s"><span class="hero-eyebrow-line"></span>About VeritasVet</div>
+<h1 class="hero-title" style="animation-delay:.4s">Trusted Partner in<br><em>Animal Nutrition</em></h1>
+<p class="hero-sub" style="animation-delay:.6s;max-width:600px">Leading provider of science-driven feed additive solutions for the global animal nutrition industry. We develop products that support animal health, performance, and sustainability across poultry, ruminant, and aquaculture production systems.</p>
+<div class="hero-actions" style="animation-delay:.8s">
+<button class="btn-hp" onclick="goPage('contact')">Get in Touch</button>
+<button class="btn-hg" onclick="goPage('products')">Our Solutions</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ═══ NEWS ═══ -->
+<div class="page-view" id="page-news">
+<div class="prod-hero"><div class="prod-hero-pat"></div>
+<div class="container"><div class="sec-center">
+<div class="sec-label" style="color:var(--green-light)"><span class="sec-label-line"></span> Research & Insights</div>
+<h2 class="sec-title" style="color:#fff">Latest News</h2>
+<p class="sec-desc" style="color:rgba(255,255,255,.55);margin:0 auto">Industry updates and research findings from VeritasVet.</p>
+</div></div>
+</div>
+<section class="section-pad insights-section">
+<div class="container">
+<div class="ins-grid" style="grid-template-columns:repeat(3,1fr)">
+<div class="ins-card"><div class="ins-img"><img src="/assets/images/insight-01.jpg" alt="Laboratory research for mycotoxin risk management in feed production"><span class="ins-tag">Research</span></div><div class="ins-body"><h3>Mycotoxin Risk Management</h3><p>Understanding strategies for identifying and mitigating mycotoxin contamination in feed supply chains.</p></div></div>
+<div class="ins-card"><div class="ins-img"><img src="/assets/images/insight-02.jpg" alt="Healthy livestock showcasing gut health innovation results"><span class="ins-tag">Innovation</span></div><div class="ins-body"><h3>Gut Health Innovation</h3><p>Advanced solutions contributing to improved feed efficiency and reduced environmental impact.</p></div></div>
+<div class="ins-card"><div class="ins-img"><img src="/assets/images/insight-03.jpg" alt="Modern aquaculture facility showing sustainable feed technology advances"><span class="ins-tag">Sustainability</span></div><div class="ins-body"><h3>Aquaculture Advances</h3><p>Feed additive technology supporting sustainable aquaculture operations worldwide.</p></div></div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- ═══ CONTACT ═══ -->
+<div class="page-view" id="page-contact">
+<div class="contact-page"><div class="container">
+<div class="sec-center" style="padding-top:3rem">
+<div class="sec-label"><span class="sec-label-line"></span> Get in Touch</div>
+<h2 class="sec-title">Contact Us</h2>
+<p class="sec-desc">Connect with our technical team to discuss your feed additive requirements.</p>
+</div>
+<div class="contact-form">
+<form onsubmit="return false">
+<div class="form-grid-2">
+<div class="form-row"><label>Name *</label><input type="text" required placeholder="Your full name"></div>
+<div class="form-row"><label>Email *</label><input type="email" required placeholder="your@email.com"></div>
+</div>
+<div class="form-grid-2">
+<div class="form-row"><label>Company *</label><input type="text" required placeholder="Company name"></div>
+<div class="form-row"><label>Country</label><input type="text" placeholder="Your country"></div>
+</div>
+<div class="form-grid-2">
+<div class="form-row"><label>I'm interested in *</label>
+<select id="contactSubject" required>
+<option value="" disabled selected>Select a subject</option>
+<option value="tds">Request Technical Sheet (TDS)</option>
+<option value="quote">Request a Quote</option>
+<option value="distributor">Become a Distributor</option>
+<option value="technical">Technical Support</option>
+<option value="other">Other Inquiry</option>
+</select></div>
+<div class="form-row"><label>Company type *</label>
+<select required>
+<option value="" disabled selected>Select your type</option>
+<option value="distributor">Distributor</option>
+<option value="feedmill">Feed Mill / Integrator</option>
+<option value="farm">Farm</option>
+<option value="premix">Premix Manufacturer</option>
+<option value="other">Other</option>
+</select></div>
+</div>
+<div class="form-row"><label>Product(s) of interest</label><input type="text" placeholder="e.g. MycoBind Pro, GutBalance, etc."></div>
+<div class="form-row"><label>Message *</label><textarea required placeholder="Tell us about your volumes, species, and specific needs..."></textarea></div>
+<button type="submit" class="btn-green" style="width:100%;justify-content:center">Send Request</button>
+</form>
+</div>
+</div></div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+<div class="ft-top">
+<div class="ft-brand"><img src="image_logo_VERITASVET.png" alt="VeritasVet"><p>Science-driven feed additive solutions for modern animal production. Supporting animal health, performance, and sustainability worldwide.</p></div>
+<div class="ft-col"><h5>Company</h5><a href="#" onclick="goPage('about')">About Us</a><a href="#" onclick="goPage('products')">Our Solutions</a><a href="#" onclick="goPage('news')">Research</a><a href="#" onclick="goPage('contact')">Contact</a></div>
+<div class="ft-col"><h5>Solutions</h5><a href="#" onclick="goPage('products')">Mycotoxin Control</a><a href="#" onclick="goPage('products')">Feed Preservation & Stability</a><a href="#" onclick="goPage('products')">Performance & Productivity</a><a href="#" onclick="goPage('products')">Digestive Performance</a></div>
+<div class="ft-col"><h5>Legal</h5><a href="#">Legal Notice</a><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></div>
+</div>
+<div class="ft-bottom"><p>&copy; 2026 VeritasVet. All rights reserved.</p><p>Trusted Partner in Animal Nutrition</p></div>
+</footer>
+
+<script>
+const P=[
+{id:'mycobind-pro',n:'MycoBind Pro',c:'mycotoxin',cn:'Mycotoxin Control',i:'🛡️',d:'Advanced broad-spectrum mycotoxin binder',f:'Premium mycotoxin binding solution utilizing advanced clay-based technology to effectively neutralize multiple mycotoxins in feed.',b:['Broad-spectrum binding','Heat-stable formulation','No nutrient interference','Proven field efficacy','Cost-effective dosing'],s:['Poultry','Ruminant','Swine'],inc:'0.5 – 2.0 kg/ton',out:'Supports liver function, helps improve flock uniformity'},
+{id:'toxisafe-plus',n:'ToxiSafe Plus',c:'mycotoxin',cn:'Mycotoxin Control',i:'🛡️',d:'Enhanced mycotoxin deactivator with enzymatic action',f:'Combines binding and biotransformation technologies for superior mycotoxin protection.',b:['Dual-mode action','Effective against aflatoxins','Supports liver function','Safe for all animals','Research-backed'],s:['Poultry','Ruminant','Swine','Aquaculture'],inc:'1.0 – 2.5 kg/ton',out:'Supports detoxification, helps reduce aflatoxin impact on performance'},
+{id:'mycoshield',n:'MycoShield Advance',c:'mycotoxin',cn:'Mycotoxin Control',i:'🛡️',d:'Next-gen mycotoxin control with immune support',f:'Comprehensive mycotoxin management while supporting immune function.',b:['Multi-toxin targeting','Immune support','Gut health enhancement','Improved palatability','Flexible dosing'],s:['Poultry','Swine'],inc:'1.0 – 2.0 kg/ton',out:'Supports immunity under mycotoxin challenge, helps improve litter quality'},
+{id:'mycoclean',n:'MycoClean',c:'mycotoxin',cn:'Mycotoxin Control',i:'🛡️',d:'Cost-effective mycotoxin binder',f:'Reliable mycotoxin binding at an economical price point.',b:['Excellent value','Effective binding','Easy to mix','Universal application','Consistent quality'],s:['Poultry','Ruminant','Swine','Aquaculture'],inc:'0.5 – 1.5 kg/ton',out:'Helps reduce mycotoxin absorption, supports overall feed safety'},
+{id:'feedguard',n:'FeedGuard',c:'feed-quality',cn:'Feed Preservation & Stability',i:'⚗️',d:'Premium feed preservative blend',f:'Synergistic blend of organic acids and antioxidants for comprehensive feed protection.',b:['Extended shelf life','Mold inhibition','Prevents oxidation','Improves palatability','Safe formulation'],s:['All Species'],inc:'1.0 – 3.0 kg/ton',out:'Helps extend shelf life, supports vitamin retention in stored feed'},
+{id:'moldsafe',n:'MoldSafe',c:'feed-quality',cn:'Feed Preservation & Stability',i:'⚗️',d:'Powerful mold inhibitor',f:'Superior mold control in challenging high-humidity storage conditions.',b:['Rapid inhibition','High humidity effective','Low inclusion rates','Thermostable','Reduces mycotoxin risk'],s:['All Species'],inc:'0.5 – 2.0 kg/ton',out:'Supports mold prevention, helps reduce secondary mycotoxin formation'},
+{id:'oxidcontrol',n:'OxidControl',c:'feed-quality',cn:'Feed Preservation & Stability',i:'⚗️',d:'Advanced antioxidant system',f:'Protects fats, oils, and vitamins from oxidative degradation.',b:['Protects fats & oils','Vitamin stability','Prevents rancidity','Extends freshness','Improves efficiency'],s:['Poultry','Swine','Aquaculture'],inc:'0.1 – 0.5 kg/ton',out:'Helps protect fat quality, supports energy value of feed'},
+{id:'feedstabilizer',n:'FeedStabilizer',c:'feed-quality',cn:'Feed Preservation & Stability',i:'⚗️',d:'Complete feed preservation system',f:'Comprehensive protection against mold, oxidation, and bacterial spoilage.',b:['All-in-one solution','Dual control','Maintains quality','Reduces waste','Proven performance'],s:['All Species'],inc:'1.0 – 2.5 kg/ton',out:'Supports overall feed quality, helps reduce feed waste and nutrient loss'},
+{id:'nutriboost',n:'NutriBoost',c:'nutrition',cn:'Performance & Productivity',i:'💊',d:'Complete vitamin & mineral premix',f:'Comprehensive nutritional solution for modern production animals.',b:['Balanced profile','Bioavailable minerals','Supports growth','Quality ingredients','Customizable'],s:['Poultry','Swine','Ruminant'],inc:'Species-specific premix rates',out:'Supports growth performance, helps improve daily weight gain'},
+{id:'vitapremix',n:'VitaPremix',c:'nutrition',cn:'Performance & Productivity',i:'💊',d:'Premium vitamin concentrate',f:'Essential vitamins stabilized for optimal animal performance.',b:['High-potency blend','Stabilized formula','Immune support','Reproductive performance','Processing compatible'],s:['All Species'],inc:'Species-specific premix rates',out:'Supports immune function, helps improve reproductive performance'},
+{id:'mineralx',n:'MineralX',c:'nutrition',cn:'Performance & Productivity',i:'💊',d:'Advanced organic mineral supplement',f:'Chelated trace minerals with superior bioavailability.',b:['Enhanced absorption','Organic sources','Bone development','Eggshell quality','Reduced excretion'],s:['Poultry','Swine','Ruminant'],inc:'0.3 – 1.0 kg/ton',out:'Supports eggshell quality, helps improve bone mineralization'},
+{id:'aminobalance',n:'AminoBalance',c:'nutrition',cn:'Performance & Productivity',i:'💊',d:'Precision amino acid supplement',f:'Essential amino acids for optimal protein utilization.',b:['Optimized protein levels','Improved conversion','Lower excretion','Muscle development','Cost-effective'],s:['Poultry','Swine','Aquaculture'],inc:'Species-specific amino acid rates',out:'Supports FCR, helps reduce nitrogen excretion by up to 20%'},
+{id:'nutricore',n:'NutriCore',c:'nutrition',cn:'Performance & Productivity',i:'💊',d:'Essential micronutrient foundation',f:'Balanced base of essential micronutrients.',b:['Complete package','Metabolic efficiency','Feed utilization','Animal welfare','Flexible application'],s:['All Species'],inc:'Species-specific premix rates',out:'Supports metabolic efficiency, helps improve overall feed utilization'},
+{id:'powermix',n:'PowerMix',c:'nutrition',cn:'Performance & Productivity',i:'💊',d:'High-performance nutrition enhancer',f:'Maximum growth potential and production efficiency.',b:['Comprehensive blend','Fast-growing optimized','Peak performance','Feed efficiency','Commercially proven'],s:['Poultry','Swine'],inc:'Species-specific rates',out:'Supports peak growth, helps improve FCR in fast-growing breeds'},
+{id:'gutbalance',n:'GutBalance',c:'gut-health',cn:'Digestive Performance',i:'🦠',d:'Multi-strain probiotic complex',f:'Selected probiotic strains for intestinal health.',b:['Multiple strains','Microbiome balance','Nutrient absorption','Immune support','Reduces pathogens'],s:['Poultry','Swine','Ruminant'],inc:'0.1 – 0.5 kg/ton',out:'Supports microbiome balance, helps improve nutrient absorption'},
+{id:'progut',n:'ProGut Plus',c:'gut-health',cn:'Digestive Performance',i:'🦠',d:'Synbiotic formula for gut resilience',f:'Probiotics with prebiotic fibers for synergistic effect.',b:['Synbiotic action','Beneficial growth','Intestinal integrity','Post-antibiotic recovery','Processing stable'],s:['Poultry','Swine'],inc:'0.2 – 0.5 kg/ton',out:'Supports gut recovery post-antibiotic, helps improve FCR'},
+{id:'digestaid',n:'DigestAid',c:'gut-health',cn:'Digestive Performance',i:'🦠',d:'Multi-enzyme complex',f:'Targeted digestive enzymes for improved nutrient utilization.',b:['Multi-enzyme formula','Breaks down anti-nutritionals','Nutrient availability','Reduces costs','Young animal support'],s:['Poultry','Swine','Aquaculture'],inc:'0.1 – 0.5 kg/ton',out:'Supports nutrient availability, helps improve feed cost efficiency'},
+{id:'intesticare',n:'IntestiCare',c:'gut-health',cn:'Digestive Performance',i:'🦠',d:'Gut barrier protection specialist',f:'Supports intestinal barrier integrity.',b:['Strengthens barrier','Reduces inflammation','Mucosal immunity','Prevents leaky gut','Overall gut health'],s:['Poultry','Swine','Ruminant'],inc:'0.2 – 1.0 kg/ton',out:'Supports gut barrier integrity, helps reduce intestinal inflammation'},
+{id:'biogut',n:'BioGut Support',c:'gut-health',cn:'Digestive Performance',i:'🦠',d:'Natural gut health promoter',f:'Organic acids and plant extracts for digestive health.',b:['Natural acidification','Inhibits pathogens','Nutrient absorption','pH optimization','Antibiotic-free'],s:['All Species'],inc:'0.5 – 2.0 kg/ton',out:'Supports antibiotic-free production, helps optimize gut pH'}
+];
+const bgMap={mycotoxin:'bg-m','feed-quality':'bg-f',nutrition:'bg-n','gut-health':'bg-g'};
+
+// Particles
+(function(){const el=document.getElementById('heroP');if(!el)return;for(let i=0;i<20;i++){const p=document.createElement('div');p.className='hero-particle';p.style.left=Math.random()*100+'%';p.style.animationDelay=Math.random()*12+'s';p.style.animationDuration=(8+Math.random()*8)+'s';el.appendChild(p)}})();
+
+// Scroll reveal
+function initReveal(){
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.12,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>obs.observe(el));
+}
+
+// Parallax
+(function(){
+const b=document.getElementById('pxBanner'),img=document.getElementById('pxImg');
+if(!b||!img)return;
+window.addEventListener('scroll',()=>{
+const r=b.getBoundingClientRect();
+if(r.top<window.innerHeight&&r.bottom>0){
+const p=(window.innerHeight-r.top)/(window.innerHeight+r.height);
+img.style.transform='translateY('+((p-.5)*80)+'px)';
+}
+},{passive:true});
+})();
+
+// Nav scroll
+window.addEventListener('scroll',()=>{document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>40)},{passive:true});
+
+// Navigation
+function goPage(p){
+document.querySelectorAll('.page-view').forEach(x=>x.classList.remove('active'));
+const el=document.getElementById('page-'+p);if(el)el.classList.add('active');
+window.scrollTo({top:0,behavior:'instant'});closeMob();
+setTimeout(initReveal,100);
+}
+function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
+function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+
+// Products
+function renderP(cat){
+const g=document.getElementById('prodsGrid');
+const list=cat==='all'?P:P.filter(p=>p.c===cat);
+g.innerHTML=list.map((p,i)=>`
+<div class="pc" onclick="showDet('${p.id}')" style="animation:fadeUp .5s ${i*.06}s both ease">
+<div class="pc-vis ${bgMap[p.c]||''}"><img src="/assets/images/products/${p.id}.jpg" alt="${p.n} — ${p.cn} feed additive by VeritasVet" onerror="this.style.display='none'"><span class="pc-cat">${p.cn}</span></div>
+<div class="pc-body"><h4>${p.n}</h4><p>${p.d}</p>
+<div class="sol-proofs" style="margin-bottom:1rem"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Inclusion:</strong> ${p.inc}</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span>${p.out}</span></div></div>
+<span class="btn-arrow" style="font-size:12px">View Details →</span></div>
+</div>`).join('');
+}
+
+function filterP(cat,btn){
+document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+btn.classList.add('active');renderP(cat);
+}
+
+function showDet(id){
+const p=P.find(x=>x.id===id);if(!p)return;
+document.getElementById('detContent').innerHTML=`
+<div class="det-vis ${bgMap[p.c]||''}"><img src="/assets/images/products/${p.id}.jpg" alt="${p.n} — ${p.cn} product detail" onerror="this.style.display='none'"></div>
+<div class="det-info"><h1>${p.n}</h1><span class="det-badge">${p.cn}</span>
+<p class="det-desc">${p.f}</p>
+<div class="sol-proofs" style="margin-bottom:2rem;padding:1.25rem;background:var(--green-mist);border-radius:12px"><div class="sol-proof" style="margin-bottom:.4rem"><span class="sol-proof-icon">◆</span><span><strong>Typical inclusion rate:</strong> ${p.inc}</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Target outcomes:</strong> ${p.out}</span></div></div>
+<div class="det-benefits"><h3>Key Benefits</h3><ul>${p.b.map(x=>'<li>'+x+'</li>').join('')}</ul></div>
+<div class="det-sp-box"><h4>Target Species</h4><div class="det-tags">${p.s.map(x=>'<span class="det-tag">'+x+'</span>').join('')}</div></div>
+<div class="det-actions">
+<button class="btn-green" onclick="goPage('contact');setTimeout(()=>{const s=document.getElementById('contactSubject');if(s)s.value='tds'},100)">📄 Request TDS</button>
+<button class="btn-green-outline" onclick="goPage('contact');setTimeout(()=>{const s=document.getElementById('contactSubject');if(s)s.value='quote'},100)">💰 Request Quote</button>
+<button class="btn-green-outline" onclick="goPage('contact')">✉️ Contact Us</button>
+</div>
+</div>`;
+goPage('detail');
+}
+
+// Init
+document.addEventListener('DOMContentLoaded',()=>{initReveal();renderP('all')});
+</script>
+</body>
+</html>
