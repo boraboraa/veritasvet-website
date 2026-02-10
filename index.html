@@ -70,9 +70,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--green-dark);margin-bottom:2rem;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .3s forwards}
 .hero-eyebrow-line{width:40px;height:1px;background:var(--green-dark)}
 .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6.5vw,5.8rem);font-weight:600;line-height:1.05;max-width:800px;margin-bottom:1.75rem;opacity:0;transform:translateY(40px);animation:hFade 1s var(--ease-out-expo) .5s forwards}
-.hero-title .hero-title-navy{color:var(--navy)}
-.hero-title em{font-style:italic;color:var(--green-dark)}
-.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(1.05rem,1.6vw,1.25rem);line-height:1.75;color:var(--navy);max-width:550px;margin-bottom:3rem;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .7s forwards}
+.hero-title .hero-title-navy{color:var(--navy);text-shadow:0 1px 6px rgba(255,255,255,.6)}
+.hero-title em{font-style:italic;color:var(--green-dark);text-shadow:0 1px 6px rgba(255,255,255,.6)}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(1.05rem,1.6vw,1.25rem);line-height:1.75;color:var(--navy);max-width:550px;margin-bottom:3rem;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .7s forwards;text-shadow:0 1px 4px rgba(255,255,255,.5)}
 .hero-actions{display:flex;gap:2rem;flex-wrap:wrap;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .9s forwards}
 @keyframes hFade{to{opacity:1;transform:translateY(0)}}
 .hero-cta{background:transparent;color:var(--navy);padding:.5rem 0;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:17px;letter-spacing:.02em;transition:opacity .35s ease;position:relative;display:inline-block;text-decoration:none;border:none;cursor:pointer}
@@ -272,7 +272,7 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .nav-links .nav-link{color:#0b1f3b!important;font-size:1.25rem}
 .nav{padding:1rem 1.5rem}
 .section-pad{padding:4rem 1.5rem}
-.hero-content{padding:0 1.5rem}
+.hero-content{padding:0 1.5rem;background:rgba(255,255,255,.35);border-radius:var(--radius-md);padding-top:1.5rem;padding-bottom:1.5rem;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
 .hero-media-img{object-position:center top}
 .trust-grid{grid-template-columns:1fr 1fr}
 .sol-grid{grid-template-columns:1fr}
