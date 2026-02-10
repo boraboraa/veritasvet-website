@@ -39,26 +39,17 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .delay-1{transition-delay:.1s}.delay-2{transition-delay:.2s}.delay-3{transition-delay:.3s}.delay-4{transition-delay:.4s}
 
 /* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:1.25rem 3rem;transition:all .5s var(--ease-out-expo)}
-.nav.scrolled{background:rgba(255,255,254,.92);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border-bottom:1px solid var(--border-subtle);padding:.9rem 3rem;box-shadow:0 1px 20px rgba(22,45,80,.05)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:9999;padding:1.25rem 3rem;background:transparent}
 .nav-inner{max-width:1440px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
 .nav-logo img{height:46px;transition:.4s}
-.nav.scrolled .nav-logo img{height:40px}
-.nav:not(.scrolled) .nav-logo img{filter:brightness(0) invert(1)}
 .nav-links{display:flex;gap:2.5rem;align-items:center}
-.nav-link{font-size:14.5px;font-weight:500;letter-spacing:.02em;transition:.3s;position:relative;padding:.3rem 0}
-.nav:not(.scrolled) .nav-link{color:rgba(255,255,255,.85)}
-.nav.scrolled .nav-link{color:var(--text-secondary)}
-.nav-link::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1.5px;background:var(--green);transition:width .4s var(--ease-out-expo)}
+.nav-link{font-size:14.5px;font-weight:500;letter-spacing:.02em;transition:opacity .3s ease;position:relative;padding:.3rem 0;color:#0b1f3b;text-shadow:0 1px 1px rgba(250,251,246,.4)}
+.nav-link::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1.5px;background:#0b1f3b;transition:width .4s var(--ease-out-expo)}
 .nav-link:hover::after{width:100%}
-.nav-link:hover{color:var(--green-dark)}
-.nav:not(.scrolled) .nav-link:hover{color:var(--green-light)}
-.nav-cta-btn{background:var(--green);color:#fff;padding:.65rem 1.75rem;border-radius:8px;font-weight:600;font-size:13.5px;letter-spacing:.03em;transition:.35s;text-transform:uppercase}
-.nav-cta-btn:hover{background:var(--green-dark);transform:translateY(-1px);box-shadow:0 6px 20px rgba(140,191,46,.3)}
+.nav-link:hover{opacity:.78}
 .hamburger{display:none;width:28px;height:20px;flex-direction:column;justify-content:space-between;cursor:pointer;z-index:10001}
 .hamburger span{display:block;width:100%;height:2px;border-radius:2px;transition:.35s}
-.nav:not(.scrolled) .hamburger span{background:#fff}
-.nav.scrolled .hamburger span{background:var(--navy)}
+.hamburger span{background:#0b1f3b}
 .hamburger.active span:nth-child(1){transform:translateY(9px) rotate(45deg)}
 .hamburger.active span:nth-child(2){opacity:0}
 .hamburger.active span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
@@ -71,7 +62,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hero-media{position:absolute;inset:0;z-index:1}
 .hero-media-img{width:100%;height:100%;object-fit:cover;opacity:.5;transform:scale(1.08);animation:heroZoom 20s ease-in-out infinite alternate}
 @keyframes heroZoom{0%{transform:scale(1.08)}100%{transform:scale(1.15)}}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,30,56,.4) 0%,rgba(12,30,56,.15) 40%,rgba(12,30,56,.7) 100%),linear-gradient(90deg,rgba(12,30,56,.65) 0%,transparent 60%);z-index:2}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(250,251,246,.76) 0%,rgba(250,251,246,.2) 20%,rgba(12,30,56,.2) 40%,rgba(12,30,56,.7) 100%),linear-gradient(90deg,rgba(12,30,56,.65) 0%,transparent 60%);z-index:2}
 .hero-particles{position:absolute;inset:0;z-index:3;pointer-events:none;overflow:hidden}
 .hero-particle{position:absolute;width:3px;height:3px;background:var(--green-light);border-radius:50%;opacity:0;animation:pDrift 12s ease-in-out infinite}
 @keyframes pDrift{0%{opacity:0;transform:translateY(100vh) translateX(0)}10%{opacity:.35}90%{opacity:.35}100%{opacity:0;transform:translateY(-20vh) translateX(40px)}}
@@ -79,6 +70,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:2rem;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .3s forwards}
 .hero-eyebrow-line{width:40px;height:1px;background:var(--green)}
 .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6.5vw,5.8rem);font-weight:600;line-height:1.05;color:#fff;max-width:800px;margin-bottom:1.75rem;opacity:0;transform:translateY(40px);animation:hFade 1s var(--ease-out-expo) .5s forwards}
+.hero-title .hero-title-navy{color:#0b1f3b}
 .hero-title em{font-style:italic;color:var(--green-light)}
 .hero-sub{font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.8;color:rgba(255,255,255,.6);max-width:550px;margin-bottom:3rem;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .7s forwards}
 .hero-actions{display:flex;gap:1.25rem;flex-wrap:wrap;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .9s forwards}
@@ -279,7 +271,7 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .hamburger{display:flex}
 .nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);flex-direction:column;justify-content:center;gap:2rem;opacity:0;pointer-events:none;transition:opacity .4s ease;z-index:10000}
 .nav-links.open{opacity:1;pointer-events:all}
-.nav-links .nav-link{color:var(--navy)!important;font-size:1.25rem}
+.nav-links .nav-link{color:#0b1f3b!important;font-size:1.25rem}
 .nav{padding:1rem 1.5rem}
 .section-pad{padding:4rem 1.5rem}
 .hero-content{padding:0 1.5rem}
@@ -329,8 +321,8 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <div class="nav-links" id="navLinks">
 <a class="nav-link" href="/about" onclick="goPath('/about');return false">About Us</a>
 <a class="nav-link" href="/news" onclick="goPath('/news');return false">News</a>
-<a class="nav-link" href="/contact" onclick="goPath('/contact');return false">Contact</a>
-<button class="nav-cta-btn" onclick="goPath('/products');return false">Discover Products</button>
+<a class="nav-link" href="/contact" onclick="goPath('/contact');return false">Contacts</a>
+<a class="nav-link" href="/products" onclick="goPath('/products');return false">Discover Products</a>
 </div>
 <div class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
 </div>
@@ -345,7 +337,7 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <div class="hero-particles" id="heroP"></div>
 <div class="hero-content">
 <div class="hero-eyebrow"><span class="hero-eyebrow-line"></span>Feed Additive &amp; Premix for Animal Health</div>
-<h1 class="hero-title">Feed Smarter,<br><em>Grow Stronger</em></h1>
+<h1 class="hero-title"><span class="hero-title-navy">Feed Smarter,</span><br><em>Grow Stronger</em></h1>
 <p class="hero-sub">VeritasVet provides science-based feeding solutions designed to enhance animal resilience, efficiency, and performance.</p>
 <div class="hero-actions">
 <button class="btn-hp" onclick="goPath('/products');return false">Explore Products</button>
@@ -651,14 +643,7 @@ img.style.transform='translateY('+((p-.5)*80)+'px)';
 },{passive:true});
 })();
 
-// Nav scroll
-window.addEventListener('scroll',()=>{document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>40)},{passive:true});
-
-function setNavState(page){
-const nav=document.getElementById('mainNav');
-if(page==='home'&&window.scrollY<40) nav.classList.remove('scrolled');
-else nav.classList.add('scrolled');
-}
+function setNavState(){}
 
 // Navigation
 function goPage(p){
