@@ -317,10 +317,10 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <div class="nav-inner">
 <a href="#" class="nav-logo" onclick="goPage('home')"><img src="image_logo_VERITASVET.png" alt="VeritasVet"></a>
 <div class="nav-links" id="navLinks">
-<a class="nav-link" href="#" onclick="goPage('about')">About</a>
-<a class="nav-link" href="#" onclick="goPage('products')">Solutions</a>
-<a class="nav-link" href="#" onclick="goPage('news')">Research</a>
-<button class="nav-cta-btn" onclick="goPage('contact')">Contact Us</button>
+<a class="nav-link" href="#" onclick="goPage('products')">Products</a>
+<a class="nav-link" href="#" onclick="goPage('about')">About Us</a>
+<a class="nav-link" href="#" onclick="goPage('contact')">Contacts</a>
+<button class="nav-cta-btn" onclick="goPage('products')">Discover Products</button>
 </div>
 <div class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
 </div>
@@ -334,12 +334,12 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <div class="hero-overlay"></div>
 <div class="hero-particles" id="heroP"></div>
 <div class="hero-content">
-<div class="hero-eyebrow"><span class="hero-eyebrow-line"></span>Trusted Partner in Animal Nutrition</div>
-<h1 class="hero-title">Science-Driven<br><em>Nutrition</em> Solutions</h1>
-<p class="hero-sub">VeritasVet develops and supplies premium feed additive solutions designed to support animal health, performance, and feed quality across poultry, ruminant, and aquaculture production systems.</p>
+<div class="hero-eyebrow"><span class="hero-eyebrow-line"></span>Feed Additive &amp; Premix for Animal Health</div>
+<h1 class="hero-title">Feed Smarter,<br><em>Grow Stronger!</em></h1>
+<p class="hero-sub">VeritasVet delivers science-based smart feeding solutions through feed additives and premix programs that support animal health and feed quality. Our principle is simple: Feed Smart, Grow Strong!</p>
 <div class="hero-actions">
-<button class="btn-hp" onclick="goPage('products')">Explore Solutions</button>
-<button class="btn-hg" onclick="goPage('about')">Our Approach</button>
+<button class="btn-hp" onclick="goPage('products')">Discover Our Products</button>
+<button class="btn-hg" onclick="goPage('about')">About Us</button>
 </div>
 </div>
 <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
@@ -370,6 +370,12 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <div class="sec-label"><span class="sec-label-line"></span> By Species</div>
 <h2 class="sec-title">Tailored for Every Species</h2>
 <p class="sec-desc">Programs designed with species-specific physiology in mind, delivering targeted nutrition where it matters most.</p>
+</div>
+
+<div class="filter-bar reveal" style="margin-top:2.5rem">
+<button class="filter-btn active" onclick="goPage('products')">Ruminant</button>
+<button class="filter-btn" onclick="goPage('products')">Poultry</button>
+<button class="filter-btn" onclick="goPage('products')">Aquatics</button>
 </div>
 
 <div class="species-panel" style="margin-top:4rem">
@@ -434,22 +440,46 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <div class="sec-center reveal">
 <div class="sec-label"><span class="sec-label-line"></span> Product Categories</div>
 <h2 class="sec-title">Feed Additive Portfolio</h2>
-<p class="sec-desc">Science-backed solutions addressing the core challenges of modern animal production.</p>
+<p class="sec-desc">Science-based categories aligned with practical feeding goals.</p>
 </div>
 <div class="sol-grid">
-<div class="sol-card reveal delay-1" onclick="goPage('products')"><div class="sol-icon ic-m">🛡️</div><h3>Mycotoxin Control</h3><p>Advanced binders and deactivators protecting animals from harmful mycotoxin contamination in feed.</p>
-<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Typical inclusion:</strong> 0.5 – 2.0 kg/ton of feed</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Target outcomes:</strong> Supports liver function, helps improve flock uniformity &amp; litter quality</span></div></div>
-<span class="sol-count">4 Products →</span></div>
-<div class="sol-card reveal delay-2" onclick="goPage('products')"><div class="sol-icon ic-f">⚗️</div><h3>Feed Preservation & Stability</h3><p>Preservatives, antioxidants, and stabilizers maintaining feed freshness and nutritional integrity throughout the supply chain.</p>
-<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Typical inclusion:</strong> 0.5 – 3.0 kg/ton of feed</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Target outcomes:</strong> Helps reduce mold &amp; oxidation, supports vitamin retention &amp; shelf life</span></div></div>
-<span class="sol-count">4 Products →</span></div>
-<div class="sol-card reveal delay-3" onclick="goPage('products')"><div class="sol-icon ic-n">💊</div><h3>Performance & Productivity</h3><p>Premium vitamins, organic minerals, and amino acids engineered to support peak production and metabolic efficiency.</p>
-<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Typical inclusion:</strong> Species-specific premix rates</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Target outcomes:</strong> Supports FCR, helps improve milk yield, eggshell quality &amp; daily weight gain</span></div></div>
-<span class="sol-count">6 Products →</span></div>
-<div class="sol-card reveal delay-4" onclick="goPage('products')"><div class="sol-icon ic-g">🦠</div><h3>Digestive Performance</h3><p>Probiotics, enzymes, and gut barrier support for intestinal health, nutrient absorption, and immune resilience.</p>
-<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Typical inclusion:</strong> 0.1 – 1.0 kg/ton of feed</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Target outcomes:</strong> Supports gut integrity, helps improve FCR &amp; reduce antibiotic dependency</span></div></div>
-<span class="sol-count">5 Products →</span></div>
+<div class="sol-card reveal delay-1" onclick="goPage('products')"><div class="sol-icon ic-g">🦠</div><h3>Gut Health</h3><p>Feed Material</p>
+<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span>Smart gut-focused feed additive support.</span></div></div>
+<span class="sol-count">see products →</span></div>
+<div class="sol-card reveal delay-2" onclick="goPage('products')"><div class="sol-icon ic-f">⚗️</div><h3>Feed Quality</h3><p>For Animal Feed</p>
+<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span>Solutions to help maintain feed consistency.</span></div></div>
+<span class="sol-count">see products →</span></div>
+<div class="sol-card reveal delay-3" onclick="goPage('products')"><div class="sol-icon ic-m">🛡️</div><h3>Mycotoxin Eliminator</h3><p>Toxin Binder</p>
+<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span>Binder options for practical toxin management.</span></div></div>
+<span class="sol-count">Details →</span></div>
+<div class="sol-card reveal delay-4" onclick="goPage('products')"><div class="sol-icon ic-n">💊</div><h3>Nutrition</h3><p>For Animal Feed</p>
+<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span>Premix and additive nutrition support tools.</span></div></div>
+<span class="sol-count">see products →</span></div>
 </div>
+</div>
+</section>
+
+<section class="section-pad" style="padding-top:0">
+<div class="container">
+<div class="sec-center reveal">
+<div class="sec-label"><span class="sec-label-line"></span> Quality Promise</div>
+<h2 class="sec-title">High Quality</h2>
+</div>
+<div class="sol-proofs" style="max-width:760px;margin:1.5rem auto 0;padding:1.5rem;background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-md)">
+<div class="sol-proof"><span class="sol-proof-icon">◆</span><span>Quality You Can Trust, Prices You Can Afford!</span></div>
+<div class="sol-proof"><span class="sol-proof-icon">◆</span><span>All Products is Natural</span></div>
+</div>
+</div>
+</section>
+
+<section class="section-pad" style="padding-top:0">
+<div class="container">
+<div class="sec-center reveal">
+<div class="sec-label"><span class="sec-label-line"></span> Featured Products</div>
+<h2 class="sec-title">Homepage Product Highlights</h2>
+<p class="sec-desc">Short overviews from our current portfolio.</p>
+</div>
+<div class="prods-grid" id="homeProdsGrid"></div>
 </div>
 </section>
 
@@ -527,8 +557,8 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <div class="container">
 <div class="sec-center">
 <div class="sec-label" style="color:var(--green-light)"><span class="sec-label-line"></span> Product Portfolio</div>
-<h2 class="sec-title" style="color:#fff">Our Solutions</h2>
-<p class="sec-desc" style="color:rgba(255,255,255,.55);margin:0 auto">Comprehensive feed additive portfolio built on science and proven in the field.</p>
+<h2 class="sec-title" style="color:#fff">Our Products</h2>
+<p class="sec-desc" style="color:rgba(255,255,255,.55);margin:0 auto">Comprehensive feed additive and premix portfolio for smart feeding programs.</p>
 </div>
 </div>
 </div>
@@ -536,10 +566,10 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <div class="container">
 <div class="filter-bar" id="filterBar">
 <button class="filter-btn active" onclick="filterP('all',this)">All Products</button>
-<button class="filter-btn" onclick="filterP('mycotoxin',this)">Mycotoxin Control</button>
-<button class="filter-btn" onclick="filterP('feed-quality',this)">Feed Preservation</button>
-<button class="filter-btn" onclick="filterP('nutrition',this)">Performance & Productivity</button>
-<button class="filter-btn" onclick="filterP('gut-health',this)">Digestive Performance</button>
+<button class="filter-btn" onclick="filterP('mycotoxin',this)">Mycotoxin Eliminator</button>
+<button class="filter-btn" onclick="filterP('feed-quality',this)">Feed Quality</button>
+<button class="filter-btn" onclick="filterP('nutrition',this)">Nutrition</button>
+<button class="filter-btn" onclick="filterP('gut-health',this)">Gut Health</button>
 </div>
 <div class="prods-grid" id="prodsGrid"></div>
 </div>
@@ -549,7 +579,7 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <!-- ═══ DETAIL ═══ -->
 <div class="page-view" id="page-detail">
 <div class="det-page"><div class="container">
-<a href="#" class="det-back" onclick="goPage('products');return false">← Back to Solutions</a>
+<a href="#" class="det-back" onclick="goPage('products');return false">← Back to Products</a>
 <div class="det-grid" id="detContent"></div>
 </div></div>
 </div>
@@ -650,25 +680,19 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 
 <script>
 const P=[
-{id:'mycobind-pro',n:'MycoBind Pro',c:'mycotoxin',cn:'Mycotoxin Control',i:'🛡️',d:'Advanced broad-spectrum mycotoxin binder',f:'Premium mycotoxin binding solution utilizing advanced clay-based technology to effectively neutralize multiple mycotoxins in feed.',b:['Broad-spectrum binding','Heat-stable formulation','No nutrient interference','Proven field efficacy','Cost-effective dosing'],s:['Poultry','Ruminant','Swine'],inc:'0.5 – 2.0 kg/ton',out:'Supports liver function, helps improve flock uniformity'},
-{id:'toxisafe-plus',n:'ToxiSafe Plus',c:'mycotoxin',cn:'Mycotoxin Control',i:'🛡️',d:'Enhanced mycotoxin deactivator with enzymatic action',f:'Combines binding and biotransformation technologies for superior mycotoxin protection.',b:['Dual-mode action','Effective against aflatoxins','Supports liver function','Safe for all animals','Research-backed'],s:['Poultry','Ruminant','Swine','Aquaculture'],inc:'1.0 – 2.5 kg/ton',out:'Supports detoxification, helps reduce aflatoxin impact on performance'},
-{id:'mycoshield',n:'MycoShield Advance',c:'mycotoxin',cn:'Mycotoxin Control',i:'🛡️',d:'Next-gen mycotoxin control with immune support',f:'Comprehensive mycotoxin management while supporting immune function.',b:['Multi-toxin targeting','Immune support','Gut health enhancement','Improved palatability','Flexible dosing'],s:['Poultry','Swine'],inc:'1.0 – 2.0 kg/ton',out:'Supports immunity under mycotoxin challenge, helps improve litter quality'},
-{id:'mycoclean',n:'MycoClean',c:'mycotoxin',cn:'Mycotoxin Control',i:'🛡️',d:'Cost-effective mycotoxin binder',f:'Reliable mycotoxin binding at an economical price point.',b:['Excellent value','Effective binding','Easy to mix','Universal application','Consistent quality'],s:['Poultry','Ruminant','Swine','Aquaculture'],inc:'0.5 – 1.5 kg/ton',out:'Helps reduce mycotoxin absorption, supports overall feed safety'},
-{id:'feedguard',n:'FeedGuard',c:'feed-quality',cn:'Feed Preservation & Stability',i:'⚗️',d:'Premium feed preservative blend',f:'Synergistic blend of organic acids and antioxidants for comprehensive feed protection.',b:['Extended shelf life','Mold inhibition','Prevents oxidation','Improves palatability','Safe formulation'],s:['All Species'],inc:'1.0 – 3.0 kg/ton',out:'Helps extend shelf life, supports vitamin retention in stored feed'},
-{id:'moldsafe',n:'MoldSafe',c:'feed-quality',cn:'Feed Preservation & Stability',i:'⚗️',d:'Powerful mold inhibitor',f:'Superior mold control in challenging high-humidity storage conditions.',b:['Rapid inhibition','High humidity effective','Low inclusion rates','Thermostable','Reduces mycotoxin risk'],s:['All Species'],inc:'0.5 – 2.0 kg/ton',out:'Supports mold prevention, helps reduce secondary mycotoxin formation'},
-{id:'oxidcontrol',n:'OxidControl',c:'feed-quality',cn:'Feed Preservation & Stability',i:'⚗️',d:'Advanced antioxidant system',f:'Protects fats, oils, and vitamins from oxidative degradation.',b:['Protects fats & oils','Vitamin stability','Prevents rancidity','Extends freshness','Improves efficiency'],s:['Poultry','Swine','Aquaculture'],inc:'0.1 – 0.5 kg/ton',out:'Helps protect fat quality, supports energy value of feed'},
-{id:'feedstabilizer',n:'FeedStabilizer',c:'feed-quality',cn:'Feed Preservation & Stability',i:'⚗️',d:'Complete feed preservation system',f:'Comprehensive protection against mold, oxidation, and bacterial spoilage.',b:['All-in-one solution','Dual control','Maintains quality','Reduces waste','Proven performance'],s:['All Species'],inc:'1.0 – 2.5 kg/ton',out:'Supports overall feed quality, helps reduce feed waste and nutrient loss'},
-{id:'nutriboost',n:'NutriBoost',c:'nutrition',cn:'Performance & Productivity',i:'💊',d:'Complete vitamin & mineral premix',f:'Comprehensive nutritional solution for modern production animals.',b:['Balanced profile','Bioavailable minerals','Supports growth','Quality ingredients','Customizable'],s:['Poultry','Swine','Ruminant'],inc:'Species-specific premix rates',out:'Supports growth performance, helps improve daily weight gain'},
-{id:'vitapremix',n:'VitaPremix',c:'nutrition',cn:'Performance & Productivity',i:'💊',d:'Premium vitamin concentrate',f:'Essential vitamins stabilized for optimal animal performance.',b:['High-potency blend','Stabilized formula','Immune support','Reproductive performance','Processing compatible'],s:['All Species'],inc:'Species-specific premix rates',out:'Supports immune function, helps improve reproductive performance'},
-{id:'mineralx',n:'MineralX',c:'nutrition',cn:'Performance & Productivity',i:'💊',d:'Advanced organic mineral supplement',f:'Chelated trace minerals with superior bioavailability.',b:['Enhanced absorption','Organic sources','Bone development','Eggshell quality','Reduced excretion'],s:['Poultry','Swine','Ruminant'],inc:'0.3 – 1.0 kg/ton',out:'Supports eggshell quality, helps improve bone mineralization'},
-{id:'aminobalance',n:'AminoBalance',c:'nutrition',cn:'Performance & Productivity',i:'💊',d:'Precision amino acid supplement',f:'Essential amino acids for optimal protein utilization.',b:['Optimized protein levels','Improved conversion','Lower excretion','Muscle development','Cost-effective'],s:['Poultry','Swine','Aquaculture'],inc:'Species-specific amino acid rates',out:'Supports FCR, helps reduce nitrogen excretion by up to 20%'},
-{id:'nutricore',n:'NutriCore',c:'nutrition',cn:'Performance & Productivity',i:'💊',d:'Essential micronutrient foundation',f:'Balanced base of essential micronutrients.',b:['Complete package','Metabolic efficiency','Feed utilization','Animal welfare','Flexible application'],s:['All Species'],inc:'Species-specific premix rates',out:'Supports metabolic efficiency, helps improve overall feed utilization'},
-{id:'powermix',n:'PowerMix',c:'nutrition',cn:'Performance & Productivity',i:'💊',d:'High-performance nutrition enhancer',f:'Maximum growth potential and production efficiency.',b:['Comprehensive blend','Fast-growing optimized','Peak performance','Feed efficiency','Commercially proven'],s:['Poultry','Swine'],inc:'Species-specific rates',out:'Supports peak growth, helps improve FCR in fast-growing breeds'},
-{id:'gutbalance',n:'GutBalance',c:'gut-health',cn:'Digestive Performance',i:'🦠',d:'Multi-strain probiotic complex',f:'Selected probiotic strains for intestinal health.',b:['Multiple strains','Microbiome balance','Nutrient absorption','Immune support','Reduces pathogens'],s:['Poultry','Swine','Ruminant'],inc:'0.1 – 0.5 kg/ton',out:'Supports microbiome balance, helps improve nutrient absorption'},
-{id:'progut',n:'ProGut Plus',c:'gut-health',cn:'Digestive Performance',i:'🦠',d:'Synbiotic formula for gut resilience',f:'Probiotics with prebiotic fibers for synergistic effect.',b:['Synbiotic action','Beneficial growth','Intestinal integrity','Post-antibiotic recovery','Processing stable'],s:['Poultry','Swine'],inc:'0.2 – 0.5 kg/ton',out:'Supports gut recovery post-antibiotic, helps improve FCR'},
-{id:'digestaid',n:'DigestAid',c:'gut-health',cn:'Digestive Performance',i:'🦠',d:'Multi-enzyme complex',f:'Targeted digestive enzymes for improved nutrient utilization.',b:['Multi-enzyme formula','Breaks down anti-nutritionals','Nutrient availability','Reduces costs','Young animal support'],s:['Poultry','Swine','Aquaculture'],inc:'0.1 – 0.5 kg/ton',out:'Supports nutrient availability, helps improve feed cost efficiency'},
-{id:'intesticare',n:'IntestiCare',c:'gut-health',cn:'Digestive Performance',i:'🦠',d:'Gut barrier protection specialist',f:'Supports intestinal barrier integrity.',b:['Strengthens barrier','Reduces inflammation','Mucosal immunity','Prevents leaky gut','Overall gut health'],s:['Poultry','Swine','Ruminant'],inc:'0.2 – 1.0 kg/ton',out:'Supports gut barrier integrity, helps reduce intestinal inflammation'},
-{id:'biogut',n:'BioGut Support',c:'gut-health',cn:'Digestive Performance',i:'🦠',d:'Natural gut health promoter',f:'Organic acids and plant extracts for digestive health.',b:['Natural acidification','Inhibits pathogens','Nutrient absorption','pH optimization','Antibiotic-free'],s:['All Species'],inc:'0.5 – 2.0 kg/ton',out:'Supports antibiotic-free production, helps optimize gut pH'}
+{id:'versamos',n:'VersaMos',c:'gut-health',cn:'Gut Health',i:'🦠',d:'MOS-based support for a balanced digestive environment.',f:'Feed additive support designed to help maintain digestive balance in routine feeding programs.',b:['Digestive support','Routine feeding fit','Practical application'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports smart feeding programs for digestive consistency'},
+{id:'toxyfix-plus',n:'ToxyFix Plus',c:'mycotoxin',cn:'Mycotoxin Eliminator',i:'🛡️',d:'Toxin binder option for broad feed protection.',f:'A practical toxin binder option intended for daily feed safety management.',b:['Binder-based support','Daily feed use','Portfolio standard'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports feed quality management where toxin pressure is present'},
+{id:'toxyfix-perfect',n:'ToxyFix Perfect',c:'mycotoxin',cn:'Mycotoxin Eliminator',i:'🛡️',d:'Enhanced toxin binder for targeted feed programs.',f:'Formulated as a targeted toxin binder selection within VeritasVet mycotoxin solutions.',b:['Targeted binder choice','Program flexibility','Routine integration'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports practical toxin control strategies'},
+{id:'toxyfix',n:'ToxyFix',c:'mycotoxin',cn:'Mycotoxin Eliminator',i:'🛡️',d:'Core mycotoxin binder for everyday feed control.',f:'Core mycotoxin binder product for standard feed management routines.',b:['Core binder product','Simple implementation','Consistent portfolio naming'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports consistent feed safety programs'},
+{id:'versacid-fl-plus',n:'VersAcid FL Plus',c:'feed-quality',cn:'Feed Quality',i:'⚗️',d:'Feed acidifier solution for quality-focused formulations.',f:'Acidifier-based feed quality support for modern feed formulation workflows.',b:['Feed quality focus','Acidifier approach','Operational fit'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports quality-focused feed management'},
+{id:'versacid-liquid',n:'VersAcid Liquid',c:'feed-quality',cn:'Feed Quality',i:'⚗️',d:'Liquid acidifier for practical feed quality support.',f:'Liquid format feed acidifier for flexible use in feed quality programs.',b:['Liquid format','Flexible use','Quality support'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports stable feed quality routines'},
+{id:'versapeg',n:'VersaPeg',c:'nutrition',cn:'Nutrition',i:'💊',d:'Nutrition support additive for balanced feed planning.',f:'Nutrition category additive selected for structured, smart feeding plans.',b:['Nutrition support','Feed planning alignment','Program consistency'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports balanced nutrition delivery in feed programs'},
+{id:'guarbind',n:'GuarBind',c:'feed-quality',cn:'Feed Quality',i:'⚗️',d:'Binding support to help maintain feed handling quality.',f:'Feed quality product intended to support handling consistency in practical operations.',b:['Binding support','Handling consistency','Operational practicality'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports feed consistency across handling stages'},
+{id:'versamold',n:'VersaMold',c:'feed-quality',cn:'Feed Quality',i:'⚗️',d:'Mold management support for feed quality programs.',f:'Feed quality support focused on mold management in storage and handling contexts.',b:['Mold-focused support','Storage relevance','Program-ready use'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports feed quality under mold-risk conditions'},
+{id:'verivit-hy-d3',n:'VeriVit HY D3',c:'nutrition',cn:'Nutrition',i:'💊',d:'Vitamin nutrition support for premix applications.',f:'Nutrition portfolio vitamin solution designed for practical premix integration.',b:['Vitamin-focused support','Premix integration','Portfolio consistency'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports vitamin-focused nutrition planning'},
+{id:'veroxid-b2a',n:'VerOxid B2A',c:'feed-quality',cn:'Feed Quality',i:'⚗️',d:'Oxidation-control support for feed quality stability.',f:'Feed quality additive used to support oxidation control in routine feed management.',b:['Oxidation support','Quality stability','Routine compatibility'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports feed quality stability during storage'},
+{id:'veroxid-phenols',n:'VerOxid Phenols',c:'feed-quality',cn:'Feed Quality',i:'⚗️',d:'Phenolic antioxidant support for feed quality care.',f:'Feed quality antioxidant option for practical feed protection programs.',b:['Antioxidant support','Practical protection','Program option'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports quality-focused antioxidant feed programs'},
+{id:'butycal-ccb94',n:'ButyCal CCB94',c:'gut-health',cn:'Gut Health',i:'🦠',d:'Butyrate-calcium support for digestive program design.',f:'Gut health portfolio option intended to support structured digestive feeding routines.',b:['Digestive portfolio fit','Program design support','Consistent naming'],s:['Ruminant','Poultry','Aquatics'],inc:'As directed in product documentation',out:'Supports digestive-focused smart feeding programs'}
 ];
 const bgMap={mycotoxin:'bg-m','feed-quality':'bg-f',nutrition:'bg-n','gut-health':'bg-g'};
 
@@ -720,6 +744,16 @@ g.innerHTML=list.map((p,i)=>`
 </div>`).join('');
 }
 
+function renderHomeP(){
+const g=document.getElementById('homeProdsGrid');
+if(!g)return;
+g.innerHTML=P.map((p,i)=>`
+<div class="pc" onclick="showDet('${p.id}')" style="animation:fadeUp .5s ${i*.05}s both ease">
+<div class="pc-vis ${bgMap[p.c]||''}"><img src="/assets/images/products/${p.id}.jpg" alt="${p.n} — ${p.cn} feed additive by VeritasVet" onerror="this.style.display='none'"><span class="pc-cat">${p.cn}</span></div>
+<div class="pc-body"><h4>${p.n}</h4><p>${p.d}</p><span class="btn-arrow" style="font-size:12px">View Details →</span></div>
+</div>`).join('');
+}
+
 function filterP(cat,btn){
 document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
 btn.classList.add('active');renderP(cat);
@@ -744,7 +778,7 @@ goPage('detail');
 }
 
 // Init
-document.addEventListener('DOMContentLoaded',()=>{initReveal();renderP('all')});
+document.addEventListener('DOMContentLoaded',()=>{initReveal();renderP('all');renderHomeP()});
 </script>
 </body>
 </html>
