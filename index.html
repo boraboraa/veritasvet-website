@@ -91,12 +91,22 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .cert-section{background:var(--ivory);padding:2.5rem 0;border-bottom:1px solid var(--border-subtle)}
 .cert-logos{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap}
 .cert-logos span{padding:.5rem .9rem;border:1px solid #d9dee4;background:#f2f4f6;color:#607284;border-radius:999px;font-size:12px;letter-spacing:.05em;font-weight:600}
-.species-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
-.species-card{background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:2rem}
-.species-card h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--navy);margin-bottom:.8rem}
-.species-card p,.species-card li{color:var(--text-secondary);font-size:.96rem;line-height:1.7}
-.species-card ul{padding-left:1.1rem;margin-bottom:1rem}
-.species-card .btn-arrow{margin-top:1rem}
+/* SPECIES IMAGE BLOCKS */
+.species-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.species-block{position:relative;border-radius:var(--radius-lg);overflow:hidden;cursor:pointer;height:480px;transition:transform .5s var(--ease-out-expo),box-shadow .5s var(--ease-out-expo)}
+.species-block:hover{transform:scale(1.02);box-shadow:var(--shadow-dramatic)}
+.species-block:active{transform:scale(1.04);box-shadow:0 24px 70px rgba(22,45,80,0.2)}
+.species-block-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease-out-expo)}
+.species-block:hover .species-block-img{transform:scale(1.07)}
+.species-block-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(12,30,56,.55) 0%,rgba(12,30,56,.1) 50%,transparent 100%);pointer-events:none;transition:background .4s ease}
+.species-block:hover .species-block-overlay{background:linear-gradient(to top,rgba(12,30,56,.65) 0%,rgba(12,30,56,.15) 55%,transparent 100%)}
+.species-block-content{position:absolute;bottom:0;left:0;right:0;padding:2rem;z-index:2;display:flex;flex-direction:column;align-items:flex-start;gap:.75rem}
+.species-block-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,2.5vw,2.4rem);font-weight:600;color:#fff;line-height:1.1;text-shadow:0 2px 8px rgba(0,0,0,.2)}
+.species-block-cta{font-family:'DM Sans',sans-serif;font-weight:700;font-size:14px;color:var(--navy);background:transparent;padding:.5rem 0;letter-spacing:.03em;position:relative;display:inline-block;text-decoration:none;transition:color .3s ease}
+.species-block-cta::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1.5px;background:var(--navy);transition:width .4s var(--ease-out-expo)}
+.species-block:hover .species-block-cta::after{width:100%}
+.species-block-cta-wrap{background:rgba(255,255,255,.92);backdrop-filter:blur(10px);padding:.6rem 1.25rem;border-radius:8px;transition:background .3s ease}
+.species-block:hover .species-block-cta-wrap{background:rgba(255,255,255,.98)}
 
 /* SECTION BASICS */
 .section-pad{padding:7rem 3rem}
@@ -248,7 +258,8 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 @media(max-width:1100px){
 .sol-grid{grid-template-columns:repeat(2,1fr)}
 .trust-grid{grid-template-columns:repeat(3,1fr)}
-.species-columns{grid-template-columns:1fr 1fr}
+.species-grid{grid-template-columns:1fr 1fr}
+.species-block{height:400px}
 .ins-grid{grid-template-columns:1fr}
 .ins-card.featured{grid-row:auto}
 .ins-card.featured .ins-img{height:260px}
@@ -261,7 +272,8 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .species-panel{grid-template-columns:1fr;min-height:auto}
 .species-panel.rev{direction:ltr}
 .sp-visual{height:380px}
-.species-columns{grid-template-columns:1fr}
+.species-grid{grid-template-columns:1fr}
+.species-block{height:360px}
 .det-grid{grid-template-columns:1fr;gap:2rem}
 .det-vis{height:280px}
 }
@@ -375,30 +387,31 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <h2 class="sec-title">Tailored for Every Species</h2>
 <p class="sec-desc">Programs designed with species-specific physiology in mind, delivering targeted nutrition where it matters most.</p>
 </div>
-<div class="species-columns">
-<article class="species-card reveal delay-1">
-<h3>Poultry</h3>
-<ul>
-<li>Broiler growth optimization</li>
-<li>Layer productivity support</li>
-<li>Mycotoxin risk reduction</li>
-</ul>
-<a href="/products/gut-health" class="btn-arrow" onclick="goPath('/products/gut-health');return false">View Poultry Solutions →</a>
-</article>
-<article class="species-card reveal delay-2">
-<h3>Ruminant</h3>
-<p>Specialized additives for dairy and beef cattle supporting rumen efficiency.</p>
-<a href="/products/feed-quality" class="btn-arrow" onclick="goPath('/products/feed-quality');return false">View Ruminant Solutions →</a>
-</article>
-<article class="species-card reveal delay-3">
-<h3>Aquaculture</h3>
-<ul>
-<li>Growth performance support</li>
-<li>Disease resistance enhancement</li>
-<li>Water quality management</li>
-</ul>
-<a href="/products/mycotoxin-eliminator" class="btn-arrow" onclick="goPath('/products/mycotoxin-eliminator');return false">View Aquaculture Solutions →</a>
-</article>
+<div class="species-grid">
+<a href="/products/feed-quality" class="species-block reveal delay-1" onclick="goPath('/products/feed-quality');return false">
+<img class="species-block-img" src="ruminant.webp" alt="Ruminant nutrition — dairy and beef cattle feed solutions by VeritasVet">
+<div class="species-block-overlay"></div>
+<div class="species-block-content">
+<h3 class="species-block-title">Ruminants</h3>
+<div class="species-block-cta-wrap"><span class="species-block-cta">View the solutions</span></div>
+</div>
+</a>
+<a href="/products/gut-health" class="species-block reveal delay-2" onclick="goPath('/products/gut-health');return false">
+<img class="species-block-img" src="poultry.webp" alt="Poultry nutrition — broiler and layer feed solutions by VeritasVet">
+<div class="species-block-overlay"></div>
+<div class="species-block-content">
+<h3 class="species-block-title">Poultry</h3>
+<div class="species-block-cta-wrap"><span class="species-block-cta">View the solutions</span></div>
+</div>
+</a>
+<a href="/products/mycotoxin-eliminator" class="species-block reveal delay-3" onclick="goPath('/products/mycotoxin-eliminator');return false">
+<img class="species-block-img" src="aquaculture.webp" alt="Aquaculture nutrition — fish and shrimp feed solutions by VeritasVet">
+<div class="species-block-overlay"></div>
+<div class="species-block-content">
+<h3 class="species-block-title">Aquaculture</h3>
+<div class="species-block-cta-wrap"><span class="species-block-cta">View the solutions</span></div>
+</div>
+</a>
 </div>
 </div>
 </section>
