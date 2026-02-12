@@ -141,10 +141,14 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* SOLUTION CARDS */
 .solutions-section{background:var(--ivory)}
 .sol-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3.5rem}
-.sol-card{background:#fff;border-radius:var(--radius-lg);padding:2.5rem 2rem;border:1px solid var(--border-subtle);transition:.5s var(--ease-out-expo);cursor:pointer;position:relative;overflow:hidden}
-.sol-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--green),var(--green-light));transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease-out-expo)}
+.sol-card{background:#fff;border-radius:var(--radius-lg);padding:0;border:1px solid var(--border-subtle);transition:.5s var(--ease-out-expo);cursor:pointer;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.sol-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--green),var(--green-light));transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease-out-expo);z-index:2}
 .sol-card:hover::before{transform:scaleX(1)}
 .sol-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-dramatic);border-color:transparent}
+.sol-card-img{width:100%;height:180px;overflow:hidden;flex-shrink:0}
+.sol-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease-out-expo)}
+.sol-card:hover .sol-card-img img{transform:scale(1.04)}
+.sol-card-body{padding:2rem 2rem 2.5rem}
 .sol-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:1.75rem;font-size:1.6rem;transition:.4s}
 .sol-icon.ic-m{background:rgba(239,68,68,.08)}.sol-icon.ic-f{background:rgba(59,130,246,.08)}
 .sol-icon.ic-n{background:rgba(168,85,247,.08)}.sol-icon.ic-g{background:rgba(16,185,129,.08)}
@@ -290,6 +294,7 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .hero-media-img{object-position:center top}
 .trust-grid{grid-template-columns:1fr 1fr}
 .sol-grid{grid-template-columns:1fr}
+.sol-card-img{height:200px}
 .ft-top{grid-template-columns:1fr;gap:2rem}
 .ft-bottom{flex-direction:column;gap:1rem;text-align:center}
 .prod-hero{padding:8rem 1.5rem 3rem}
@@ -429,10 +434,10 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <p class="sec-desc">Navigate by category to find the right solution set.</p>
 </div>
 <div class="sol-grid">
-<div class="sol-card reveal delay-1" onclick="goPath('/products/gut-health')"><div class="sol-icon ic-g">🦠</div><h3>Gut Health</h3><p>Category gateway</p><span class="sol-count">/products/gut-health →</span></div>
-<div class="sol-card reveal delay-2" onclick="goPath('/products/feed-quality')"><div class="sol-icon ic-f">⚗️</div><h3>Feed Quality</h3><p>Category gateway</p><span class="sol-count">/products/feed-quality →</span></div>
-<div class="sol-card reveal delay-3" onclick="goPath('/products/mycotoxin-eliminator')"><div class="sol-icon ic-m">🛡️</div><h3>Mycotoxin Eliminator</h3><p>Category gateway</p><span class="sol-count">/products/mycotoxin-eliminator →</span></div>
-<div class="sol-card reveal delay-4" onclick="goPath('/products/nutrition')"><div class="sol-icon ic-n">💊</div><h3>Nutrition</h3><p>Category gateway</p><span class="sol-count">/products/nutrition →</span></div>
+<div class="sol-card reveal delay-1" onclick="goPath('/products/gut-health')"><div class="sol-card-img"><img src="/Gut health.webp" alt="Gut health feed additive solutions by VeritasVet"></div><div class="sol-card-body"><div class="sol-icon ic-g">🦠</div><h3>Gut Health</h3><p>Category gateway</p><span class="sol-count">/products/gut-health →</span></div></div>
+<div class="sol-card reveal delay-2" onclick="goPath('/products/feed-quality')"><div class="sol-card-img"><img src="/feed quality.webp" alt="Feed quality preservation solutions by VeritasVet"></div><div class="sol-card-body"><div class="sol-icon ic-f">⚗️</div><h3>Feed Quality</h3><p>Category gateway</p><span class="sol-count">/products/feed-quality →</span></div></div>
+<div class="sol-card reveal delay-3" onclick="goPath('/products/mycotoxin-eliminator')"><div class="sol-card-img"><img src="/mycotoxin management.webp" alt="Mycotoxin management and elimination solutions by VeritasVet"></div><div class="sol-card-body"><div class="sol-icon ic-m">🛡️</div><h3>Mycotoxin Eliminator</h3><p>Category gateway</p><span class="sol-count">/products/mycotoxin-eliminator →</span></div></div>
+<div class="sol-card reveal delay-4" onclick="goPath('/products/nutrition')"><div class="sol-card-img"><img src="/nutrition.webp" alt="Animal nutrition solutions by VeritasVet"></div><div class="sol-card-body"><div class="sol-icon ic-n">💊</div><h3>Nutrition</h3><p>Category gateway</p><span class="sol-count">/products/nutrition →</span></div></div>
 </div>
 </div>
 </section>
