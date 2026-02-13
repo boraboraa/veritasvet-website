@@ -221,12 +221,12 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 /* PRODUCT CARD */
 .pc{background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;transition:.5s var(--ease-out-expo);cursor:pointer}
 .pc:hover{transform:translateY(-6px);box-shadow:var(--shadow-dramatic);border-color:transparent}
-.pc-vis{width:100%;height:180px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.pc-vis{width:100%;height:200px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .pc-vis.bg-m{background:linear-gradient(135deg,#fef2f2,#fecaca30)}
 .pc-vis.bg-f{background:linear-gradient(135deg,#eff6ff,#bfdbfe30)}
 .pc-vis.bg-n{background:linear-gradient(135deg,#faf5ff,#e9d5ff30)}
 .pc-vis.bg-g{background:linear-gradient(135deg,#ecfdf5,#a7f3d030)}
-.pc-vis img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease-out-expo)}
+.pc-vis img{width:100%;height:100%;object-fit:contain;padding:.75rem;transition:transform .5s var(--ease-out-expo)}
 .pc:hover .pc-vis img{transform:scale(1.06)}
 .pc-cat{position:absolute;top:.75rem;right:.75rem;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);padding:.3rem .85rem;border-radius:50px;font-size:10.5px;font-weight:700;color:var(--navy);letter-spacing:.05em;text-transform:uppercase}
 .pc-body{padding:1.5rem}
@@ -239,7 +239,7 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .det-back:hover{gap:.8rem;color:var(--green)}
 .det-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.1fr;gap:4rem;background:#fff;padding:3rem;border-radius:var(--radius-xl);border:1px solid var(--border-subtle);box-shadow:var(--shadow-soft)}
 .det-vis{width:100%;height:450px;border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;overflow:hidden}
-.det-vis img{width:100%;height:100%;object-fit:cover}
+.det-vis img{width:100%;height:100%;object-fit:contain;padding:1rem}
 .det-info h1{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:var(--navy);margin-bottom:.75rem}
 .det-badge{display:inline-block;background:var(--green-pale);padding:.35rem 1.1rem;border-radius:50px;font-size:11px;font-weight:700;color:var(--green-dark);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.5rem}
 .det-desc{font-size:1.05rem;color:var(--text-secondary);line-height:1.8;margin-bottom:2rem}
@@ -737,9 +737,11 @@ const P=[
 {id:'versapeg',n:'VersaPeg',c:'nutrition',cn:'Nutrition',d:'Nutritional formulation support for balanced performance.',f:'Specialized nutrition support ingredient used in additive and premix strategies.',b:['Balanced nutrition support','Program integration','Performance-oriented'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports optimized nutrition design'},
 {id:'guarbind',n:'GuarBind',c:'feed-quality',cn:'Feed Quality',d:'Feed binding solution for pellet and texture consistency.',f:'Feed quality solution supporting cohesive feed form and handling stability.',b:['Binding consistency','Improved handling','Supports feed uniformity'],s:['Poultry','Ruminant'],inc:'As directed in product documentation',out:'Supports stable feed quality metrics'},
 {id:'veroxid-b2a',n:'VerOxid B2A',c:'feed-quality',cn:'Feed Quality',d:'Antioxidant support for preserving feed freshness.',f:'Feed quality additive used to protect feed value against oxidative deterioration.',b:['Oxidation control','Preserves freshness','Improves shelf stability'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports prolonged feed quality retention'},
-{id:'veroxid-phenols',n:'VerOxid Phenols',c:'feed-quality',cn:'Feed Quality',d:'Phenolic antioxidant support for feed preservation programs.',f:'A quality-focused antioxidant component used to sustain feed integrity over time.',b:['Phenolic antioxidant support','Integrity preservation','Stable storage support'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports antioxidant-based feed protection'}
+{id:'veroxid-phenols',n:'VerOxid Phenols',c:'feed-quality',cn:'Feed Quality',d:'Phenolic antioxidant support for feed preservation programs.',f:'A quality-focused antioxidant component used to sustain feed integrity over time.',b:['Phenolic antioxidant support','Integrity preservation','Stable storage support'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports antioxidant-based feed protection'},
+{id:'versamold',n:'VersaMold',c:'feed-quality',cn:'Feed Quality',d:'Mold inhibitor for feed preservation and storage stability.',f:'A feed quality solution designed to control mold growth and maintain feed integrity during storage and handling.',b:['Mold growth inhibition','Storage stability support','Feed freshness preservation'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports mold-free feed storage programs'}
 ];
 const bgMap={'mycotoxin-eliminator':'bg-m','feed-quality':'bg-f',nutrition:'bg-n','gut-health':'bg-g'};
+const imgMap={'butycal-ccb94':'/butycal_CCB94.jpg','versamos':'/versamos.jpg','versacid-fl-plus':'/veracid_fl_plus.jpg','versacid-liquid':'/veracid_liquid.jpg','toxifix':'/toxyfix.jpg','toxifix-plus':'/toxyfix_plus.jpg','toxifix-perfect':'/toxyfix_perfect.jpg','verivit-hy-d3':'/verivit_hy_d3.jpg','versapeg':'/versapeg.jpg','guarbind':'/guarbind.jpg','veroxid-b2a':'/veroxid_b2a.jpg','veroxid-phenols':'/veroxid_phenols.jpg','versamold':'/versamold.jpg'};
 
 // Particles
 (function(){const el=document.getElementById('heroP');if(!el)return;for(let i=0;i<20;i++){const p=document.createElement('div');p.className='hero-particle';p.style.left=Math.random()*100+'%';p.style.animationDelay=Math.random()*12+'s';p.style.animationDuration=(8+Math.random()*8)+'s';el.appendChild(p)}})();
@@ -813,7 +815,7 @@ const g=document.getElementById('prodsGrid');
 const list=P.filter(p=>p.c===cat);
 g.innerHTML=list.map((p,i)=>`
 <div class="pc" onclick="showDet('${p.id}')" style="animation:fadeUp .5s ${i*.06}s both ease">
-<div class="pc-vis ${bgMap[p.c]||''}"><img src="/assets/images/products/${p.id}.jpg" alt="${p.n} — ${p.cn} feed additive by VeritasVet" onerror="this.style.display='none'"><span class="pc-cat">${p.cn}</span></div>
+<div class="pc-vis ${bgMap[p.c]||''}"><img src="${imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg'}" alt="${p.n} — ${p.cn} feed additive by VeritasVet" onerror="this.style.display='none'"><span class="pc-cat">${p.cn}</span></div>
 <div class="pc-body"><h4>${p.n}</h4><p>${p.d}</p>
 <div class="sol-proofs" style="margin-bottom:1rem"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Inclusion:</strong> ${p.inc}</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span>${p.out}</span></div></div>
 <span class="btn-arrow" style="font-size:12px">View Details →</span></div>
@@ -823,7 +825,7 @@ g.innerHTML=list.map((p,i)=>`
 function showDet(id){
 const p=P.find(x=>x.id===id);if(!p)return;
 document.getElementById('detContent').innerHTML=`
-<div class="det-vis ${bgMap[p.c]||''}"><img src="/assets/images/products/${p.id}.jpg" alt="${p.n} — ${p.cn} product detail" onerror="this.style.display='none'"></div>
+<div class="det-vis ${bgMap[p.c]||''}"><img src="${imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg'}" alt="${p.n} — ${p.cn} product detail by VeritasVet" onerror="this.style.display='none'"></div>
 <div class="det-info"><h1>${p.n}</h1><span class="det-badge">${p.cn}</span>
 <p class="det-desc">${p.f}</p>
 <div class="sol-proofs" style="margin-bottom:2rem;padding:1.25rem;background:var(--green-mist);border-radius:12px"><div class="sol-proof" style="margin-bottom:.4rem"><span class="sol-proof-icon">◆</span><span><strong>Typical inclusion rate:</strong> ${p.inc}</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Target outcomes:</strong> ${p.out}</span></div></div>
