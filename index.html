@@ -353,6 +353,92 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .det-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
 .btn-green-outline{background:transparent;color:var(--green-dark);padding:.75rem 1.5rem;border-radius:8px;font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase;transition:.35s;display:inline-flex;align-items:center;gap:.4rem;border:1.5px solid var(--green)}
 .btn-green-outline:hover{background:var(--green-pale);border-color:var(--green-dark)}
+
+/* ═══ ABOUT PAGE ═══ */
+.abt-hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+.abt-hero-bg{position:absolute;inset:0;z-index:1}
+.abt-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;animation:heroZoom 25s ease-in-out infinite alternate}
+.abt-hero-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(100deg,rgba(12,30,56,.78) 0%,rgba(12,30,56,.52) 50%,rgba(12,30,56,.18) 100%)}
+.abt-hero-inner{position:relative;z-index:10;max-width:1440px;margin:0 auto;padding:8rem 3rem 5rem;width:100%}
+.abt-hero-content{max-width:680px}
+.abt-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5.5vw,3.25rem);font-weight:700;line-height:1.12;color:#fff;margin-bottom:.75rem;text-shadow:0 2px 12px rgba(0,0,0,.2)}
+.abt-hero .abt-subtitle{font-family:'Cormorant Garamond',serif;font-size:clamp(1.15rem,2vw,1.4rem);font-weight:500;color:var(--green-light);margin-bottom:2rem;line-height:1.5;letter-spacing:.01em}
+.abt-hero .abt-text{font-size:1.05rem;color:rgba(247,248,243,.88);line-height:1.75;max-width:600px;margin-bottom:2.5rem}
+.abt-hero .abt-text p{margin-bottom:1rem}
+.abt-hero .abt-text p:last-child{margin-bottom:0}
+.abt-hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+
+/* ABOUT SECTIONS */
+.abt-section{padding:110px 3rem}
+.abt-section .abt-container{max-width:1200px;margin:0 auto}
+.abt-bg-beige{background:#f9f7f2}
+.abt-bg-white{background:#fff}
+.abt-bg-neutral{background:#f4f5f0}
+.abt-bg-navy{background:var(--navy-deep)}
+
+.abt-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.75rem,3.5vw,2.1rem);font-weight:600;line-height:1.15;color:var(--navy);margin-bottom:1.75rem}
+.abt-section .abt-body{font-size:1.05rem;color:var(--text-secondary);line-height:1.7;max-width:720px}
+.abt-section .abt-body p{margin-bottom:1.1rem}
+.abt-section .abt-body p:last-child{margin-bottom:0}
+
+/* Two-column layouts */
+.abt-split{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.abt-split.reverse{direction:rtl}
+.abt-split.reverse>*{direction:ltr}
+.abt-img-wrap{border-radius:12px;overflow:hidden;box-shadow:var(--shadow-medium)}
+.abt-img-wrap img{width:100%;max-height:420px;object-fit:cover;display:block;border-radius:12px;transition:transform .6s var(--ease-out-expo)}
+.abt-img-wrap:hover img{transform:scale(1.03)}
+
+/* Centered layout */
+.abt-centered{text-align:center}
+.abt-centered .abt-body{margin:0 auto 2.5rem}
+.abt-centered h2{text-align:center}
+.abt-centered .abt-img-wrap{max-width:800px;margin:0 auto}
+
+/* Cards grid */
+.abt-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
+.abt-card{background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:2rem 1.75rem;transition:transform .35s var(--ease-out-expo),box-shadow .35s var(--ease-out-expo)}
+.abt-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-dramatic)}
+.abt-card h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:.75rem;line-height:1.25}
+.abt-card p{font-size:.95rem;color:var(--text-secondary);line-height:1.7}
+
+/* CTA section */
+.abt-cta-section{text-align:center;padding:110px 3rem}
+.abt-cta-inner{max-width:700px;margin:0 auto}
+.abt-cta-inner h2{color:#fff;margin-bottom:1rem}
+.abt-cta-inner .abt-body{color:rgba(255,255,255,.65);margin:0 auto 2.5rem;max-width:600px}
+.abt-cta-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* Fade-up animation for about sections */
+.abt-fade{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease-out-expo),transform .7s var(--ease-out-expo)}
+.abt-fade.visible{opacity:1;transform:translateY(0)}
+.abt-stagger-1{transition-delay:.12s}
+.abt-stagger-2{transition-delay:.24s}
+.abt-stagger-3{transition-delay:.36s}
+.abt-stagger-4{transition-delay:.48s}
+
+/* Markets list */
+.abt-markets{font-size:1.1rem;color:var(--text-primary);font-weight:500;letter-spacing:.02em;margin-top:1.5rem;line-height:2}
+
+/* About page responsive */
+@media(max-width:1100px){
+.abt-cards{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:900px){
+.abt-split{grid-template-columns:1fr;gap:2.5rem}
+.abt-split.reverse{direction:ltr}
+}
+@media(max-width:768px){
+.abt-section{padding:70px 1.5rem}
+.abt-cta-section{padding:70px 1.5rem}
+.abt-hero-inner{padding:7rem 1.5rem 4rem}
+.abt-hero h1{font-size:2rem}
+.abt-cards{grid-template-columns:1fr}
+.abt-hero-actions{flex-direction:column;gap:.75rem}
+.abt-hero-actions .btn-green,.abt-hero-actions .btn-green-outline{width:100%;justify-content:center}
+.abt-cta-actions{flex-direction:column;align-items:center}
+.abt-cta-actions .btn-green,.abt-cta-actions .btn-green-outline{width:100%;max-width:320px;justify-content:center}
+}
 </style>
 </head>
 <body>
@@ -590,19 +676,148 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 
 <!-- ═══ ABOUT ═══ -->
 <div class="page-view" id="page-about">
-<div class="about-hero">
-<div class="about-hero-img"><img src="/assets/images/about-hero.jpg" alt="Green agricultural landscape representing VeritasVet commitment to animal nutrition"></div>
-<div class="about-hero-ov"></div>
-<div class="about-hero-ct">
-<div class="hero-eyebrow" style="animation-delay:.2s"><span class="hero-eyebrow-line"></span>About VeritasVet</div>
-<h1 class="hero-title" style="animation-delay:.4s">Trusted Partner in<br><em>Animal Nutrition</em></h1>
-<p class="hero-sub" style="animation-delay:.6s;max-width:600px">Leading provider of science-driven feed additive solutions for the global animal nutrition industry. We develop products that support animal health, performance, and sustainability across poultry, ruminant, and aquaculture production systems.</p>
-<div class="hero-actions" style="animation-delay:.8s">
-<button class="btn-hp" onclick="goPath('/contact')">Get in Touch</button>
-<button class="btn-hg" onclick="goPath('/products')">Our Solutions</button>
+
+<!-- SECTION 1 — HERO -->
+<section class="abt-hero">
+<div class="abt-hero-bg"><img src="/images/hero_about.webp" alt="VeritasVet — science-driven animal nutrition partner"></div>
+<div class="abt-hero-overlay"></div>
+<div class="abt-hero-inner">
+<div class="abt-hero-content">
+<h1>Feed Smarter. Grow Stronger.</h1>
+<p class="abt-subtitle">Quality You Can Trust. Prices You Can Afford.</p>
+<div class="abt-text">
+<p>VeritasVet is a technical animal nutrition partner providing practical feed additive strategies designed to improve animal resilience, feed safety and production efficiency under real farming conditions.</p>
+<p>We support producers and integrators in achieving consistent performance while maintaining economic balance in their formulations.</p>
+</div>
+<div class="abt-hero-actions">
+<a class="btn-green" href="/products.html" onclick="goPath('/products');return false">Discover Solutions</a>
+<a class="btn-green-outline" style="color:#fff;border-color:rgba(255,255,255,.5)" href="/contact.html" onclick="goPath('/contact');return false">Contact Our Team</a>
 </div>
 </div>
 </div>
+</section>
+
+<!-- SECTION 2 — OUR ROLE -->
+<section class="abt-section abt-bg-white">
+<div class="abt-container">
+<div class="abt-split">
+<div class="abt-fade">
+<h2>Our Role in the Industry</h2>
+<div class="abt-body">
+<p>VeritasVet operates as an independent formulation and application specialist.</p>
+<p>Rather than promoting a fixed catalog, we select and combine technologies from qualified manufacturing partners to deliver the most appropriate solution for each situation.</p>
+<p>This flexible approach allows us to focus on performance, reliability and cost-efficiency — ensuring solutions match field realities, raw-material variability and production objectives across livestock, poultry and aquaculture systems.</p>
+</div>
+</div>
+<div class="abt-img-wrap abt-fade abt-stagger-1">
+<img src="/images/role.webp" alt="VeritasVet role in the animal nutrition industry" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 3 — HOW WE WORK -->
+<section class="abt-section abt-bg-beige">
+<div class="abt-container">
+<div class="abt-centered">
+<div class="abt-fade">
+<h2>How We Work</h2>
+<div class="abt-body">
+<p>We begin by understanding your production environment, constraints and performance objectives.</p>
+<p>Our team evaluates the situation and proposes a tailored nutritional strategy adapted to your needs — whether related to feed safety, animal performance or formulation optimization.</p>
+<p>Our objective is simple: provide the right solution for your operation, not the most convenient one for us.</p>
+</div>
+</div>
+<div class="abt-img-wrap abt-fade abt-stagger-1">
+<img src="/images/method.webp" alt="VeritasVet methodology — tailored nutritional strategies" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 4 — PROVEN PERFORMANCE -->
+<section class="abt-section abt-bg-white">
+<div class="abt-container">
+<div class="abt-split reverse">
+<div class="abt-fade">
+<h2>Proven Performance</h2>
+<div class="abt-body">
+<p>Our solutions are assessed through recognized validation systems.</p>
+<p>Mycotoxin management technologies are evaluated using the UGent simulated gastrointestinal digestion model and independently verified by Trilogy Analytical Laboratories (USA) to confirm performance under practical digestive conditions.</p>
+<p>Our collaboration model is supported by manufacturing partners operating under internationally recognized certification systems.</p>
+</div>
+<div style="margin-top:2rem">
+<a class="btn-green" href="/certifications.html" onclick="goPath('/certifications');return false">View Certifications</a>
+</div>
+</div>
+<div class="abt-img-wrap abt-fade abt-stagger-1">
+<img src="/images/lab.webp" alt="Laboratory validation of VeritasVet feed additive solutions" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 5 — WORKING WITH VERITASVET -->
+<section class="abt-section abt-bg-neutral">
+<div class="abt-container">
+<div class="abt-centered abt-fade">
+<h2>Working With VeritasVet</h2>
+</div>
+<div class="abt-cards">
+<div class="abt-card abt-fade abt-stagger-1">
+<h3>Technical Support</h3>
+<p>We assist partners in selecting and implementing solutions adapted to formulation and market constraints.</p>
+</div>
+<div class="abt-card abt-fade abt-stagger-2">
+<h3>Flexible Sourcing</h3>
+<p>Our independent sourcing model allows selection of the most appropriate technology from qualified manufacturers instead of a fixed product range.</p>
+</div>
+<div class="abt-card abt-fade abt-stagger-3">
+<h3>Market Adaptation</h3>
+<p>Solutions and documentation are adapted to local raw materials, contamination risks and production practices.</p>
+</div>
+<div class="abt-card abt-fade abt-stagger-4">
+<h3>Long-Term Reliability</h3>
+<p>We prioritize stable supply, transparent communication and continuous follow-up.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 6 — REGIONAL PRESENCE -->
+<section class="abt-section abt-bg-white">
+<div class="abt-container">
+<div class="abt-centered">
+<div class="abt-fade">
+<h2>Regional Presence</h2>
+<div class="abt-body">
+<p>VeritasVet collaborates with partners across the Middle East.</p>
+</div>
+<div class="abt-markets abt-fade abt-stagger-1">
+Jordan &middot; Iraq &middot; Yemen &middot; Egypt &middot; Saudi Arabia &middot; Qatar &middot; Oman &middot; United Arab Emirates
+</div>
+</div>
+<div class="abt-img-wrap abt-fade abt-stagger-2" style="margin-top:2.5rem">
+<img src="/images/map.webp" alt="VeritasVet regional presence across the Middle East" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION 7 — FINAL CTA -->
+<section class="abt-cta-section abt-bg-navy">
+<div class="abt-cta-inner abt-fade">
+<h2>Work With Us</h2>
+<div class="abt-body">
+<p>Discuss your nutritional or feed safety challenges with our technical team and discover how a tailored approach can improve your production results.</p>
+</div>
+<div class="abt-cta-actions">
+<a class="btn-green" href="/contact.html" onclick="goPath('/contact');return false">Request Information</a>
+<a class="btn-green-outline" style="color:#fff;border-color:rgba(255,255,255,.5)" href="/products.html" onclick="goPath('/products');return false">Explore Products</a>
+</div>
+</div>
+</section>
+
 </div>
 
 <!-- ═══ NEWS ═══ -->
@@ -755,7 +970,7 @@ const imgMap={'butycal-ccb94':'/butycal_CCB94.jpg','versamos':'/versamos.jpg','v
 // Scroll reveal
 function initReveal(){
 const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.12,rootMargin:'0px 0px -50px 0px'});
-document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>obs.observe(el));
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.abt-fade').forEach(el=>obs.observe(el));
 }
 
 // Parallax
