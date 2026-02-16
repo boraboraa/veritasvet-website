@@ -1,0 +1,52 @@
+:root{
+  --navy:#162d50;--green:#8cbf2e;--cream:#fafbf6;--text-primary:#1a2b3d;--text-secondary:#4a5d72;--border:#e8ecf0;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-primary);line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.site-header{position:sticky;top:0;z-index:10;background:rgba(250,251,246,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--border)}
+.header-inner{max-width:1200px;margin:0 auto;padding:1rem 1.25rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.logo img{height:42px}
+.nav-toggle{display:none;border:1px solid var(--border);border-radius:8px;padding:.45rem .6rem;background:#fff}
+.site-nav{display:flex;align-items:center;gap:.75rem}
+.site-nav a{padding:.38rem .68rem;border-radius:999px;font-size:.95rem}
+.site-nav a:focus-visible,.site-nav a:hover{outline:none;background:#fff;box-shadow:0 0 0 2px rgba(140,191,46,.25)}
+.site-nav .active{background:#fff;color:var(--navy);box-shadow:0 0 0 1px rgba(22,45,80,.08)}
+main{max-width:1200px;margin:0 auto;padding:2rem 1.25rem 4rem}
+.news-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.1rem);margin:0 0 .5rem}
+.news-hero p{color:var(--text-secondary);margin:0 0 1.5rem}
+.filter-group{background:#fff;border:1px solid var(--border);border-radius:16px;padding:1rem;margin-bottom:1.5rem}
+.filter-group h2{font-size:1rem;margin:0 0 .75rem;color:var(--navy)}
+.filter-row{display:flex;flex-wrap:wrap;gap:.6rem}
+.filter-btn,.filter-chip,select{font:inherit;border:1px solid var(--border);background:#fff;padding:.5rem .85rem;border-radius:999px;color:var(--text-primary)}
+.filter-btn[aria-pressed="true"],.filter-chip[aria-pressed="true"]{background:#eaf4d4;border-color:#8cbf2e}
+.filter-btn:focus-visible,.filter-chip:focus-visible,select:focus-visible{outline:2px solid #8cbf2e;outline-offset:2px}
+select{border-radius:10px;min-width:220px}
+.news-grid{display:grid;gap:1rem;grid-template-columns:repeat(2,minmax(0,1fr))}
+.news-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:1rem;display:flex;flex-direction:column;gap:.75rem}
+.news-card__media{aspect-ratio:16/9;border-radius:12px;background:linear-gradient(135deg,#eef3f8,#dfe8f1)}
+.news-card__media span{position:absolute;left:-9999px}
+.news-card h2{font-size:1.15rem;margin:0;color:var(--navy)}
+.news-card p{margin:0;color:var(--text-secondary)}
+.news-tags{display:flex;flex-wrap:wrap;gap:.45rem}
+.news-tags span{font-size:.78rem;padding:.2rem .55rem;border-radius:999px;background:#f2f8e6;color:#52740f}
+.read-link{font-weight:600;color:var(--navy)}
+.news-article{background:#fff;border:1px solid var(--border);border-radius:18px;padding:1.1rem}
+.news-article__header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(1.85rem,4vw,2.7rem);margin:.25rem 0 1rem;color:var(--navy)}
+.news-article__hero-image{width:100%;aspect-ratio:16/7;border-radius:12px;background:linear-gradient(135deg,#eef3f8,#dfe8f1);margin-bottom:1rem}
+.news-article__summary-box{display:grid;gap:.75rem;grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:1rem}
+.summary-item{border:1px solid var(--border);border-radius:12px;padding:.8rem;background:#fafcf7}
+.summary-item h2{font-size:1rem;margin:0 0 .4rem;color:var(--navy)}
+.summary-item p,.news-article section p{margin:0;color:var(--text-secondary)}
+.news-article section{margin-top:1rem}
+.news-article h2{font-size:1.1rem;color:var(--navy);margin:0 0 .5rem}
+.news-article ul{margin:.2rem 0 0;padding-left:1.2rem;color:var(--text-secondary)}
+.back-home{display:inline-flex;margin-top:1rem;color:var(--navy);font-weight:600}
+@media (max-width:900px){
+  .news-grid{grid-template-columns:1fr}
+  .news-article__summary-box{grid-template-columns:1fr}
+  .nav-toggle{display:block}
+  .site-nav{display:none;position:absolute;left:0;right:0;top:72px;background:rgba(250,251,246,.98);padding:1rem;border-bottom:1px solid var(--border);flex-direction:column;align-items:flex-start}
+  .site-nav.open{display:flex}
+}
