@@ -368,6 +368,17 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .abt-hero .abt-text p:last-child{margin-bottom:0}
 .abt-hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
 
+/* Hero readable overlay */
+.hero-readable{background:rgba(255,255,255,0.18);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:18px;padding:28px 34px;max-width:640px}
+
+/* Eyebrow text */
+.abt-eyebrow{font-size:14.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:1.5rem;line-height:1.5}
+
+/* CTA layout with image */
+.abt-cta-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;text-align:left;max-width:1100px}
+.abt-cta-text{max-width:none}
+.cta-visual img{width:100%;object-fit:cover;border-radius:14px}
+
 /* ABOUT SECTIONS */
 .abt-section{padding:110px 3rem}
 .abt-section .abt-container{max-width:1200px;margin:0 auto}
@@ -404,7 +415,7 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 
 /* CTA section */
 .abt-cta-section{text-align:center;padding:110px 3rem}
-.abt-cta-inner{max-width:700px;margin:0 auto}
+.abt-cta-inner{max-width:1100px;margin:0 auto}
 .abt-cta-inner h2{color:#fff;margin-bottom:1rem}
 .abt-cta-inner .abt-body{color:rgba(255,255,255,.65);margin:0 auto 2.5rem;max-width:600px}
 .abt-cta-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
@@ -453,6 +464,12 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .abt-split{grid-template-columns:1fr;gap:2.5rem}
 .abt-split.reverse{direction:ltr}
 }
+@media(max-width:900px){
+.abt-cta-layout{grid-template-columns:1fr;text-align:center}
+.abt-cta-layout .abt-cta-text{order:2}
+.abt-cta-layout .cta-visual{order:1}
+.abt-cta-actions{justify-content:center}
+}
 @media(max-width:768px){
 .abt-section{padding:70px 1.5rem}
 .abt-cta-section{padding:70px 1.5rem}
@@ -464,6 +481,7 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .abt-hero-actions .btn-green,.abt-hero-actions .btn-green-outline{width:100%;justify-content:center}
 .abt-cta-actions{flex-direction:column;align-items:center}
 .abt-cta-actions .btn-green,.abt-cta-actions .btn-green-outline{width:100%;max-width:320px;justify-content:center}
+.hero-readable{padding:20px 22px;max-width:100%}
 }
 </style>
 </head>
@@ -709,15 +727,16 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <div class="abt-hero-overlay"></div>
 <div class="abt-hero-inner">
 <div class="abt-hero-content">
-<h1>Feed Smarter. Grow Stronger.</h1>
-<p class="abt-subtitle">Quality You Can Trust. Prices You Can Afford.</p>
+<div class="hero-readable">
+<p class="abt-eyebrow">FEED ADDITIVES & PREMIX FOR ANIMAL HEALTH</p>
+<h1>Quality You Can Trust, Prices You Can Afford</h1>
 <div class="abt-text">
-<p>VeritasVet is a technical animal nutrition partner providing practical feed additive strategies designed to improve animal resilience, feed safety and production efficiency under real farming conditions.</p>
-<p>We support producers and integrators in achieving consistent performance while maintaining economic balance in their formulations.</p>
+<p>VeritasVet is a technical animal nutrition partner providing practical feed additive strategies to improve animal resilience, feed safety and production efficiency under real farming conditions.</p>
+<p>Our quality experts support producers and integrators in selecting the most suitable solution through discussion, analysis and field-oriented recommendations.</p>
 </div>
 <div class="abt-hero-actions">
-<a class="btn-green" href="/products.html" onclick="goPath('/products');return false">Discover Solutions</a>
 <a class="btn-green-outline" style="color:#fff;border-color:rgba(255,255,255,.5)" href="/contact.html" onclick="goPath('/contact');return false">Contact Our Team</a>
+</div>
 </div>
 </div>
 </div>
@@ -832,14 +851,20 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 
 <!-- SECTION 7 — FINAL CTA -->
 <section class="abt-cta-section abt-bg-navy">
-<div class="abt-cta-inner abt-fade">
-<h2>Work With Us</h2>
+<div class="abt-cta-inner abt-cta-layout abt-fade">
+<div class="abt-cta-text">
+<h2>Let's Work Together</h2>
 <div class="abt-body">
-<p>Discuss your nutritional or feed safety challenges with our technical team and discover how a tailored approach can improve your production results.</p>
+<p>Whether you are looking to distribute our solutions or optimize your feeding programs, our technical team is ready to discuss your needs and define the most suitable collaboration.</p>
+<p>Schedule a short meeting with us — no commitment, just practical discussion.</p>
 </div>
 <div class="abt-cta-actions">
-<a class="btn-green" href="/contact.html" onclick="goPath('/contact');return false">Request Information</a>
-<a class="btn-green-outline" style="color:#fff;border-color:rgba(255,255,255,.5)" href="/products.html" onclick="goPath('/products');return false">Explore Products</a>
+<a class="btn-green" href="/contact.html" onclick="goPath('/contact');return false">Book a Meeting</a>
+<a class="btn-green-outline" style="color:#fff;border-color:rgba(255,255,255,.5)" href="/contact.html?subject=partnership" onclick="goPath('/contact');return false">Become a Partner</a>
+</div>
+</div>
+<div class="cta-visual">
+<img src="/images/cta-collaboration.jpg" alt="Technical discussion with customer">
 </div>
 </div>
 </section>
