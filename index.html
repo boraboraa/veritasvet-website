@@ -329,13 +329,46 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 
 /* SPECIES PAGE */
 .sp-page{padding:8rem 3rem 4rem;min-height:100vh;background:var(--cream)}
-.sp-page-hero{text-align:center;max-width:780px;margin:0 auto 3rem;padding:0 1rem}
-.sp-page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,3.6rem);font-weight:600;line-height:1.1;color:var(--navy);margin-bottom:1rem}
-.sp-page-section{max-width:900px;margin:0 auto 3rem}
-.sp-page-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:600;color:var(--navy);margin-bottom:1rem}
-.sp-page-section p{font-size:1.05rem;color:var(--text-secondary);line-height:1.8;max-width:720px}
-.sp-products-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;max-width:900px;margin:0 auto}
-@media(max-width:768px){.sp-page{padding:6rem 1.5rem 3rem}.sp-products-list{grid-template-columns:1fr}}
+.sp-hero-intro{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;max-width:1200px;margin:0 auto 3.5rem}
+.sp-hero-text h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,3.6rem);font-weight:600;line-height:1.1;color:var(--navy);margin-bottom:.75rem}
+.sp-hero-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.5vw,1.7rem);font-weight:600;color:var(--navy);margin-bottom:1.25rem;line-height:1.25}
+.sp-hero-text p{font-size:1.05rem;color:var(--text-secondary);line-height:1.8;margin-bottom:1rem}
+.sp-hero-text p:last-child{margin-bottom:0}
+.sp-hero-img{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-medium)}
+.sp-hero-img img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:4/3}
+
+/* SOLUTION SWITCHER */
+.sp-tab-bar{display:flex;gap:0;justify-content:center;max-width:1200px;margin:0 auto 2.5rem;border-bottom:2px solid var(--border-subtle)}
+.sp-tab{padding:.85rem 2rem;font-weight:600;font-size:14.5px;color:var(--text-muted);letter-spacing:.02em;position:relative;transition:color .3s ease;background:none;cursor:pointer}
+.sp-tab::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:2px;background:var(--green);transform:scaleX(0);transition:transform .35s var(--ease-out-expo)}
+.sp-tab[aria-selected="true"]{color:var(--green-dark)}
+.sp-tab[aria-selected="true"]::after{transform:scaleX(1)}
+.sp-tab:hover{color:var(--green-dark)}
+
+/* CATEGORY GRID */
+.sp-cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;max-width:1200px;margin:0 auto 2.5rem}
+.sp-cat-card{background:#fff;border:1.5px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.5rem 1.25rem;text-align:center;font-weight:600;font-size:14.5px;color:var(--text-primary);cursor:pointer;transition:border-color .3s ease,box-shadow .3s ease,background .3s ease}
+.sp-cat-card:hover{border-color:var(--green);box-shadow:0 4px 16px rgba(140,191,46,.12)}
+.sp-cat-card.active{border-color:var(--green);background:var(--green-pale);color:var(--green-dark)}
+
+/* PRODUCTS CONTAINER */
+.sp-products-container{max-width:1200px;margin:0 auto}
+.sp-products-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
+
+/* PREMIX PANEL */
+.sp-premix-panel{max-width:680px;margin:0 auto;text-align:center;padding:3rem 2rem}
+.sp-premix-panel p{font-size:1.1rem;color:var(--text-secondary);line-height:1.8;margin-bottom:2rem}
+
+@media(max-width:900px){
+.sp-hero-intro{grid-template-columns:1fr;gap:2rem}
+.sp-cat-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+.sp-page{padding:6rem 1.5rem 3rem}
+.sp-products-list{grid-template-columns:1fr}
+.sp-cat-grid{grid-template-columns:1fr 1fr}
+.sp-tab{padding:.7rem 1.25rem;font-size:13.5px}
+}
 
 /* DETAIL PAGE TDS/QUOTE BUTTONS */
 .det-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
@@ -940,51 +973,129 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <!-- ═══ SPECIES: POULTRY ═══ -->
 <div class="page-view" id="page-species-poultry">
 <div class="sp-page"><div class="container">
-<section class="sp-page-hero reveal">
+
+<section class="sp-hero-intro reveal">
+<div class="sp-hero-text">
 <h1>Poultry</h1>
+<h2>How do we help with your poultry ?</h2>
+<p>VeritasVet supports poultry producers with practical and cost-efficient nutritional strategies adapted to breeders, broilers and layers.</p>
+<p>Our approach focuses on improving feed efficiency, stabilizing gut health, reducing mycotoxin impact and optimizing metabolic performance to enhance productivity and final product quality.</p>
+<p>Rather than proposing generic programs, our technical specialists analyze farm conditions, production targets and feed formulation constraints to recommend the most suitable additive and premix solutions.</p>
+<p>Each production stage requires a different nutritional approach. Our team works closely with partners and integrators to select the optimal solution for performance, safety and economic efficiency</p>
+</div>
+<div class="sp-hero-img">
+<img src="/poultry.webp" alt="Poultry production">
+</div>
 </section>
-<section class="sp-page-section reveal">
-<h2>How We Help You</h2>
-<p>Our poultry feed additive portfolio is engineered for the specific digestive physiology and production demands of broiler and layer operations. From gut integrity and nutrient absorption to mycotoxin risk management, each product is designed to support flock performance, feed efficiency, and overall resilience under commercial farming conditions.</p>
-</section>
-<section class="sp-page-section reveal">
-<h2>Solutions</h2>
-</section>
+
+<div class="sp-tab-bar" role="tablist" data-species="Poultry">
+<button class="sp-tab" role="tab" aria-selected="true" data-tab="additives">Feed Additives</button>
+<button class="sp-tab" role="tab" aria-selected="false" data-tab="premix">Premix</button>
+</div>
+
+<div class="sp-additives-panel">
+<div class="sp-cat-grid">
+<button class="sp-cat-card" data-category="mycotoxin-eliminator">Mycotoxin Management</button>
+<button class="sp-cat-card" data-category="gut-health">Gut Health</button>
+<button class="sp-cat-card" data-category="feed-quality">Feed Quality</button>
+<button class="sp-cat-card" data-category="nutrition">Nutrition Performance</button>
+</div>
+<div class="sp-products-container">
 <div class="sp-products-list" id="spPoultryGrid"></div>
+</div>
+</div>
+
+<div class="sp-premix-panel" style="display:none">
+<p>Each production system requires a specific nutritional balance.<br>Contact our team to receive a tailored premix adapted to your formulation and raw materials.</p>
+<a href="/contact" class="btn-green" onclick="event.preventDefault();goPath('/contact')">Contact Our Team</a>
+</div>
+
 </div></div>
 </div>
 
 <!-- ═══ SPECIES: RUMINANTS ═══ -->
 <div class="page-view" id="page-species-ruminants">
 <div class="sp-page"><div class="container">
-<section class="sp-page-hero reveal">
-<h1>Ruminants</h1>
+
+<section class="sp-hero-intro reveal">
+<div class="sp-hero-text">
+<h1>Ruminant</h1>
+<h2>How we support ruminant performance</h2>
+<p>VeritasVet assists dairy and beef producers with practical nutritional strategies designed to stabilize rumen function and improve production efficiency under real farm conditions.</p>
+<p>Our approach focuses on optimizing rumen fermentation, supporting calf development and maintaining digestive balance throughout all production stages. Particular attention is given to mitigating the impact of mycotoxins, improving young animal robustness and maintaining feed intake consistency in adult animals.</p>
+<p>Our solutions contribute to better growth, improved feed conversion and more stable performance by protecting intestinal integrity and supporting microbial equilibrium. In dairy herds, this also helps maintain milk quality parameters and reduce metabolic disturbances linked to nutritional stress.</p>
+<p>Thanks to field experience and technical evaluation, we recommend solutions adapted to species category, age stage and production objectives. Each farm has its own constraints, and our role is to identify the most efficient and economically relevant nutritional strategy.</p>
+</div>
+<div class="sp-hero-img">
+<img src="/ruminant.webp" alt="Ruminant production">
+</div>
 </section>
-<section class="sp-page-section reveal">
-<h2>How We Help You</h2>
-<p>Our ruminant feed additive solutions target the unique challenges of dairy and beef production systems. From rumen stability and metabolic efficiency to feed preservation and mycotoxin control, our products are formulated to support consistent output, animal health, and cost-effective feed programs in intensive and semi-intensive operations.</p>
-</section>
-<section class="sp-page-section reveal">
-<h2>Solutions</h2>
-</section>
+
+<div class="sp-tab-bar" role="tablist" data-species="Ruminant">
+<button class="sp-tab" role="tab" aria-selected="true" data-tab="additives">Feed Additives</button>
+<button class="sp-tab" role="tab" aria-selected="false" data-tab="premix">Premix</button>
+</div>
+
+<div class="sp-additives-panel">
+<div class="sp-cat-grid">
+<button class="sp-cat-card" data-category="mycotoxin-eliminator">Mycotoxin Management</button>
+<button class="sp-cat-card" data-category="gut-health">Gut Health</button>
+<button class="sp-cat-card" data-category="feed-quality">Feed Quality</button>
+<button class="sp-cat-card" data-category="nutrition">Nutrition Performance</button>
+</div>
+<div class="sp-products-container">
 <div class="sp-products-list" id="spRuminantsGrid"></div>
+</div>
+</div>
+
+<div class="sp-premix-panel" style="display:none">
+<p>Each production system requires a specific nutritional balance.<br>Contact our team to receive a tailored premix adapted to your formulation and raw materials.</p>
+<a href="/contact" class="btn-green" onclick="event.preventDefault();goPath('/contact')">Contact Our Team</a>
+</div>
+
 </div></div>
 </div>
 
 <!-- ═══ SPECIES: AQUACULTURE ═══ -->
 <div class="page-view" id="page-species-aquaculture">
 <div class="sp-page"><div class="container">
-<section class="sp-page-hero reveal">
+
+<section class="sp-hero-intro reveal">
+<div class="sp-hero-text">
 <h1>Aquaculture</h1>
+<h2>How we support aquaculture performance</h2>
+<p>VeritasVet supports fish and shrimp producers with nutritional strategies designed to improve feed utilization, water stability and production consistency under intensive farming conditions.</p>
+<p>Our solutions focus on enhancing nutrient digestibility, stabilizing gut microbiota and reducing metabolic stress throughout the production cycle. Particular attention is given to improving feed conversion ratio, supporting immunity and limiting the impact of mycotoxins and raw material variability.</p>
+<p>By optimizing digestion and nutrient absorption, our approach contributes to better growth rates, improved survival and more stable water quality. This helps producers maintain predictable performance while controlling feeding costs and environmental pressure.</p>
+<p>Our technical team evaluates each farming condition — species, growth stage and production system — to recommend the most efficient and economically relevant nutritional program adapted to your operation.</p>
+</div>
+<div class="sp-hero-img">
+<img src="/aquaculture.webp" alt="Aquaculture production">
+</div>
 </section>
-<section class="sp-page-section reveal">
-<h2>How We Help You</h2>
-<p>Our aquaculture feed additive range addresses the specific nutritional and environmental requirements of fish and shrimp farming. From gut health support and mycotoxin management to feed stability and oxidation control, each solution is designed to promote healthy growth, water quality, and sustainable aquatic production performance.</p>
-</section>
-<section class="sp-page-section reveal">
-<h2>Solutions</h2>
-</section>
+
+<div class="sp-tab-bar" role="tablist" data-species="Aquaculture">
+<button class="sp-tab" role="tab" aria-selected="true" data-tab="additives">Feed Additives</button>
+<button class="sp-tab" role="tab" aria-selected="false" data-tab="premix">Premix</button>
+</div>
+
+<div class="sp-additives-panel">
+<div class="sp-cat-grid">
+<button class="sp-cat-card" data-category="mycotoxin-eliminator">Mycotoxin Management</button>
+<button class="sp-cat-card" data-category="gut-health">Gut Health</button>
+<button class="sp-cat-card" data-category="feed-quality">Feed Quality</button>
+<button class="sp-cat-card" data-category="nutrition">Nutrition Performance</button>
+</div>
+<div class="sp-products-container">
 <div class="sp-products-list" id="spAquacultureGrid"></div>
+</div>
+</div>
+
+<div class="sp-premix-panel" style="display:none">
+<p>Each production system requires a specific nutritional balance.<br>Contact our team to receive a tailored premix adapted to your formulation and raw materials.</p>
+<a href="/contact" class="btn-green" onclick="event.preventDefault();goPath('/contact')">Contact Our Team</a>
+</div>
+
 </div></div>
 </div>
 
@@ -1054,9 +1165,9 @@ setTimeout(initReveal,100);
 function goPath(path,push=true){
 const route=path||'/';
 if(route==='/'||route==='/home') goPage('home');
-else if(route==='/species/poultry'||route==='/species/poultry.html'){goPage('species-poultry');renderSpecies('spPoultryGrid','Poultry')}
-else if(route==='/species/ruminants'||route==='/species/ruminants.html'){goPage('species-ruminants');renderSpecies('spRuminantsGrid','Ruminant')}
-else if(route==='/species/aquaculture'||route==='/species/aquaculture.html'){goPage('species-aquaculture');renderSpecies('spAquacultureGrid','Aquaculture')}
+else if(route==='/species/poultry'||route==='/species/poultry.html'){goPage('species-poultry');initSpeciesPage('page-species-poultry','spPoultryGrid','Poultry')}
+else if(route==='/species/ruminants'||route==='/species/ruminants.html'){goPage('species-ruminants');initSpeciesPage('page-species-ruminants','spRuminantsGrid','Ruminant')}
+else if(route==='/species/aquaculture'||route==='/species/aquaculture.html'){goPage('species-aquaculture');initSpeciesPage('page-species-aquaculture','spAquacultureGrid','Aquaculture')}
 else if(route.startsWith('/products/')){
 const cat=route.replace('/products/','');
 renderP(cat);
@@ -1072,9 +1183,10 @@ else goPage('home');
 if(push) history.pushState({path:route},'',route);
 }
 
-function renderSpecies(gridId,species){
+function renderSpecies(gridId,species,category){
 const g=document.getElementById(gridId);if(!g)return;
-const list=P.filter(p=>p.s.includes(species));
+let list=P.filter(p=>p.s.includes(species));
+if(category)list=list.filter(p=>p.c===category);
 g.innerHTML=list.map((p,i)=>`
 <div class="pc" onclick="showDet('${p.id}')" style="animation:fadeUp .5s ${i*.06}s both ease">
 <div class="pc-vis product-card__media"><img class="product-card__img" src="${imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg'}" alt="${p.n} — ${p.cn} feed additive by VeritasVet" onerror="this.style.display='none'"><span class="pc-cat">${p.cn}</span></div>
@@ -1082,6 +1194,52 @@ g.innerHTML=list.map((p,i)=>`
 <div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">◆</span><span><strong>Inclusion:</strong> ${p.inc}</span></div><div class="sol-proof"><span class="sol-proof-icon">◆</span><span>${p.out}</span></div></div>
 <span class="btn-arrow" style="font-size:12px">View Details →</span></div>
 </div>`).join('');
+}
+
+function initSpeciesPage(pageId,gridId,species){
+const page=document.getElementById(pageId);if(!page)return;
+const tabs=page.querySelectorAll('.sp-tab');
+const additivesPanel=page.querySelector('.sp-additives-panel');
+const premixPanel=page.querySelector('.sp-premix-panel');
+const catCards=page.querySelectorAll('.sp-cat-card');
+
+// Reset state
+tabs.forEach(t=>{t.setAttribute('aria-selected',t.dataset.tab==='additives'?'true':'false')});
+additivesPanel.style.display='';
+premixPanel.style.display='none';
+catCards.forEach(c=>c.classList.remove('active'));
+renderSpecies(gridId,species);
+
+if(page.dataset.spInit)return;
+page.dataset.spInit='1';
+
+tabs.forEach(tab=>{
+tab.addEventListener('click',function(){
+tabs.forEach(t=>t.setAttribute('aria-selected','false'));
+this.setAttribute('aria-selected','true');
+if(this.dataset.tab==='additives'){
+additivesPanel.style.display='';
+premixPanel.style.display='none';
+}else{
+additivesPanel.style.display='none';
+premixPanel.style.display='';
+}
+});
+});
+
+catCards.forEach(card=>{
+card.addEventListener('click',function(){
+const isActive=this.classList.contains('active');
+catCards.forEach(c=>c.classList.remove('active'));
+if(isActive){
+this.classList.remove('active');
+renderSpecies(gridId,species);
+}else{
+this.classList.add('active');
+renderSpecies(gridId,species,this.dataset.category);
+}
+});
+});
 }
 
 function setActiveCategory(cat){
