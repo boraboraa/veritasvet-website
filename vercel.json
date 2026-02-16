@@ -5,38 +5,6 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/about",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/contact",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/products",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/products/gut-health",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/products/feed-quality",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/products/mycotoxin-eliminator",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/products/nutrition",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/certifications",
-      "destination": "/index.html"
-    },
-    {
       "source": "/species/poultry",
       "destination": "/poultry.html"
     },
@@ -89,7 +57,7 @@
       ]
     },
     {
-      "source": "/species/(.*)",
+      "source": "/news/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -106,38 +74,19 @@
       ]
     },
     {
-      "source": "/about",
+      "source": "/species/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/contact",
-      "headers": [
+        },
         {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/products(.*)",
-      "headers": [
+          "key": "Pragma",
+          "value": "no-cache"
+        },
         {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/certifications",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
+          "key": "Expires",
+          "value": "0"
         }
       ]
     },
