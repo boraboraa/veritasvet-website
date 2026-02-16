@@ -37,8 +37,20 @@
       "destination": "/index.html"
     },
     {
-      "source": "/species/:path*",
-      "destination": "/index.html"
+      "source": "/species/poultry",
+      "destination": "/poultry.html"
+    },
+    {
+      "source": "/species/ruminants",
+      "destination": "/ruminant.html"
+    },
+    {
+      "source": "/species/ruminant",
+      "destination": "/ruminant.html"
+    },
+    {
+      "source": "/species/aquaculture",
+      "destination": "/aquaculture.html"
     }
   ],
   "headers": [
