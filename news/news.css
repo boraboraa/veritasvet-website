@@ -28,7 +28,7 @@ select{border-radius:10px;min-width:220px}
 .news-card__media{aspect-ratio:16/9;border-radius:12px;background:linear-gradient(135deg,#eef3f8,#dfe8f1)}
 .news-card__media span{position:absolute;left:-9999px}
 .news-card h2{font-size:1.15rem;margin:0;color:var(--navy)}
-.news-card p{margin:0;color:var(--text-secondary)}
+.news-card p{margin:0;color:var(--text-secondary);min-height:4.8rem}
 .news-tags{display:flex;flex-wrap:wrap;gap:.45rem}
 .news-tags span{font-size:.78rem;padding:.2rem .55rem;border-radius:999px;background:#f2f8e6;color:#52740f}
 .read-link{font-weight:600;color:var(--navy)}
