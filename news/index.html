@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Insights | VeritasVet</title>
+  <meta name="description" content="[PLACEHOLDER]">
+  <meta property="og:title" content="Technical Insights | VeritasVet">
+  <meta property="og:description" content="[PLACEHOLDER]">
+  <meta property="og:image" content="[PLACEHOLDER]">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/news/news.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/"><img src="/image_logo_VERITASVET.png" alt="VeritasVet"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="news-nav">Menu</button>
+    <nav id="news-nav" class="site-nav" aria-label="Primary">
+      <a href="/about">Company</a>
+      <a href="/species/poultry">Species</a>
+      <a href="/products">Products</a>
+      <a href="/news" class="active">News</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <header class="news-hero">
+    <h1>Technical Insights</h1>
+    <p>Find solutions to practical feeding challenges</p>
+  </header>
+
+  <section class="filter-group" aria-labelledby="primary-filters">
+    <h2 id="primary-filters">Primary focus</h2>
+    <div class="filter-row" role="group" aria-label="Primary filters">
+      <button class="filter-btn" aria-pressed="true">Gut Health &amp; Immunity</button>
+      <button class="filter-btn" aria-pressed="false">Feed Quality &amp; Raw Materials</button>
+      <button class="filter-btn" aria-pressed="false">Mycotoxins &amp; Contamination</button>
+      <button class="filter-btn" aria-pressed="false">Performance &amp; Productivity</button>
+      <button class="filter-btn" aria-pressed="false">Additives &amp; Strategies</button>
+      <button class="filter-btn" aria-pressed="false">Field Cases</button>
+    </div>
+  </section>
+
+  <section class="filter-group" aria-labelledby="secondary-filters">
+    <h2 id="secondary-filters">Species</h2>
+    <div class="filter-row" role="group" aria-label="Species filter chips">
+      <button class="filter-chip" aria-pressed="false">Poultry</button>
+      <button class="filter-chip" aria-pressed="false">Ruminant</button>
+      <button class="filter-chip" aria-pressed="false">Aquaculture</button>
+      <button class="filter-chip" aria-pressed="true">Multi-species</button>
+    </div>
+  </section>
+
+  <section class="filter-group" aria-labelledby="tertiary-filter">
+    <h2 id="tertiary-filter">Goal</h2>
+    <select id="goal-filter" aria-label="Goal selector">
+      <option>Improve FCR</option>
+      <option>Reduce mortality</option>
+      <option>Stabilize digestion</option>
+      <option>Improve milk yield</option>
+      <option>Improve egg quality</option>
+      <option>Prevent risk</option>
+    </select>
+  </section>
+
+  <section aria-label="Article list">
+    <div class="news-grid">
+      <article class="news-card"><div class="news-card__media" role="img" aria-label="Article image placeholder"></div><h2>Reduce Mycotoxin Risk</h2><p>[PLACEHOLDER EXCERPT]</p><div class="news-tags"><span>Problem</span><span>Multi-species</span></div><a class="read-link" href="/news/reduce-mycotoxin-risk">Read Article</a></article>
+      <article class="news-card"><div class="news-card__media" role="img" aria-label="Article image placeholder"></div><h2>Feed Quality and Durability</h2><p>[PLACEHOLDER EXCERPT]</p><div class="news-tags"><span>Performance</span><span>Poultry</span></div><a class="read-link" href="/news/feed-quality-and-durability">Read Article</a></article>
+      <article class="news-card"><div class="news-card__media" role="img" aria-label="Article image placeholder"></div><h2>Gut Health and Animal Performance</h2><p>[PLACEHOLDER EXCERPT]</p><div class="news-tags"><span>Digestion</span><span>Ruminant</span></div><a class="read-link" href="/news/gut-health-and-animal-performance">Read Article</a></article>
+      <article class="news-card"><div class="news-card__media" role="img" aria-label="Article image placeholder"></div><h2>Smart Feeding, Stronger Animals</h2><p>[PLACEHOLDER EXCERPT]</p><div class="news-tags"><span>Strategy</span><span>Multi-species</span></div><a class="read-link" href="/news/smart-feeding-stronger-animals">Read Article</a></article>
+      <article class="news-card"><div class="news-card__media" role="img" aria-label="Article image placeholder"></div><h2>High Bioavailability Vitamin D3</h2><p>[PLACEHOLDER EXCERPT]</p><div class="news-tags"><span>Additives</span><span>Aquaculture</span></div><a class="read-link" href="/news/high-bioavailability-vitamin-d3">Read Article</a></article>
+    </div>
+  </section>
+</main>
+<script>
+const toggle=document.querySelector('.nav-toggle');
+const nav=document.getElementById('news-nav');
+if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});}
+</script>
+</body>
+</html>
