@@ -329,13 +329,12 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 
 /* SPECIES PAGE */
 .sp-page{padding:8rem 3rem 4rem;min-height:100vh;background:var(--cream)}
-.sp-hero-intro{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;max-width:1200px;margin:0 auto 3.5rem}
-.sp-hero-text h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,3.6rem);font-weight:600;line-height:1.1;color:var(--navy);margin-bottom:.75rem}
-.sp-hero-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.5vw,1.7rem);font-weight:600;color:var(--navy);margin-bottom:1.25rem;line-height:1.25}
-.sp-hero-text p{font-size:1.05rem;color:var(--text-secondary);line-height:1.8;margin-bottom:1rem}
-.sp-hero-text p:last-child{margin-bottom:0}
-.sp-hero-img{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-medium)}
-.sp-hero-img img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:4/3}
+.species-intro{max-width:1200px;margin:0 auto 3.5rem}
+.species-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.species-intro-text h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,3.6rem);font-weight:600;line-height:1.1;color:var(--navy);margin-bottom:.75rem}
+.species-intro-text p{font-size:1.05rem;color:var(--text-secondary);line-height:1.8;margin-bottom:0}
+.species-intro-image{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-medium)}
+.species-intro-image img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:4/3}
 
 /* SOLUTION SWITCHER */
 .sp-tab-bar{display:flex;gap:0;justify-content:center;max-width:1200px;margin:0 auto 2.5rem;border-bottom:2px solid var(--border-subtle)}
@@ -360,7 +359,7 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .sp-premix-panel p{font-size:1.1rem;color:var(--text-secondary);line-height:1.8;margin-bottom:2rem}
 
 @media(max-width:900px){
-.sp-hero-intro{grid-template-columns:1fr;gap:2rem}
+.species-intro-grid{grid-template-columns:1fr;gap:2rem}
 .sp-cat-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:768px){
@@ -976,17 +975,15 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <div class="page-view" id="page-species-poultry">
 <div class="sp-page"><div class="container">
 
-<section class="sp-hero-intro reveal">
-<div class="sp-hero-text">
+<section class="species-intro reveal">
+<div class="species-intro-grid">
+<div class="species-intro-text">
 <h1>Poultry</h1>
-<h2>How do we help with your poultry ?</h2>
 <p>VeritasVet supports poultry producers with practical and cost-efficient nutritional strategies adapted to breeders, broilers and layers.</p>
-<p>Our approach focuses on improving feed efficiency, stabilizing gut health, reducing mycotoxin impact and optimizing metabolic performance to enhance productivity and final product quality.</p>
-<p>Rather than proposing generic programs, our technical specialists analyze farm conditions, production targets and feed formulation constraints to recommend the most suitable additive and premix solutions.</p>
-<p>Each production stage requires a different nutritional approach. Our team works closely with partners and integrators to select the optimal solution for performance, safety and economic efficiency</p>
 </div>
-<div class="sp-hero-img">
+<div class="species-intro-image">
 <img src="/poultry.webp" alt="Poultry production">
+</div>
 </div>
 </section>
 
@@ -1019,17 +1016,15 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <div class="page-view" id="page-species-ruminants">
 <div class="sp-page"><div class="container">
 
-<section class="sp-hero-intro reveal">
-<div class="sp-hero-text">
+<section class="species-intro reveal">
+<div class="species-intro-grid">
+<div class="species-intro-text">
 <h1>Ruminant</h1>
-<h2>How we support ruminant performance</h2>
 <p>VeritasVet assists dairy and beef producers with practical nutritional strategies designed to stabilize rumen function and improve production efficiency under real farm conditions.</p>
-<p>Our approach focuses on optimizing rumen fermentation, supporting calf development and maintaining digestive balance throughout all production stages. Particular attention is given to mitigating the impact of mycotoxins, improving young animal robustness and maintaining feed intake consistency in adult animals.</p>
-<p>Our solutions contribute to better growth, improved feed conversion and more stable performance by protecting intestinal integrity and supporting microbial equilibrium. In dairy herds, this also helps maintain milk quality parameters and reduce metabolic disturbances linked to nutritional stress.</p>
-<p>Thanks to field experience and technical evaluation, we recommend solutions adapted to species category, age stage and production objectives. Each farm has its own constraints, and our role is to identify the most efficient and economically relevant nutritional strategy.</p>
 </div>
-<div class="sp-hero-img">
+<div class="species-intro-image">
 <img src="/ruminant.webp" alt="Ruminant production">
+</div>
 </div>
 </section>
 
@@ -1062,17 +1057,15 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 <div class="page-view" id="page-species-aquaculture">
 <div class="sp-page"><div class="container">
 
-<section class="sp-hero-intro reveal">
-<div class="sp-hero-text">
+<section class="species-intro reveal">
+<div class="species-intro-grid">
+<div class="species-intro-text">
 <h1>Aquaculture</h1>
-<h2>How we support aquaculture performance</h2>
 <p>VeritasVet supports fish and shrimp producers with nutritional strategies designed to improve feed utilization, water stability and production consistency under intensive farming conditions.</p>
-<p>Our solutions focus on enhancing nutrient digestibility, stabilizing gut microbiota and reducing metabolic stress throughout the production cycle. Particular attention is given to improving feed conversion ratio, supporting immunity and limiting the impact of mycotoxins and raw material variability.</p>
-<p>By optimizing digestion and nutrient absorption, our approach contributes to better growth rates, improved survival and more stable water quality. This helps producers maintain predictable performance while controlling feeding costs and environmental pressure.</p>
-<p>Our technical team evaluates each farming condition — species, growth stage and production system — to recommend the most efficient and economically relevant nutritional program adapted to your operation.</p>
 </div>
-<div class="sp-hero-img">
+<div class="species-intro-image">
 <img src="/aquaculture.webp" alt="Aquaculture production">
+</div>
 </div>
 </section>
 
