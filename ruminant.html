@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruminant | VeritasVet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/news/news.css">
+  <link rel="stylesheet" href="/species-pages.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/"><img src="/image_logo_VERITASVET.png" alt="VeritasVet"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="species-nav">Menu</button>
+    <nav id="species-nav" class="site-nav" aria-label="Primary">
+      <a href="/about">Company</a>
+      <a href="/species/ruminant" class="active">Species</a>
+      <a href="/products">Products</a>
+      <a href="/news">News</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="species-main">
+  <section class="intro-split two-column" aria-label="Ruminant introduction">
+    <div class="left">
+      <h1>Ruminant</h1>
+      <p>Targeted nutritional tools for ruminant herds to support stable digestion, conversion efficiency, and resilient production output.</p>
+    </div>
+    <div class="right">
+      <img src="/assets/images/species-ruminant.jpg" alt="Ruminant production">
+    </div>
+  </section>
+
+  <section class="solution-switcher tabs" aria-label="Solution switcher">
+    <button type="button" class="tab is-active" aria-pressed="true">Feed Additives</button>
+    <button type="button" class="tab" aria-pressed="false">Premix</button>
+  </section>
+
+  <section class="category-section" aria-label="Category grid">
+    <div class="dynamic-container" id="ruminant-category-grid"></div>
+  </section>
+</main>
+
+<script>
+const toggle=document.querySelector('.nav-toggle');
+const nav=document.getElementById('species-nav');
+if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});}
+</script>
+</body>
+</html>
