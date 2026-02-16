@@ -35,9 +35,31 @@
     {
       "source": "/certifications",
       "destination": "/index.html"
+    },
+    {
+      "source": "/species/:path*",
+      "destination": "/index.html"
     }
   ],
   "headers": [
+    {
+      "source": "/(.*).html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
     {
       "source": "/assets/images/(.*)",
       "headers": [
