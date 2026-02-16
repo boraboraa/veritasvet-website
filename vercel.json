@@ -17,19 +17,7 @@
       "destination": "/index.html"
     },
     {
-      "source": "/products/gut-health",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/products/feed-quality",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/products/mycotoxin-eliminator",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/products/nutrition",
+      "source": "/products/(.*)",
       "destination": "/index.html"
     },
     {
@@ -37,27 +25,7 @@
       "destination": "/index.html"
     },
     {
-      "source": "/species/poultry",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/species/poultry.html",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/species/ruminants",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/species/ruminants.html",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/species/aquaculture",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/species/aquaculture.html",
+      "source": "/species/(.*)",
       "destination": "/index.html"
     }
   ],
