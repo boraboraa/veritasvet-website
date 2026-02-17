@@ -109,12 +109,12 @@ function renderP(cat){
 const g=document.getElementById('prodsGrid');
 const list=cat==='all'?P:P.filter(p=>p.c===cat);
 g.innerHTML=list.map((p,i)=>
-'<div class="pc" onclick="showDet(\''+p.id+'\')" style="animation:fadeUp .5s '+i*.06+'s both ease">'+
+'<a class="pc" href="/products/'+p.id+'/" style="animation:fadeUp .5s '+i*.06+'s both ease">'+
 '<div class="pc-vis product-card__media"><img class="product-card__img" src="'+(imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg')+'" alt="'+p.n+' — '+p.cn+' feed additive by VeritasVet" onerror="this.style.display=\'none\'"><span class="pc-cat">'+p.cn+'</span></div>'+
 '<div class="pc-body"><h4>'+p.n+'</h4><p>'+p.d+'</p>'+
 '<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span><strong>Inclusion:</strong> '+p.inc+'</span></div><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span>'+p.out+'</span></div></div>'+
 '<span class="btn-arrow" style="font-size:12px">View Details &#8594;</span></div>'+
-'</div>').join('');
+'</a>').join('');
 }
 
 function filterProducts(cat){
