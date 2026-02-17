@@ -47,77 +47,120 @@
 
   <!-- Hero Intro -->
   <header class="news-hero">
-    <h1>Technical Insights</h1>
-    <p>Practical nutrition knowledge and field experience to solve real feeding challenges.</p>
-    <div class="news-hero__image" role="img" aria-label="Technical Insights hero image"></div>
+    <div class="news-hero-text">
+      <span class="news-hero-eyebrow">Technical Knowledge Hub</span>
+      <h1>Technical Insights</h1>
+      <p>Practical feeding knowledge, field experience and nutritional strategies to improve animal performance and production stability.</p>
+    </div>
+    <div class="news-hero-image-placeholder" role="img" aria-label="Technical Insights hero image"></div>
   </header>
 
-  <!-- Featured Article -->
-  <section class="news-featured" aria-label="Featured publication">
-    <div class="news-featured__text">
-      <h2><a href="/news/reduce-mycotoxin-risk/">Reduce Mycotoxin Risk</a></h2>
-      <p>Practical prevention actions for contamination pressure in real farm conditions. Understanding how mycotoxins enter the feed chain and what steps can be taken at farm level to reduce exposure and protect animal performance.</p>
-      <time datetime="2026-01-15">15 January 2026</time>
-      <a class="read-link" href="/news/reduce-mycotoxin-risk/">Read article</a>
-    </div>
-    <div class="news-featured__image" role="img" aria-label="Featured article image"></div>
+  <!-- Category Navigation -->
+  <nav class="news-filter-nav" aria-label="Article categories">
+    <a class="news-filter-btn" href="#gut-health">Gut Health</a>
+    <a class="news-filter-btn" href="#feed-quality">Feed Quality</a>
+    <a class="news-filter-btn" href="#mycotoxins">Mycotoxins</a>
+    <a class="news-filter-btn" href="#nutrition-strategies">Nutrition Strategies</a>
+  </nav>
+
+  <!-- Section: Gut Health -->
+  <section id="gut-health" class="news-section" aria-label="Gut Health articles">
+    <h2 class="news-section-title">Gut Health</h2>
+
+    <article class="news-article-card">
+      <div class="news-card-image" role="img" aria-label="Article image"></div>
+      <div class="news-card-body">
+        <span class="news-card-category">Gut Health</span>
+        <h3><a href="/news/gut-health-and-animal-performance/">Gut Health and Animal Performance</a></h3>
+        <p>Practical digestion-focused priorities linked to measurable field performance across ruminant production systems.</p>
+        <a class="read-link" href="/news/gut-health-and-animal-performance/">Read article &rarr;</a>
+      </div>
+    </article>
+
+    <article class="news-article-card">
+      <div class="news-card-image" role="img" aria-label="Article image"></div>
+      <div class="news-card-body">
+        <span class="news-card-category">Gut Health</span>
+        <h3><a href="/news/gut-health-sustainable-production/">Gut Health in Sustainable Production</a></h3>
+        <p>How gut health strategies contribute to sustainable animal production and reduced antimicrobial dependency.</p>
+        <a class="read-link" href="/news/gut-health-sustainable-production/">Read article &rarr;</a>
+      </div>
+    </article>
   </section>
 
-  <!-- Divider -->
-  <hr class="news-divider">
-
-  <!-- Article List -->
-  <section class="news-list" aria-label="Publication list">
+  <!-- Section: Feed Quality -->
+  <section id="feed-quality" class="news-section" aria-label="Feed Quality articles">
+    <h2 class="news-section-title">Feed Quality</h2>
 
     <article class="news-article-card">
-      <h3><a href="/news/feed-quality-and-durability/">Feed Quality and Durability</a></h3>
-      <time datetime="2026-01-10">10 January 2026</time>
-      <p>Benchmarks and quality checks to support consistent feed handling outcomes and reduce nutrient loss during storage and transport.</p>
-      <a class="read-link" href="/news/feed-quality-and-durability/">Read article</a>
+      <div class="news-card-image" role="img" aria-label="Article image"></div>
+      <div class="news-card-body">
+        <span class="news-card-category">Feed Quality</span>
+        <h3><a href="/news/feed-quality-and-durability/">Feed Quality and Durability</a></h3>
+        <p>Benchmarks and quality checks to support consistent feed handling outcomes and reduce nutrient loss during storage and transport.</p>
+        <a class="read-link" href="/news/feed-quality-and-durability/">Read article &rarr;</a>
+      </div>
     </article>
 
     <article class="news-article-card">
-      <h3><a href="/news/gut-health-and-animal-performance/">Gut Health and Animal Performance</a></h3>
-      <time datetime="2025-12-20">20 December 2025</time>
-      <p>Practical digestion-focused priorities linked to measurable field performance across ruminant production systems.</p>
-      <a class="read-link" href="/news/gut-health-and-animal-performance/">Read article</a>
+      <div class="news-card-image" role="img" aria-label="Article image"></div>
+      <div class="news-card-body">
+        <span class="news-card-category">Feed Quality</span>
+        <h3><a href="/news/aquaculture-feed-innovation/">Aquaculture Feed Innovation</a></h3>
+        <p>Emerging nutritional solutions for sustainable aquaculture feed formulations and performance optimisation.</p>
+        <a class="read-link" href="/news/aquaculture-feed-innovation/">Read article &rarr;</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- Section: Mycotoxins -->
+  <section id="mycotoxins" class="news-section" aria-label="Mycotoxins articles">
+    <h2 class="news-section-title">Mycotoxins</h2>
+
+    <article class="news-article-card">
+      <div class="news-card-image" role="img" aria-label="Article image"></div>
+      <div class="news-card-body">
+        <span class="news-card-category">Mycotoxins</span>
+        <h3><a href="/news/reduce-mycotoxin-risk/">Reduce Mycotoxin Risk</a></h3>
+        <p>Practical prevention actions for contamination pressure in real farm conditions and steps to reduce exposure and protect animal performance.</p>
+        <a class="read-link" href="/news/reduce-mycotoxin-risk/">Read article &rarr;</a>
+      </div>
     </article>
 
     <article class="news-article-card">
-      <h3><a href="/news/smart-feeding-stronger-animals/">Smart Feeding, Stronger Animals</a></h3>
-      <time datetime="2025-12-05">5 December 2025</time>
-      <p>Feeding strategy principles to improve resilience and day-to-day productivity in multi-species operations.</p>
-      <a class="read-link" href="/news/smart-feeding-stronger-animals/">Read article</a>
+      <div class="news-card-image" role="img" aria-label="Article image"></div>
+      <div class="news-card-body">
+        <span class="news-card-category">Mycotoxins</span>
+        <h3><a href="/news/mycotoxin-risk-management/">Mycotoxin Risk Management</a></h3>
+        <p>Structured risk management strategies to address mycotoxin challenges across feed production and storage.</p>
+        <a class="read-link" href="/news/mycotoxin-risk-management/">Read article &rarr;</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- Section: Nutrition Strategies -->
+  <section id="nutrition-strategies" class="news-section" aria-label="Nutrition Strategies articles">
+    <h2 class="news-section-title">Nutrition Strategies</h2>
+
+    <article class="news-article-card">
+      <div class="news-card-image" role="img" aria-label="Article image"></div>
+      <div class="news-card-body">
+        <span class="news-card-category">Nutrition Strategies</span>
+        <h3><a href="/news/smart-feeding-stronger-animals/">Smart Feeding, Stronger Animals</a></h3>
+        <p>Feeding strategy principles to improve resilience and day-to-day productivity in multi-species operations.</p>
+        <a class="read-link" href="/news/smart-feeding-stronger-animals/">Read article &rarr;</a>
+      </div>
     </article>
 
     <article class="news-article-card">
-      <h3><a href="/news/high-bioavailability-vitamin-d3/">High Bioavailability Vitamin D3</a></h3>
-      <time datetime="2025-11-18">18 November 2025</time>
-      <p>Why bioavailability matters when targeting robust mineral and bone outcomes in aquaculture species.</p>
-      <a class="read-link" href="/news/high-bioavailability-vitamin-d3/">Read article</a>
+      <div class="news-card-image" role="img" aria-label="Article image"></div>
+      <div class="news-card-body">
+        <span class="news-card-category">Nutrition Strategies</span>
+        <h3><a href="/news/high-bioavailability-vitamin-d3/">High Bioavailability Vitamin D3</a></h3>
+        <p>Why bioavailability matters when targeting robust mineral and bone outcomes in aquaculture species.</p>
+        <a class="read-link" href="/news/high-bioavailability-vitamin-d3/">Read article &rarr;</a>
+      </div>
     </article>
-
-    <article class="news-article-card">
-      <h3><a href="/news/mycotoxin-risk-management/">Mycotoxin Risk Management</a></h3>
-      <time datetime="2025-11-02">2 November 2025</time>
-      <p>Structured risk management strategies to address mycotoxin challenges across feed production and storage.</p>
-      <a class="read-link" href="/news/mycotoxin-risk-management/">Read article</a>
-    </article>
-
-    <article class="news-article-card">
-      <h3><a href="/news/aquaculture-feed-innovation/">Aquaculture Feed Innovation</a></h3>
-      <time datetime="2025-10-14">14 October 2025</time>
-      <p>Emerging nutritional solutions for sustainable aquaculture feed formulations and performance optimisation.</p>
-      <a class="read-link" href="/news/aquaculture-feed-innovation/">Read article</a>
-    </article>
-
-    <article class="news-article-card">
-      <h3><a href="/news/gut-health-sustainable-production/">Gut Health in Sustainable Production</a></h3>
-      <time datetime="2025-09-28">28 September 2025</time>
-      <p>How gut health strategies contribute to sustainable animal production and reduced antimicrobial dependency.</p>
-      <a class="read-link" href="/news/gut-health-sustainable-production/">Read article</a>
-    </article>
-
   </section>
 
 </main>
