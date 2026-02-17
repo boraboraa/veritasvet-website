@@ -83,13 +83,23 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,rgba(106,154,26,.6),transparent);animation:sPulse 2s ease-in-out infinite}
 @keyframes sPulse{0%,100%{opacity:.3;transform:scaleY(.6)}50%{opacity:1;transform:scaleY(1)}}
 
-/* MARQUEE */
-.trust-bar{background:var(--navy);padding:1.2rem 0}
-.trust-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;text-align:center;color:rgba(255,255,255,.78);font-size:14px}
-.trust-grid strong{display:block;color:var(--green-light);font-size:1.2rem;font-family:'Cormorant Garamond',serif}
-.cert-section{background:var(--ivory);padding:2.5rem 0;border-bottom:1px solid var(--border-subtle)}
-.cert-logos{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap}
-.cert-logos span{padding:.5rem .9rem;border:1px solid #d9dee4;background:#f2f4f6;color:#607284;border-radius:999px;font-size:12px;letter-spacing:.05em;font-weight:600}
+/* CREDIBILITY BLOCK */
+.credibility-section{padding:5rem 3rem 4rem;border-bottom:1px solid var(--border-subtle)}
+.credibility-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:start;max-width:1100px;margin:0 auto}
+.credibility-divider{width:1px;background:var(--border-subtle);align-self:stretch;margin:0 3rem}
+.credibility-col{padding:1rem 0}
+.credibility-eyebrow{display:block;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted);margin-bottom:.75rem}
+.credibility-heading{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,2.5vw,1.85rem);font-weight:600;line-height:1.15;color:var(--navy);margin-bottom:1rem}
+.credibility-body{font-size:.95rem;color:var(--text-secondary);line-height:1.7;margin-bottom:1.5rem;max-width:440px}
+.credibility-badges{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.5rem}
+.credibility-badge{padding:.4rem 1rem;border:1px solid var(--border-subtle);background:#f6f7f9;color:var(--text-secondary);border-radius:var(--radius-sm);font-size:12.5px;letter-spacing:.04em;font-weight:600}
+.credibility-link{display:inline-flex;align-items:center;gap:.4rem;font-weight:600;font-size:13.5px;color:var(--green-dark);letter-spacing:.03em;transition:color .3s ease,gap .3s ease}
+.credibility-link:hover{color:var(--green);gap:.7rem}
+@media(max-width:900px){
+.credibility-section{padding:3.5rem 1.5rem 3rem}
+.credibility-grid{grid-template-columns:1fr;gap:0}
+.credibility-divider{width:100%;height:1px;margin:2rem 0}
+}
 /* SPECIES CARDS */
 .species-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
 .species-card{display:flex;flex-direction:column;background:#fff;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border-subtle);transition:transform .4s var(--ease-out-expo),box-shadow .4s var(--ease-out-expo);cursor:pointer;color:inherit}
