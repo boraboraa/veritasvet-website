@@ -38,54 +38,82 @@
 </nav>
 
 <main class="news-main">
+
+  <!-- Hero Intro -->
   <header class="news-hero">
     <h1>Technical Insights</h1>
-    <p>Find solutions to practical feeding challenges</p>
+    <p>Practical nutrition knowledge and field experience to solve real feeding challenges.</p>
+    <div class="news-hero__image" role="img" aria-label="Technical Insights hero image"></div>
   </header>
 
-  <section class="filter-group" aria-labelledby="primary-filters">
-    <h2 id="primary-filters">Primary focus</h2>
-    <div class="filter-row" role="group" aria-label="Primary filters">
-      <button type="button" class="filter-btn" aria-pressed="true">Gut Health &amp; Immunity</button>
-      <button type="button" class="filter-btn" aria-pressed="false">Feed Quality &amp; Raw Materials</button>
-      <button type="button" class="filter-btn" aria-pressed="false">Mycotoxins &amp; Contamination</button>
-      <button type="button" class="filter-btn" aria-pressed="false">Performance &amp; Productivity</button>
-      <button type="button" class="filter-btn" aria-pressed="false">Additives &amp; Strategies</button>
-      <button type="button" class="filter-btn" aria-pressed="false">Field Cases</button>
+  <!-- Featured Article -->
+  <section class="news-featured" aria-label="Featured publication">
+    <div class="news-featured__text">
+      <h2><a href="/news/reduce-mycotoxin-risk/">Reduce Mycotoxin Risk</a></h2>
+      <p>Practical prevention actions for contamination pressure in real farm conditions. Understanding how mycotoxins enter the feed chain and what steps can be taken at farm level to reduce exposure and protect animal performance.</p>
+      <time datetime="2026-01-15">15 January 2026</time>
+      <a class="read-link" href="/news/reduce-mycotoxin-risk/">Read article</a>
     </div>
+    <div class="news-featured__image" role="img" aria-label="Featured article image"></div>
   </section>
 
-  <section class="filter-group" aria-labelledby="secondary-filters">
-    <h2 id="secondary-filters">Species</h2>
-    <div class="filter-row" role="group" aria-label="Species filter chips">
-      <button type="button" class="filter-chip" aria-pressed="false">Poultry</button>
-      <button type="button" class="filter-chip" aria-pressed="false">Ruminant</button>
-      <button type="button" class="filter-chip" aria-pressed="false">Aquaculture</button>
-      <button type="button" class="filter-chip" aria-pressed="true">Multi-species</button>
-    </div>
+  <!-- Divider -->
+  <hr class="news-divider">
+
+  <!-- Article List -->
+  <section class="news-list" aria-label="Publication list">
+
+    <article class="news-article-card">
+      <h3><a href="/news/feed-quality-and-durability/">Feed Quality and Durability</a></h3>
+      <time datetime="2026-01-10">10 January 2026</time>
+      <p>Benchmarks and quality checks to support consistent feed handling outcomes and reduce nutrient loss during storage and transport.</p>
+      <a class="read-link" href="/news/feed-quality-and-durability/">Read article</a>
+    </article>
+
+    <article class="news-article-card">
+      <h3><a href="/news/gut-health-and-animal-performance/">Gut Health and Animal Performance</a></h3>
+      <time datetime="2025-12-20">20 December 2025</time>
+      <p>Practical digestion-focused priorities linked to measurable field performance across ruminant production systems.</p>
+      <a class="read-link" href="/news/gut-health-and-animal-performance/">Read article</a>
+    </article>
+
+    <article class="news-article-card">
+      <h3><a href="/news/smart-feeding-stronger-animals/">Smart Feeding, Stronger Animals</a></h3>
+      <time datetime="2025-12-05">5 December 2025</time>
+      <p>Feeding strategy principles to improve resilience and day-to-day productivity in multi-species operations.</p>
+      <a class="read-link" href="/news/smart-feeding-stronger-animals/">Read article</a>
+    </article>
+
+    <article class="news-article-card">
+      <h3><a href="/news/high-bioavailability-vitamin-d3/">High Bioavailability Vitamin D3</a></h3>
+      <time datetime="2025-11-18">18 November 2025</time>
+      <p>Why bioavailability matters when targeting robust mineral and bone outcomes in aquaculture species.</p>
+      <a class="read-link" href="/news/high-bioavailability-vitamin-d3/">Read article</a>
+    </article>
+
+    <article class="news-article-card">
+      <h3><a href="/news/mycotoxin-risk-management/">Mycotoxin Risk Management</a></h3>
+      <time datetime="2025-11-02">2 November 2025</time>
+      <p>Structured risk management strategies to address mycotoxin challenges across feed production and storage.</p>
+      <a class="read-link" href="/news/mycotoxin-risk-management/">Read article</a>
+    </article>
+
+    <article class="news-article-card">
+      <h3><a href="/news/aquaculture-feed-innovation/">Aquaculture Feed Innovation</a></h3>
+      <time datetime="2025-10-14">14 October 2025</time>
+      <p>Emerging nutritional solutions for sustainable aquaculture feed formulations and performance optimisation.</p>
+      <a class="read-link" href="/news/aquaculture-feed-innovation/">Read article</a>
+    </article>
+
+    <article class="news-article-card">
+      <h3><a href="/news/gut-health-sustainable-production/">Gut Health in Sustainable Production</a></h3>
+      <time datetime="2025-09-28">28 September 2025</time>
+      <p>How gut health strategies contribute to sustainable animal production and reduced antimicrobial dependency.</p>
+      <a class="read-link" href="/news/gut-health-sustainable-production/">Read article</a>
+    </article>
+
   </section>
 
-  <section class="filter-group" aria-labelledby="tertiary-filter">
-    <h2 id="tertiary-filter">Production Goal</h2>
-    <select id="goal-filter" aria-label="Goal selector">
-      <option>Improve FCR</option>
-      <option>Reduce mortality</option>
-      <option>Stabilize digestion</option>
-      <option>Improve milk yield</option>
-      <option>Improve egg quality</option>
-      <option>Prevent risk</option>
-    </select>
-  </section>
-
-  <section aria-label="Article list">
-    <div class="news-grid">
-      <article class="news-card"><div class="news-card__media" role="img" aria-label="Article image placeholder"></div><h2>Reduce Mycotoxin Risk</h2><p>[PLACEHOLDER EXCERPT] Practical prevention actions for contamination pressure in real farm conditions.</p><div class="news-tags"><span>Problem</span><span>Multi-species</span></div><a class="read-link" href="/news/reduce-mycotoxin-risk">Read Article</a></article>
-      <article class="news-card"><div class="news-card__media" role="img" aria-label="Article image placeholder"></div><h2>Feed Quality and Durability</h2><p>[PLACEHOLDER EXCERPT] Benchmarks and quality checks to support consistent feed handling outcomes.</p><div class="news-tags"><span>Performance</span><span>Poultry</span></div><a class="read-link" href="/news/feed-quality-and-durability">Read Article</a></article>
-      <article class="news-card"><div class="news-card__media" role="img" aria-label="Article image placeholder"></div><h2>Gut Health and Animal Performance</h2><p>[PLACEHOLDER EXCERPT] Practical digestion-focused priorities linked to measurable field performance.</p><div class="news-tags"><span>Digestion</span><span>Ruminant</span></div><a class="read-link" href="/news/gut-health-and-animal-performance">Read Article</a></article>
-      <article class="news-card"><div class="news-card__media" role="img" aria-label="Article image placeholder"></div><h2>Smart Feeding, Stronger Animals</h2><p>[PLACEHOLDER EXCERPT] Feeding strategy principles to improve resilience and day-to-day productivity.</p><div class="news-tags"><span>Strategy</span><span>Multi-species</span></div><a class="read-link" href="/news/smart-feeding-stronger-animals">Read Article</a></article>
-      <article class="news-card"><div class="news-card__media" role="img" aria-label="Article image placeholder"></div><h2>High Bioavailability Vitamin D3</h2><p>[PLACEHOLDER EXCERPT] Why bioavailability matters when targeting robust mineral and bone outcomes.</p><div class="news-tags"><span>Additives</span><span>Aquaculture</span></div><a class="read-link" href="/news/high-bioavailability-vitamin-d3">Read Article</a></article>
-    </div>
-  </section>
 </main>
 
 <footer>
