@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certifications | European Feed Quality Standards | VeritasVet</title>
+<meta name="description" content="VeritasVet operates under GMP, HACCP, SGS, Halal, QS, VLOG and A-Futter certifications, ensuring strict European quality, safety, and traceability standards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<nav class="nav" id="mainNav">
+<div class="nav-inner">
+<a href="/" class="nav-logo"><img src="/image_logo_VERITASVET.png" alt="VeritasVet"></a>
+<div class="nav-links" id="navLinks">
+<a class="nav-link" href="/about/">Company</a>
+<div class="nav-dropdown" id="speciesDropdown" onclick="this.classList.toggle('open')">
+<span class="nav-link">Species <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<div class="nav-dropdown-menu">
+<a href="/species/poultry/">Poultry</a>
+<a href="/species/ruminant/">Ruminants</a>
+<a href="/species/aquaculture/">Aquaculture</a>
+</div>
+</div>
+<a class="nav-link" href="/products/">Products</a>
+<a class="nav-link" href="/news/">News</a>
+<a class="nav-link" href="/contact/">Contact</a>
+</div>
+<div class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
+</div>
+</nav>
+
+<div class="cert-page">
+<div class="container">
+<section class="cert-hero-section reveal">
+<h1>Certified Quality. Proven European Standards.</h1>
+<p>At VeritasVet, quality and compliance are fundamental to our operations. Our products are manufactured under internationally recognized certification systems, ensuring safety, traceability, and regulatory compliance across European and global markets.</p>
+</section>
+<div class="cert-grid">
+<article class="cert-card reveal delay-1">
+<img class="cert-card-logo" src="/gmp_veritas_web_logolar.png" alt="GMP certification logo" loading="lazy" decoding="async">
+<h3>GMP</h3>
+<p>With GMP certification, we demonstrate that our products are manufactured under controlled and standardized conditions, ensuring consistent quality and safety at every production stage.</p>
+</article>
+<article class="cert-card reveal delay-2">
+<img class="cert-card-logo" src="/haccp_sgs_veritas_web_logolar.png" alt="HACCP and SGS certification logo" loading="lazy" decoding="async">
+<h3>HACCP &amp; SGS</h3>
+<p>HACCP and SGS certifications confirm that our processes are systematically controlled and independently audited according to international safety and quality standards.</p>
+</article>
+<article class="cert-card reveal delay-3">
+<img class="cert-card-logo" src="/halal_food_veritas_web_logolar.png" alt="Halal certification logo" loading="lazy" decoding="async">
+<h3>Halal</h3>
+<p>Halal certification demonstrates that our products and manufacturing processes comply with recognized Halal standards for international markets.</p>
+</article>
+<article class="cert-card reveal delay-1">
+<img class="cert-card-logo" src="/a_futter_veritas_web_logolar.png" alt="A-Futter certification logo" loading="lazy" decoding="async">
+<h3>A-Futter</h3>
+<p>A-Futter certification confirms compliance with recognized feed production and safety standards.</p>
+</article>
+<article class="cert-card reveal delay-2">
+<img class="cert-card-logo" src="/qs_quality_veritas_web_logolar.png" alt="QS quality certification logo" loading="lazy" decoding="async">
+<h3>QS</h3>
+<p>QS certification proves adherence to strict European requirements for quality assurance and full supply chain traceability.</p>
+</article>
+<article class="cert-card reveal delay-3">
+<img class="cert-card-logo" src="/vlog_gepruft_veritas_web_logolar.png" alt="VLOG non-GMO certification logo" loading="lazy" decoding="async">
+<h3>VLOG</h3>
+<p>VLOG certification confirms compliance with verified non-GMO sourcing and production standards.</p>
+</article>
+</div>
+<section class="cert-closing reveal">
+<h2>Our Commitment to Continuous Compliance</h2>
+<p>All certifications are subject to regular audits and continuous monitoring to ensure sustained compliance with evolving European and international regulations.</p>
+</section>
+</div>
+</div>
+
+<footer>
+<div class="ft-top">
+<div class="ft-brand"><img src="/image_logo_VERITASVET.png" alt="VeritasVet"><p>Science-driven feed additive solutions for modern animal production. Supporting animal health, performance, and sustainability worldwide.</p></div>
+<div class="ft-col"><h5>Company</h5><a href="/about/">About Us</a><a href="/products/">Our Solutions</a><a href="/news/">Research</a><a href="/contact/">Contact</a></div>
+<div class="ft-col"><h5>Species</h5><a href="/species/poultry/">Poultry</a><a href="/species/ruminant/">Ruminants</a><a href="/species/aquaculture/">Aquaculture</a></div>
+<div class="ft-col"><h5>Legal</h5><a href="#">Legal Notice</a><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></div>
+</div>
+<div class="ft-bottom"><p>&copy; 2026 VeritasVet. All rights reserved.</p><p>Trusted Partner in Animal Nutrition</p></div>
+</footer>
+
+<script>
+function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
+function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+function initReveal(){
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.12,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.abt-fade,.abt-badge-stagger').forEach(el=>obs.observe(el));
+}
+document.addEventListener('DOMContentLoaded',initReveal);
+</script>
+</body>
+</html>
