@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VerOxid Phenols | VeritasVet</title>
+<meta name="description" content="Technical feed additive solution for animal nutrition">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<nav class="nav" id="mainNav">
+<div class="nav-inner">
+<a href="/" class="nav-logo"><img src="/image_logo_VERITASVET.png" alt="VeritasVet"></a>
+<div class="nav-links" id="navLinks">
+<a class="nav-link" href="/about/">Company</a>
+<div class="nav-dropdown" id="speciesDropdown" onclick="this.classList.toggle('open')">
+<span class="nav-link">Species <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<div class="nav-dropdown-menu">
+<a href="/species/poultry/">Poultry</a>
+<a href="/species/ruminant/">Ruminants</a>
+<a href="/species/aquaculture/">Aquaculture</a>
+</div>
+</div>
+<a class="nav-link" href="/products/">Products</a>
+<a class="nav-link" href="/news/">News</a>
+<a class="nav-link" href="/contact/">Contact</a>
+</div>
+<div class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
+</div>
+</nav>
+
+<main class="product-page">
+
+  <a class="product-back" href="/products/">&larr; Back to Products</a>
+
+  <section class="product-hero">
+    <div class="product-image">
+      <img src="/veroxid_phenols.jpg" alt="VerOxid Phenols — Feed Quality feed additive by VeritasVet">
+    </div>
+    <div class="product-summary">
+      <h1>VerOxid Phenols</h1>
+      <p class="product-category">Feed Quality</p>
+      <p class="product-description">A quality-focused antioxidant component used to sustain feed integrity over time.</p>
+    </div>
+  </section>
+
+  <section class="product-benefits">
+    <h2>Key Benefits</h2>
+    <ul>
+      <li>Phenolic antioxidant support</li>
+      <li>Integrity preservation</li>
+      <li>Stable storage support</li>
+    </ul>
+  </section>
+
+  <section class="product-application">
+    <h2>Recommended Use</h2>
+    <p>Inclusion rate as directed in product documentation. Supports antioxidant-based feed protection across poultry, ruminant and aquaculture production systems.</p>
+  </section>
+
+  <section class="product-cta">
+    <a href="/contact/">Request Technical Information</a>
+  </section>
+
+</main>
+
+<footer>
+<div class="ft-top">
+<div class="ft-brand"><img src="/image_logo_VERITASVET.png" alt="VeritasVet"><p>Science-driven feed additive solutions for modern animal production. Supporting animal health, performance, and sustainability worldwide.</p></div>
+<div class="ft-col"><h5>Company</h5><a href="/about/">About Us</a><a href="/products/">Our Solutions</a><a href="/news/">Research</a><a href="/contact/">Contact</a></div>
+<div class="ft-col"><h5>Species</h5><a href="/species/poultry/">Poultry</a><a href="/species/ruminant/">Ruminants</a><a href="/species/aquaculture/">Aquaculture</a></div>
+<div class="ft-col"><h5>Legal</h5><a href="#">Legal Notice</a><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a></div>
+</div>
+<div class="ft-bottom"><p>&copy; 2026 VeritasVet. All rights reserved.</p><p>Trusted Partner in Animal Nutrition</p></div>
+</footer>
+
+<script>
+function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
+</script>
+</body>
+</html>

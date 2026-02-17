@@ -59,7 +59,7 @@
 
   function cardHTML(p) {
     var img = IMG_MAP[p.id] || '';
-    return '<div class="pc" data-category="' + catKey(p.c) + '">' +
+    return '<a class="pc" href="/products/' + p.id + '/" data-category="' + catKey(p.c) + '">' +
       '<div class="pc-vis">' +
         '<img src="' + img + '" alt="' + p.n + '" onerror="this.style.display=\'none\'">' +
         '<span class="pc-cat">' + p.cn + '</span>' +
@@ -73,7 +73,7 @@
         '</div>' +
         '<span class="btn-arrow">View Details &#8594;</span>' +
       '</div>' +
-    '</div>';
+    '</a>';
   }
 
   /* ── Init ───────────────────────────────────────────────────── */
