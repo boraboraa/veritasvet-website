@@ -5,36 +5,24 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/about",
-      "destination": "/index.html"
+      "source": "/poultry",
+      "destination": "/poultry.html"
     },
     {
-      "source": "/contact",
-      "destination": "/index.html"
+      "source": "/ruminant",
+      "destination": "/ruminant.html"
     },
     {
-      "source": "/products",
-      "destination": "/index.html"
+      "source": "/aquaculture",
+      "destination": "/aquaculture.html"
     },
     {
-      "source": "/products/gut-health",
-      "destination": "/index.html"
+      "source": "/news",
+      "destination": "/news/index.html"
     },
     {
-      "source": "/products/feed-quality",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/products/mycotoxin-eliminator",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/products/nutrition",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/certifications",
-      "destination": "/index.html"
+      "source": "/news/:slug",
+      "destination": "/news/:slug/index.html"
     },
     {
       "source": "/species/poultry",
@@ -89,51 +77,52 @@
       ]
     },
     {
+      "source": "/news",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/news/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/poultry",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/ruminant",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/aquaculture",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
       "source": "/species/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        },
-        {
-          "key": "Pragma",
-          "value": "no-cache"
-        },
-        {
-          "key": "Expires",
-          "value": "0"
-        }
-      ]
-    },
-    {
-      "source": "/about",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/contact",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/products(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/certifications",
       "headers": [
         {
           "key": "Cache-Control",
