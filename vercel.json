@@ -2,45 +2,7 @@
   "buildCommand": "node build.js",
   "outputDirectory": ".",
   "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/poultry",
-      "destination": "/poultry.html"
-    },
-    {
-      "source": "/ruminant",
-      "destination": "/ruminant.html"
-    },
-    {
-      "source": "/aquaculture",
-      "destination": "/aquaculture.html"
-    },
-    {
-      "source": "/news",
-      "destination": "/news/index.html"
-    },
-    {
-      "source": "/news/:slug",
-      "destination": "/news/:slug/index.html"
-    },
-    {
-      "source": "/species/poultry",
-      "destination": "/poultry.html"
-    },
-    {
-      "source": "/species/ruminants",
-      "destination": "/ruminant.html"
-    },
-    {
-      "source": "/species/ruminant",
-      "destination": "/ruminant.html"
-    },
-    {
-      "source": "/species/aquaculture",
-      "destination": "/aquaculture.html"
-    }
-  ],
+  "trailingSlash": true,
   "headers": [
     {
       "source": "/(.*).html",
@@ -77,15 +39,6 @@
       ]
     },
     {
-      "source": "/news",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
-    },
-    {
       "source": "/news/(.*)",
       "headers": [
         {
@@ -95,34 +48,43 @@
       ]
     },
     {
-      "source": "/poultry",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/ruminant",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/aquaculture",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }
-      ]
-    },
-    {
       "source": "/species/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/about/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/products/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/contact/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/certifications/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
