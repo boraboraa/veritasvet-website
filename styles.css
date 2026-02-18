@@ -122,8 +122,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .solutions-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
 .solution-card{display:flex;flex-direction:column;background:var(--cream);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border-subtle);transition:transform .4s var(--ease-out-expo),box-shadow .4s var(--ease-out-expo);cursor:pointer;color:inherit;text-decoration:none}
 .solution-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-medium)}
-.solution-image{width:100%;aspect-ratio:16/10;background-color:var(--warm-white);background-size:cover;background-position:center;overflow:hidden;flex-shrink:0;transition:background-size .5s var(--ease-out-expo)}
+.solution-image{position:relative;width:100%;aspect-ratio:16/10;background-color:var(--warm-white);background-size:cover;background-position:center;overflow:hidden;flex-shrink:0;transition:background-size .5s var(--ease-out-expo)}
+.solution-image::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.25);pointer-events:none}
 .solution-card:hover .solution-image{background-size:103%}
+.additives-image{background-image:url('/images/feed-additives-home.png')}
+.premix-image{background-image:url('/images/premix-home.png')}
 .solution-card-body{padding:1.75rem 2rem 2rem;display:flex;flex-direction:column;flex-grow:1}
 .solution-card-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:.75rem}
 .solution-card-desc{font-size:.92rem;color:var(--text-secondary);line-height:1.7;margin-bottom:1.25rem;flex-grow:1}
