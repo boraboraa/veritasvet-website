@@ -403,24 +403,20 @@ a.pc{text-decoration:none;color:inherit}
 .btn-green-outline:hover{background:var(--green-pale);border-color:var(--green-dark)}
 
 /* ═══ ABOUT PAGE ═══ */
-.abt-hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
-.abt-hero-bg{position:absolute;inset:0;z-index:1}
-.abt-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;animation:heroZoom 25s ease-in-out infinite alternate}
-.abt-hero-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(100deg,rgba(12,30,56,.35) 0%,rgba(12,30,56,.25) 50%,rgba(12,30,56,.1) 100%)}
-.abt-hero-inner{position:relative;z-index:10;max-width:1440px;margin:0 auto;padding:8rem 3rem 5rem;width:100%}
-.abt-hero-content{max-width:680px}
-.abt-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5.5vw,3.25rem);font-weight:700;line-height:1.12;color:#fff;margin-bottom:.75rem;text-shadow:0 2px 12px rgba(0,0,0,.2)}
-.abt-hero .abt-subtitle{font-family:'Cormorant Garamond',serif;font-size:clamp(1.15rem,2vw,1.4rem);font-weight:500;color:var(--green-light);margin-bottom:2rem;line-height:1.5;letter-spacing:.01em}
-.abt-hero .abt-text{font-size:1.05rem;color:rgba(247,248,243,.88);line-height:1.75;max-width:600px;margin-bottom:2.5rem}
-.abt-hero .abt-text p{margin-bottom:1rem}
+.abt-hero{position:relative;background:var(--cream);overflow:hidden}
+.abt-hero-inner{max-width:1440px;margin:0 auto;padding:7rem 3rem 3rem;width:100%}
+.abt-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;min-height:35vh}
+.abt-hero-content{max-width:560px}
+.abt-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,2.75rem);font-weight:700;line-height:1.15;color:var(--navy);margin-bottom:1rem}
+.abt-hero .abt-text{font-size:.97rem;color:var(--text-secondary);line-height:1.75;max-width:500px;margin-bottom:1.75rem}
+.abt-hero .abt-text p{margin-bottom:.75rem}
 .abt-hero .abt-text p:last-child{margin-bottom:0}
 .abt-hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
-
-/* Hero readable overlay */
-.hero-readable{background:rgba(255,255,255,0.18);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:18px;padding:28px 34px;max-width:640px}
+.abt-hero-img{border-radius:12px;overflow:hidden;box-shadow:var(--shadow-medium)}
+.abt-hero-img img{width:100%;display:block;max-height:380px;object-fit:cover;border-radius:12px}
 
 /* Eyebrow text */
-.abt-eyebrow{font-size:14.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:1.5rem;line-height:1.5}
+.abt-eyebrow{font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--green-dark);margin-bottom:1.25rem;line-height:1.5}
 
 /* CTA layout with image */
 .abt-cta-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;text-align:left;max-width:1100px}
@@ -511,25 +507,25 @@ a.pc{text-decoration:none;color:inherit}
 @media(max-width:900px){
 .abt-split{grid-template-columns:1fr;gap:2.5rem}
 .abt-split.reverse{direction:ltr}
-}
-@media(max-width:900px){
 .abt-cta-layout{grid-template-columns:1fr;text-align:center}
 .abt-cta-layout .abt-cta-text{order:2}
 .abt-cta-layout .cta-visual{order:1}
 .abt-cta-actions{justify-content:center}
+.abt-hero-grid{grid-template-columns:1fr;gap:2rem;min-height:auto}
+.abt-hero-img{order:2}
+.abt-hero-content{order:1;max-width:100%}
 }
 @media(max-width:768px){
 .abt-section{padding:70px 1.5rem}
 .abt-cta-section{padding:70px 1.5rem}
-.abt-hero-inner{padding:7rem 1.5rem 4rem}
-.abt-hero h1{font-size:2rem}
+.abt-hero-inner{padding:5.5rem 1.5rem 2.5rem}
+.abt-hero h1{font-size:1.85rem}
 .abt-cards{grid-template-columns:1fr}
 .abt-features-grid{grid-template-columns:1fr}
 .abt-hero-actions{flex-direction:column;gap:.75rem}
 .abt-hero-actions .btn-green,.abt-hero-actions .btn-green-outline{width:100%;justify-content:center}
 .abt-cta-actions{flex-direction:column;align-items:center}
 .abt-cta-actions .btn-green,.abt-cta-actions .btn-green-outline{width:100%;max-width:320px;justify-content:center}
-.hero-readable{padding:20px 22px;max-width:100%}
 }
 
 /* PRODUCT DETAIL PAGE */
