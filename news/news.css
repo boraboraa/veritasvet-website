@@ -30,7 +30,8 @@ main.news-main{max-width:860px;margin:0 auto;padding:8rem 1.5rem 5rem}
 .news-article-card{display:grid;grid-template-columns:180px 1fr;gap:1.75rem;align-items:start;padding:1.5rem 0;border-bottom:1px solid var(--border-subtle)}
 .news-section .news-article-card:last-child{border-bottom:none}
 
-.news-card-image{width:100%;aspect-ratio:4/3;border-radius:var(--radius-sm);background:linear-gradient(135deg,#eef3f8,#dfe8f1);flex-shrink:0}
+.news-card-image{width:100%;aspect-ratio:4/3;border-radius:var(--radius-sm);background:linear-gradient(135deg,#eef3f8,#dfe8f1);flex-shrink:0;overflow:hidden}
+.news-card-image img{display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit}
 
 .news-card-body{display:flex;flex-direction:column;gap:.4rem}
 .news-card-category{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green-dark)}
@@ -46,7 +47,8 @@ main.news-main{max-width:860px;margin:0 auto;padding:8rem 1.5rem 5rem}
 /* ── Article Detail Page (unchanged) ── */
 .news-article{background:#fff;border:1px solid var(--border-subtle);border-radius:18px;padding:1.1rem}
 .news-article__header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(1.85rem,4vw,2.7rem);margin:.25rem 0 1rem;color:var(--navy)}
-.news-article__hero-image{width:100%;aspect-ratio:16/7;border-radius:12px;background:linear-gradient(135deg,#eef3f8,#dfe8f1);margin-bottom:1rem}
+.news-article__hero-image{width:100%;aspect-ratio:16/7;border-radius:12px;background:linear-gradient(135deg,#eef3f8,#dfe8f1);margin-bottom:1rem;overflow:hidden}
+.news-article__hero-image img{display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit}
 .news-article__summary-box{display:grid;gap:.75rem;grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:1rem}
 .summary-item{border:1px solid var(--border-subtle);border-radius:12px;padding:.8rem;background:#fafcf7}
 .summary-item h2{font-size:1rem;margin:0 0 .4rem;color:var(--navy)}
