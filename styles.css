@@ -609,3 +609,31 @@ a.pc{text-decoration:none;color:inherit}
 .product-hero{padding:2rem}
 .product-benefits,.product-application{padding:2rem 1.5rem}
 }
+
+/* ═══ CONTACT PAGE ═══ */
+.ct-page{padding:8rem 3rem 5rem;min-height:100vh;background:#fff}
+.ct-hero{max-width:680px;margin:0 auto 4rem;padding-top:2rem}
+.ct-hero .sec-title{margin-bottom:1.25rem}
+.ct-hero-desc{font-size:1.05rem;color:var(--text-secondary);line-height:1.8;max-width:600px;margin:0 auto 1.25rem}
+.ct-response-time{font-size:.85rem;font-weight:600;letter-spacing:.06em;color:var(--text-muted);text-transform:uppercase}
+.ct-options{max-width:900px;margin:0 auto 5rem}
+.ct-options-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.ct-card{background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:2.5rem 2rem;display:flex;flex-direction:column;transition:transform .4s var(--ease-out-expo),box-shadow .4s var(--ease-out-expo)}
+.ct-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-medium)}
+.ct-card-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:1rem}
+.ct-card-desc{font-size:.95rem;color:var(--text-secondary);line-height:1.7;margin-bottom:1.75rem;flex-grow:1}
+.ct-card .btn-green{width:fit-content}
+.ct-direct{max-width:680px;margin:0 auto;padding:3rem 0 1rem;border-top:1px solid var(--border-subtle)}
+.ct-direct-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3vw,1.85rem);font-weight:600;color:var(--navy);margin-bottom:1.25rem}
+.ct-direct-email{font-size:1.05rem;color:var(--text-secondary);margin-bottom:.75rem}
+.ct-direct-email a{color:var(--green-dark);font-weight:600;transition:color .3s ease}
+.ct-direct-email a:hover{color:var(--green)}
+.ct-direct-offices{font-size:.92rem;color:var(--text-muted);letter-spacing:.02em}
+@media(max-width:768px){
+.ct-page{padding:6rem 1.5rem 4rem}
+.ct-hero{padding-top:1rem;margin-bottom:3rem}
+.ct-options-grid{grid-template-columns:1fr}
+.ct-options{margin-bottom:3.5rem}
+.ct-card{padding:2rem 1.5rem}
+.ct-direct{padding:2.5rem 0 1rem}
+}
