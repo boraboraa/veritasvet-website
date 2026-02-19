@@ -41,34 +41,94 @@
 <main class="ct-page">
 <div class="container">
 
-<!-- Hero Intro -->
+<!-- Hero -->
 <section class="ct-hero sec-center">
-<h1 class="sec-title">Contact Our Team</h1>
-<p class="ct-hero-desc">We support clients and partners worldwide with reliable feed additive and premix solutions. Our team is ready to assist you with technical, commercial and regulatory questions.</p>
-<p class="ct-response-time">Response time: 12–48 business hours</p>
+<h1 class="sec-title">Let's Build Your Nutritional Strategy</h1>
+<p class="ct-hero-desc">Every operation is unique.<br>Share your objectives — our team will design the most relevant solution.</p>
 </section>
 
-<!-- Contact Options Grid -->
-<section class="ct-options">
-<div class="ct-options-grid">
-<div class="ct-card">
-<h2 class="ct-card-title">I am looking for solutions</h2>
-<p class="ct-card-desc">Discuss your feed additive or premix requirements with our technical and commercial team.</p>
-<a href="mailto:info@veritasvet.com?subject=Solutions%20Inquiry" class="btn-green">Contact Our Team</a>
+<!-- Form -->
+<section class="ct-form-wrap">
+<form id="ctForm" onsubmit="return false">
+
+<fieldset class="ct-fieldset">
+<div class="form-grid-2">
+<div class="form-row"><label for="ctName">Full Name *</label><input type="text" id="ctName" required placeholder="Your full name"></div>
+<div class="form-row"><label for="ctCompany">Company Name *</label><input type="text" id="ctCompany" required placeholder="Company name"></div>
 </div>
-<div class="ct-card">
-<h2 class="ct-card-title">I want to become a distribution partner</h2>
-<p class="ct-card-desc">Explore partnership opportunities and distribution collaboration with VeritasVet.</p>
-<a href="mailto:info@veritasvet.com?subject=Partnership%20Inquiry" class="btn-green">Become a Partner</a>
+<div class="form-grid-2">
+<div class="form-row"><label for="ctPosition">Position</label><input type="text" id="ctPosition" placeholder="Your role"></div>
+<div class="form-row"><label for="ctCountry">Country *</label><input type="text" id="ctCountry" required placeholder="Your country"></div>
 </div>
+<div class="form-grid-2">
+<div class="form-row"><label for="ctEmail">Professional Email *</label><input type="email" id="ctEmail" required placeholder="your@company.com"></div>
+<div class="form-row"><label for="ctPhone">Phone</label><input type="tel" id="ctPhone" placeholder="+00 000 000 000"></div>
 </div>
+</fieldset>
+
+<fieldset class="ct-fieldset">
+<legend class="ct-section-label">Tell us about your operation</legend>
+<div class="ct-radio-group" role="radiogroup" aria-label="Company type">
+<label class="ct-radio"><input type="radio" name="companyType" value="feedmill" required><span>Feedmill</span></label>
+<label class="ct-radio"><input type="radio" name="companyType" value="integrator"><span>Integrator</span></label>
+<label class="ct-radio"><input type="radio" name="companyType" value="distributor"><span>Distributor</span></label>
+<label class="ct-radio"><input type="radio" name="companyType" value="premix"><span>Premix Manufacturer</span></label>
+<label class="ct-radio"><input type="radio" name="companyType" value="consultant"><span>Nutrition Consultant</span></label>
+<label class="ct-radio"><input type="radio" name="companyType" value="other" id="ctTypeOther"><span>Other</span></label>
+</div>
+<div class="ct-other-field" id="ctOtherWrap">
+<div class="form-row"><label for="ctOtherText">Please specify</label><input type="text" id="ctOtherText" placeholder="Your activity"></div>
+</div>
+</fieldset>
+
+<fieldset class="ct-fieldset">
+<legend class="ct-section-label">Area of interest</legend>
+<div class="ct-check-group">
+<label class="ct-check"><input type="checkbox" name="interest" value="additives"><span>Feed Additives</span></label>
+<label class="ct-check"><input type="checkbox" name="interest" value="premix"><span>Premix Solutions</span></label>
+<label class="ct-check"><input type="checkbox" name="interest" value="technical"><span>Technical Support</span></label>
+<label class="ct-check"><input type="checkbox" name="interest" value="regulatory"><span>Regulatory &amp; Documentation</span></label>
+<label class="ct-check"><input type="checkbox" name="interest" value="logistics"><span>Logistics &amp; Supply</span></label>
+</div>
+</fieldset>
+
+<fieldset class="ct-fieldset">
+<legend class="ct-section-label">What are you looking to improve?</legend>
+<div class="form-row"><textarea id="ctMessage" required placeholder="Performance targets, formulation constraints, regulatory requirements, logistics preferences…"></textarea></div>
+</fieldset>
+
+<div class="ct-submit">
+<button type="submit" class="btn-green">Request Technical Consultation</button>
+<p class="ct-confidential">All inquiries are handled confidentially.</p>
+</div>
+
+</form>
 </section>
 
-<!-- Direct Contact Information -->
-<section class="ct-direct sec-center">
-<h2 class="ct-direct-title">Direct Contact</h2>
-<p class="ct-direct-email">Email: <a href="mailto:info@veritasvet.com">info@veritasvet.com</a></p>
-<p class="ct-direct-offices">Corporate offices: Belgium | United Arab Emirates | Türkiye</p>
+<!-- Contact Info -->
+<section class="ct-info">
+<div class="ct-info-grid">
+<div class="ct-info-col">
+<h2 class="ct-info-title">Registered Entities</h2>
+<div class="ct-entity">
+<p class="ct-entity-name">VeritasVet SRL</p>
+<p class="ct-entity-loc">Brussels, Belgium</p>
+</div>
+<div class="ct-entity">
+<p class="ct-entity-name">VeritasVet LLC</p>
+<p class="ct-entity-loc">Dubai, United Arab Emirates</p>
+</div>
+<div class="ct-entity">
+<p class="ct-entity-name">Veritas Veteriner ve Tarım İlaçları Sanayi Ticaret Ltd. Şti.</p>
+<p class="ct-entity-loc">Izmir, Türkiye</p>
+</div>
+</div>
+<div class="ct-info-col">
+<h2 class="ct-info-title">Direct Contact</h2>
+<p class="ct-info-email"><a href="mailto:sales@veritasvet.com">sales@veritasvet.com</a></p>
+<p class="ct-info-response">Response time: 6–24 hours</p>
+</div>
+</div>
 </section>
 
 </div>
@@ -87,6 +147,7 @@
 <script>
 function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
 function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+document.querySelectorAll('input[name="companyType"]').forEach(function(r){r.addEventListener('change',function(){var w=document.getElementById('ctOtherWrap');w.classList.toggle('visible',this.value==='other')})});
 </script>
 </body>
 </html>
