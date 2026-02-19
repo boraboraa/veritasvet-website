@@ -753,28 +753,41 @@ box-shadow:0 8px 28px rgba(140,191,46,0.28);
 transform:scale(.995);
 }
 
-/* Footer Info */
-.ct-form-footer{
-text-align:center;
-margin-top:36px;
-padding-top:28px;
-border-top:1px solid var(--border-subtle);
+/* Contact Info Block */
+.ct-contact-info{
+margin-top:40px;
+padding-top:32px;
+border-top:1px solid #eaeaea;
 }
-.ct-form-footer p{
-font-size:.95rem;
-color:var(--text-secondary);
-margin-bottom:6px;
+.ct-contact-info-section{
+margin-bottom:20px;
 }
-.ct-form-footer a{
-color:var(--green-dark);
+.ct-contact-info-section:last-child{
+margin-bottom:0;
+}
+.ct-contact-info-title{
+font-family:'DM Sans',sans-serif;
+font-size:14px;
 font-weight:600;
+color:var(--text-primary);
+letter-spacing:.03em;
+margin:0 0 8px;
+}
+.ct-contact-info-text{
+font-family:'DM Sans',sans-serif;
+font-size:13px;
+color:var(--text-muted);
+line-height:1.8;
+margin:0;
+}
+.ct-contact-info-text a{
+color:var(--green-dark);
+font-weight:500;
+text-decoration:none;
 transition:color .3s ease;
 }
-.ct-form-footer a:hover{color:var(--green)}
-.ct-offices{
-font-size:.85rem !important;
-color:var(--text-muted) !important;
-letter-spacing:.02em;
+.ct-contact-info-text a:hover{
+color:var(--green);
 }
 
 /* Contact Page Responsive */
