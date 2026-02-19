@@ -611,29 +611,184 @@ a.pc{text-decoration:none;color:inherit}
 }
 
 /* ═══ CONTACT PAGE ═══ */
-.ct-page{padding:8rem 3rem 5rem;min-height:100vh;background:#fff}
-.ct-hero{max-width:680px;margin:0 auto 4rem;padding-top:2rem}
-.ct-hero .sec-title{margin-bottom:1.25rem}
-.ct-hero-desc{font-size:1.05rem;color:var(--text-secondary);line-height:1.8;max-width:600px;margin:0 auto 1.25rem}
-.ct-response-time{font-size:.85rem;font-weight:600;letter-spacing:.06em;color:var(--text-muted);text-transform:uppercase}
-.ct-options{max-width:900px;margin:0 auto 5rem}
-.ct-options-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
-.ct-card{background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:2.5rem 2rem;display:flex;flex-direction:column;transition:transform .4s var(--ease-out-expo),box-shadow .4s var(--ease-out-expo)}
-.ct-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-medium)}
-.ct-card-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:1rem}
-.ct-card-desc{font-size:.95rem;color:var(--text-secondary);line-height:1.7;margin-bottom:1.75rem;flex-grow:1}
-.ct-card .btn-green{width:fit-content}
-.ct-direct{max-width:680px;margin:0 auto;padding:3rem 0 1rem;border-top:1px solid var(--border-subtle)}
-.ct-direct-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3vw,1.85rem);font-weight:600;color:var(--navy);margin-bottom:1.25rem}
-.ct-direct-email{font-size:1.05rem;color:var(--text-secondary);margin-bottom:.75rem}
-.ct-direct-email a{color:var(--green-dark);font-weight:600;transition:color .3s ease}
-.ct-direct-email a:hover{color:var(--green)}
-.ct-direct-offices{font-size:.92rem;color:var(--text-muted);letter-spacing:.02em}
+.ct-page{padding:100px 1.5rem;min-height:100vh;background:var(--cream)}
+
+/* Card load animation */
+@keyframes ctCardAppear{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+/* Main Card */
+.ct-form-card{
+max-width:720px;
+margin:0 auto;
+background:#fff;
+border-radius:20px;
+border:1px solid #e8ecf0;
+box-shadow:0 4px 40px rgba(22,45,80,0.06);
+padding:56px 56px 48px;
+opacity:0;
+animation:ctCardAppear .8s var(--ease-out-expo) .15s forwards;
+}
+
+/* Header */
+.ct-form-header{text-align:center;margin-bottom:40px}
+.ct-form-title{
+font-family:'Cormorant Garamond',serif;
+font-size:clamp(2rem,4vw,2.8rem);
+font-weight:600;
+line-height:1.1;
+color:var(--navy);
+margin-bottom:14px;
+}
+.ct-form-subtitle{
+font-size:1.05rem;
+color:var(--text-secondary);
+line-height:1.75;
+max-width:520px;
+margin:0 auto 14px;
+}
+.ct-form-response{
+font-size:.82rem;
+font-weight:600;
+letter-spacing:.08em;
+color:var(--text-muted);
+text-transform:uppercase;
+}
+
+/* Form Rows */
+.ct-form{display:flex;flex-direction:column;gap:22px}
+.ct-form-row{display:flex;flex-direction:column;gap:6px}
+.ct-form-row label{
+font-weight:600;
+font-size:12.5px;
+letter-spacing:.06em;
+text-transform:uppercase;
+color:var(--navy);
+}
+.ct-required{color:#c0392b;font-weight:700}
+.ct-optional{font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-muted);font-size:12px}
+
+/* Inputs */
+.ct-form-row input,
+.ct-form-row textarea,
+.ct-form-row select{
+width:100%;
+padding:.9rem 1.1rem;
+border:1.5px solid var(--border-subtle);
+border-radius:12px;
+font-size:15px;
+font-family:'DM Sans',sans-serif;
+background:var(--cream);
+color:var(--text-primary);
+transition:border-color .3s ease,box-shadow .3s ease,background-color .3s ease;
+}
+.ct-form-row input:focus,
+.ct-form-row textarea:focus,
+.ct-form-row select:focus{
+outline:none;
+border-color:var(--green);
+box-shadow:0 0 0 4px rgba(140,191,46,0.1);
+background:#fff;
+}
+.ct-form-row input::placeholder,
+.ct-form-row textarea::placeholder{color:var(--text-muted);opacity:.6}
+.ct-form-row textarea{min-height:140px;resize:vertical;line-height:1.6}
+.ct-form-row select{
+appearance:none;-webkit-appearance:none;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237e8fa2' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+background-repeat:no-repeat;
+background-position:right 1.1rem center;
+cursor:pointer;
+}
+
+/* Two-column grid inside conditional */
+.ct-form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+/* Conditional Fields Wrapper */
+.ct-conditional-wrap{
+overflow:hidden;
+max-height:0;
+opacity:0;
+transition:max-height .3s cubic-bezier(0.4,0,0.2,1),opacity .28s ease,margin .3s ease;
+margin-top:-22px;
+margin-bottom:0;
+}
+.ct-conditional-wrap.ct-revealed{
+max-height:200px;
+opacity:1;
+margin-top:0;
+margin-bottom:0;
+}
+.ct-conditional-inner{padding-top:0}
+.ct-conditional-section{display:none}
+.ct-conditional-section.ct-active{display:block}
+
+/* Submit Button */
+.ct-submit-btn{
+width:100%;
+padding:1.05rem 2rem;
+background:var(--green);
+color:#fff;
+border:none;
+border-radius:12px;
+font-family:'DM Sans',sans-serif;
+font-weight:700;
+font-size:15px;
+letter-spacing:.05em;
+text-transform:uppercase;
+cursor:pointer;
+transition:background .3s ease,transform .25s ease,box-shadow .3s ease;
+margin-top:8px;
+}
+.ct-submit-btn:hover{
+background:var(--green-dark);
+transform:scale(1.02);
+box-shadow:0 8px 28px rgba(140,191,46,0.28);
+}
+.ct-submit-btn:active{
+transform:scale(.995);
+}
+
+/* Footer Info */
+.ct-form-footer{
+text-align:center;
+margin-top:36px;
+padding-top:28px;
+border-top:1px solid var(--border-subtle);
+}
+.ct-form-footer p{
+font-size:.95rem;
+color:var(--text-secondary);
+margin-bottom:6px;
+}
+.ct-form-footer a{
+color:var(--green-dark);
+font-weight:600;
+transition:color .3s ease;
+}
+.ct-form-footer a:hover{color:var(--green)}
+.ct-offices{
+font-size:.85rem !important;
+color:var(--text-muted) !important;
+letter-spacing:.02em;
+}
+
+/* Contact Page Responsive */
 @media(max-width:768px){
-.ct-page{padding:6rem 1.5rem 4rem}
-.ct-hero{padding-top:1rem;margin-bottom:3rem}
-.ct-options-grid{grid-template-columns:1fr}
-.ct-options{margin-bottom:3.5rem}
-.ct-card{padding:2rem 1.5rem}
-.ct-direct{padding:2.5rem 0 1rem}
+.ct-page{padding:80px 1rem 60px}
+.ct-form-card{padding:36px 24px 32px;border-radius:16px}
+.ct-form-header{margin-bottom:32px}
+.ct-form-grid-2{grid-template-columns:1fr}
+.ct-form-title{font-size:1.85rem}
+}
+@media(max-width:480px){
+.ct-page{padding:72px .75rem 48px}
+.ct-form-card{padding:28px 18px 24px}
+}
+@media(prefers-reduced-motion:reduce){
+.ct-form-card{opacity:1;animation:none}
+.ct-conditional-wrap{transition:none}
+.ct-submit-btn{transition:none}
 }
