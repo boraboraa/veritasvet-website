@@ -62,9 +62,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* HERO */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:#f5f5f0}
 .hero-media{position:absolute;inset:0;z-index:1}
-.hero-media-img{width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:1;transform:scale(1.02);animation:heroZoom 25s ease-in-out infinite alternate}
+.hero-media-img{width:100%;height:100%;object-fit:cover;object-position:center center;opacity:1;transform:scale(1.02);animation:heroZoom 25s ease-in-out infinite alternate}
 @keyframes heroZoom{0%{transform:scale(1.02)}100%{transform:scale(1.06)}}
-.hero-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(100deg,rgba(12,30,56,.30) 0%,rgba(12,30,56,.10) 50%,transparent 75%);pointer-events:none}
+.hero-overlay{display:none}
 .hero-particles{position:absolute;inset:0;z-index:3;pointer-events:none;overflow:hidden}
 .hero-particle{position:absolute;width:3px;height:3px;background:var(--green);border-radius:50%;opacity:0;animation:pDrift 12s ease-in-out infinite}
 @keyframes pDrift{0%{opacity:0;transform:translateY(100vh) translateX(0)}10%{opacity:.2}90%{opacity:.2}100%{opacity:0;transform:translateY(-20vh) translateX(40px)}}
@@ -307,7 +307,7 @@ a.pc{text-decoration:none;color:inherit}
 .section-pad{padding:4rem 1.5rem}
 .hero-content{padding:0 1.5rem}
 .hero-copy{padding:1.6rem 1.4rem 1.8rem;background:linear-gradient(100deg,rgba(12,30,56,.76),rgba(12,30,56,.45) 64%,rgba(12,30,56,.1))}
-.hero-media-img{object-position:center 35%}
+.hero-media-img{object-position:center top}
 .trust-grid{grid-template-columns:1fr 1fr}
 .ft-top{grid-template-columns:1fr;gap:2rem}
 .ft-bottom{flex-direction:column;gap:1rem;text-align:center}
