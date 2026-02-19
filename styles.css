@@ -497,6 +497,32 @@ a.pc{text-decoration:none;color:inherit}
 .abt-badge-stagger.visible{opacity:1;transform:translateY(0)}
 .abt-badge-d1{transition-delay:.08s}.abt-badge-d2{transition-delay:.16s}.abt-badge-d3{transition-delay:.24s}.abt-badge-d4{transition-delay:.32s}.abt-badge-d5{transition-delay:.40s}.abt-badge-d6{transition-delay:.48s}.abt-badge-d7{transition-delay:.56s}.abt-badge-d8{transition-delay:.64s}
 
+/* Section separator */
+.abt-section-separator{width:60%;max-width:720px;height:1px;background:var(--border-subtle);margin:0 auto;padding:0}
+
+/* Regional Presence two-column grid */
+.abt-regional-grid{display:grid;grid-template-columns:45% 55%;gap:3rem;align-items:center}
+.abt-regional-text{text-align:left}
+.abt-regional-text h2{text-align:left}
+.abt-regional-text .abt-body{margin:0 0 2.5rem}
+
+/* Entity blocks */
+.abt-entities{display:flex;flex-direction:column;gap:1.25rem;margin-top:2rem}
+.abt-entity{display:flex;align-items:flex-start;gap:.85rem}
+.abt-entity-icon{flex-shrink:0;margin-top:2px}
+.abt-entity-info{display:flex;flex-direction:column;gap:.15rem}
+.abt-entity-name{font-weight:700;font-size:.97rem;color:var(--text-primary);line-height:1.4}
+.abt-entity-location{font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);line-height:1.4}
+
+/* Regional map image */
+.abt-regional-map{max-width:520px;margin-left:auto;border-radius:var(--radius-md);overflow:hidden;box-shadow:0 4px 24px rgba(22,45,80,0.07)}
+.abt-regional-map img{width:100%;display:block;object-fit:cover;border-radius:var(--radius-md)}
+
+@media(max-width:900px){
+.abt-regional-grid{grid-template-columns:1fr;gap:2.5rem}
+.abt-regional-map{max-width:100%;margin-left:0}
+}
+
 /* Markets list */
 .abt-markets{font-size:1.1rem;color:var(--text-primary);font-weight:500;letter-spacing:.02em;margin-top:1.5rem;line-height:2}
 
