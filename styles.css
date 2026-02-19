@@ -32,10 +32,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 }
 
 /* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:9999;height:84px;display:flex;align-items:center;padding:0 3rem;background:#ffffff;border-bottom:1px solid var(--border-subtle);box-shadow:0 1px 4px rgba(22,45,80,0.04)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:9999;height:90px;display:flex;align-items:center;padding:0 3rem;background:#ffffff;border-bottom:1px solid var(--border-subtle);box-shadow:0 1px 4px rgba(22,45,80,0.04)}
 .nav-inner{max-width:1440px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;width:100%}
 .nav-logo{display:flex;align-items:center;padding-left:.5rem}
-.nav-logo img{max-height:48px;height:auto;width:auto;transition:transform .25s ease,filter .25s ease;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;filter:contrast(1.05) saturate(1.05)}
+.nav-logo img{height:68px;width:auto;transition:transform .25s ease,filter .25s ease;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;filter:contrast(1.05) saturate(1.05)}
 .nav-logo img:hover{transform:scale(1.02)}
 .nav-links{display:flex;gap:.35rem;align-items:center}
 .nav-link{font-size:14.5px;font-weight:500;letter-spacing:.02em;transition:color .3s ease;position:relative;padding:.5rem 1rem;border-radius:6px;color:var(--text-primary);background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none;text-shadow:none}
@@ -303,7 +303,8 @@ a.pc{text-decoration:none;color:inherit}
 .nav-dropdown-menu{position:static;transform:none;opacity:1;pointer-events:all;background:transparent;box-shadow:none;border:none;backdrop-filter:none;min-width:0;padding:0;margin:.5rem 0}
 .nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown.open .nav-dropdown-menu{transform:none}
 .nav-dropdown-menu a{font-size:1.1rem;padding:.4rem 1rem;color:var(--text-secondary)}
-.nav{height:64px;padding:0 1.5rem}
+.nav{height:68px;padding:0 1.5rem}
+.nav-logo img{height:50px}
 .section-pad{padding:4rem 1.5rem}
 .hero-content{padding:0 1.5rem}
 .hero-copy{padding:1.6rem 1.4rem 1.8rem;background:linear-gradient(100deg,rgba(12,30,56,.76),rgba(12,30,56,.45) 64%,rgba(12,30,56,.1))}
