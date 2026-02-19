@@ -39,138 +39,54 @@
 </nav>
 
 <main class="ct-page">
-<div class="container">
+<div class="ct-container">
 
+<!-- Two-Column Layout -->
+<div class="ct-layout">
+
+<!-- LEFT: Main Contact Card -->
 <div class="ct-form-card" id="ctFormCard">
 
-<!-- Title Area -->
 <div class="ct-form-header">
-<h1 class="ct-form-title">Contact Our Team</h1>
+<h1 class="ct-form-title">Let's Build the Right Solution Together</h1>
 <p class="ct-form-subtitle">Every operation is different. Describe your needs — we will take care of the rest.</p>
-<p class="ct-form-response">Response time: 6–24 business hours</p>
 </div>
 
-<!-- Contact Form -->
-<form class="ct-form" id="contactForm" action="mailto:info@veritasvet.com" method="post" enctype="text/plain">
+<form class="ct-form" id="contactForm" action="mailto:sales@veritasvet.com" method="post" enctype="text/plain">
 
+<div class="ct-form-grid-2">
+<div class="ct-form-row">
+<label for="ctName">Full Name <span class="ct-required">*</span></label>
+<input type="text" id="ctName" name="name" required placeholder="Your full name">
+</div>
 <div class="ct-form-row">
 <label for="ctCompany">Company Name <span class="ct-required">*</span></label>
 <input type="text" id="ctCompany" name="company" required placeholder="Your company name">
 </div>
+</div>
 
 <div class="ct-form-row">
-<label for="ctEmail">Professional Email <span class="ct-required">*</span></label>
+<label for="ctEmail">Email <span class="ct-required">*</span></label>
 <input type="email" id="ctEmail" name="email" required placeholder="your.email@company.com">
 </div>
 
+<div class="ct-form-grid-2">
 <div class="ct-form-row">
-<label for="ctPhone">Phone <span class="ct-optional">(Optional)</span></label>
-<input type="tel" id="ctPhone" name="phone" placeholder="+1 (555) 000-0000">
-</div>
-
-<div class="ct-form-row">
-<label for="ctActivity">Activity Type</label>
-<select id="ctActivity" name="activity">
+<label for="ctActivity">Activity Type <span class="ct-required">*</span></label>
+<select id="ctActivity" name="activity" required>
 <option value="">Select your activity</option>
 <option value="feedmill">Feedmill</option>
 <option value="integrator">Integrator</option>
 <option value="distributor">Distributor</option>
-<option value="premix-manufacturer">Premix Manufacturer</option>
-<option value="nutrition-consultant">Nutrition Consultant</option>
+<option value="trader">Trader</option>
+<option value="farm">Farm</option>
 <option value="other">Other</option>
 </select>
 </div>
-
-<!-- Conditional Fields (revealed on activity selection) -->
-<div class="ct-conditional-wrap" id="ctConditionalWrap">
-<div class="ct-conditional-inner" id="ctConditionalInner">
-
-<div class="ct-conditional-section" id="ctFieldsFeedmill" hidden>
-<div class="ct-form-grid-2">
 <div class="ct-form-row">
-<label for="ctMills">Number of Feed Mills</label>
-<input type="text" id="ctMills" name="mills" placeholder="e.g. 3">
+<label for="ctCountry">Country <span class="ct-required">*</span></label>
+<input type="text" id="ctCountry" name="country" required placeholder="Your country">
 </div>
-<div class="ct-form-row">
-<label for="ctVolume">Annual Production Volume</label>
-<input type="text" id="ctVolume" name="volume" placeholder="e.g. 50,000 MT/year">
-</div>
-</div>
-</div>
-
-<div class="ct-conditional-section" id="ctFieldsIntegrator" hidden>
-<div class="ct-form-grid-2">
-<div class="ct-form-row">
-<label for="ctSpeciesFocus">Species Focus</label>
-<input type="text" id="ctSpeciesFocus" name="species_focus" placeholder="e.g. Poultry, Ruminants">
-</div>
-<div class="ct-form-row">
-<label for="ctFarms">Number of Farms</label>
-<input type="text" id="ctFarms" name="farms" placeholder="e.g. 25">
-</div>
-</div>
-</div>
-
-<div class="ct-conditional-section" id="ctFieldsDistributor" hidden>
-<div class="ct-form-grid-2">
-<div class="ct-form-row">
-<label for="ctTerritory">Territory / Region</label>
-<input type="text" id="ctTerritory" name="territory" placeholder="e.g. Western Europe">
-</div>
-<div class="ct-form-row">
-<label for="ctPortfolio">Current Portfolio</label>
-<input type="text" id="ctPortfolio" name="portfolio" placeholder="e.g. Feed additives, premixes">
-</div>
-</div>
-</div>
-
-<div class="ct-conditional-section" id="ctFieldsPremix" hidden>
-<div class="ct-form-grid-2">
-<div class="ct-form-row">
-<label for="ctSpecialization">Specialization</label>
-<input type="text" id="ctSpecialization" name="specialization" placeholder="e.g. Poultry premixes">
-</div>
-<div class="ct-form-row">
-<label for="ctCapacity">Production Capacity</label>
-<input type="text" id="ctCapacity" name="capacity" placeholder="e.g. 10,000 MT/year">
-</div>
-</div>
-</div>
-
-<div class="ct-conditional-section" id="ctFieldsConsultant" hidden>
-<div class="ct-form-grid-2">
-<div class="ct-form-row">
-<label for="ctConsultSpecies">Species Focus</label>
-<input type="text" id="ctConsultSpecies" name="consult_species" placeholder="e.g. Poultry, Aquaculture">
-</div>
-<div class="ct-form-row">
-<label for="ctClients">Number of Clients</label>
-<input type="text" id="ctClients" name="clients" placeholder="e.g. 15">
-</div>
-</div>
-</div>
-
-<div class="ct-conditional-section" id="ctFieldsOther" hidden>
-<div class="ct-form-row">
-<label for="ctOtherActivity">Please Specify</label>
-<input type="text" id="ctOtherActivity" name="other_activity" placeholder="Describe your activity">
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="ct-form-row">
-<label for="ctInterest">Area of Interest</label>
-<select id="ctInterest" name="interest">
-<option value="">Select area of interest</option>
-<option value="feed-additives">Feed Additives</option>
-<option value="premixes">Premixes</option>
-<option value="technical-support">Technical Support</option>
-<option value="partnership">Distribution Partnership</option>
-<option value="regulatory">Regulatory Questions</option>
-<option value="other">Other</option>
-</select>
 </div>
 
 <div class="ct-form-row">
@@ -178,17 +94,52 @@
 <textarea id="ctMessage" name="message" required placeholder="Describe your needs, volumes, species, or any specific requirements..."></textarea>
 </div>
 
+<div class="ct-form-actions">
 <button type="submit" class="ct-submit-btn">Send Message</button>
+</div>
 
 </form>
 
-<!-- Direct Contact Info -->
-<div class="ct-form-footer">
-<p>Or reach us directly at <a href="mailto:info@veritasvet.com">info@veritasvet.com</a></p>
-<p class="ct-offices">Corporate offices: Belgium | United Arab Emirates | Türkiye</p>
 </div>
 
+<!-- RIGHT: Direct Contact Sidebar -->
+<aside class="ct-sidebar">
+<div class="ct-sidebar-card">
+<h2 class="ct-sidebar-title">Direct Contact</h2>
+<div class="ct-sidebar-row">
+<span class="ct-sidebar-label">Email</span>
+<a href="mailto:sales@veritasvet.com" class="ct-sidebar-link">sales@veritasvet.com</a>
 </div>
+<div class="ct-sidebar-divider"></div>
+<div class="ct-sidebar-row">
+<span class="ct-sidebar-label">Response time</span>
+<span class="ct-sidebar-value">6–24 business hours</span>
+</div>
+</div>
+</aside>
+
+</div>
+
+<!-- Corporate Offices Section -->
+<section class="ct-offices-section">
+<div class="ct-offices-top"></div>
+<h2 class="ct-offices-title">Corporate Offices</h2>
+<p class="ct-offices-intro">Our legal entities ensure smooth international operations and regulatory compliance.</p>
+<div class="ct-offices-list">
+<div class="ct-office">
+<span class="ct-office-name">VeritasVet SRL</span>
+<span class="ct-office-location">Brussels, Belgium</span>
+</div>
+<div class="ct-office">
+<span class="ct-office-name">VeritasVet LLC</span>
+<span class="ct-office-location">Dubai, United Arab Emirates</span>
+</div>
+<div class="ct-office">
+<span class="ct-office-name">Veritas Veteriner ve Tar&#305;m &#304;la&#231;lar&#305; Sanayi Ticaret Ltd. &#350;ti.</span>
+<span class="ct-office-location">Izmir, T&#252;rkiye</span>
+</div>
+</div>
+</section>
 
 </div>
 </main>
@@ -206,51 +157,6 @@
 <script>
 function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
 function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
-
-/* Conditional Fields Logic */
-(function(){
-  var activitySelect = document.getElementById('ctActivity');
-  var wrap = document.getElementById('ctConditionalWrap');
-  var sections = document.querySelectorAll('.ct-conditional-section');
-
-  var fieldMap = {
-    'feedmill': 'ctFieldsFeedmill',
-    'integrator': 'ctFieldsIntegrator',
-    'distributor': 'ctFieldsDistributor',
-    'premix-manufacturer': 'ctFieldsPremix',
-    'nutrition-consultant': 'ctFieldsConsultant',
-    'other': 'ctFieldsOther'
-  };
-
-  activitySelect.addEventListener('change', function(){
-    var val = this.value;
-
-    /* Hide all sections first */
-    for(var i = 0; i < sections.length; i++){
-      sections[i].classList.remove('ct-active');
-      sections[i].hidden = true;
-    }
-
-    if(val && fieldMap[val]){
-      /* Show the matching section */
-      var target = document.getElementById(fieldMap[val]);
-      target.hidden = false;
-      target.classList.add('ct-active');
-
-      /* Reveal the wrapper with animation */
-      wrap.classList.add('ct-revealed');
-
-      /* Measure actual content height for smooth transition */
-      var inner = document.getElementById('ctConditionalInner');
-      var h = inner.scrollHeight;
-      wrap.style.maxHeight = h + 'px';
-    } else {
-      /* Collapse the wrapper */
-      wrap.style.maxHeight = '0px';
-      wrap.classList.remove('ct-revealed');
-    }
-  });
-})();
 </script>
 </body>
 </html>
