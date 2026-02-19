@@ -12,32 +12,32 @@
   <link rel="stylesheet" href="/species-pages.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="header-inner">
-    <a class="logo" href="/"><img src="/image_logo_VERITASVET.png" alt="VeritasVet"></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="species-nav">Menu</button>
-    <nav id="species-nav" class="site-nav" aria-label="Primary">
-      <a href="/about/">Company</a>
-      <div class="nav-dropdown" onclick="this.classList.toggle('open')">
-        <span class="nav-link active">Species <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        <div class="nav-dropdown-menu">
-          <a href="/species/poultry/">Poultry</a>
-          <a href="/species/ruminant/">Ruminants</a>
-          <a href="/species/aquaculture/">Aquaculture</a>
-        </div>
-      </div>
-      <div class="nav-dropdown" onclick="this.classList.toggle('open')">
-        <span class="nav-link">Products <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        <div class="nav-dropdown-menu">
-          <a href="/feed-additives.html">Feed Additives</a>
-          <a href="/premixes.html">Premixes</a>
-        </div>
-      </div>
-      <a href="/news/">News</a>
-      <a href="/contact/">Contact</a>
-    </nav>
-  </div>
-</header>
+<nav class="nav" id="mainNav">
+<div class="nav-inner">
+<a href="/" class="nav-logo"><img src="/image_logo_VERITASVET.png" alt="VeritasVet"></a>
+<div class="nav-links" id="navLinks">
+<a class="nav-link" href="/about/">Company</a>
+<div class="nav-dropdown" id="speciesDropdown" onclick="this.classList.toggle('open')">
+<span class="nav-link active">Species <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<div class="nav-dropdown-menu">
+<a href="/species/poultry/">Poultry</a>
+<a href="/species/ruminant/">Ruminants</a>
+<a href="/species/aquaculture/">Aquaculture</a>
+</div>
+</div>
+<div class="nav-dropdown" onclick="this.classList.toggle('open')">
+<span class="nav-link">Products <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<div class="nav-dropdown-menu">
+<a href="/feed-additives.html">Feed Additives</a>
+<a href="/premixes.html">Premixes</a>
+</div>
+</div>
+<a class="nav-link" href="/news/">News</a>
+<a class="nav-link" href="/contact/">Contact</a>
+</div>
+<div class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
+</div>
+</nav>
 
 <main class="species-main">
   <section class="intro-split two-column" aria-label="Aquaculture introduction">
@@ -65,9 +65,10 @@
 
 <script src="/species-switcher.js"></script>
 <script>
-const toggle=document.querySelector('.nav-toggle');
-const nav=document.getElementById('species-nav');
-if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});}
+function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
+function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+document.querySelectorAll('.nav-link,.nav-dropdown-menu a').forEach(el=>el.addEventListener('click',closeMob));
+document.addEventListener('click',e=>{if(!e.target.closest('.nav-dropdown'))document.querySelectorAll('.nav-dropdown').forEach(d=>d.classList.remove('open'));});
 </script>
 </body>
 </html>
