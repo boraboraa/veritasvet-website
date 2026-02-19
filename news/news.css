@@ -14,39 +14,28 @@ main.news-main{max-width:1080px;margin:0 auto;padding:8rem 1.5rem 5rem}
 .news-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:600;margin:0 0 .75rem;color:var(--navy);line-height:1.12}
 .news-hero p{color:var(--text-secondary);font-size:1.05rem;line-height:1.7;margin:0;max-width:500px}
 
-/* ── Filter Navigation ── */
-.news-filter-nav{display:flex;gap:2rem;margin-bottom:3.5rem;padding-bottom:1rem;border-bottom:1px solid var(--border-subtle)}
-.news-filter-btn{font-size:.9rem;font-weight:600;color:var(--text-muted);letter-spacing:.02em;padding-bottom:.5rem;position:relative;transition:color .3s ease}
-.news-filter-btn::after{content:'';position:absolute;bottom:-.5rem;left:0;width:0;height:2px;background:var(--green-dark);transition:width .35s var(--ease-out-expo)}
-.news-filter-btn:hover{color:var(--navy)}
-.news-filter-btn:hover::after{width:100%}
-.news-filter-btn.active{color:var(--navy)}
-.news-filter-btn.active::after{width:100%}
-
-/* ── Section Grouping ── */
-.news-section{margin-bottom:0;padding-top:64px}
-.news-section:first-of-type{padding-top:0}
-.news-section:last-child{margin-bottom:0}
-.news-section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3vw,1.9rem);font-weight:600;color:var(--navy);margin:0 0 2rem;padding-bottom:.75rem;border-bottom:1px solid var(--border-subtle);line-height:1.2}
+/* ── Listing Layout ── */
+.news-section{margin-bottom:0}
 
 /* ── Article Grid ── */
-.news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px}
+.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
 
 /* ── Article Card ── */
 .news-article-card{display:flex;flex-direction:column;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(22,45,80,.06);transition:box-shadow .3s ease,transform .3s ease}
 .news-article-card:hover{box-shadow:0 6px 24px rgba(22,45,80,.1);transform:translateY(-2px)}
 .news-section .news-article-card:last-child{border-bottom:none}
 
-.news-card-image{width:100%;aspect-ratio:16/10;background:linear-gradient(135deg,#eef3f8,#dfe8f1);flex-shrink:0;overflow:hidden}
+.news-card-image{width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,#eef3f8,#dfe8f1);flex-shrink:0;overflow:hidden}
 .news-card-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
 .news-article-card:hover .news-card-image img{transform:scale(1.05)}
 
-.news-card-body{display:flex;flex-direction:column;gap:.5rem;padding:1.25rem 1.5rem 1.5rem}
+.news-card-body{display:flex;flex-direction:column;gap:.45rem;padding:1rem 1.2rem 1.15rem}
 .news-card-category{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green-dark)}
 .news-card-body h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.15rem,2vw,1.4rem);margin:0;color:var(--navy);line-height:1.3;font-weight:600;transition:color .3s ease}
 .news-card-body h3 a{color:inherit;text-decoration:none}
 .news-article-card:hover .news-card-body h3{color:var(--navy-deep)}
 .news-card-body p{color:var(--text-secondary);font-size:.92rem;line-height:1.65;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.news-card-body time{font-size:.8rem;color:var(--text-muted);letter-spacing:.02em}
 
 /* ── Shared link style ── */
 .read-link{font-weight:600;color:var(--navy);font-size:.85rem;text-decoration:none;letter-spacing:.02em;transition:color .3s ease;margin-top:auto;padding-top:.25rem}
@@ -97,13 +86,15 @@ main.news-main{max-width:1080px;margin:0 auto;padding:8rem 1.5rem 5rem}
 .article-cta .btn-primary:hover{background:var(--green-dark);transform:translateY(-2px)}
 
 /* ── Responsive ── */
+@media(max-width:1024px){
+  .news-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+}
+
 @media(max-width:768px){
   main.news-main{padding:6rem 1.25rem 3rem}
   .news-hero-banner{margin-bottom:1.75rem}
   .news-hero-img{border-radius:var(--radius-sm)}
-  .news-filter-nav{gap:1.25rem;flex-wrap:wrap}
-  .news-grid{grid-template-columns:1fr;gap:24px}
-  .news-section{padding-top:48px}
+  .news-grid{grid-template-columns:1fr;gap:20px}
   .news-card-image{aspect-ratio:16/9}
   .news-article__summary-box{grid-template-columns:1fr}
   .article-section{margin-top:40px}

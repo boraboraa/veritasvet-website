@@ -67,25 +67,21 @@
     </div>
   </header>
 
-  <!-- Category Navigation -->
-  <nav class="news-filter-nav" aria-label="Article categories">
-    <a class="news-filter-btn" href="#gut-health">Gut Health</a>
-    <a class="news-filter-btn" href="#feed-quality">Feed Quality</a>
-    <a class="news-filter-btn" href="#mycotoxins">Mycotoxins</a>
-    <a class="news-filter-btn" href="#nutrition-strategies">Nutrition Strategies</a>
-  </nav>
-
-  <!-- Section: Gut Health -->
-  <section id="gut-health" class="news-section" aria-label="Gut Health articles">
-    <h2 class="news-section-title">Gut Health</h2>
+  <section class="news-section" aria-label="Technical Insights articles">
     <div class="news-grid">
-    </div>
-  </section>
 
-  <!-- Section: Feed Quality -->
-  <section id="feed-quality" class="news-section" aria-label="Feed Quality articles">
-    <h2 class="news-section-title">Feed Quality</h2>
-    <div class="news-grid">
+    <article class="news-article-card" data-animate>
+      <div class="news-card-image">
+        <img src="/animal%20performance%20news.png" alt="Gut health and animal performance in modern production systems" width="1456" height="816" loading="lazy" decoding="async">
+      </div>
+      <div class="news-card-body">
+        <span class="news-card-category">Gut Health</span>
+        <h3><a href="/news/gut-health-and-animal-performance-strengthening-immunity-with-proper-nutrition/">Gut Health and Animal Performance: Strengthening Immunity with Proper Nutrition</a></h3>
+        <p>How nutrition-centered gut health strategies reinforce immunity and support consistent animal performance across production systems.</p>
+        <p><time datetime="2026-01-15">January 15, 2026</time></p>
+        <a class="read-link" href="/news/gut-health-and-animal-performance-strengthening-immunity-with-proper-nutrition/">Read article &rarr;</a>
+      </div>
+    </article>
 
     <article class="news-article-card" data-animate>
       <div class="news-card-image">
@@ -95,17 +91,10 @@
         <span class="news-card-category">Feed Quality</span>
         <h3><a href="/news/feed-quality-and-durability/">Feed Quality and Durability</a></h3>
         <p>Benchmarks and quality checks to support consistent feed handling outcomes and reduce nutrient loss during storage and transport.</p>
+        <p><time datetime="2026-01-10">January 10, 2026</time></p>
         <a class="read-link" href="/news/feed-quality-and-durability/">Read article &rarr;</a>
       </div>
     </article>
-
-    </div>
-  </section>
-
-  <!-- Section: Mycotoxins -->
-  <section id="mycotoxins" class="news-section" aria-label="Mycotoxins articles">
-    <h2 class="news-section-title">Mycotoxins</h2>
-    <div class="news-grid">
 
     <article class="news-article-card" data-animate>
       <div class="news-card-image" role="img" aria-label="Mycotoxin risk in animal feed">
@@ -115,17 +104,11 @@
         <span class="news-card-category">Mycotoxins</span>
         <h3><a href="/news/gut-health-sustainable-production/">Reduce Mycotoxin Risk: Safe and Reliable Feeding Solutions</a></h3>
         <p>Incorporating toxin binders and mycotoxin eliminator solutions into feeding programs to ensure safe, reliable animal production.</p>
+        <p><time datetime="2026-01-05">January 5, 2026</time></p>
         <a class="read-link" href="/news/gut-health-sustainable-production/">Read article &rarr;</a>
       </div>
     </article>
 
-    </div>
-  </section>
-
-  <!-- Section: Nutrition Strategies -->
-  <section id="nutrition-strategies" class="news-section" aria-label="Nutrition Strategies articles">
-    <h2 class="news-section-title">Nutrition Strategies</h2>
-    <div class="news-grid">
     </div>
   </section>
 
@@ -163,41 +146,6 @@ function closeMob(){document.getElementById('navLinks').classList.remove('open')
   });
 })();
 
-/* Smooth scroll for category navigation */
-(function(){
-  var nav=document.querySelector('.news-filter-nav');
-  if(!nav)return;
-  var btns=nav.querySelectorAll('.news-filter-btn');
-  function setActive(hash){
-    btns.forEach(function(b){
-      b.classList.toggle('active',b.getAttribute('href')===hash);
-    });
-  }
-  btns.forEach(function(btn){
-    btn.addEventListener('click',function(e){
-      e.preventDefault();
-      var href=this.getAttribute('href');
-      var target=document.querySelector(href);
-      if(target){
-        setActive(href);
-        var navHeight=document.querySelector('.nav')?document.querySelector('.nav').offsetHeight:0;
-        var top=target.getBoundingClientRect().top+window.pageYOffset-navHeight-20;
-        window.scrollTo({top:top,behavior:'smooth'});
-        history.replaceState(null,null,href);
-      }
-    });
-  });
-  /* Highlight active section on scroll */
-  var sections=document.querySelectorAll('.news-section');
-  var scrollObserver=new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        setActive('#'+entry.target.id);
-      }
-    });
-  },{threshold:0.2,rootMargin:'-80px 0px -60% 0px'});
-  sections.forEach(function(s){scrollObserver.observe(s)});
-})();
 </script>
 
 </body>
