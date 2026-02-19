@@ -1,8 +1,8 @@
 /* SPECIES HEADER */
-.site-header{position:fixed;top:0;left:0;right:0;z-index:9999;height:90px;display:flex;align-items:center;padding:0 3rem;background:#ffffff;border-bottom:1px solid var(--border-subtle);box-shadow:0 1px 4px rgba(22,45,80,0.04)}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:9999;height:105px;display:flex;align-items:center;padding:0 3rem;background:#ffffff;border-bottom:1px solid var(--border-subtle);box-shadow:0 1px 4px rgba(22,45,80,0.04)}
 .header-inner{max-width:1440px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;width:100%}
 .site-header .logo{display:flex;align-items:center;padding-left:.5rem}
-.site-header .logo img{height:68px;width:auto;transition:transform .25s ease,filter .25s ease;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;filter:contrast(1.05) saturate(1.05)}
+.site-header .logo img{height:90%;width:auto;transition:transform .25s ease,filter .25s ease;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;filter:contrast(1.05) saturate(1.05)}
 .site-header .logo img:hover{transform:scale(1.02)}
 
 /* SPECIES NAV */
