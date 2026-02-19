@@ -648,7 +648,14 @@ font-size:.97rem;
 color:var(--text-secondary);
 line-height:1.7;
 max-width:480px;
-margin:0 auto;
+margin:0 auto 14px;
+}
+.ct-form-response{
+font-size:.78rem;
+font-weight:600;
+letter-spacing:.1em;
+text-transform:uppercase;
+color:var(--text-muted);
 }
 
 /* Form */
@@ -662,6 +669,7 @@ text-transform:uppercase;
 color:var(--navy);
 }
 .ct-required{color:#c0392b;font-weight:700}
+.ct-optional{font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-muted);font-size:11px}
 
 /* Inputs */
 .ct-form-row input,
@@ -687,13 +695,27 @@ background:#fff;
 }
 .ct-form-row input::placeholder,
 .ct-form-row textarea::placeholder{color:var(--text-muted);opacity:.55}
-.ct-form-row textarea{min-height:150px;resize:vertical;line-height:1.6}
+.ct-form-row textarea{min-height:130px;resize:vertical;line-height:1.6}
 .ct-form-row select{
 appearance:none;-webkit-appearance:none;
 background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237e8fa2' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
 background-repeat:no-repeat;
 background-position:right 1rem center;
 cursor:pointer;
+}
+
+/* Conditional "Other" reveal */
+.ct-other-wrap{
+overflow:hidden;
+max-height:0;
+opacity:0;
+margin-top:-20px;
+transition:max-height .3s cubic-bezier(0.4,0,0.2,1),opacity .25s ease,margin-top .3s ease;
+}
+.ct-other-wrap.ct-other-visible{
+max-height:90px;
+opacity:1;
+margin-top:0;
 }
 
 /* Two-column form grid */
@@ -815,4 +837,5 @@ color:var(--text-muted);
 .ct-container{opacity:1;animation:none}
 .ct-submit-btn{transition:none}
 .ct-form-card{transition:none}
+.ct-other-wrap{transition:none}
 }

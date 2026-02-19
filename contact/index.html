@@ -45,8 +45,9 @@
 <div class="ct-form-card" id="ctFormCard">
 
 <div class="ct-form-header">
-<h1 class="ct-form-title">Let's Build the Right Solution Together</h1>
+<h1 class="ct-form-title">Let's build the right solution together</h1>
 <p class="ct-form-subtitle">Every operation is different. Describe your needs — we will take care of the rest.</p>
+<p class="ct-form-response">Response time: 6–24 business hours</p>
 </div>
 
 <form class="ct-form" id="contactForm" action="mailto:sales@veritasvet.com" method="post" enctype="text/plain">
@@ -57,28 +58,26 @@
 <input type="text" id="ctName" name="name" required placeholder="Your full name">
 </div>
 <div class="ct-form-row">
-<label for="ctCompany">Company Name <span class="ct-required">*</span></label>
-<input type="text" id="ctCompany" name="company" required placeholder="Your company name">
+<label for="ctPosition">Position <span class="ct-optional">(optional)</span></label>
+<input type="text" id="ctPosition" name="position" placeholder="Your role or title">
 </div>
-</div>
-
-<div class="ct-form-row">
-<label for="ctEmail">Email <span class="ct-required">*</span></label>
-<input type="email" id="ctEmail" name="email" required placeholder="your.email@company.com">
 </div>
 
 <div class="ct-form-grid-2">
 <div class="ct-form-row">
-<label for="ctActivity">Activity Type <span class="ct-required">*</span></label>
-<select id="ctActivity" name="activity" required>
-<option value="">Select your activity</option>
-<option value="feedmill">Feedmill</option>
-<option value="integrator">Integrator</option>
-<option value="distributor">Distributor</option>
-<option value="trader">Trader</option>
-<option value="farm">Farm</option>
-<option value="other">Other</option>
-</select>
+<label for="ctCompany">Company Name <span class="ct-required">*</span></label>
+<input type="text" id="ctCompany" name="company" required placeholder="Your company name">
+</div>
+<div class="ct-form-row">
+<label for="ctEmail">Professional Email <span class="ct-required">*</span></label>
+<input type="email" id="ctEmail" name="email" required placeholder="your.email@company.com">
+</div>
+</div>
+
+<div class="ct-form-grid-2">
+<div class="ct-form-row">
+<label for="ctPhone">Phone <span class="ct-optional">(optional)</span></label>
+<input type="tel" id="ctPhone" name="phone" placeholder="+1 (555) 000-0000">
 </div>
 <div class="ct-form-row">
 <label for="ctCountry">Country <span class="ct-required">*</span></label>
@@ -87,8 +86,28 @@
 </div>
 
 <div class="ct-form-row">
+<label for="ctActivity">Activity Type <span class="ct-required">*</span></label>
+<select id="ctActivity" name="activity" required>
+<option value="">Select your activity</option>
+<option value="feedmill">Feedmill</option>
+<option value="integrator">Integrator</option>
+<option value="distributor">Distributor</option>
+<option value="premix-manufacturer">Premix Manufacturer</option>
+<option value="nutrition-consultant">Nutrition Consultant</option>
+<option value="other">Other</option>
+</select>
+</div>
+
+<div class="ct-other-wrap" id="ctOtherWrap">
+<div class="ct-form-row">
+<label for="ctOtherSpecify">Please Specify</label>
+<input type="text" id="ctOtherSpecify" name="other_specify" placeholder="Describe your activity">
+</div>
+</div>
+
+<div class="ct-form-row">
 <label for="ctMessage">Message <span class="ct-required">*</span></label>
-<textarea id="ctMessage" name="message" required placeholder="Describe your needs, volumes, species, or any specific requirements..."></textarea>
+<textarea id="ctMessage" name="message" required placeholder="Describe your needs, volumes, species, or specific technical requirements..."></textarea>
 </div>
 
 <div class="ct-form-actions">
@@ -131,7 +150,7 @@
 </div>
 <div class="ct-info-office">
 <span class="ct-info-office-name">Veritas Veteriner ve Tar&#305;m &#304;la&#231;lar&#305; Sanayi Ticaret Ltd. &#350;ti.</span>
-<span class="ct-info-office-loc">Izmir, T&#252;rkiye</span>
+<span class="ct-info-office-loc">&#304;zmir, T&#252;rkiye</span>
 </div>
 </div>
 </div>
@@ -155,6 +174,11 @@
 <script>
 function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
 function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+document.getElementById('ctActivity').addEventListener('change',function(){
+var w=document.getElementById('ctOtherWrap');
+if(this.value==='other'){w.classList.add('ct-other-visible')}
+else{w.classList.remove('ct-other-visible')}
+});
 </script>
 </body>
 </html>
