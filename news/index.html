@@ -67,17 +67,7 @@
     </div>
   </header>
 
-  <!-- Category Navigation -->
-  <nav class="news-filter-nav" aria-label="Article categories">
-    <a class="news-filter-btn" href="#gut-health">Gut Health</a>
-    <a class="news-filter-btn" href="#feed-quality">Feed Quality</a>
-    <a class="news-filter-btn" href="#mycotoxins">Mycotoxins</a>
-    <a class="news-filter-btn" href="#nutrition-strategies">Nutrition Strategies</a>
-  </nav>
-
-  <!-- Section: Gut Health -->
-  <section id="gut-health" class="news-section" aria-label="Gut Health articles">
-    <h2 class="news-section-title">Gut Health</h2>
+  <section class="news-section" aria-label="Technical insight articles">
     <div class="news-grid">
 
     <article class="news-article-card" data-animate>
@@ -93,14 +83,6 @@
       </div>
     </article>
 
-    </div>
-  </section>
-
-  <!-- Section: Feed Quality -->
-  <section id="feed-quality" class="news-section" aria-label="Feed Quality articles">
-    <h2 class="news-section-title">Feed Quality</h2>
-    <div class="news-grid">
-
     <article class="news-article-card" data-animate>
       <div class="news-card-image">
         <img src="/pellet%20news.png" alt="High-quality animal feed pellets demonstrating durability and structural integrity" width="1456" height="816" loading="lazy" decoding="async">
@@ -112,14 +94,6 @@
         <a class="read-link" href="/news/feed-quality-and-durability/">Read article &rarr;</a>
       </div>
     </article>
-
-    </div>
-  </section>
-
-  <!-- Section: Mycotoxins -->
-  <section id="mycotoxins" class="news-section" aria-label="Mycotoxins articles">
-    <h2 class="news-section-title">Mycotoxins</h2>
-    <div class="news-grid">
 
     <article class="news-article-card" data-animate>
       <div class="news-card-image" role="img" aria-label="Mycotoxin risk in animal feed">
@@ -133,13 +107,6 @@
       </div>
     </article>
 
-    </div>
-  </section>
-
-  <!-- Section: Nutrition Strategies -->
-  <section id="nutrition-strategies" class="news-section" aria-label="Nutrition Strategies articles">
-    <h2 class="news-section-title">Nutrition Strategies</h2>
-    <div class="news-grid">
     </div>
   </section>
 
@@ -177,41 +144,6 @@ function closeMob(){document.getElementById('navLinks').classList.remove('open')
   });
 })();
 
-/* Smooth scroll for category navigation */
-(function(){
-  var nav=document.querySelector('.news-filter-nav');
-  if(!nav)return;
-  var btns=nav.querySelectorAll('.news-filter-btn');
-  function setActive(hash){
-    btns.forEach(function(b){
-      b.classList.toggle('active',b.getAttribute('href')===hash);
-    });
-  }
-  btns.forEach(function(btn){
-    btn.addEventListener('click',function(e){
-      e.preventDefault();
-      var href=this.getAttribute('href');
-      var target=document.querySelector(href);
-      if(target){
-        setActive(href);
-        var navHeight=document.querySelector('.nav')?document.querySelector('.nav').offsetHeight:0;
-        var top=target.getBoundingClientRect().top+window.pageYOffset-navHeight-20;
-        window.scrollTo({top:top,behavior:'smooth'});
-        history.replaceState(null,null,href);
-      }
-    });
-  });
-  /* Highlight active section on scroll */
-  var sections=document.querySelectorAll('.news-section');
-  var scrollObserver=new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        setActive('#'+entry.target.id);
-      }
-    });
-  },{threshold:0.2,rootMargin:'-80px 0px -60% 0px'});
-  sections.forEach(function(s){scrollObserver.observe(s)});
-})();
 </script>
 
 </body>
