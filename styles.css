@@ -825,16 +825,157 @@ color:var(--green);
 .ct-submit-btn{transition:none}
 }
 
-/* RESTRUCTURED PRODUCT PAGES */
-.product-hero{position:relative;width:100%;height:420px;overflow:hidden}
-.product-hero img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 0.8s ease}
-.product-hero:hover img{transform:scale(1.14)}
-.product-hero__title{position:absolute;bottom:2rem;left:2rem;color:white;font-family:'Cormorant Garamond',serif;font-size:2.5rem;text-shadow:0 2px 8px rgba(0,0,0,0.5)}
-.product-body{max-width:800px;margin:3rem auto;padding:0 2rem}
-.product-tagline{font-style:italic;color:var(--color-accent);font-size:1.2rem;margin-bottom:1.5rem}
-.product-description{font-family:'DM Sans',sans-serif;line-height:1.8}
-.product-cta{background:var(--color-navy);color:white;padding:3rem 2rem;text-align:center;margin-top:4rem}
-.product-cta h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom:1rem;color:white}
-.product-cta p{margin-bottom:1.5rem;opacity:0.85}
-.product-cta a.btn-primary{color:var(--color-accent);font-weight:600;font-size:1rem;text-decoration:none;border:1px solid var(--color-accent);padding:0.6rem 1.4rem}
-@media(max-width:768px){.product-hero{height:260px} .product-hero__title{font-size:1.6rem}}
+/* ═══ PRODUCT PAGES — REBUILT ═══ */
+
+/* HERO: full-width banner with cover image and dark gradient overlay */
+.product-hero{
+  position:relative;
+  width:100vw;
+  height:500px;
+  overflow:hidden;
+  display:block;
+  background:none;
+  padding:0;
+  border-radius:0;
+  border:none;
+  box-shadow:none;
+  margin:0;
+  margin-left:calc(-50vw + 50%);
+}
+.product-hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  padding:0;
+  transform:none;
+  transition:none;
+}
+.product-hero:hover img{transform:none}
+.product-hero::after{
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height:50%;
+  background:linear-gradient(to bottom,transparent,rgba(0,0,0,0.6));
+  pointer-events:none;
+  z-index:1;
+}
+.product-hero__title{
+  position:absolute;
+  bottom:2rem;
+  left:2rem;
+  z-index:2;
+  color:#fff;
+  font-family:'Cormorant Garamond',serif;
+  font-size:3rem;
+  font-weight:600;
+  text-shadow:none;
+  margin:0;
+  line-height:1.15;
+}
+
+/* CONTENT: centered column */
+.product-body{
+  max-width:760px;
+  margin:0 auto;
+  padding:2rem;
+}
+.product-tagline{
+  font-style:italic;
+  color:var(--green);
+  font-size:1.1rem;
+  margin-bottom:1.5rem;
+}
+.product-description{
+  font-family:'DM Sans',sans-serif;
+  line-height:1.9;
+  color:var(--text-primary);
+  font-size:1rem;
+}
+.product-description p{
+  line-height:1.9;
+  color:var(--text-primary);
+  font-size:1rem;
+}
+.product-description h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.6rem;
+  color:var(--navy);
+  margin-top:2.5rem;
+  margin-bottom:1rem;
+  font-weight:600;
+}
+.product-description ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.product-description li{
+  padding:0.4rem 0;
+  border-bottom:1px solid rgba(0,0,0,0.06);
+  color:var(--text-primary);
+  font-size:1rem;
+  line-height:1.9;
+  position:static;
+}
+.product-description li::before{
+  content:'✓';
+  color:var(--green);
+  font-weight:700;
+  margin-right:0.6rem;
+  position:static;
+  width:auto;
+  height:auto;
+  border-radius:0;
+  background:none;
+  transform:none;
+}
+
+/* CTA: full-width navy banner */
+.product-cta{
+  width:100%;
+  background:var(--navy);
+  padding:4rem 2rem;
+  text-align:center;
+  margin-top:0;
+  border-radius:0;
+}
+.product-cta h3{
+  color:#fff;
+  font-family:'Cormorant Garamond',serif;
+  font-size:2rem;
+  font-weight:600;
+  margin-bottom:1rem;
+}
+.product-cta p{
+  color:#fff;
+  opacity:0.8;
+  margin-bottom:2rem;
+  font-size:1rem;
+}
+.product-cta .btn-primary{
+  display:inline-block;
+  border:2px solid var(--green);
+  color:var(--green);
+  padding:0.8rem 2rem;
+  background:transparent;
+  font-weight:600;
+  font-size:1rem;
+  text-decoration:none;
+  transition:background 0.3s,color 0.3s;
+  border-radius:0;
+}
+.product-cta .btn-primary:hover{
+  background:var(--green);
+  color:#fff;
+}
+
+/* MOBILE: compact hero and content */
+@media(max-width:768px){
+  .product-hero{height:280px}
+  .product-body{padding:1rem}
+  .product-hero__title{font-size:1.8rem;left:1.5rem;bottom:1.5rem}
+}
