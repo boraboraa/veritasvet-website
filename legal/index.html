@@ -3,31 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ToxyFix — Feed Additive for Animal Nutrition | VeritasVet</title>
-<meta name="description" content="ToxyFix is a synergistic blend of binders featuring HSCAS minerals that effectively adsorb polar mycotoxins including Aflatoxin and Ochratoxin.">
-<link rel="canonical" href="https://veritasvet.com/products/toxifix/">
-<meta property="og:title" content="ToxyFix — Feed Additive for Animal Nutrition | VeritasVet">
-<meta property="og:description" content="ToxyFix is a synergistic blend of binders featuring HSCAS minerals that effectively adsorb polar mycotoxins including Aflatoxin and Ochratoxin.">
-<meta property="og:image" content="https://veritasvet.com/toxyfix.jpg">
-<meta property="og:url" content="https://veritasvet.com/products/toxifix/">
-<meta property="og:type" content="website">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "ToxyFix",
-  "description": "ToxyFix is a synergistic blend of specifically selected binders featuring mineral components known as HSCAS (Hydrated Sodium Calcium Aluminosilicate). These minerals effectively adsorb polar mycotoxins including Aflatoxin, Ochratoxin and Zearalenone. Registered by EFSA for the reduction of mycotoxin contamination in feed.",
-  "brand": {
-    "@type": "Brand",
-    "name": "VeritasVet"
-  },
-  "manufacturer": {
-    "@type": "Organization",
-    "name": "VeritasVet"
-  },
-  "url": "https://veritasvet.com/products/toxifix/"
-}
-</script>
+<title>Legal Notice | VeritasVet</title>
+<meta name="description" content="Legal notice and company information for Veritasvet SRL.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -66,30 +43,39 @@
 </div>
 </nav>
 
-<main class="product-detail-page">
-  <div class="product-detail">
-    <div class="product-detail__left">
-      <img class="product-image" src="/toxyfix.jpg" alt="ToxyFix — Synergistic Mineral Toxin Binder feed additive by VeritasVet" loading="lazy">
-    </div>
-    <div class="product-detail__right">
-      <h1>ToxyFix</h1>
-      <p class="product-tagline">Synergistic Mineral Toxin Binder — Your Ultimate Solution for Feed Safety</p>
-      <p>ToxyFix is a synergistic blend of specifically selected binders featuring mineral components known as HSCAS (Hydrated Sodium Calcium Aluminosilicate). These minerals effectively adsorb polar mycotoxins including Aflatoxin, Ochratoxin and Zearalenone. Registered by EFSA for the reduction of mycotoxin contamination in feed (category 1, functional group m, EU No. 1060/2013).</p>
-      <h2>Key Benefits</h2>
-      <ul class="product-benefits-list">
-        <li><strong>Aflatoxins B1 B2 G1 G2</strong> — 100% adsorption</li>
-        <li><strong>Ochratoxin OTA</strong> — 29% deactivation</li>
-        <li><strong>Zearalenone ZEN</strong> — 72% deactivation</li>
-      </ul>
-      <h2>How It Works</h2>
-      <p>HSCAS functions as a chemical sponge adsorbing mycotoxins in the gastrointestinal tract through its unique structure total negative ionic charge pore size and accessible surface area.</p>
-      <div class="product-cta-block">
-        <h3>Interested in ToxyFix?</h3>
-        <p>Request full technical documentation or schedule a meeting with our team.</p>
-        <a class="btn-primary" href="/contact/">Contact Our Team &rarr;</a>
-      </div>
-    </div>
-  </div>
+<main class="legal-page">
+<div class="legal-inner">
+<div class="legal-hero reveal">
+<h1>Legal Notice</h1>
+<p class="legal-updated">Last updated: February 2026</p>
+</div>
+
+<article class="legal-content reveal">
+<h2>Company Information</h2>
+<p><strong>Veritasvet SRL</strong><br>
+Avenue de Broqueville 136/1<br>
+1200 Woluwe-Saint-Lambert<br>
+Belgium</p>
+<p><strong>VAT Number:</strong> BE 0633.747.322</p>
+<p><strong>Email:</strong> <a href="mailto:sales@veritasvet.com">sales@veritasvet.com</a></p>
+<p><strong>Managing Director:</strong> Mehmet Dogrul</p>
+
+<h2>Website Hosting</h2>
+<p>This website is hosted by <strong>Vercel Inc.</strong></p>
+
+<h2>Purpose of the Website</h2>
+<p>This website is operated for informational and lead generation purposes only. No direct sales are conducted through this website.</p>
+
+<h2>Intellectual Property</h2>
+<p>All content on this website, including but not limited to text, images, graphics, logos, and design elements, is the property of Veritasvet SRL and is protected by applicable intellectual property laws. Reproduction, distribution, or use of any content without prior written consent is prohibited.</p>
+
+<h2>Disclaimer</h2>
+<p>While every effort is made to ensure the accuracy of the information provided on this website, Veritasvet SRL accepts no liability for errors, omissions, or inaccuracies in the content. The information is provided on an "as is" basis without warranties of any kind.</p>
+
+<h2>Governing Law</h2>
+<p>This legal notice and the use of this website are governed by Belgian law. Any disputes arising from or in connection with the use of this website shall be subject to the exclusive jurisdiction of the courts of Brussels, Belgium.</p>
+</article>
+</div>
 </main>
 
 <footer>
@@ -109,7 +95,13 @@
 </footer>
 
 <script>
+function initReveal(){
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.12,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>obs.observe(el));
+}
 function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
+function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+document.addEventListener('DOMContentLoaded',initReveal);
 </script>
 </body>
 </html>
