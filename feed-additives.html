@@ -44,17 +44,31 @@
 
 <!-- PRODUCTS LISTING -->
 <div id="productsListing">
-<div class="prod-hero"><div class="prod-hero-pat"></div>
+
+<!-- Hero Section -->
+<section class="pmx-hero">
+<img class="pmx-hero-img" src="/feed%20additives%20header.png" alt="Targeted Feed Additives hero banner">
+<div class="pmx-hero-overlay"></div>
+<div class="pmx-hero-content">
+<h1 class="pmx-hero-title">Targeted Feed Additives</h1>
+<p class="pmx-hero-sub">At VeritasVet, feed additives are not generic supplements &mdash; they are science-driven solutions selected for your species, your challenges, and your production goals.</p>
+</div>
+</section>
+
+<!-- Intro Section -->
+<section class="pmx-intro reveal">
 <div class="container">
-<div class="sec-center">
-<div class="sec-label" style="color:var(--green-light)"><span class="sec-label-line"></span> Feed Additives</div>
-<h2 class="sec-title" style="color:#fff" id="productsTitle">Feed Additives</h2>
-<p class="sec-desc" style="color:rgba(255,255,255,.55);margin:0 auto" id="productsDesc">Select a product category to view its dedicated portfolio.</p>
+<div class="pmx-intro-inner">
+<div class="pmx-intro-accent"></div>
+<p class="pmx-intro-line">Every farm faces different pressures &mdash; and so every formula must answer differently.</p>
+<p class="pmx-intro-line">Developed with precision. Validated by science. Delivered for performance.</p>
 </div>
 </div>
-</div>
+</section>
+
 <div class="section-pad" style="padding-top:2rem">
 <div class="container">
+<h2 class="sec-title" style="text-align:center;margin-bottom:2rem" id="productsTitle">Feed Additives</h2>
 <div class="filter-bar" id="filterBar">
 <button class="filter-btn active" data-category="all" onclick="filterProducts('all')">All</button>
 <button class="filter-btn" data-category="gut-health" onclick="filterProducts('gut-health')">Gut Health</button>
@@ -166,7 +180,12 @@ document.getElementById('productsListing').style.display='block';
 window.scrollTo({top:0,behavior:'instant'});
 }
 
-document.addEventListener('DOMContentLoaded',function(){renderP('all')});
+document.addEventListener('DOMContentLoaded',function(){
+renderP('all');
+// Scroll reveal
+var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.12,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
+});
 </script>
 </body>
 </html>
