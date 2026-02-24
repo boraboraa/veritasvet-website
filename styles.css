@@ -36,7 +36,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .nav-inner{max-width:1440px;height:100%;margin:0 auto;display:flex;justify-content:space-between;align-items:center;width:100%}
 .nav-logo{display:flex;align-items:center;height:100%;padding-left:.5rem;overflow:hidden;flex-shrink:0}
 .nav-logo img{max-height:100%;height:auto;width:auto;object-fit:contain;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;filter:contrast(1.05) saturate(1.05)}
-.nav-links{display:flex;gap:.35rem;align-items:center}
+.nav-links{display:flex;gap:.35rem;align-items:center;margin-right:auto;margin-left:2rem}
+.nav-social{display:flex;align-items:center;gap:.75rem;flex-shrink:0}
+.nav-social a{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:6px;transition:background .25s ease,transform .25s ease}
+.nav-social a:hover{background:var(--green-pale);transform:translateY(-1px)}
+.nav-social a svg{width:18px;height:18px;fill:var(--text-secondary);transition:fill .25s ease}
+.nav-social a:hover svg{fill:var(--green-dark)}
 .nav-link{font-size:14.5px;font-weight:500;letter-spacing:.02em;transition:color .3s ease;position:relative;padding:.5rem 1rem;border-radius:6px;color:var(--text-primary);background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none;text-shadow:none}
 .nav-link::after{content:'';position:absolute;bottom:6px;left:1rem;width:0;height:1.5px;background:var(--green-dark);transition:width .4s var(--ease-out-expo)}
 .nav-link-emphasis{background:transparent;box-shadow:none}
@@ -231,6 +236,11 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .ft-col h5{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;color:var(--green-light);margin-bottom:1.25rem}
 .ft-col a{display:block;color:rgba(255,255,255,.4);font-size:.9rem;margin-bottom:.5rem;transition:.3s}
 .ft-col a:hover{color:var(--green-light);padding-left:3px}
+.ft-social{display:flex;gap:.75rem;margin-top:1.25rem}
+.ft-social a{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:6px;border:1px solid rgba(255,255,255,.12);transition:background .25s ease,border-color .25s ease,transform .25s ease}
+.ft-social a:hover{background:rgba(140,191,46,.15);border-color:var(--green);transform:translateY(-1px)}
+.ft-social a svg{width:18px;height:18px;fill:rgba(255,255,255,.4);transition:fill .25s ease}
+.ft-social a:hover svg{fill:var(--green-light)}
 .ft-bottom{max-width:1440px;margin:0 auto;border-top:1px solid rgba(255,255,255,.06);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;color:rgba(255,255,255,.25);font-size:.85rem}
 
 /* PRODUCTS PAGE */
@@ -311,8 +321,9 @@ a.pc{text-decoration:none;color:inherit}
 }
 @media(max-width:768px){
 .hamburger{display:flex}
-.nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:#ffffff;flex-direction:column;justify-content:center;gap:2rem;opacity:0;pointer-events:none;transition:opacity .4s ease;z-index:10000}
+.nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:#ffffff;flex-direction:column;justify-content:center;gap:2rem;opacity:0;pointer-events:none;transition:opacity .4s ease;z-index:10000;margin-right:0;margin-left:0}
 .nav-links.open{opacity:1;pointer-events:all}
+.nav-social{display:none}
 .nav-links .nav-link{color:var(--text-primary)!important;font-size:1.25rem;background:transparent;box-shadow:none}
 .nav-dropdown-menu{position:static;transform:none;opacity:1;pointer-events:all;background:transparent;box-shadow:none;border:none;backdrop-filter:none;min-width:0;padding:0;margin:.5rem 0}
 .nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown.open .nav-dropdown-menu{transform:none}
