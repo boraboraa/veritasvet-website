@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Legal Notice | VeritasVet</title>
-<meta name="description" content="Legal notice and company information for Veritasvet SRL.">
+<title>Versamixx Dairy — Premix Solutions | VeritasVet</title>
+<meta name="description" content="Versamixx Dairy is a custom-formulated blend of vitamins, chelated minerals, and functional additives designed to support milk production, reproductive performance, and metabolic health in dairy cattle.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -43,39 +43,33 @@
 </div>
 </nav>
 
-<main class="legal-page">
-<div class="legal-inner">
-<div class="legal-hero reveal">
-<h1>Legal Notice</h1>
-<p class="legal-updated">Last updated: February 2026</p>
+<main>
+
+<!-- Hero Section -->
+<section class="pmx-hero">
+<div class="pmx-hero-placeholder"><span>Image coming soon</span></div>
+<div class="pmx-hero-overlay"></div>
+<div class="pmx-hero-content">
+<h1 class="pmx-hero-title">Versamixx Dairy</h1>
 </div>
+</section>
 
-<article class="legal-content reveal">
-<h2>Company Information</h2>
-<p><strong>Veritasvet SRL</strong><br>
-Avenue de Broqueville 136/1<br>
-1200 Woluwe-Saint-Lambert<br>
-Belgium</p>
-<p><strong>VAT Number:</strong> BE 0633.747.322</p>
-<p><strong>Email:</strong> <a href="mailto:sales@veritasvet.com">sales@veritasvet.com</a></p>
-<p><strong>Managing Director:</strong> Mehmet Dogrul</p>
-
-<h2>Website Hosting</h2>
-<p>This website is hosted by <strong>Vercel Inc.</strong></p>
-
-<h2>Purpose of the Website</h2>
-<p>This website is operated for informational and lead generation purposes only. No direct sales are conducted through this website.</p>
-
-<h2>Intellectual Property</h2>
-<p>All content on this website, including but not limited to text, images, graphics, logos, and design elements, is the property of Veritasvet SRL and is protected by applicable intellectual property laws. Reproduction, distribution, or use of any content without prior written consent is prohibited.</p>
-
-<h2>Disclaimer</h2>
-<p>While every effort is made to ensure the accuracy of the information provided on this website, Veritasvet SRL accepts no liability for errors, omissions, or inaccuracies in the content. The information is provided on an "as is" basis without warranties of any kind.</p>
-
-<h2>Governing Law</h2>
-<p>This legal notice and the use of this website are governed by Belgian law. Any disputes arising from or in connection with the use of this website shall be subject to the exclusive jurisdiction of the courts of Brussels, Belgium.</p>
-</article>
+<!-- Description Section -->
+<section class="pmx-detail-body">
+<div class="pmx-detail-inner reveal">
+<p class="pmx-detail-desc">Dairy nutrition demands precision at every stage &mdash; from dry period to peak lactation. Versamixx Dairy is a custom-formulated blend of vitamins, chelated minerals, and functional additives designed to support milk production, reproductive performance, and metabolic health in dairy cattle. We work closely with you and your nutritionist to develop a formula tailored to your herd goals, raw materials, and local conditions &mdash; incorporated directly into your feed ration at the right inclusion rate.</p>
 </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="pmx-cta">
+<div class="pmx-cta-inner reveal">
+<h2>Interested in this solution?</h2>
+<p>Our team is ready to develop a formula tailored to your operation.</p>
+<a class="btn-green" href="/contact/">Contact Our Team</a>
+</div>
+</section>
+
 </main>
 
 <footer>
@@ -98,12 +92,14 @@ Belgium</p>
 </footer>
 
 <script>
+function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
+function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+
+// Scroll reveal
 function initReveal(){
 const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.12,rootMargin:'0px 0px -50px 0px'});
 document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>obs.observe(el));
 }
-function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
-function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
 document.addEventListener('DOMContentLoaded',initReveal);
 </script>
 </body>
