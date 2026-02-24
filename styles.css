@@ -244,6 +244,8 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .prod-card-img{width:100%;aspect-ratio:16/10;background-size:cover;background-position:center;position:relative;overflow:hidden;transition:background-size .6s var(--ease-out-expo)}
 .prod-card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(22,45,80,.08) 100%);pointer-events:none}
 .prod-card:hover .prod-card-img{background-size:106%}
+.additives-image{background-image:url('/images/feed-additives-home.png')}
+.premix-image{background-image:url('/images/premix-home.png')}
 .prod-card-content{padding:2rem 2.25rem 2.5rem;display:flex;flex-direction:column;flex-grow:1}
 .prod-card-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.5vw,2rem);font-weight:700;color:var(--navy);line-height:1.15;margin-bottom:1rem}
 .prod-card-desc{font-size:.94rem;color:var(--text-secondary);line-height:1.75;margin-bottom:1.75rem;flex-grow:1}
