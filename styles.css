@@ -482,6 +482,17 @@ a.pc{text-decoration:none;color:inherit}
 .abt-cta-inner .abt-body{color:rgba(255,255,255,.65);margin:0 auto 2.5rem;max-width:600px}
 .abt-cta-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 
+/* CTA two-column split */
+.abt-cta-split{display:grid;grid-template-columns:1fr 1fr;min-height:500px}
+.abt-cta-split-text{background:var(--navy-deep);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;text-align:left;padding:5rem 4rem}
+.abt-cta-split-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.75rem,3.5vw,2.1rem);font-weight:600;line-height:1.15;color:#fff;margin-bottom:1rem}
+.abt-cta-split-text .abt-body{color:rgba(255,255,255,.65);margin-bottom:2.5rem;max-width:540px;font-size:1.05rem;line-height:1.7}
+.abt-cta-split-text .abt-body p{margin-bottom:1.1rem}
+.abt-cta-split-text .abt-body p:last-child{margin-bottom:0}
+.abt-cta-split-text .abt-cta-actions{justify-content:flex-start}
+.abt-cta-split-img{overflow:hidden}
+.abt-cta-split-img img{width:100%;height:100%;object-fit:cover;display:block}
+
 /* Fade-up animation for about sections */
 .abt-fade{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease-out-expo),transform .7s var(--ease-out-expo)}
 .abt-fade.visible{opacity:1;transform:translateY(0)}
@@ -577,6 +588,10 @@ a.pc{text-decoration:none;color:inherit}
 .abt-cta-layout .abt-cta-text{order:2}
 .abt-cta-layout .cta-visual{order:1}
 .abt-cta-actions{justify-content:center}
+.abt-cta-split{grid-template-columns:1fr}
+.abt-cta-split-text{text-align:center;align-items:center;padding:4rem 2rem}
+.abt-cta-split-text .abt-cta-actions{justify-content:center}
+.abt-cta-split-img{max-height:400px}
 .abt-hero-grid{grid-template-columns:1fr;gap:2rem;min-height:auto}
 .abt-hero-img{order:2}
 .abt-hero-content{order:1;max-width:100%}
@@ -591,6 +606,8 @@ a.pc{text-decoration:none;color:inherit}
 .abt-hero-actions{flex-direction:column;gap:.75rem}
 .abt-hero-actions .btn-green,.abt-hero-actions .btn-green-outline{width:100%;justify-content:center}
 .abt-cta-actions{flex-direction:column;align-items:center}
+.abt-cta-split-text{padding:3rem 1.5rem}
+.abt-cta-split-img{max-height:300px}
 .abt-cta-actions .btn-green,.abt-cta-actions .btn-green-outline{width:100%;max-width:320px;justify-content:center}
 .about-who{padding:50px 1.5rem}
 .abt-logistics-grid{grid-template-columns:1fr 1fr}
