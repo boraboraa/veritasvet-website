@@ -3,9 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="refresh" content="0;url=/feed-additives.html">
-<link rel="canonical" href="/feed-additives.html">
-<title>Products | VeritasVet</title>
+<title>Products — Feed Additives & Premixes for Animal Nutrition | VeritasVet</title>
+<meta name="description" content="Explore VeritasVet's product range: science-driven feed additives and tailored premix solutions for poultry, ruminant, and aquaculture production systems.">
+<meta name="keywords" content="feed additives, premixes, animal nutrition, poultry feed, ruminant feed, aquaculture feed, gut health, mycotoxin binder, feed quality, livestock nutrition">
+<link rel="canonical" href="/products/">
+<meta property="og:title" content="Products — Feed Additives & Premixes | VeritasVet">
+<meta property="og:description" content="Science-driven feed additives and tailored premix solutions engineered for modern animal production systems.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -44,39 +48,56 @@
 </div>
 </nav>
 
-<!-- PRODUCTS LISTING -->
-<div id="productsListing">
+<!-- HERO -->
 <div class="prod-hero"><div class="prod-hero-pat"></div>
 <div class="container">
 <div class="sec-center">
 <div class="sec-label" style="color:var(--green-light)"><span class="sec-label-line"></span> Product Portfolio</div>
-<h2 class="sec-title" style="color:#fff" id="productsTitle">Product Portfolio</h2>
-<p class="sec-desc" style="color:rgba(255,255,255,.55);margin:0 auto" id="productsDesc">Select a product category to view its dedicated portfolio.</p>
+<h1 class="sec-title" style="color:#fff">Our Product Range</h1>
+<p class="sec-desc" style="color:rgba(255,255,255,.55);margin:0 auto;max-width:620px">Integrated feeding solutions built for performance. Select the product category that matches your formulation strategy and production objectives.</p>
 </div>
 </div>
 </div>
-<div class="section-pad" style="padding-top:2rem">
+
+<!-- PRODUCT CATEGORIES -->
+<section class="section-pad solutions-section">
 <div class="container">
-<div class="filter-bar" id="filterBar">
-<button class="filter-btn active" data-category="all" onclick="filterProducts('all')">All</button>
-<button class="filter-btn" data-category="gut-health" onclick="filterProducts('gut-health')">Gut Health</button>
-<button class="filter-btn" data-category="feed-quality" onclick="filterProducts('feed-quality')">Feed Quality</button>
-<button class="filter-btn" data-category="mycotoxin-eliminator" onclick="filterProducts('mycotoxin-eliminator')">Mycotoxin Eliminator</button>
-<button class="filter-btn" data-category="nutrition" onclick="filterProducts('nutrition')">Nutrition</button>
+<div class="sec-center reveal">
+<div class="sec-label"><span class="sec-label-line"></span> Product Categories</div>
+<h2 class="sec-title">Select Your Approach</h2>
+<p class="sec-desc">Two complementary product lines engineered for modern feed operations.</p>
 </div>
-<div class="prods-grid" id="prodsGrid"></div>
+<div class="solutions-grid">
+<a href="/feed-additives.html" class="solution-card reveal delay-1">
+<div class="solution-image additives-image" role="img" aria-label="Feed additive products for gut health, feed quality, mycotoxin elimination, and nutrition"></div>
+<div class="solution-card-body">
+<h3 class="solution-card-title">Feed Additives</h3>
+<p class="solution-card-desc">A science-driven portfolio of functional feed additives covering gut health, feed quality, mycotoxin elimination, and nutritional support — engineered to enhance digestive resilience, feed efficiency, and production performance across poultry, ruminant, and aquaculture operations.</p>
+<span class="solution-card-cta">Explore Feed Additives &rarr;</span>
+</div>
+</a>
+<a href="/premixes.html" class="solution-card reveal delay-2">
+<div class="solution-image premix-image" role="img" aria-label="Tailored premix solutions for species-specific nutritional programs"></div>
+<div class="solution-card-body">
+<h3 class="solution-card-title">Premixes</h3>
+<p class="solution-card-desc">Tailored premix solutions adapted to species, formulation constraints, and production objectives. Our technical team designs precise nutritional programs matching your raw materials and performance targets — each premix is built for your specific production system.</p>
+<span class="solution-card-cta">Explore Premixes &rarr;</span>
+</div>
+</a>
 </div>
 </div>
-</div>
+</section>
 
-<!-- PRODUCT DETAIL (hidden by default) -->
-<div id="productDetail" style="display:none">
-<div class="det-page"><div class="container">
-<a href="#" class="det-back" onclick="hideDetail();return false">&#8592; Back to Products</a>
-<div class="det-grid" id="detContent"></div>
-</div></div>
+<!-- CTA -->
+<section class="cta-final reveal-scale">
+<div class="container">
+<h2 class="cta-final-title">Need Help Choosing the Right Solution?</h2>
+<p class="cta-final-sub">Whether you need a standalone feed additive or a fully tailored premix program, our technical team can guide you to the right approach for your production system.</p>
+<a class="btn-green" href="/contact/">Contact Our Team &rarr;</a>
 </div>
+</section>
 
+<!-- FOOTER -->
 <footer>
 <div class="ft-top">
 <div class="ft-brand"><img src="/image_logo_VERITASVET.png" alt="VeritasVet"><p>Science-driven feed additive solutions for modern animal production. Supporting animal health, performance, and sustainability worldwide.</p>
@@ -93,78 +114,15 @@
 </footer>
 
 <script>
-const P=[
-{id:'butycal-ccb94',n:'ButyCal CCB94',c:'gut-health',cn:'Gut Health',d:'Butyrate and calcium support designed for digestive resilience.',f:'A gut health additive supporting feed efficiency and digestive integrity in routine feeding programs.',b:['Supports gut integrity','Helps optimize feed conversion','Designed for stable daily use'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports resilient digestive performance'},
-{id:'versamos',n:'VersaMos',c:'gut-health',cn:'Gut Health',d:'MOS-based support for digestive balance and pathogen management.',f:'A science-based gut support option formulated to reinforce intestinal health and microbiome stability.',b:['MOS digestive support','Pathogen pressure management','Gut microbiota support'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports stable digestive health programs'},
-{id:'versacid-fl-plus',n:'VersAcid FL Plus',c:'gut-health',cn:'Gut Health',d:'Acidifier blend for pH and digestive optimization.',f:'A liquid acidifier solution used to support feed hygiene and gut environment consistency.',b:['pH support','Feed hygiene support','Digestive conditioning'],s:['Poultry','Ruminant'],inc:'As directed in product documentation',out:'Supports digestive and feed acidification goals'},
-{id:'versacid-liquid',n:'VersAcid Liquid',c:'gut-health',cn:'Gut Health',d:'Liquid acidifier for practical water and feed programs.',f:'Flexible acidification support intended for operational feed and drinking-water systems.',b:['Operational flexibility','Supports acidic gut environment','Compatible daily use'],s:['Poultry','Aquaculture'],inc:'As directed in product documentation',out:'Supports daily acidification performance'},
-{id:'toxifix',n:'ToxyFix',c:'mycotoxin-eliminator',cn:'Mycotoxin Eliminator',d:'Mycotoxin binder supporting contamination risk management.',f:'A targeted mycotoxin control option designed to bind and manage toxin exposure in feed.',b:['Mycotoxin binding','Risk mitigation support','Supports safer feed intake'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports mycotoxin management outcomes'},
-{id:'toxifix-plus',n:'ToxyFix Plus',c:'mycotoxin-eliminator',cn:'Mycotoxin Eliminator',d:'Enhanced mycotoxin eliminator for broad-spectrum feed challenges.',f:'Advanced toxin-binding technology built for demanding contamination conditions.',b:['Broad-spectrum support','Enhanced formula','Operational consistency'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports robust toxin control plans'},
-{id:'toxifix-perfect',n:'ToxyFix Perfect',c:'mycotoxin-eliminator',cn:'Mycotoxin Eliminator',d:'Comprehensive toxin eliminator for high-risk feed scenarios.',f:'Premium mycotoxin strategy with broad application for preventive and corrective feed programs.',b:['Comprehensive support','Premium binder platform','Ideal for high-risk periods'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports complete toxin elimination strategies'},
-{id:'verivit-hy-d3',n:'VeriVit HY D3',c:'nutrition',cn:'Nutrition',d:'Vitamin-focused additive supporting nutritional completeness.',f:'Nutrition category solution designed to strengthen feed micronutrient delivery and consistency.',b:['Vitamin support','Nutritional consistency','Supports performance programs'],s:['Poultry','Ruminant'],inc:'As directed in product documentation',out:'Supports nutrition-focused feed outcomes'},
-{id:'versapeg',n:'VersaPeg',c:'nutrition',cn:'Nutrition',d:'Nutritional formulation support for balanced performance.',f:'Specialized nutrition support ingredient used in additive and premix strategies.',b:['Balanced nutrition support','Program integration','Performance-oriented'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports optimized nutrition design'},
-{id:'guarbind',n:'GuarBind',c:'feed-quality',cn:'Feed Quality',d:'Feed binding solution for pellet and texture consistency.',f:'Feed quality solution supporting cohesive feed form and handling stability.',b:['Binding consistency','Improved handling','Supports feed uniformity'],s:['Poultry','Ruminant'],inc:'As directed in product documentation',out:'Supports stable feed quality metrics'},
-{id:'veroxid-b2a',n:'VerOxid B2A',c:'feed-quality',cn:'Feed Quality',d:'Antioxidant support for preserving feed freshness.',f:'Feed quality additive used to protect feed value against oxidative deterioration.',b:['Oxidation control','Preserves freshness','Improves shelf stability'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports prolonged feed quality retention'},
-{id:'veroxid-phenols',n:'VerOxid Phenols',c:'feed-quality',cn:'Feed Quality',d:'Phenolic antioxidant support for feed preservation programs.',f:'A quality-focused antioxidant component used to sustain feed integrity over time.',b:['Phenolic antioxidant support','Integrity preservation','Stable storage support'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports antioxidant-based feed protection'},
-{id:'versamold',n:'VersaMold',c:'feed-quality',cn:'Feed Quality',d:'Mold inhibitor for feed preservation and storage stability.',f:'A feed quality solution designed to control mold growth and maintain feed integrity during storage and handling.',b:['Mold growth inhibition','Storage stability support','Feed freshness preservation'],s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports mold-free feed storage programs'}
-];
-const bgMap={'mycotoxin-eliminator':'bg-m','feed-quality':'bg-f',nutrition:'bg-n','gut-health':'bg-g'};
-const imgMap={'butycal-ccb94':'/butycal_CCB94.jpg','versamos':'/versamos.jpg','versacid-fl-plus':'/veracid_fl_plus.jpg','versacid-liquid':'/veracid_liquid.jpg','toxifix':'/toxyfix.jpg','toxifix-plus':'/toxyfix_plus.jpg','toxifix-perfect':'/toxyfix_perfect.jpg','verivit-hy-d3':'/verivit_hy_d3.jpg','versapeg':'/versapeg.jpg','guarbind':'/guarbind.jpg','veroxid-b2a':'/veroxid_b2a.jpg','veroxid-phenols':'/veroxid_phenols.jpg','versamold':'/versamold.jpg'};
-
 function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
 function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
 
-function setActiveCategory(cat){
-document.querySelectorAll('#filterBar .filter-btn').forEach(btn=>{
-btn.classList.toggle('active',btn.dataset.category===cat);
-});
-const labels={'all':'All','gut-health':'Gut Health','feed-quality':'Feed Quality','mycotoxin-eliminator':'Mycotoxin Eliminator','nutrition':'Nutrition'};
-document.getElementById('productsTitle').textContent=cat==='all'?'Product Portfolio':labels[cat]+' Products';
+// Scroll reveal
+function initReveal(){
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.12,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>obs.observe(el));
 }
-
-function renderP(cat){
-const g=document.getElementById('prodsGrid');
-const list=cat==='all'?P:P.filter(p=>p.c===cat);
-g.innerHTML=list.map((p,i)=>
-'<a class="pc" href="/products/'+p.id+'/" style="animation:fadeUp .5s '+i*.06+'s both ease">'+
-'<div class="pc-vis product-card__media"><img class="product-card__img" src="'+(imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg')+'" alt="'+p.n+' — '+p.cn+' feed additive by VeritasVet" onerror="this.style.display=\'none\'"><span class="pc-cat">'+p.cn+'</span></div>'+
-'<div class="pc-body"><h4>'+p.n+'</h4><p>'+p.d+'</p>'+
-'<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span><strong>Inclusion:</strong> '+p.inc+'</span></div><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span>'+p.out+'</span></div></div>'+
-'<span class="btn-arrow" style="font-size:12px">View Details &#8594;</span></div>'+
-'</a>').join('');
-}
-
-function filterProducts(cat){
-renderP(cat);
-setActiveCategory(cat);
-}
-
-function showDet(id){
-const p=P.find(x=>x.id===id);if(!p)return;
-document.getElementById('detContent').innerHTML=
-'<div class="det-vis '+(bgMap[p.c]||'')+'"><img src="'+(imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg')+'" alt="'+p.n+' — '+p.cn+' product detail by VeritasVet" onerror="this.style.display=\'none\'"></div>'+
-'<div class="det-info"><h1>'+p.n+'</h1><span class="det-badge">'+p.cn+'</span>'+
-'<p class="det-desc">'+p.f+'</p>'+
-'<div class="sol-proofs" style="margin-bottom:2rem;padding:1.25rem;background:var(--green-mist);border-radius:12px"><div class="sol-proof" style="margin-bottom:.4rem"><span class="sol-proof-icon">&#9670;</span><span><strong>Typical inclusion rate:</strong> '+p.inc+'</span></div><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span><strong>Target outcomes:</strong> '+p.out+'</span></div></div>'+
-'<div class="det-benefits"><h3>Key Benefits</h3><ul>'+p.b.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>'+
-'<div class="det-sp-box"><h4>Target Species</h4><div class="det-tags">'+p.s.map(x=>'<span class="det-tag">'+x+'</span>').join('')+'</div></div>'+
-'<div class="det-actions">'+
-'<a class="btn-green" href="/contact/">&#128196; Request TDS</a>'+
-'<a class="btn-green-outline" href="/contact/">&#128176; Request Quote</a>'+
-'<a class="btn-green-outline" href="/contact/">&#9993;&#65039; Contact Us</a>'+
-'</div></div>';
-document.getElementById('productsListing').style.display='none';
-document.getElementById('productDetail').style.display='block';
-window.scrollTo({top:0,behavior:'instant'});
-}
-
-function hideDetail(){
-document.getElementById('productDetail').style.display='none';
-document.getElementById('productsListing').style.display='block';
-window.scrollTo({top:0,behavior:'instant'});
-}
-
-document.addEventListener('DOMContentLoaded',function(){renderP('all')});
+document.addEventListener('DOMContentLoaded',initReveal);
 </script>
 </body>
 </html>
