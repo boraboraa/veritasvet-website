@@ -838,3 +838,78 @@ color:var(--green);
 .product-cta p{margin-bottom:1.5rem;opacity:0.85}
 .product-cta a.btn-primary{color:var(--color-accent);font-weight:600;font-size:1rem;text-decoration:none;border:1px solid var(--color-accent);padding:0.6rem 1.4rem}
 @media(max-width:768px){.product-hero{height:260px} .product-hero__title{font-size:1.6rem}}
+
+/* ═══ PRODUCT DETAIL — TWO-COLUMN LAYOUT ═══ */
+:root{--color-navy:#162d50;--color-accent:#8cbf2e}
+
+@keyframes productImageReveal{
+from{transform:scale(1.06);opacity:0.85}
+to{transform:scale(1.0);opacity:1}
+}
+
+.product-detail{
+max-width:1100px;margin:0 auto;padding:4rem 2rem;
+display:flex;flex-direction:row;gap:3rem;align-items:flex-start
+}
+.product-detail__left{width:40%;flex-shrink:0}
+.product-detail__right{width:60%}
+
+.product-detail__left .product-image{
+width:100%;border-radius:8px;object-fit:cover;aspect-ratio:4/5;
+box-shadow:0 8px 32px rgba(0,0,0,0.12);
+animation:productImageReveal 0.8s ease forwards;
+display:block;height:auto;background:none;padding:0
+}
+
+.product-detail__right h1{
+font-family:'Cormorant Garamond',serif;font-size:2.6rem;
+color:var(--color-navy);margin-bottom:0.5rem;line-height:1.1;font-weight:600
+}
+.product-detail__right .product-tagline{
+font-style:italic;color:var(--color-accent);font-size:1.1rem;margin-bottom:1.5rem
+}
+.product-detail__right>p{
+font-family:'DM Sans',sans-serif;line-height:1.9;font-size:1rem;
+color:var(--text-secondary)
+}
+.product-detail__right h2{
+font-family:'Cormorant Garamond',serif;font-size:1.4rem;
+color:var(--color-navy);margin-top:2rem;margin-bottom:0.75rem;font-weight:600
+}
+.product-detail__right .product-benefits-list{
+list-style:none;padding:0;margin:0
+}
+.product-detail__right .product-benefits-list li{
+padding:0.4rem 0;border-bottom:1px solid rgba(0,0,0,0.06);
+font-family:'DM Sans',sans-serif;font-size:1rem;line-height:1.9;
+color:var(--text-secondary)
+}
+.product-detail__right .product-benefits-list li::before{
+content:'✓';color:var(--color-accent);margin-right:0.5rem;font-weight:700
+}
+
+.product-cta-block{
+background:var(--color-navy);padding:2rem;border-radius:8px;margin-top:2.5rem
+}
+.product-cta-block h3{
+font-family:'Cormorant Garamond',serif;font-size:1.6rem;
+color:#fff;margin-bottom:0.5rem;font-weight:600
+}
+.product-cta-block p{
+color:#fff;opacity:0.8;margin-bottom:1rem;font-size:1rem;line-height:1.6
+}
+.product-cta-block a.btn-primary{
+border:2px solid var(--color-accent);color:var(--color-accent);
+padding:0.7rem 1.8rem;background:transparent;font-weight:600;font-size:1rem;
+text-decoration:none;display:inline-block;border-radius:4px;transition:background 0.3s,color 0.3s
+}
+.product-cta-block a.btn-primary:hover{
+background:var(--color-accent);color:#fff
+}
+
+@media(max-width:768px){
+.product-detail{flex-direction:column}
+.product-detail__left{width:100%}
+.product-detail__right{width:100%}
+.product-detail__left .product-image{aspect-ratio:16/9}
+}
