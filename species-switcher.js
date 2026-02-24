@@ -41,6 +41,27 @@
     { key: 'nutrition',   label: 'Nutrition' }
   ];
 
+  var PREMIX_MAP = {
+    poultry: {
+      n: 'Versamixx Poultry',
+      img: '/Versamixx%20poultry.jpeg',
+      href: '/premixes/versamixx-poultry/',
+      d: 'Precision micronutrition designed for your production system \u2014 broilers, layers, or breeders. Formulated to optimize feed conversion, immune resilience, and growth performance based on your flock\u2019s specific needs.'
+    },
+    ruminant: {
+      n: 'Versamixx Dairy',
+      img: '/Versamixx%20Dairy%20.jpeg',
+      href: '/premixes/versamixx-dairy/',
+      d: 'A custom blend of vitamins, chelated minerals, and functional additives formulated to support milk production, reproductive performance, and metabolic health in dairy cattle.'
+    },
+    aquaculture: {
+      n: 'Versamixx Aqua',
+      img: '/versamixx%20aqua.jpeg',
+      href: '/premixes/versamixx-aqua/',
+      d: 'Custom-developed for your aquatic species \u2014 shrimp, tilapia, salmon, or seabass. Delivers a balanced profile of vitamins, chelated minerals, and functional additives to support growth, immunity, and feed efficiency.'
+    }
+  };
+
   /* ── Helpers ───────────────────────────────────────────────── */
 
   function catKey(raw) {
@@ -118,12 +139,22 @@
     /* ── Create premix panel ─────────────────────────────────── */
     var premix = document.createElement('section');
     premix.id = 'premix-panel';
-    premix.className = 'sp-premix-panel';
     premix.style.display = 'none';
+    var pmxData = PREMIX_MAP[species];
     premix.innerHTML =
-      '<h3 style="font-family:\'Cormorant Garamond\',serif;font-size:1.6rem;font-weight:600;color:var(--navy,#162d50);margin-bottom:1rem">Premix Solutions</h3>' +
-      '<p>Our premix programs are formulated specifically for ' + species + ' production, combining selected additives into ready-to-use blends tailored to your feed mill requirements and production objectives.</p>' +
-      '<a class="btn-arrow" href="/contact/">Contact Our Team &#8594;</a>';
+      '<div class="sp-products-list" style="padding:2rem 0">' +
+        '<a class="pc" href="' + pmxData.href + '">' +
+          '<div class="pc-vis">' +
+            '<img src="' + pmxData.img + '" alt="' + pmxData.n + '" onerror="this.style.display=\'none\'">' +
+            '<span class="pc-cat">Premix</span>' +
+          '</div>' +
+          '<div class="pc-body">' +
+            '<h4>' + pmxData.n + '</h4>' +
+            '<p>' + pmxData.d + '</p>' +
+            '<span class="btn-arrow">View Details &#8594;</span>' +
+          '</div>' +
+        '</a>' +
+      '</div>';
     categorySection.parentNode.insertBefore(premix, categorySection.nextSibling);
 
     /* ── DOM references ──────────────────────────────────────── */
