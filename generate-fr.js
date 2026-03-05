@@ -352,6 +352,65 @@ const translations = [
   // Species page common
   ['Feed Additives', 'Additifs Alimentaires'],
 
+  // Footer translations
+  ['Woluwe-Saint-Lambert, Belgium', 'Woluwe-Saint-Lambert, Belgique'],
+  ['aria-label="Email for newsletter"', 'aria-label="E-mail pour la newsletter"'],
+  ['Brussels, Belgium', 'Bruxelles, Belgique'],
+  ['Dubai, United Arab Emirates', 'Dubaï, Émirats Arabes Unis'],
+
+  // Country names
+  ['>Jordan</span>', '>Jordanie</span>'],
+  ['>Saudi Arabia</span>', '>Arabie Saoudite</span>'],
+  ['>UAE</span>', '>EAU</span>'],
+  ['>Egypt</span>', '>Égypte</span>'],
+  ['>Iraq</span>', '>Irak</span>'],
+  ['>Yemen</span>', '>Yémen</span>'],
+  ['>United Arab Emirates</span>', '>Émirats Arabes Unis</span>'],
+
+  // Alt texts
+  ['alt="Cattle and poultry on a professional livestock farm, representing VeritasVet science-based animal nutrition"', 'alt="Bétail et volaille dans un élevage professionnel, représentant la nutrition animale scientifique VeritasVet"'],
+  ['alt="VeritasVet — science-driven animal nutrition partner"', 'alt="VeritasVet — partenaire en nutrition animale scientifique"'],
+  ['alt="Dr. Mehmet Dogrul — VeritasVet Founder"', 'alt="Dr. Mehmet Dogrul — Fondateur de VeritasVet"'],
+  ['alt="International shipping container — VeritasVet global supply chain"', 'alt="Conteneur d\'expédition internationale — chaîne d\'approvisionnement mondiale VeritasVet"'],
+  ['alt="VeritasVet regional presence across the Middle East"', 'alt="Présence régionale de VeritasVet au Moyen-Orient"'],
+  ['alt="Laboratory validation of VeritasVet feed additive solutions"', 'alt="Validation en laboratoire des solutions d\'additifs alimentaires VeritasVet"'],
+  ['alt="Technical discussion with customer"', 'alt="Discussion technique avec un client"'],
+  ['alt="Gut health and animal performance in modern production systems"', 'alt="Santé intestinale et performance animale dans les systèmes de production modernes"'],
+  ['alt="High-quality animal feed pellets demonstrating durability and structural integrity"', 'alt="Granulés alimentaires pour animaux de haute qualité démontrant durabilité et intégrité structurelle"'],
+
+  // Contact page placeholders
+  ['placeholder="your.email@company.com"', 'placeholder="votre.email@entreprise.com"'],
+  ['placeholder="+1 (555) 000-0000"', 'placeholder="+32 (0)2 123 45 67"'],
+  ['placeholder="e.g. 3"', 'placeholder="ex. 3"'],
+  ['placeholder="e.g. 50,000 MT/year"', 'placeholder="ex. 50 000 t/an"'],
+  ['placeholder="e.g. 25"', 'placeholder="ex. 25"'],
+  ['placeholder="e.g. Western Europe"', 'placeholder="ex. Europe de l\'Ouest"'],
+  ['placeholder="e.g. Feed additives, premixes"', 'placeholder="ex. Additifs alimentaires, prémélanges"'],
+  ['placeholder="e.g. Poultry premixes"', 'placeholder="ex. Prémélanges volaille"'],
+  ['placeholder="e.g. 10,000 MT/year"', 'placeholder="ex. 10 000 t/an"'],
+  ['placeholder="e.g. Poultry, Aquaculture"', 'placeholder="ex. Volaille, Aquaculture"'],
+  ['placeholder="e.g. Poultry, Ruminants"', 'placeholder="ex. Volaille, Ruminants"'],
+  ['placeholder="e.g. 15"', 'placeholder="ex. 15"'],
+
+  // Products page
+  ['Our Nutritional Solutions', 'Nos Solutions Nutritionnelles'],
+  ['Precision-engineered feed additives and tailored premix programs', 'Des additifs alimentaires conçus avec précision et des programmes de prémélanges personnalisés'],
+  ['Need Help Choosing the Right Solution?', 'Besoin d\'Aide pour Choisir la Bonne Solution ?'],
+  ['Contact Our Team', 'Contacter Notre Équipe'],
+  ['>Explore <span>', '>Découvrir <span>'],
+
+  // Premixes page
+  ['Tailored Premix Solutions', 'Solutions de Prémélanges Personnalisées'],
+  ['premixes are not standard products', 'les prémélanges ne sont pas des produits standards'],
+  ['Every operation is unique', 'Chaque exploitation est unique'],
+  ['Discover More <span>', 'En Savoir Plus <span>'],
+
+  // Feed additives JS labels
+  ["'all':'All'", "'all':'Tous'"],
+  ["' Products'", "' Produits'"],
+  ['feed additive by VeritasVet', 'additif alimentaire par VeritasVet'],
+  ['product detail by VeritasVet', 'détail produit par VeritasVet'],
+
   // General terms used across pages
   ['Poultry', 'Volaille'],
   ['Ruminant', 'Ruminant'],

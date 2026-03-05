@@ -35,10 +35,10 @@
   };
 
   var CATEGORIES = [
-    { key: 'gut-health',  label: 'Gut Health' },
-    { key: 'mycotoxin',   label: 'Mycotoxin Eliminator' },
-    { key: 'feed-quality', label: 'Feed Quality' },
-    { key: 'nutrition',   label: 'Nutrition' }
+    { key: 'gut-health',  label: 'Gut Health', labelFr: 'Santé Intestinale' },
+    { key: 'mycotoxin',   label: 'Mycotoxin Eliminator', labelFr: 'Éliminateur de Mycotoxines' },
+    { key: 'feed-quality', label: 'Feed Quality', labelFr: 'Qualité de l\'Aliment' },
+    { key: 'nutrition',   label: 'Nutrition', labelFr: 'Nutrition' }
   ];
 
   var PREMIX_MAP = {
@@ -62,6 +62,41 @@
     }
   };
 
+  /* ── Language detection ────────────────────────────────────── */
+  var isFr = document.documentElement.lang === 'fr' || location.pathname.indexOf('/fr/') > -1;
+
+  /* ── French translations for dynamic strings ─────────────── */
+  var FR_PRODUCTS = {
+    'butycal-ccb94': {cn:'Santé Intestinale',d:'Support de butyrate et calcium conçu pour la résilience digestive.',inc:'Selon la documentation produit',out:'Soutient une performance digestive résiliente'},
+    'versamos': {cn:'Santé Intestinale',d:'Support à base de MOS pour l\'équilibre digestif et la gestion des pathogènes.',inc:'Selon la documentation produit',out:'Soutient des programmes de santé digestive stables'},
+    'versacid-fl-plus': {cn:'Santé Intestinale',d:'Mélange acidifiant pour l\'optimisation du pH et de la digestion.',inc:'Selon la documentation produit',out:'Soutient les objectifs d\'acidification digestive et alimentaire'},
+    'versacid-liquid': {cn:'Santé Intestinale',d:'Acidifiant liquide pour les programmes pratiques d\'eau et d\'alimentation.',inc:'Selon la documentation produit',out:'Soutient la performance d\'acidification quotidienne'},
+    'toxifix': {cn:'Éliminateur de Mycotoxines',d:'Liant de mycotoxines soutenant la gestion du risque de contamination.',inc:'Selon la documentation produit',out:'Soutient les résultats de gestion des mycotoxines'},
+    'toxifix-plus': {cn:'Éliminateur de Mycotoxines',d:'Éliminateur de mycotoxines amélioré pour les défis alimentaires à large spectre.',inc:'Selon la documentation produit',out:'Soutient des plans de contrôle robustes des toxines'},
+    'toxifix-perfect': {cn:'Éliminateur de Mycotoxines',d:'Éliminateur complet de toxines pour les scénarios alimentaires à haut risque.',inc:'Selon la documentation produit',out:'Soutient les stratégies complètes d\'élimination des toxines'},
+    'verivit-hy-d3': {cn:'Nutrition',d:'Additif axé sur les vitamines soutenant la complétude nutritionnelle.',inc:'Selon la documentation produit',out:'Soutient les résultats alimentaires axés sur la nutrition'},
+    'versapeg': {cn:'Nutrition',d:'Support de formulation nutritionnelle pour des performances équilibrées.',inc:'Selon la documentation produit',out:'Soutient la conception nutritionnelle optimisée'},
+    'guarbind': {cn:'Qualité de l\'Aliment',d:'Solution de liaison alimentaire pour la cohérence des granulés et de la texture.',inc:'Selon la documentation produit',out:'Soutient des métriques de qualité alimentaire stables'},
+    'veroxid-b2a': {cn:'Qualité de l\'Aliment',d:'Support antioxydant pour préserver la fraîcheur de l\'aliment.',inc:'Selon la documentation produit',out:'Soutient la rétention prolongée de la qualité alimentaire'},
+    'veroxid-phenols': {cn:'Qualité de l\'Aliment',d:'Support antioxydant phénolique pour les programmes de préservation des aliments.',inc:'Selon la documentation produit',out:'Soutient la protection alimentaire à base d\'antioxydants'},
+    'versamold': {cn:'Qualité de l\'Aliment',d:'Inhibiteur de moisissures pour la préservation des aliments et la stabilité de stockage.',inc:'Selon la documentation produit',out:'Soutient les programmes de stockage d\'aliments sans moisissure'}
+  };
+
+  var FR_PREMIX_MAP = {
+    poultry: {
+      n: 'Versamixx Volaille',
+      d: 'Micronutrition de précision conçue pour votre système de production \u2014 poulets de chair, pondeuses ou reproducteurs. Formulée pour optimiser la conversion alimentaire, la résilience immunitaire et les performances de croissance selon les besoins spécifiques de votre élevage.'
+    },
+    ruminant: {
+      n: 'Versamixx Dairy',
+      d: 'Un mélange personnalisé de vitamines, minéraux chélatés et additifs fonctionnels formulé pour soutenir la production laitière, les performances reproductives et la santé métabolique des bovins laitiers.'
+    },
+    aquaculture: {
+      n: 'Versamixx Aqua',
+      d: 'Développé sur mesure pour vos espèces aquatiques \u2014 crevettes, tilapia, saumon ou bar. Offre un profil équilibré de vitamines, minéraux chélatés et additifs fonctionnels pour soutenir la croissance, l\'immunité et l\'efficacité alimentaire.'
+    }
+  };
+
   /* ── Helpers ───────────────────────────────────────────────── */
 
   function catKey(raw) {
@@ -80,19 +115,27 @@
 
   function cardHTML(p) {
     var img = IMG_MAP[p.id] || '';
-    return '<a class="pc" href="/products/' + p.id + '/" data-category="' + catKey(p.c) + '">' +
+    var fr = isFr && FR_PRODUCTS[p.id];
+    var cn = fr ? fr.cn : p.cn;
+    var desc = fr ? fr.d : p.d;
+    var inc = fr ? fr.inc : p.inc;
+    var out = fr ? fr.out : p.out;
+    var prefix = isFr ? '/fr' : '';
+    var inclLabel = isFr ? 'Incorporation :' : 'Inclusion:';
+    var viewLabel = isFr ? 'Voir les Détails' : 'View Details';
+    return '<a class="pc" href="' + prefix + '/products/' + p.id + '/" data-category="' + catKey(p.c) + '">' +
       '<div class="pc-vis">' +
         '<img src="' + img + '" alt="' + p.n + '" onerror="this.style.display=\'none\'">' +
-        '<span class="pc-cat">' + p.cn + '</span>' +
+        '<span class="pc-cat">' + cn + '</span>' +
       '</div>' +
       '<div class="pc-body">' +
         '<h4>' + p.n + '</h4>' +
-        '<p>' + p.d + '</p>' +
+        '<p>' + desc + '</p>' +
         '<div class="sol-proofs">' +
-          '<div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span><strong>Inclusion:</strong> ' + p.inc + '</span></div>' +
-          '<div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span>' + p.out + '</span></div>' +
+          '<div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span><strong>' + inclLabel + '</strong> ' + inc + '</span></div>' +
+          '<div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span>' + out + '</span></div>' +
         '</div>' +
-        '<span class="btn-arrow">View Details &#8594;</span>' +
+        '<span class="btn-arrow">' + viewLabel + ' &#8594;</span>' +
       '</div>' +
     '</a>';
   }
@@ -123,7 +166,8 @@
     /* ── Render category grid ────────────────────────────────── */
     var html = '<div class="sp-cat-grid" id="category-grid">';
     CATEGORIES.forEach(function (c) {
-      html += '<button type="button" class="sp-cat-card" data-category="' + c.key + '">' + c.label + '</button>';
+      var lbl = isFr ? c.labelFr : c.label;
+      html += '<button type="button" class="sp-cat-card" data-category="' + c.key + '">' + lbl + '</button>';
     });
     html += '</div>';
 
@@ -141,17 +185,23 @@
     premix.id = 'premix-panel';
     premix.style.display = 'none';
     var pmxData = PREMIX_MAP[species];
+    var frPmx = isFr && FR_PREMIX_MAP[species];
+    var pmxName = frPmx ? frPmx.n : pmxData.n;
+    var pmxDesc = frPmx ? frPmx.d : pmxData.d;
+    var pmxHref = isFr ? '/fr' + pmxData.href : pmxData.href;
+    var pmxCatLabel = isFr ? 'Prémélange' : 'Premix';
+    var pmxViewLabel = isFr ? 'Voir les Détails' : 'View Details';
     premix.innerHTML =
       '<div class="sp-products-list" style="padding:2rem 0">' +
-        '<a class="pc" href="' + pmxData.href + '">' +
+        '<a class="pc" href="' + pmxHref + '">' +
           '<div class="pc-vis">' +
-            '<img src="' + pmxData.img + '" alt="' + pmxData.n + '" onerror="this.style.display=\'none\'">' +
-            '<span class="pc-cat">Premix</span>' +
+            '<img src="' + pmxData.img + '" alt="' + pmxName + '" onerror="this.style.display=\'none\'">' +
+            '<span class="pc-cat">' + pmxCatLabel + '</span>' +
           '</div>' +
           '<div class="pc-body">' +
-            '<h4>' + pmxData.n + '</h4>' +
-            '<p>' + pmxData.d + '</p>' +
-            '<span class="btn-arrow">View Details &#8594;</span>' +
+            '<h4>' + pmxName + '</h4>' +
+            '<p>' + pmxDesc + '</p>' +
+            '<span class="btn-arrow">' + pmxViewLabel + ' &#8594;</span>' +
           '</div>' +
         '</a>' +
       '</div>';
@@ -174,7 +224,8 @@
         tab.setAttribute('aria-pressed', 'true');
 
         /* Toggle panels */
-        var isAdditives = tab.textContent.trim() === 'Feed Additives';
+        var tabText = tab.textContent.trim();
+        var isAdditives = tabText === 'Feed Additives' || tabText === 'Additifs Alimentaires';
         categorySection.style.display = isAdditives ? '' : 'none';
         premix.style.display = isAdditives ? 'none' : '';
       });
