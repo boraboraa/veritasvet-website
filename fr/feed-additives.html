@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Additifs Alimentaires | VeritasVet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="alternate" hreflang="en" href="https://www.veritasvet.com/feed-additives.html">
+<link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/feed-additives.html">
+<link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/feed-additives.html">
+
+<style>
+.lang-switch{display:flex;align-items:center;gap:4px;margin-left:12px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500}
+.lang-btn{color:var(--text-secondary,#6b7280);text-decoration:none;padding:2px 6px;border-radius:4px;transition:color .2s,background .2s}
+.lang-btn:hover{color:var(--navy,#1a2332)}
+.lang-btn.lang-active{color:var(--navy,#1a2332);font-weight:700;background:rgba(26,35,50,.06)}
+.lang-sep{color:var(--text-secondary,#6b7280);font-weight:300}
+@media(max-width:900px){.lang-switch{margin:12px 0 0;justify-content:center}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="mainNav">
+<div class="nav-inner">
+<a href="/fr/" class="nav-logo"><img src="/image_logo_VERITASVET.png" alt="VeritasVet"></a>
+<div class="nav-links" id="navLinks">
+<a class="nav-link" href="/fr/about/">Entreprise</a>
+<div class="nav-dropdown" id="speciesDropdown" onclick="this.classList.toggle('open')">
+<span class="nav-link">Espèces <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<div class="nav-dropdown-menu">
+<a href="/fr/species/poultry/">Volaille</a>
+<a href="/fr/species/ruminant/">Ruminants</a>
+<a href="/fr/species/aquaculture/">Aquaculture</a>
+</div>
+</div>
+<div class="nav-dropdown" onclick="this.classList.toggle('open')">
+<span class="nav-link">Produits <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<div class="nav-dropdown-menu">
+<a href="/fr/feed-additives.html">Additifs Alimentaires</a>
+<a href="/fr/premixes/">Prémélanges</a>
+</div>
+</div>
+<a class="nav-link" href="/fr/news/">Actualités</a>
+<a class="nav-link" href="/fr/contact/">Contact</a>
+</div>
+<div class="nav-social">
+<a href="https://www.linkedin.com/company/veritasvet-srl/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+<a href="https://www.facebook.com/veritasvet.srl" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+</div>
+<div class="lang-switch"><a href="/feed-additives.html" class="lang-btn">EN</a><span class="lang-sep">|</span><a href="/fr/feed-additives.html" class="lang-btn lang-active">FR</a></div>
+<div class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
+</div>
+</nav>
+
+<!-- PRODUCTS LISTING -->
+<div id="productsListing">
+
+<!-- Hero Section -->
+<section class="pmx-hero">
+<img class="pmx-hero-img" src="/feed%20additives%20header.png" alt="Additifs Alimentaires Ciblés hero banner">
+<div class="pmx-hero-overlay"></div>
+<div class="pmx-hero-content">
+<h1 class="pmx-hero-title">Additifs Alimentaires Ciblés</h1>
+<p class="pmx-hero-sub">Chez VeritasVet, les additifs alimentaires ne sont pas des suppléments génériques &mdash; ce sont des solutions scientifiques sélectionnées pour votre espèce, vos défis et vos objectifs de production.</p>
+</div>
+</section>
+
+<!-- Intro Section -->
+<section class="pmx-intro reveal">
+<div class="container">
+<div class="pmx-intro-inner">
+<div class="pmx-intro-accent"></div>
+<p class="pmx-intro-line">Chaque exploitation fait face à des pressions différentes &mdash; et chaque formule doit répondre différemment.</p>
+<p class="pmx-intro-line">Développé avec précision. Validé par la science. Livré pour la performance.</p>
+</div>
+</div>
+</section>
+
+<div class="section-pad" style="padding-top:2rem">
+<div class="container">
+<h2 class="sec-title" style="text-align:center;margin-bottom:2rem" id="productsTitle">Additifs Alimentaires</h2>
+<div class="filter-bar" id="filterBar">
+<button class="filter-btn active" data-category="all" onclick="filterProducts('all')">Tous</button>
+<button class="filter-btn" data-category="gut-health" onclick="filterProducts('gut-health')">Santé Intestinale</button>
+<button class="filter-btn" data-category="feed-quality" onclick="filterProducts('feed-quality')">Qualité de l'Aliment</button>
+<button class="filter-btn" data-category="mycotoxin-eliminator" onclick="filterProducts('mycotoxin-eliminator')">Éliminateur de Mycotoxines</button>
+<button class="filter-btn" data-category="nutrition" onclick="filterProducts('nutrition')">Nutrition</button>
+</div>
+<div class="prods-grid" id="prodsGrid"></div>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT DETAIL (hidden by default) -->
+<div id="productDetail" style="display:none">
+<div class="det-page"><div class="container">
+<a href="#" class="det-back" onclick="hideDetail();return false">&#8592; Retour aux Additifs Alimentaires</a>
+<div class="det-grid" id="detContent"></div>
+</div></div>
+</div>
+
+<footer>
+<div class="ft-top">
+<div class="ft-brand"><img src="/image_logo_VERITASVET.png" alt="VeritasVet"><p>Solutions d'additifs alimentaires scientifiques pour la production animale moderne. Soutenir la santé, les performances et la durabilité animales dans le monde entier.</p>
+<a class="ft-email" href="mailto:sales@veritasvet.com">sales@veritasvet.com</a>
+<div class="ft-social">
+<a href="https://www.linkedin.com/company/veritasvet-srl/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+<a href="https://www.facebook.com/veritasvet.srl" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+</div>
+</div>
+<div class="ft-col"><h5>Entreprise</h5><a href="/fr/about/">À Propos</a><a href="/fr/feed-additives.html">Nos Solutions</a><a href="/fr/news/">Recherche</a><a href="/fr/contact/">Contact</a></div>
+<div class="ft-col"><h5>Produits</h5><a href="/fr/feed-additives.html">Additifs Alimentaires</a><a href="/fr/premixes/">Prémélanges</a></div>
+<div class="ft-col"><h5>Espèces</h5><a href="/fr/species/poultry/">Volaille</a><a href="/fr/species/ruminant/">Ruminants</a><a href="/fr/species/aquaculture/">Aquaculture</a></div>
+<div class="ft-col"><h5>Juridique</h5><a href="/fr/legal">Mentions Légales</a><a href="/fr/privacy">Politique de Confidentialité</a><a href="/fr/cookies">Politique des Cookies</a><a href="/fr/terms">Conditions Générales</a></div>
+</div>
+<div class="ft-newsletter"><p>Recevez nos dernières mises à jour de recherche</p><form onsubmit="return false"><input type="email" placeholder="Votre adresse e-mail" aria-label="Email for newsletter"><button type="submit">S'abonner</button></form></div>
+<div class="ft-bottom"><p>&copy; 2026 VeritasVet. Tous droits réservés.</p><p>Partenaire de Confiance en Nutrition Animale</p></div>
+<div class="ft-legal"><p>Veritasvet SRL | Avenue de Broqueville 136/1, 1200 Woluwe-Saint-Lambert, Belgium | VAT: BE 0633.747.322 | <a href="mailto:sales@veritasvet.com">sales@veritasvet.com</a></p><p><a href="/fr/legal">Mentions Légales</a> &middot; <a href="/fr/privacy">Politique de Confidentialité</a> &middot; <a href="/fr/cookies">Politique des Cookies</a> &middot; <a href="/fr/terms">Conditions Générales</a></p></div>
+</footer>
+
+<script>
+const P=[
+{id:'butycal-ccb94',n:'ButyCal CCB94',c:'gut-health',cn:'Santé Intestinale',d:'Support de butyrate et calcium conçu pour la résilience digestive.',f:'Un additif de santé intestinale soutenant l'efficacité alimentaire et l'intégrité digestive dans les programmes alimentaires courants.',b:['Soutient l'intégrité intestinale','Aide à optimiser la conversion alimentaire','Conçu pour un usage quotidien stable'],s:['Volaille','Ruminant','Aquaculture'],inc:'Selon la documentation produit',out:'Soutient une performance digestive résiliente'},
+{id:'versamos',n:'VersaMos',c:'gut-health',cn:'Santé Intestinale',d:'Support à base de MOS pour l'équilibre digestif et la gestion des pathogènes.',f:'Une option de soutien intestinal basée sur la science formulée pour renforcer la santé intestinale et la stabilité du microbiome.',b:['Support digestif MOS','Gestion de la pression pathogène','Support du microbiote intestinal'],s:['Volaille','Ruminant','Aquaculture'],inc:'Selon la documentation produit',out:'Soutient des programmes de santé digestive stables'},
+{id:'versacid-fl-plus',n:'VersAcid FL Plus',c:'gut-health',cn:'Santé Intestinale',d:'Mélange acidifiant pour l'optimisation du pH et de la digestion.',f:'Une solution d'acidifiant liquide utilisée pour soutenir l'hygiène des aliments et la cohérence de l'environnement intestinal.',b:['Support du pH','Support de l'hygiène alimentaire','Conditionnement digestif'],s:['Volaille','Ruminant'],inc:'Selon la documentation produit',out:'Soutient les objectifs d'acidification digestive et alimentaire'},
+{id:'versacid-liquid',n:'VersAcid Liquid',c:'gut-health',cn:'Santé Intestinale',d:'Acidifiant liquide pour les programmes pratiques d'eau et d'alimentation.',f:'Support d'acidification flexible destiné aux systèmes opérationnels d'alimentation et d'eau potable.',b:['Flexibilité opérationnelle','Soutient un environnement intestinal acide','Usage quotidien compatible'],s:['Volaille','Aquaculture'],inc:'Selon la documentation produit',out:'Soutient la performance d'acidification quotidienne'},
+{id:'toxifix',n:'ToxyFix',c:'mycotoxin-eliminator',cn:'Éliminateur de Mycotoxines',d:'Liant de mycotoxines soutenant la gestion du risque de contamination.',f:'Une option de contrôle ciblé des mycotoxines conçue pour lier et gérer l'exposition aux toxines dans l'aliment.',b:['Liaison des mycotoxines','Support d'atténuation des risques','Soutient une consommation alimentaire plus sûre'],s:['Volaille','Ruminant','Aquaculture'],inc:'Selon la documentation produit',out:'Soutient les résultats de gestion des mycotoxines'},
+{id:'toxifix-plus',n:'ToxyFix Plus',c:'mycotoxin-eliminator',cn:'Éliminateur de Mycotoxines',d:'Éliminateur de mycotoxines amélioré pour les défis alimentaires à large spectre.',f:'Technologie avancée de liaison des toxines conçue pour des conditions de contamination exigeantes.',b:['Support à large spectre','Formule améliorée','Cohérence opérationnelle'],s:['Volaille','Ruminant','Aquaculture'],inc:'Selon la documentation produit',out:'Soutient des plans de contrôle robustes des toxines'},
+{id:'toxifix-perfect',n:'ToxyFix Perfect',c:'mycotoxin-eliminator',cn:'Éliminateur de Mycotoxines',d:'Éliminateur complet de toxines pour les scénarios alimentaires à haut risque.',f:'Stratégie premium de mycotoxines avec une large application pour les programmes alimentaires préventifs et correctifs.',b:['Support complet','Plateforme de liant premium','Idéal pour les périodes à haut risque'],s:['Volaille','Ruminant','Aquaculture'],inc:'Selon la documentation produit',out:'Soutient les stratégies complètes d'élimination des toxines'},
+{id:'verivit-hy-d3',n:'VeriVit HY D3',c:'nutrition',cn:'Nutrition',d:'Additif axé sur les vitamines soutenant la complétude nutritionnelle.',f:'Solution de catégorie nutrition conçue pour renforcer la livraison et la cohérence des micronutriments dans l'alimentation.',b:['Support vitaminique','Cohérence nutritionnelle','Soutient les programmes de performance'],s:['Volaille','Ruminant'],inc:'Selon la documentation produit',out:'Soutient les résultats alimentaires axés sur la nutrition'},
+{id:'versapeg',n:'VersaPeg',c:'nutrition',cn:'Nutrition',d:'Support de formulation nutritionnelle pour des performances équilibrées.',f:'Ingrédient de soutien nutritionnel spécialisé utilisé dans les stratégies d'additifs et de prémélanges.',b:['Support nutritionnel équilibré','Intégration de programme','Orienté performance'],s:['Volaille','Ruminant','Aquaculture'],inc:'Selon la documentation produit',out:'Soutient la conception nutritionnelle optimisée'},
+{id:'guarbind',n:'GuarBind',c:'feed-quality',cn:'Qualité de l'Aliment',d:'Solution de liaison alimentaire pour la cohérence des granulés et de la texture.',f:'Solution de qualité alimentaire soutenant la forme cohésive de l'aliment et la stabilité de manipulation.',b:['Cohérence de liaison','Manipulation améliorée','Soutient l'uniformité de l'aliment'],s:['Volaille','Ruminant'],inc:'Selon la documentation produit',out:'Soutient des métriques de qualité alimentaire stables'},
+{id:'veroxid-b2a',n:'VerOxid B2A',c:'feed-quality',cn:'Qualité de l'Aliment',d:'Support antioxydant pour préserver la fraîcheur de l'aliment.',f:'Additif de qualité alimentaire utilisé pour protéger la valeur de l'aliment contre la détérioration oxydative.',b:['Contrôle de l'oxydation','Préserve la fraîcheur','Améliore la stabilité de conservation'],s:['Volaille','Ruminant','Aquaculture'],inc:'Selon la documentation produit',out:'Soutient la rétention prolongée de la qualité alimentaire'},
+{id:'veroxid-phenols',n:'VerOxid Phenols',c:'feed-quality',cn:'Qualité de l'Aliment',d:'Support antioxydant phénolique pour les programmes de préservation des aliments.',f:'Un composant antioxydant axé sur la qualité utilisé pour maintenir l'intégrité de l'aliment dans le temps.',b:['Support antioxydant phénolique','Préservation de l'intégrité','Support de stockage stable'],s:['Volaille','Ruminant','Aquaculture'],inc:'Selon la documentation produit',out:'Soutient la protection alimentaire à base d'antioxydants'},
+{id:'versamold',n:'VersaMold',c:'feed-quality',cn:'Qualité de l'Aliment',d:'Inhibiteur de moisissures pour la préservation des aliments et la stabilité de stockage.',f:'Une solution de qualité alimentaire conçue pour contrôler la croissance des moisissures et maintenir l'intégrité de l'aliment pendant le stockage et la manipulation.',b:['Inhibition de la croissance des moisissures','Support de stabilité de stockage','Préservation de la fraîcheur alimentaire'],s:['Volaille','Ruminant','Aquaculture'],inc:'Selon la documentation produit',out:'Soutient les programmes de stockage d'aliments sans moisissure'}
+];
+const bgMap={'mycotoxin-eliminator':'bg-m','feed-quality':'bg-f',nutrition:'bg-n','gut-health':'bg-g'};
+const imgMap={'butycal-ccb94':'/butycal_CCB94.jpg','versamos':'/versamos.jpg','versacid-fl-plus':'/veracid_fl_plus.jpg','versacid-liquid':'/veracid_liquid.jpg','toxifix':'/toxyfix.jpg','toxifix-plus':'/toxyfix_plus.jpg','toxifix-perfect':'/toxyfix_perfect.jpg','verivit-hy-d3':'/verivit_hy_d3.jpg','versapeg':'/versapeg.jpg','guarbind':'/guarbind.jpg','veroxid-b2a':'/veroxid_b2a.jpg','veroxid-phenols':'/veroxid_phenols.jpg','versamold':'/versamold.jpg'};
+
+function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
+function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+
+function setActiveCategory(cat){
+document.querySelectorAll('#filterBar .filter-btn').forEach(btn=>{
+btn.classList.toggle('active',btn.dataset.category===cat);
+});
+const labels={'all':'All','gut-health':'Santé Intestinale','feed-quality':'Qualité de l'Aliment','mycotoxin-eliminator':'Éliminateur de Mycotoxines','nutrition':'Nutrition'};
+document.getElementById('productsTitle').textContent=cat==='all'?'Additifs Alimentaires':labels[cat]+' Products';
+}
+
+function renderP(cat){
+const g=document.getElementById('prodsGrid');
+const list=cat==='all'?P:P.filter(p=>p.c===cat);
+g.innerHTML=list.map((p,i)=>
+'<a class="pc" href="/fr/products/'+p.id+'/" style="animation:fadeUp .5s '+i*.06+'s both ease">'+
+'<div class="pc-vis product-card__media"><img class="product-card__img" src="'+(imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg')+'" alt="'+p.n+' — '+p.cn+' feed additive by VeritasVet" onerror="this.style.display=\'none\'"><span class="pc-cat">'+p.cn+'</span></div>'+
+'<div class="pc-body"><h4>'+p.n+'</h4><p>'+p.d+'</p>'+
+'<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span><strong>Incorporation :</strong> '+p.inc+'</span></div><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span>'+p.out+'</span></div></div>'+
+'<span class="btn-arrow" style="font-size:12px">Voir les Détails &#8594;</span></div>'+
+'</a>').join('');
+}
+
+function filterProducts(cat){
+renderP(cat);
+setActiveCategory(cat);
+}
+
+function showDet(id){
+const p=P.find(x=>x.id===id);if(!p)return;
+document.getElementById('detContent').innerHTML=
+'<div class="det-vis '+(bgMap[p.c]||'')+'"><img src="'+(imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg')+'" alt="'+p.n+' — '+p.cn+' product detail by VeritasVet" onerror="this.style.display=\'none\'"></div>'+
+'<div class="det-info"><h1>'+p.n+'</h1><span class="det-badge">'+p.cn+'</span>'+
+'<p class="det-desc">'+p.f+'</p>'+
+'<div class="sol-proofs" style="margin-bottom:2rem;padding:1.25rem;background:var(--green-mist);border-radius:12px"><div class="sol-proof" style="margin-bottom:.4rem"><span class="sol-proof-icon">&#9670;</span><span><strong>Taux d'incorporation typique :</strong> '+p.inc+'</span></div><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span><strong>Résultats visés :</strong> '+p.out+'</span></div></div>'+
+'<div class="det-benefits"><h3>Avantages Clés</h3><ul>'+p.b.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>'+
+'<div class="det-sp-box"><h4>Espèces Cibles</h4><div class="det-tags">'+p.s.map(x=>'<span class="det-tag">'+x+'</span>').join('')+'</div></div>'+
+'<div class="det-actions">'+
+'<a class="btn-green" href="/fr/contact/">&#128196; Demander la FT</a>'+
+'<a class="btn-green-outline" href="/fr/contact/">&#128176; Demander un Devis</a>'+
+'<a class="btn-green-outline" href="/fr/contact/">&#9993;&#65039; Nous Contacter</a>'+
+'</div></div>';
+document.getElementById('productsListing').style.display='none';
+document.getElementById('productDetail').style.display='block';
+window.scrollTo({top:0,behavior:'instant'});
+}
+
+function hideDetail(){
+document.getElementById('productDetail').style.display='none';
+document.getElementById('productsListing').style.display='block';
+window.scrollTo({top:0,behavior:'instant'});
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+renderP('all');
+// Scroll reveal
+var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.12,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
+});
+</script>
+</body>
+</html>

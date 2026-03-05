@@ -25,6 +25,10 @@
         {
           "key": "Expires",
           "value": "0"
+        },
+        {
+          "key": "Content-Language",
+          "value": "en"
         }
       ]
     },
@@ -42,6 +46,36 @@
         {
           "key": "Expires",
           "value": "0"
+        },
+        {
+          "key": "Content-Language",
+          "value": "en"
+        }
+      ]
+    },
+    {
+      "source": "/fr/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        },
+        {
+          "key": "Content-Language",
+          "value": "fr"
+        }
+      ]
+    },
+    {
+      "source": "/fr/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        },
+        {
+          "key": "Content-Language",
+          "value": "fr"
         }
       ]
     },
