@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aquaculture | VeritasVet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/news/news.css">
+  <link rel="stylesheet" href="/species-pages.css">
+<link rel="alternate" hreflang="en" href="https://www.veritasvet.com/aquaculture.html">
+<link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/aquaculture.html">
+<link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/aquaculture.html">
+
+<style>
+.lang-switch{display:flex;align-items:center;gap:4px;margin-left:12px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500}
+.lang-btn{color:var(--text-secondary,#6b7280);text-decoration:none;padding:2px 6px;border-radius:4px;transition:color .2s,background .2s}
+.lang-btn:hover{color:var(--navy,#1a2332)}
+.lang-btn.lang-active{color:var(--navy,#1a2332);font-weight:700;background:rgba(26,35,50,.06)}
+.lang-sep{color:var(--text-secondary,#6b7280);font-weight:300}
+@media(max-width:900px){.lang-switch{margin:12px 0 0;justify-content:center}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/fr/"><img src="/image_logo_VERITASVET.png" alt="VeritasVet"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="species-nav">Menu</button>
+    <nav id="species-nav" class="site-nav" aria-label="Primary">
+      <a href="/fr/about">Entreprise</a>
+      <a href="/fr/species/aquaculture" class="active">Species</a>
+      <a href="/fr/feed-additives.html">Products</a>
+      <a href="/fr/news">Actualités</a>
+      <a href="/fr/contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="species-main">
+  <section class="intro-split two-column" aria-label="Aquaculture introduction">
+    <div class="left">
+      <h1>How we support aquaculture performance</h1>
+      <p>VeritasVet supports fish and shrimp producers with nutritional strategies designed to improve feed utilization, water stability and production consistency under intensive farming conditions.</p>
+      <p>Our solutions focus on enhancing nutrient digestibility, stabilizing gut microbiota and reducing metabolic stress throughout the production cycle. Particular attention is given to improving feed conversion ratio, supporting immunity and limiting the impact of mycotoxins and raw material variability.</p>
+      <p>By optimizing digestion and nutrient absorption, our approach contributes to better growth rates, improved survival and more stable water quality. This helps producers maintain predictable performance while controlling feeding costs and environmental pressure.</p>
+      <p>Our technical team evaluates each farming condition — species, growth stage and production system — to recommend the most efficient and economically relevant nutritional program adapted to your operation.</p>
+    </div>
+    <div class="right">
+      <img src="/aquaculture.webp" alt="Aquaculture production">
+    </div>
+  </section>
+
+  <section class="solution-switcher tabs" aria-label="Solution switcher">
+    <button type="button" class="tab is-active" aria-pressed="true">Additifs Alimentaires</button>
+    <button type="button" class="tab" aria-pressed="false">Premix</button>
+  </section>
+
+  <section class="category-section" aria-label="Category grid">
+    <div class="dynamic-container" id="aquaculture-category-grid"></div>
+  </section>
+</main>
+
+<script src="/species-switcher.js"></script>
+<script>
+const toggle=document.querySelector('.nav-toggle');
+const nav=document.getElementById('species-nav');
+if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});}
+</script>
+</body>
+</html>
