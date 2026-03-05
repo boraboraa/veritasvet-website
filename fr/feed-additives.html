@@ -116,9 +116,9 @@
 <div class="ft-col"><h5>Espèces</h5><a href="/fr/species/poultry/">Volaille</a><a href="/fr/species/ruminant/">Ruminants</a><a href="/fr/species/aquaculture/">Aquaculture</a></div>
 <div class="ft-col"><h5>Juridique</h5><a href="/fr/legal">Mentions Légales</a><a href="/fr/privacy">Politique de Confidentialité</a><a href="/fr/cookies">Politique des Cookies</a><a href="/fr/terms">Conditions Générales</a></div>
 </div>
-<div class="ft-newsletter"><p>Recevez nos dernières mises à jour de recherche</p><form onsubmit="return false"><input type="email" placeholder="Votre adresse e-mail" aria-label="Email for newsletter"><button type="submit">S'abonner</button></form></div>
+<div class="ft-newsletter"><p>Recevez nos dernières mises à jour de recherche</p><form onsubmit="return false"><input type="email" placeholder="Votre adresse e-mail" aria-label="E-mail pour la newsletter"><button type="submit">S'abonner</button></form></div>
 <div class="ft-bottom"><p>&copy; 2026 VeritasVet. Tous droits réservés.</p><p>Partenaire de Confiance en Nutrition Animale</p></div>
-<div class="ft-legal"><p>Veritasvet SRL | Avenue de Broqueville 136/1, 1200 Woluwe-Saint-Lambert, Belgium | VAT: BE 0633.747.322 | <a href="mailto:sales@veritasvet.com">sales@veritasvet.com</a></p><p><a href="/fr/legal">Mentions Légales</a> &middot; <a href="/fr/privacy">Politique de Confidentialité</a> &middot; <a href="/fr/cookies">Politique des Cookies</a> &middot; <a href="/fr/terms">Conditions Générales</a></p></div>
+<div class="ft-legal"><p>Veritasvet SRL | Avenue de Broqueville 136/1, 1200 Woluwe-Saint-Lambert, Belgique | VAT: BE 0633.747.322 | <a href="mailto:sales@veritasvet.com">sales@veritasvet.com</a></p><p><a href="/fr/legal">Mentions Légales</a> &middot; <a href="/fr/privacy">Politique de Confidentialité</a> &middot; <a href="/fr/cookies">Politique des Cookies</a> &middot; <a href="/fr/terms">Conditions Générales</a></p></div>
 </footer>
 
 <script>
@@ -147,8 +147,8 @@ function setActiveCategory(cat){
 document.querySelectorAll('#filterBar .filter-btn').forEach(btn=>{
 btn.classList.toggle('active',btn.dataset.category===cat);
 });
-const labels={'all':'All','gut-health':'Santé Intestinale','feed-quality':'Qualité de l'Aliment','mycotoxin-eliminator':'Éliminateur de Mycotoxines','nutrition':'Nutrition'};
-document.getElementById('productsTitle').textContent=cat==='all'?'Additifs Alimentaires':labels[cat]+' Products';
+const labels={'all':'Tous','gut-health':'Santé Intestinale','feed-quality':'Qualité de l'Aliment','mycotoxin-eliminator':'Éliminateur de Mycotoxines','nutrition':'Nutrition'};
+document.getElementById('productsTitle').textContent=cat==='all'?'Additifs Alimentaires':labels[cat]+' Produits';
 }
 
 function renderP(cat){
@@ -156,7 +156,7 @@ const g=document.getElementById('prodsGrid');
 const list=cat==='all'?P:P.filter(p=>p.c===cat);
 g.innerHTML=list.map((p,i)=>
 '<a class="pc" href="/fr/products/'+p.id+'/" style="animation:fadeUp .5s '+i*.06+'s both ease">'+
-'<div class="pc-vis product-card__media"><img class="product-card__img" src="'+(imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg')+'" alt="'+p.n+' — '+p.cn+' feed additive by VeritasVet" onerror="this.style.display=\'none\'"><span class="pc-cat">'+p.cn+'</span></div>'+
+'<div class="pc-vis product-card__media"><img class="product-card__img" src="'+(imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg')+'" alt="'+p.n+' — '+p.cn+' additif alimentaire par VeritasVet" onerror="this.style.display=\'none\'"><span class="pc-cat">'+p.cn+'</span></div>'+
 '<div class="pc-body"><h4>'+p.n+'</h4><p>'+p.d+'</p>'+
 '<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span><strong>Incorporation :</strong> '+p.inc+'</span></div><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span>'+p.out+'</span></div></div>'+
 '<span class="btn-arrow" style="font-size:12px">Voir les Détails &#8594;</span></div>'+
@@ -171,7 +171,7 @@ setActiveCategory(cat);
 function showDet(id){
 const p=P.find(x=>x.id===id);if(!p)return;
 document.getElementById('detContent').innerHTML=
-'<div class="det-vis '+(bgMap[p.c]||'')+'"><img src="'+(imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg')+'" alt="'+p.n+' — '+p.cn+' product detail by VeritasVet" onerror="this.style.display=\'none\'"></div>'+
+'<div class="det-vis '+(bgMap[p.c]||'')+'"><img src="'+(imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg')+'" alt="'+p.n+' — '+p.cn+' détail produit par VeritasVet" onerror="this.style.display=\'none\'"></div>'+
 '<div class="det-info"><h1>'+p.n+'</h1><span class="det-badge">'+p.cn+'</span>'+
 '<p class="det-desc">'+p.f+'</p>'+
 '<div class="sol-proofs" style="margin-bottom:2rem;padding:1.25rem;background:var(--green-mist);border-radius:12px"><div class="sol-proof" style="margin-bottom:.4rem"><span class="sol-proof-icon">&#9670;</span><span><strong>Taux d'incorporation typique :</strong> '+p.inc+'</span></div><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span><strong>Résultats visés :</strong> '+p.out+'</span></div></div>'+
