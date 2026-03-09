@@ -15,7 +15,17 @@
       "permanent": true
     },
     {
+      "source": "/aquaculture",
+      "destination": "/species/aquaculture/",
+      "permanent": true
+    },
+    {
       "source": "/poultry.html",
+      "destination": "/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/poultry",
       "destination": "/species/poultry/",
       "permanent": true
     },
@@ -25,7 +35,17 @@
       "permanent": true
     },
     {
+      "source": "/ruminant",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
       "source": "/feed-additives.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/feed-additives",
       "destination": "/products/",
       "permanent": true
     },
@@ -35,7 +55,17 @@
       "permanent": true
     },
     {
+      "source": "/fr/aquaculture",
+      "destination": "/fr/species/aquaculture/",
+      "permanent": true
+    },
+    {
       "source": "/fr/poultry.html",
+      "destination": "/fr/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/poultry",
       "destination": "/fr/species/poultry/",
       "permanent": true
     },
@@ -45,7 +75,17 @@
       "permanent": true
     },
     {
+      "source": "/fr/ruminant",
+      "destination": "/fr/species/ruminant/",
+      "permanent": true
+    },
+    {
       "source": "/fr/feed-additives.html",
+      "destination": "/fr/products/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/feed-additives",
       "destination": "/fr/products/",
       "permanent": true
     }
