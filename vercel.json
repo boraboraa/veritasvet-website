@@ -8,6 +8,46 @@
       "source": "/premixes.html",
       "destination": "/premixes/",
       "permanent": true
+    },
+    {
+      "source": "/aquaculture.html",
+      "destination": "/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/poultry.html",
+      "destination": "/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/ruminant.html",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/feed-additives.html",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/aquaculture.html",
+      "destination": "/fr/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/poultry.html",
+      "destination": "/fr/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/ruminant.html",
+      "destination": "/fr/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/feed-additives.html",
+      "destination": "/fr/products/",
+      "permanent": true
     }
   ],
   "headers": [
@@ -139,6 +179,19 @@
         {
           "key": "Cache-Control",
           "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
         }
       ]
     },

@@ -572,18 +572,42 @@ function main() {
   console.log(`Updated ${enCount} English pages with hreflang tags and language switcher.`);
 
   // ── Generate sitemap.xml with hreflang alternates ──
+  const today = new Date().toISOString().slice(0, 10);
+
+  // Priority hierarchy based on URL path
+  function getPriority(urlPath) {
+    // Strip /fr prefix for matching
+    const p = urlPath.replace(/^\/fr/, '') || '/';
+    if (p === '/') return '1.0';
+    if (p === '/products/' || p === '/premixes/' || p === '/feed-additives/' || p.startsWith('/species/')) return '0.9';
+    if (p.startsWith('/products/') || p.startsWith('/premixes/')) return '0.8';
+    if (p.startsWith('/news/')) return '0.7';
+    if (p === '/about/' || p === '/contact/' || p === '/certifications/') return '0.6';
+    if (p === '/privacy/' || p === '/cookies/' || p === '/terms/' || p === '/legal/') return '0.3';
+    return '0.5';
+  }
+
+  // Skip .html extension URLs — clean /species/* versions exist
+  const sitemapPages = pages.filter(({ enPath }) => !enPath.endsWith('.html'));
+
   let sitemapEntries = [];
-  for (const { enPath } of pages) {
+  for (const { enPath } of sitemapPages) {
     const enUrl = SITE_URL + enPath;
     const frUrl = SITE_URL + '/fr' + enPath;
+    const enPriority = getPriority(enPath);
+    const frPriority = getPriority('/fr' + enPath);
     sitemapEntries.push(`  <url>
     <loc>${enUrl}</loc>
+    <lastmod>${today}</lastmod>
+    <priority>${enPriority}</priority>
     <xhtml:link rel="alternate" hreflang="en" href="${enUrl}"/>
     <xhtml:link rel="alternate" hreflang="fr" href="${frUrl}"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="${enUrl}"/>
   </url>
   <url>
     <loc>${frUrl}</loc>
+    <lastmod>${today}</lastmod>
+    <priority>${frPriority}</priority>
     <xhtml:link rel="alternate" hreflang="en" href="${enUrl}"/>
     <xhtml:link rel="alternate" hreflang="fr" href="${frUrl}"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="${enUrl}"/>
