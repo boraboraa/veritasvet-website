@@ -68,7 +68,11 @@
 </div>
 
 <!-- Contact Form -->
-<form class="ct-form" id="contactForm" action="mailto:info@veritasvet.com" method="post" enctype="text/plain">
+<form class="ct-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="6ad39115-6edb-458a-a82f-16e2b3f136e8">
+<input type="hidden" name="subject" value="New Inquiry — VeritasVet Website">
+<input type="hidden" name="from_name" value="VeritasVet Website">
+<input type="hidden" name="redirect" value="false">
 
 <div class="ct-form-row">
 <label for="ctCompany">Company Name <span class="ct-required">*</span></label>
@@ -195,7 +199,8 @@
 <textarea id="ctMessage" name="message" required placeholder="Describe your needs, volumes, species, or any specific requirements..."></textarea>
 </div>
 
-<button type="submit" class="ct-submit-btn">Send Message</button>
+<button type="submit" class="ct-submit-btn" id="ctSubmitBtn">Send Message</button>
+<div id="ctFormStatus" style="display:none;margin-top:16px;padding:16px 20px;border-radius:12px;font-family:'DM Sans',sans-serif;font-size:15px;text-align:center"></div>
 
 </form>
 
@@ -284,6 +289,47 @@ function closeMob(){document.getElementById('navLinks').classList.remove('open')
       wrap.style.maxHeight = '0px';
       wrap.classList.remove('ct-revealed');
     }
+  });
+})();
+
+/* Web3Forms Submission */
+(function(){
+  var form = document.getElementById('contactForm');
+  var btn = document.getElementById('ctSubmitBtn');
+  var status = document.getElementById('ctFormStatus');
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    status.style.display = 'none';
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(function(res){ return res.json(); })
+    .then(function(data){
+      if(data.success){
+        status.style.display = 'block';
+        status.style.background = '#f0fdf4';
+        status.style.color = '#166534';
+        status.textContent = 'Thank you for your message. Our team will get back to you shortly.';
+        form.reset();
+      } else {
+        throw new Error('Submission failed');
+      }
+    })
+    .catch(function(){
+      status.style.display = 'block';
+      status.style.background = '#fef2f2';
+      status.style.color = '#991b1b';
+      status.textContent = 'Something went wrong. Please try again or email us at bora.dogrul@veritasvet.com';
+    })
+    .finally(function(){
+      btn.disabled = false;
+      btn.textContent = 'Send Message';
+    });
   });
 })();
 </script>
