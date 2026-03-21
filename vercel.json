@@ -105,6 +105,11 @@
       "permanent": true
     },
     {
+      "source": "/fr/products/toxyfix/",
+      "destination": "/fr/products/toxifix/",
+      "permanent": true
+    },
+    {
       "source": "/smart-feeding-stronger-animals-unlock-their-potential/",
       "destination": "/news/smart-feeding-stronger-animals/",
       "permanent": true
