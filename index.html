@@ -4,6 +4,19 @@
 <meta charset="UTF-8">
 <meta name="build-id" content="mm159pe4-xcky09" data-built="2026-02-24T21:55:38.572Z">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  try{
+    if(window.location.pathname !== '/') return;
+    if(sessionStorage.getItem('lang-checked')) return;
+    var lang=(navigator.language||navigator.userLanguage||'').toLowerCase();
+    sessionStorage.setItem('lang-checked','1');
+    if(lang.indexOf('fr')===0){
+      window.location.replace('/fr/');
+    }
+  }catch(e){}
+})();
+</script>
 <title>VeritasVet — Science-Driven Animal Nutrition</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -225,16 +238,6 @@
 </footer>
 
 <script>
-// Browser language detection — redirect French speakers to /fr/ (once per session)
-(function(){
-  if(sessionStorage.getItem('lang-checked'))return;
-  sessionStorage.setItem('lang-checked','1');
-  var lang=navigator.language||navigator.userLanguage||'';
-  if(lang.toLowerCase().indexOf('fr')===0){
-    window.location.href='/fr/';
-  }
-})();
-
 // Particles
 (function(){const el=document.getElementById('heroP');if(!el)return;for(let i=0;i<20;i++){const p=document.createElement('div');p.className='hero-particle';p.style.left=Math.random()*100+'%';p.style.animationDelay=Math.random()*12+'s';p.style.animationDuration=(8+Math.random()*8)+'s';el.appendChild(p)}})();
 

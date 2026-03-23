@@ -490,6 +490,24 @@ const langSwitcherCSS = `
 </style>
 `;
 
+const langSwitcherStyleRegex = /<style>\s*\.lang-switch\{[\s\S]*?@media\(max-width:900px\)\{\.lang-switch\{[\s\S]*?\}\}\s*<\/style>\s*/g;
+const hreflangTagsRegex = /\s*<link rel="alternate" hreflang="(?:en|fr|x-default)" href="[^"]*">\s*/g;
+const langSwitcherRegex = /\s*<div class="lang-switch">[\s\S]*?<\/div>\s*/g;
+
+function upsertHeadTags(html, enPath) {
+  const hreflangTags = getHreflangTags(enPath);
+  const cleanedHead = html
+    .replace(hreflangTagsRegex, '\n')
+    .replace(langSwitcherStyleRegex, '\n');
+  return cleanedHead.replace('</head>', `${hreflangTags}\n${langSwitcherCSS}</head>`);
+}
+
+function upsertLangSwitcher(html, isfrench, enPath, frPath) {
+  const langSwitch = getLangSwitcher(isfrench, enPath, frPath);
+  const cleanedNav = html.replace(langSwitcherRegex, '\n');
+  return cleanedNav.replace('<div class="hamburger"', `${langSwitch}\n<div class="hamburger"`);
+}
+
 // ─── Main processing ─────────────────────────────────────────────
 function main() {
   const htmlFiles = collectHtml(ROOT, ROOT);
@@ -520,19 +538,11 @@ function main() {
     // 3. Rewrite internal links to /fr/ prefix
     frHtml = rewriteLinksToFr(frHtml);
 
-    // 4. Add hreflang tags in <head>
-    const hreflangTags = getHreflangTags(enPath);
-    frHtml = frHtml.replace('</head>', hreflangTags + '\n</head>');
+    // 4. Upsert hreflang tags + language switcher CSS in <head>
+    frHtml = upsertHeadTags(frHtml, enPath);
 
-    // 5. Add language switcher CSS in <head>
-    frHtml = frHtml.replace('</head>', langSwitcherCSS + '</head>');
-
-    // 6. Add language switcher in nav (after nav-social div, before hamburger)
-    const langSwitch = getLangSwitcher(true, enPath, frPath);
-    frHtml = frHtml.replace(
-      '<div class="hamburger"',
-      langSwitch + '\n<div class="hamburger"'
-    );
+    // 5. Upsert language switcher in nav (after nav-social div, before hamburger)
+    frHtml = upsertLangSwitcher(frHtml, true, enPath, frPath);
 
     // 7. Write to /fr/ directory
     const destFile = relFile.replace(/\\/g, '/');
@@ -549,22 +559,11 @@ function main() {
     const srcPath = path.join(ROOT, relFile);
     let html = fs.readFileSync(srcPath, 'utf8');
 
-    // Skip if already has hreflang
-    if (html.includes('hreflang="fr"')) continue;
+    // Upsert hreflang tags + language switcher CSS
+    html = upsertHeadTags(html, enPath);
 
-    // Add hreflang tags
-    const hreflangTags = getHreflangTags(enPath);
-    html = html.replace('</head>', hreflangTags + '\n</head>');
-
-    // Add language switcher CSS
-    html = html.replace('</head>', langSwitcherCSS + '</head>');
-
-    // Add language switcher in nav
-    const langSwitch = getLangSwitcher(false, enPath, frPath);
-    html = html.replace(
-      '<div class="hamburger"',
-      langSwitch + '\n<div class="hamburger"'
-    );
+    // Upsert language switcher in nav
+    html = upsertLangSwitcher(html, false, enPath, frPath);
 
     fs.writeFileSync(srcPath, html, 'utf8');
     enCount++;
