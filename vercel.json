@@ -318,6 +318,106 @@
       "source": "/FR/Pets/",
       "destination": "/fr/pets/",
       "permanent": true
+    },
+    {
+      "source": "/product-category/poultry/",
+      "destination": "/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/poultry",
+      "destination": "/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/ruminant/",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/ruminant",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/aquaculture/",
+      "destination": "/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/aquaculture",
+      "destination": "/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/pet/",
+      "destination": "/pets/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/pet",
+      "destination": "/pets/",
+      "permanent": true
+    },
+    {
+      "source": "/Product-Category/Poultry/",
+      "destination": "/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/Product-Category/Ruminant/",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/Product-Category/Aquaculture/",
+      "destination": "/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/Product-Category/Pets/",
+      "destination": "/pets/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/product-category/poultry/",
+      "destination": "/fr/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/product-category/ruminant/",
+      "destination": "/fr/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/product-category/aquaculture/",
+      "destination": "/fr/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/product-category/pets/",
+      "destination": "/fr/pets/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/Product-Category/Poultry/",
+      "destination": "/fr/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/Product-Category/Ruminant/",
+      "destination": "/fr/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/Product-Category/Aquaculture/",
+      "destination": "/fr/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/Product-Category/Pets/",
+      "destination": "/fr/pets/",
+      "permanent": true
     }
   ],
   "rewrites": [
