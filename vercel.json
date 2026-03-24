@@ -138,6 +138,86 @@
       "source": "/group/nutrition/",
       "destination": "/products/",
       "permanent": true
+    },
+    {
+      "source": "/pets",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/pets/",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/imprint",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/imprint/",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/about-us/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/aquatics",
+      "destination": "/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/aquatics/",
+      "destination": "/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/pets",
+      "destination": "/fr/products/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/pets/",
+      "destination": "/fr/products/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/imprint",
+      "destination": "/fr/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/imprint/",
+      "destination": "/fr/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/about-us",
+      "destination": "/fr/about/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/about-us/",
+      "destination": "/fr/about/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/aquatics",
+      "destination": "/fr/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/aquatics/",
+      "destination": "/fr/species/aquaculture/",
+      "permanent": true
     }
   ],
   "rewrites": [
