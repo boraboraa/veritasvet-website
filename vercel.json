@@ -198,6 +198,126 @@
       "source": "/fr/aquatics/",
       "destination": "/fr/species/aquaculture/",
       "permanent": true
+    },
+    {
+      "source": "/Ruminant",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/Ruminant/",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/Poultry",
+      "destination": "/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/Poultry/",
+      "destination": "/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/Aquatics",
+      "destination": "/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/Aquatics/",
+      "destination": "/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/About-Us",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/About-Us/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/Imprint",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/Imprint/",
+      "destination": "/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/Pets",
+      "destination": "/pets/",
+      "permanent": true
+    },
+    {
+      "source": "/Pets/",
+      "destination": "/pets/",
+      "permanent": true
+    },
+    {
+      "source": "/FR/Ruminant",
+      "destination": "/fr/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/FR/Ruminant/",
+      "destination": "/fr/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/FR/Poultry",
+      "destination": "/fr/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/FR/Poultry/",
+      "destination": "/fr/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/FR/Aquatics",
+      "destination": "/fr/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/FR/Aquatics/",
+      "destination": "/fr/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/FR/About-Us",
+      "destination": "/fr/about/",
+      "permanent": true
+    },
+    {
+      "source": "/FR/About-Us/",
+      "destination": "/fr/about/",
+      "permanent": true
+    },
+    {
+      "source": "/FR/Imprint",
+      "destination": "/fr/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/FR/Imprint/",
+      "destination": "/fr/legal/",
+      "permanent": true
+    },
+    {
+      "source": "/FR/Pets",
+      "destination": "/fr/pets/",
+      "permanent": true
+    },
+    {
+      "source": "/FR/Pets/",
+      "destination": "/fr/pets/",
+      "permanent": true
     }
   ],
   "rewrites": [
