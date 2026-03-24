@@ -6,35 +6,43 @@
   "redirects": [
     {
       "source": "/solutions/mycotoxin-binder-poultry-me",
-      "statusCode": 410
+      "destination": "/products/toxifix/",
+      "permanent": true
     },
     {
       "source": "/solutions/mycotoxin-binder-poultry-me/",
-      "statusCode": 410
+      "destination": "/products/toxifix/",
+      "permanent": true
     },
     {
       "source": "/products/mycotoxin-binder-poultry-me",
-      "statusCode": 410
+      "destination": "/products/toxifix/",
+      "permanent": true
     },
     {
       "source": "/products/mycotoxin-binder-poultry-me/",
-      "statusCode": 410
+      "destination": "/products/toxifix/",
+      "permanent": true
     },
     {
       "source": "/fr/solutions/mycotoxin-binder-poultry-me",
-      "statusCode": 410
+      "destination": "/fr/products/toxifix/",
+      "permanent": true
     },
     {
       "source": "/fr/solutions/mycotoxin-binder-poultry-me/",
-      "statusCode": 410
+      "destination": "/fr/products/toxifix/",
+      "permanent": true
     },
     {
       "source": "/fr/products/mycotoxin-binder-poultry-me",
-      "statusCode": 410
+      "destination": "/fr/products/toxifix/",
+      "permanent": true
     },
     {
       "source": "/fr/products/mycotoxin-binder-poultry-me/",
-      "statusCode": 410
+      "destination": "/fr/products/toxifix/",
+      "permanent": true
     },
     {
       "source": "/premixes.html",
