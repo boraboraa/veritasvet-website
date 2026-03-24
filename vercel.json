@@ -140,16 +140,6 @@
       "permanent": true
     },
     {
-      "source": "/pets",
-      "destination": "/products/",
-      "permanent": true
-    },
-    {
-      "source": "/pets/",
-      "destination": "/products/",
-      "permanent": true
-    },
-    {
       "source": "/imprint",
       "destination": "/legal/",
       "permanent": true
@@ -177,16 +167,6 @@
     {
       "source": "/aquatics/",
       "destination": "/species/aquaculture/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/pets",
-      "destination": "/fr/products/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/pets/",
-      "destination": "/fr/products/",
       "permanent": true
     },
     {
@@ -224,6 +204,22 @@
     {
       "source": "/sitemap.xml",
       "destination": "/api/sitemap"
+    },
+    {
+      "source": "/pets",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/pets/",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/fr/pets",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/fr/pets/",
+      "destination": "/api/gone"
     }
   ],
   "headers": [
