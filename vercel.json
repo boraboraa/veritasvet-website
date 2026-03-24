@@ -5,6 +5,38 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/solutions/mycotoxin-binder-poultry-me",
+      "statusCode": 410
+    },
+    {
+      "source": "/solutions/mycotoxin-binder-poultry-me/",
+      "statusCode": 410
+    },
+    {
+      "source": "/products/mycotoxin-binder-poultry-me",
+      "statusCode": 410
+    },
+    {
+      "source": "/products/mycotoxin-binder-poultry-me/",
+      "statusCode": 410
+    },
+    {
+      "source": "/fr/solutions/mycotoxin-binder-poultry-me",
+      "statusCode": 410
+    },
+    {
+      "source": "/fr/solutions/mycotoxin-binder-poultry-me/",
+      "statusCode": 410
+    },
+    {
+      "source": "/fr/products/mycotoxin-binder-poultry-me",
+      "statusCode": 410
+    },
+    {
+      "source": "/fr/products/mycotoxin-binder-poultry-me/",
+      "statusCode": 410
+    },
+    {
       "source": "/premixes.html",
       "destination": "/premixes/",
       "permanent": true

@@ -133,7 +133,6 @@ const translations = [
   // Footer
   ['Science-driven feed additive solutions for modern animal production. Supporting animal health, performance, and sustainability worldwide.', 'Solutions d\'additifs alimentaires scientifiques pour la production animale moderne. Soutenir la santé, les performances et la durabilité animales dans le monde entier.'],
   ['>About Us</a>', '>À Propos</a>'],
-  ['>Our Solutions</a>', '>Nos Solutions</a>'],
   ['>Research</a>', '>Recherche</a>'],
   ['<h5>Company</h5>', '<h5>Entreprise</h5>'],
   ['<h5>Products</h5>', '<h5>Produits</h5>'],
