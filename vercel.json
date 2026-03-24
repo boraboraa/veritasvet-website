@@ -90,6 +90,26 @@
       "permanent": true
     },
     {
+      "source": "/fr/markets/middle-east",
+      "destination": "/fr/markets/moyen-orient/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/middle-east/",
+      "destination": "/fr/markets/moyen-orient/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/africa",
+      "destination": "/fr/markets/afrique/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/africa/",
+      "destination": "/fr/markets/afrique/",
+      "permanent": true
+    },
+    {
       "source": "/sitemap.xml/",
       "destination": "/sitemap.xml",
       "permanent": true
