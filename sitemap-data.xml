@@ -625,4 +625,36 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/terms/"/>
   </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/middle-east/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/middle-east/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/moyen-orient/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/middle-east/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/moyen-orient/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/middle-east/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/moyen-orient/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/middle-east/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/africa/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/africa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/afrique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/africa/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/afrique/</loc>
+    <lastmod>2026-03-24</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/africa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/afrique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/africa/"/>
+  </url>
 </urlset>
