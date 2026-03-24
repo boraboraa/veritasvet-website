@@ -124,6 +124,16 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .species-card-cta{display:inline-flex;align-items:center;gap:.4rem;font-size:12.5px;font-weight:600;color:#fff;background:var(--green);padding:.5rem 1.15rem;border-radius:6px;letter-spacing:.03em;text-transform:uppercase;transition:background .25s ease;margin-top:auto;width:fit-content}
 .species-card:hover .species-card-cta{background:var(--green-dark)}
 
+/* HOME MARKETS */
+.home-markets{background:var(--cream);padding-top:0}
+.home-markets-shell{background:linear-gradient(140deg,var(--navy-deep),var(--navy-rich));border-radius:var(--radius-xl);padding:3rem 2rem;box-shadow:var(--shadow-medium)}
+.home-markets-shell .sec-label{color:rgba(255,255,255,.8)}
+.home-markets-shell .sec-label-line{background:var(--green-light)}
+.home-markets-shell .sec-title{color:#fff}
+.home-markets-shell .sec-desc{color:rgba(255,255,255,.74);max-width:700px}
+.home-markets-actions{margin-top:2rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.home-markets-actions .btn-green-outline{border-color:rgba(255,255,255,.75);color:#fff}
+.home-markets-actions .btn-green-outline:hover{background:rgba(255,255,255,.15);border-color:#fff}
 
 /* SECTION BASICS */
 .section-pad{padding:7rem 3rem}
@@ -376,6 +386,9 @@ a.pc{text-decoration:none;color:inherit}
 .nav{height:84px;padding:0 1.5rem}
 .nav-logo img{height:88%;max-height:74px}
 .section-pad{padding:4rem 1.5rem}
+.home-markets-shell{padding:2.5rem 1.4rem}
+.home-markets-actions{flex-direction:column;align-items:stretch}
+.home-markets-actions .btn-green,.home-markets-actions .btn-green-outline{justify-content:center;width:100%}
 .hero-content{padding:0 1.5rem}
 .hero-copy{padding:1.6rem 1.4rem 1.8rem;background:linear-gradient(100deg,rgba(12,30,56,.76),rgba(12,30,56,.45) 64%,rgba(12,30,56,.1))}
 .hero-media-img{object-position:center 35%}
