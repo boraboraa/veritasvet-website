@@ -5,6 +5,11 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/contacts/",
+      "destination": "https://www.veritasvet.com/contact/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
