@@ -5,6 +5,11 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/boost-animal-performance-with-vitamin-d3/",
+      "destination": "https://www.veritasvet.com/news/high-bioavailability-vitamin-d3/",
+      "permanent": true
+    },
+    {
       "source": "/contacts/",
       "destination": "https://www.veritasvet.com/contact/",
       "permanent": true
