@@ -1,0 +1,16 @@
+{
+  "projectId": "prj_YDJwcRqDntwV55499cCbRUnxFRG2",
+  "orgId": "team_pPDHLPxzzBYl4oq0J1cnZiUX",
+  "projectName": "veritasvet-website",
+  "settings": {
+    "createdAt": 1770642131477,
+    "framework": null,
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": ".",
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "24.x"
+  }
+}

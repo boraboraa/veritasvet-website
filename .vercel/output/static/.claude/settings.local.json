@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd.exe /c type:*)",
+      "Bash(bash -c 'cat \"\"C:\\\\Users\\\\dogru\\\\OneDrive\\\\Bureau\\\\Veritasvet Website test\\\\index.html\"\"')",
+      "Bash(powershell:*)",
+      "Bash(powershell.exe -Command \"\\(Get-Content ''C:\\\\Users\\\\dogru\\\\OneDrive\\\\Bureau\\\\Veritasvet Website test\\\\index.html''\\)[652..653]\")",
+      "Bash(node:*)",
+      "Bash(TMPDIR=/tmp node:*)",
+      "Bash(cmd.exe /c \"node -e \"\"const fs=require\\(''fs''\\); const lines=fs.readFileSync\\(''C:/Users/dogru/OneDrive/Bureau/Veritasvet Website test/index.html'',''utf8''\\).split\\(''\\\\n''\\); console.log\\(''LINE 653:'', lines[652]\\); console.log\\(''LINE 654:'', lines[653]\\);\"\"\")",
+      "Bash(export TEMP=/tmp)",
+      "Bash(export TMP=/tmp)",
+      "Bash(export TMPDIR=/tmp)",
+      "Bash(echo:*)",
+      "Bash(export PATH=\"/c/Program Files/Git/usr/bin:$PATH\")"
+    ]
+  }
+}
