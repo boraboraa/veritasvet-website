@@ -11,13 +11,101 @@
 <link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/egypt/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Egypt Feed Additives | VeritasVet">
-<meta property="og:description" content="Feed additive and mycotoxin solutions for Egyptian feed mills and poultry producers. EU-certified. Request a consultation.">
+<meta property="og:description" content="Feed additive and mycotoxin solutions for Egyptian feed mills and poultry producers.">
 <meta property="og:url" content="https://www.veritasvet.com/markets/egypt/">
 <meta property="og:image" content="https://www.veritasvet.com/assets/images/markets-egypt-hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<style>
+/*** Egypt Upgrade: Visual Section Distinction ***/
+
+/* Section 2: At a Glance — light tinted background for contrast */
+.section-glance { background: #f7faf5; }
+
+/* Section 3: Key Challenges — white, clean */
+.section-challenges { background: #ffffff; }
+
+/* Section 4: Approach — subtle dark tint */
+.section-approach { background: #f0f5ee; }
+
+/* Section 5: Products — white */
+.section-products { background: #ffffff; }
+
+/* Section 6: Species — light tint */
+.section-species { background: #f7faf5; }
+
+/* Hero overlay for text contrast when using bg image */
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(16,52,32,0.82) 0%, rgba(16,52,32,0.50) 60%, rgba(16,52,32,0.25) 100%);
+  z-index: 1;
+}
+.hero-content { position: relative; z-index: 2; }
+.hero-media-wrap { position: relative; z-index: 2; }
+
+/* Stat number styling for At a Glance */
+.stat-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #163420;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+.stat-label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #4a5d4a;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Challenge list — icon-style bullets */
+.challenge-list { list-style: none; padding: 0; margin: 0; }
+.challenge-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  border-bottom: 1px solid #e8ede6;
+  font-size: 0.95rem;
+  color: #2d3a2d;
+  line-height: 1.5;
+}
+.challenge-list li:last-child { border-bottom: none; }
+.challenge-list li strong { color: #163420; }
+.challenge-icon {
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  background: #163420;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 0.1rem;
+}
+.challenge-icon svg { width: 14px; height: 14px; stroke: #fff; fill: none; }
+
+/* Approach cards — keep hover from base CSS, add top accent bar */
+.approach-card {
+  border-top: 3px solid #4e8a5e;
+  background: #fff;
+}
+
+/* CTA section — strong visual */
+.cta-section {
+  background: #163420;
+  color: #fff;
+  padding: 4rem 0;
+}
+.cta-section h2 { color: #fff; font-size: 2rem; margin-bottom: 1rem; }
+.cta-section p { color: rgba(255,255,255,0.82); font-size: 1.05rem; max-width: 600px; margin: 0 auto 2rem; }
+@media (max-width: 768px) {
+  .stat-number { font-size: 2rem; }
+  .cta-section { padding: 3rem 0; }
+  .cta-section h2 { font-size: 1.6rem; }
+}
+</style>
 </head>
 <body>
 <nav class="nav" id="mainNav">
@@ -65,130 +153,173 @@
 </nav>
 <main class="market-main">
 
-<section class="market-hero-section">
-<div class="market-hero-shell">
-<div>
-<span class="market-eyebrow">North Africa Market Focus</span>
-<h1>Egypt Feed Additive Solutions</h1>
-<p>Science-driven additive programs for Egyptian feed mills, integrators, and distributors navigating heat stress, mycotoxin risk, and feed quality challenges.</p>
+<!-- HERO: Background image with overlay -->
+<section class="market-hero-section" style="background-image:url('/assets/images/markets-egypt-hero.jpg');background-size:cover;background-position:center;">
+<div class="hero-overlay"></div>
+<div class="market-hero-shell" style="padding:5rem 0;">
+<div class="hero-content">
+<span class="market-eyebrow" style="color:rgba(255,255,255,0.75);">North Africa Market Focus</span>
+<h1 style="color:#fff;font-size:3rem;font-weight:700;margin:0.75rem 0 1.25rem;max-width:540px;line-height:1.1;">Egypt Feed Additive Solutions</h1>
+<p style="color:rgba(255,255,255,0.88);font-size:1.1rem;max-width:500px;line-height:1.6;margin:0 0 2rem;">Science-driven programs for Egyptian feed mills, integrators, and distributors — built for heat stress, mycotoxin risk, and feed quality challenges.</p>
 <div class="market-hero-actions">
-<a class="btn-green" href="/contact/">Request Technical Consultation</a>
-<a class="btn-green-outline" href="/contact/">Become Distribution Partner</a>
+<a class="btn-green" href="/contact/" style="background:#4e8a5e;border-color:#4e8a5e;">Request Technical Consultation</a>
+<a class="btn-green-outline" href="/contact/" style="border-color:rgba(255,255,255,0.6);color:#fff;">Become Distribution Partner</a>
 </div>
 </div>
-<div class="market-hero-media"><img src="/assets/images/markets-egypt-hero.jpg" alt="Egypt poultry and feed production" loading="lazy"></div>
+<div class="hero-media-wrap">
+<div class="market-hero-media"><img src="/assets/images/markets-egypt-hero.jpg" alt="Egyptian poultry and feed production" loading="eager"></div>
+</div>
 </div>
 </section>
 
-<section class="market-section">
+<!-- SECTION 2: At a Glance — tinted background -->
+<section class="market-section section-glance" style="padding:4rem 0;">
 <div class="market-box">
-<h2>Egypt at a Glance</h2>
+<div style="text-align:center;margin-bottom:2.5rem;">
+<span class="market-eyebrow" style="display:block;margin-bottom:0.5rem;">Market Overview</span>
+<h2 style="font-size:2rem;color:#163420;margin:0;">Egypt at a Glance</h2>
+</div>
 <div class="market-grid">
-<article class="market-card">
-<h3>1.4B+</h3>
-<p>Poultry birds produced annually — the largest market in North Africa</p>
+<article class="market-card" style="text-align:center;padding:2rem 1.5rem;">
+<div class="stat-number">1.4B+</div>
+<div class="stat-label">Poultry birds / year</div>
+<p style="margin:0.75rem 0 0;font-size:0.9rem;color:#4a5d4a;">Largest market in North Africa — dominant sector across the region</p>
 </article>
-<article class="market-card">
-<h3>65–75%</h3>
-<p>Feed cost as share of total production — efficiency is critical</p>
+<article class="market-card" style="text-align:center;padding:2rem 1.5rem;">
+<div class="stat-number">65–75%</div>
+<div class="stat-label">Feed cost share</div>
+<p style="margin:0.75rem 0 0;font-size:0.9rem;color:#4a5d4a;">Of total production cost — feed efficiency is the key margin driver</p>
 </article>
-<article class="market-card">
-<h3>#1</h3>
-<p>North African feed market by volume and integration level</p>
+<article class="market-card" style="text-align:center;padding:2rem 1.5rem;">
+<div class="stat-number">Import</div>
+<div class="stat-label">Corn & Soymeal</div>
+<p style="margin:0.75rem 0 0;font-size:0.9rem;color:#4a5d4a;">Black Sea and South American origins — systematic mycotoxin control essential</p>
 </article>
-<article class="market-card">
-<h3>Import-Dependent</h3>
-<p>Corn and soybean meal sourced from Black Sea and South America</p>
+<article class="market-card" style="text-align:center;padding:2rem 1.5rem;">
+<div class="stat-number">40°C+</div>
+<div class="stat-label">Summer peaks</div>
+<p style="margin:0.75rem 0 0;font-size:0.9rem;color:#4a5d4a;">Upper Egypt heat stress season — year-round pressure on gut health</p>
 </article>
 </div>
 </div>
 </section>
 
-<section class="market-section">
+<!-- SECTION 3: Key Challenges — white + icon list -->
+<section class="market-section section-challenges" style="padding:4rem 0;">
 <div class="market-box">
-<h2>Key Challenges</h2>
-<ul class="market-list">
-<li><strong>Heat stress:</strong> Temperatures exceed 40°C in Upper Egypt, reducing feed intake and gut integrity in broilers and layers.</li>
-<li><strong>Mycotoxin risk:</strong> Imported corn and soymeal frequently exceed safe thresholds — systematic mitigation required at intake.</li>
-<li><strong>Feed hygiene:</strong> High Nile Delta humidity accelerates mold growth in stored ingredients and finished feed.</li>
-<li><strong>Distribution complexity:</strong> Multiple intermediary layers between mills and farms demand strong technical support.</li>
+<div style="text-align:center;margin-bottom:2.5rem;">
+<span class="market-eyebrow" style="display:block;margin-bottom:0.5rem;">The Reality on the Ground</span>
+<h2 style="font-size:2rem;color:#163420;margin:0;">Key Challenges</h2>
+</div>
+<div style="max-width:780px;margin:0 auto;">
+<ul class="challenge-list">
+<li>
+<span class="challenge-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7z"/></svg></span>
+<div><strong>Heat stress</strong> — Summer temperatures exceed 40°C in Upper Egypt, reducing feed intake, damaging gut integrity, and slowing growth rates in broilers and layers across most production systems.</div>
+</li>
+<li>
+<span class="challenge-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7z"/></svg></span>
+<div><strong>Mycotoxin risk</strong> — Corn and soymeal imported from Black Sea and South American origins frequently exceed safe thresholds. Systematic control at mill intake is non-negotiable.</div>
+</li>
+<li>
+<span class="challenge-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7z"/></svg></span>
+<div><strong>Feed hygiene</strong> — High ambient humidity in the Nile Delta accelerates mold growth in stored ingredients and finished feed, requiring proactive mold control protocols.</div>
+</li>
+<li>
+<span class="challenge-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7z"/></svg></span>
+<div><strong>Distribution complexity</strong> — Multiple intermediary layers between manufacturers and farms demand strong technical support networks to ensure correct product application at farm level.</div>
+</li>
 </ul>
 </div>
+</div>
 </section>
 
-<section class="market-section">
+<!-- SECTION 4: VeritasVet Approach — tinted + top accent on cards -->
+<section class="market-section section-approach" style="padding:4rem 0;">
 <div class="market-box">
-<h2>VeritasVet Approach in Egypt</h2>
+<div style="text-align:center;margin-bottom:2.5rem;">
+<span class="market-eyebrow" style="display:block;margin-bottom:0.5rem;">How We Work</span>
+<h2 style="font-size:2rem;color:#163420;margin:0;">VeritasVet Approach in Egypt</h2>
+</div>
 <div class="market-grid">
-<article class="market-card">
-<h3>Risk Assessment</h3>
-<p>Mycotoxin testing and ingredient-risk mapping at intake — establishing baseline contamination profiles by origin and season.</p>
+<article class="market-card approach-card" style="padding:1.75rem;">
+<h3 style="color:#163420;margin:0 0 0.75rem;font-size:1.05rem;">Risk Assessment</h3>
+<p style="margin:0;color:#3d4f3d;font-size:0.92rem;line-height:1.6;">Mycotoxin testing and ingredient-risk profiling at intake — establishing contamination baselines by origin, season, and supplier to set action thresholds.</p>
 </article>
-<article class="market-card">
-<h3>Protocol Design</h3>
-<p>Additive programs tailored to feed matrix, dosage guidance by operation type, and distributor onboarding for consistent field application.</p>
+<article class="market-card approach-card" style="padding:1.75rem;">
+<h3 style="color:#163420;margin:0 0 0.75rem;font-size:1.05rem;">Program Design</h3>
+<p style="margin:0;color:#3d4f3d;font-size:0.92rem;line-height:1.6;">Additive programs tailored to feed matrix, dosage guidance by operation type, and distributor onboarding to ensure consistent field application across Egypt.</p>
 </article>
-<article class="market-card">
-<h3>Ongoing Support</h3>
-<p>Responsive troubleshooting, performance tracking, and supply continuity to maintain results across production cycles.</p>
+<article class="market-card approach-card" style="padding:1.75rem;">
+<h3 style="color:#163420;margin:0 0 0.75rem;font-size:1.05rem;">Ongoing Support</h3>
+<p style="margin:0;color:#3d4f3d;font-size:0.92rem;line-height:1.6;">Responsive troubleshooting, performance tracking, and supply continuity — maintaining results cycle after cycle for integrated operations and independent farms alike.</p>
 </article>
 </div>
 </div>
 </section>
 
-<section class="market-section">
+<!-- SECTION 5: Product Solutions -->
+<section class="market-section section-products" style="padding:4rem 0;">
 <div class="market-box">
-<h2>Product Solutions</h2>
+<div style="text-align:center;margin-bottom:2.5rem;">
+<span class="market-eyebrow" style="display:block;margin-bottom:0.5rem;">Targeted Solutions</span>
+<h2 style="font-size:2rem;color:#163420;margin:0;">Product Pathways</h2>
+</div>
 <div class="market-grid">
-<article class="market-card">
-<h3>ToxyFix / ToxyFix Plus</h3>
-<p>Multi-mycotoxin protection for corn and soymeal at high contamination levels.</p>
+<article class="market-card" style="padding:1.75rem;">
+<h3 style="color:#163420;margin:0 0 0.5rem;">ToxyFix / ToxyFix Plus</h3>
+<p style="margin:0 0 1rem;color:#4a5d4a;font-size:0.9rem;">Multi-mycotoxin protection for corn and soymeal at high contamination levels — the first line of defense for Egyptian feed mills.</p>
 <a class="market-link" href="/products/toxifix/">View ToxyFix →</a>
 </article>
-<article class="market-card">
-<h3>VersaMold</h3>
-<p>Storage stability and mold control for feed ingredients in humid Nile Delta conditions.</p>
+<article class="market-card" style="padding:1.75rem;">
+<h3 style="color:#163420;margin:0 0 0.5rem;">VersaMold</h3>
+<p style="margin:0 0 1rem;color:#4a5d4a;font-size:0.9rem;">Storage stability and mold control for ingredients in humid Nile Delta conditions — protecting feed quality from intake to farm delivery.</p>
 <a class="market-link" href="/products/versamold/">View VersaMold →</a>
 </article>
-<article class="market-card">
-<h3>VersaPeg</h3>
-<p>Intestinal integrity during heat stress periods for broiler and layer operations.</p>
+<article class="market-card" style="padding:1.75rem;">
+<h3 style="color:#163420;margin:0 0 0.5rem;">VersaPeg</h3>
+<p style="margin:0 0 1rem;color:#4a5d4a;font-size:0.9rem;">Intestinal integrity during heat stress periods — supporting gut barrier function in broilers and layers under thermal pressure.</p>
 <a class="market-link" href="/products/versapeg/">View VersaPeg →</a>
 </article>
 </div>
 </div>
 </section>
 
-<section class="market-section">
+<!-- SECTION 6: Species Programs -->
+<section class="market-section section-species" style="padding:4rem 0;">
 <div class="market-box">
-<h2>Species Programs</h2>
+<div style="text-align:center;margin-bottom:2.5rem;">
+<span class="market-eyebrow" style="display:block;margin-bottom:0.5rem;">Species Coverage</span>
+<h2 style="font-size:2rem;color:#163420;margin:0;">Species Programs</h2>
+</div>
 <div class="market-grid">
-<article class="market-card">
-<h3>Poultry</h3>
-<p>Heat-adapted gut health and FCR programs for Egypt's dominant broiler and layer sector.</p>
+<article class="market-card" style="padding:1.75rem;">
+<h3 style="color:#163420;margin:0 0 0.5rem;">Poultry</h3>
+<p style="margin:0 0 1rem;color:#4a5d4a;font-size:0.9rem;">Heat-adapted gut health and FCR programs for Egypt's dominant broiler and layer sector — from small farms to large integrators.</p>
 <a class="market-link" href="/species/poultry/">Explore Poultry →</a>
 </article>
-<article class="market-card">
-<h3>Ruminants</h3>
-<p>Rumen stability and metabolic support for dairy herds under heat stress and variable forage.</p>
+<article class="market-card" style="padding:1.75rem;">
+<h3 style="color:#163420;margin:0 0 0.5rem;">Ruminants</h3>
+<p style="margin:0 0 1rem;color:#4a5d4a;font-size:0.9rem;">Rumen stability and metabolic support for dairy herds facing heat stress and variable forage quality in Egyptian conditions.</p>
 <a class="market-link" href="/species/ruminant/">Explore Ruminants →</a>
 </article>
-<article class="market-card">
-<h3>Aquaculture</h3>
-<p>Feed quality solutions for Egypt's tilapia and catfish sectors.</p>
+<article class="market-card" style="padding:1.75rem;">
+<h3 style="color:#163420;margin:0 0 0.5rem;">Aquaculture</h3>
+<p style="margin:0 0 1rem;color:#4a5d4a;font-size:0.9rem;">Feed quality solutions for Egypt's tilapia and catfish sectors — supporting water-quality management and growth consistency.</p>
 <a class="market-link" href="/species/aquaculture/">Explore Aquaculture →</a>
 </article>
 </div>
 </div>
 </section>
 
-<section class="market-section">
-<div class="market-cta">
-<h2>Build a Region-Specific Plan for Egypt</h2>
-<p>Speak with our technical team to design an additive program aligned with your operation's production targets and feed ingredient profile.</p>
-<div class="market-hero-actions">
-<a class="btn-green" href="/contact/">Contact Technical Team</a>
-<a class="btn-green-outline" href="/contact/">Become Distribution Partner</a>
+<!-- SECTION 7: CTA — strong dark visual -->
+<section class="cta-section" style="text-align:center;">
+<div class="market-cta" style="max-width:680px;margin:0 auto;padding:0 1.5rem;">
+<h2 style="color:#fff;font-size:2.1rem;font-weight:600;margin:0 0 1rem;line-height:1.2;">Build a Region-Specific Plan for Egypt</h2>
+<p style="color:rgba(255,255,255,0.85);font-size:1rem;line-height:1.65;margin:0 0 2.5rem;">Speak with our technical team to design an additive program aligned with your production targets, feed ingredient profile, and distribution network.</p>
+<div class="market-hero-actions" style="justify-content:center;">
+<a class="btn-green" href="/contact/" style="background:#4e8a5e;border-color:#4e8a5e;min-width:220px;">Contact Technical Team</a>
+<a class="btn-green-outline" href="/contact/" style="border-color:rgba(255,255,255,0.5);color:#fff;min-width:220px;">Become Distribution Partner</a>
 </div>
 </div>
 </section>
