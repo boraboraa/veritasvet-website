@@ -689,4 +689,20 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/arabie-saoudite/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/saudi-arabia/"/>
   </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/jordan/</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/jordan/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/jordan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/jordan/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/jordan/</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/jordan/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/jordan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/jordan/"/>
+  </url>
 </urlset>
