@@ -705,4 +705,36 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/jordan/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/jordan/"/>
   </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/iraq/</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/iraq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/irak/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/iraq/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/irak/</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/iraq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/irak/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/iraq/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/uae/</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/uae/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/emirats-arabes-unis/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/uae/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/emirats-arabes-unis/</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/uae/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/emirats-arabes-unis/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/uae/"/>
+  </url>
 </urlset>
