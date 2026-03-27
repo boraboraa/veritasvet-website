@@ -657,4 +657,36 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/afrique/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/africa/"/>
   </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/egypt/</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/egypt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/egypte/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/egypt/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/egypte/</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/egypt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/egypte/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/egypt/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/saudi-arabia/</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/saudi-arabia/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/arabie-saoudite/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/saudi-arabia/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/arabie-saoudite/</loc>
+    <lastmod>2026-03-27</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/saudi-arabia/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/arabie-saoudite/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/saudi-arabia/"/>
+  </url>
 </urlset>
