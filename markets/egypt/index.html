@@ -18,21 +18,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
-<style>
-.lang-switch{display:flex;align-items:center;gap:4px;margin-left:12px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500}
-.lang-btn{color:var(--text-secondary,#6b7280);text-decoration:none;padding:2px 6px;border-radius:4px;transition:color .2s,background .2s}
-.lang-btn:hover{color:var(--navy,#1a2332)}
-.lang-btn.lang-active{color:var(--navy,#1a2332);font-weight:700;background:rgba(26,35,50,.06)}
-.lang-sep{color:var(--text-secondary,#6b7280);font-weight:300}
-@media(max-width:900px){.lang-switch{margin:12px 0 0;justify-content:center}}
-.credibility-bar{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.2)}
-.credibility-item{display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:rgba(255,255,255,.85);font-weight:500}
-.credibility-item svg{flex-shrink:0;opacity:.9}
-.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
-.stat-card{background:linear-gradient(135deg,rgba(255,255,255,.1),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.2);border-radius:var(--radius-md);padding:1rem;text-align:center}
-.stat-num{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:#fff;line-height:1}
-.stat-label{font-size:.72rem;color:rgba(255,255,255,.7);margin-top:.3rem;letter-spacing:.04em;text-transform:uppercase}
-</style>
 </head>
 <body>
 <nav class="nav" id="mainNav">
@@ -46,6 +31,18 @@
 <a href="/species/poultry/">Poultry</a>
 <a href="/species/ruminant/">Ruminants</a>
 <a href="/species/aquaculture/">Aquaculture</a>
+</div>
+</div>
+<div class="nav-dropdown" onclick="this.classList.toggle('open')">
+<span class="nav-link">Markets <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<div class="nav-dropdown-menu">
+<a href="/markets/africa/">Africa</a>
+<a href="/markets/middle-east/">Middle East</a>
+<a href="/markets/egypt/">Egypt</a>
+<a href="/markets/saudi-arabia/">Saudi Arabia</a>
+<a href="/markets/jordan/">Jordan</a>
+<a href="/markets/iraq/">Iraq</a>
+<a href="/markets/uae/">UAE</a>
 </div>
 </div>
 <div class="nav-dropdown" onclick="this.classList.toggle('open')">
@@ -73,15 +70,14 @@
 <span class="market-eyebrow">North Africa Market Focus</span>
 <h1>Egypt Feed Additive Solutions</h1>
 <p>VeritasVet supports Egyptian feed mills, poultry integrators, and distribution partners with science-driven additive programs built for high-intensity operations, heat stress pressure, and feed quality challenges.</p>
-<div class="credibility-bar">
-<div class="credibility-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5ec47b" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>ISO 22000 Certified</div>
-<div class="credibility-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5ec47b" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>GMP+ Approved</div>
-<div class="credibility-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5ec47b" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>EU Manufactured</div>
-<div class="credibility-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5ec47b" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>FAMI-QS Compliant</div>
+<div class="market-hero-actions">
+<a class="btn-green" href="/contact/">Request Technical Consultation</a>
+<a class="btn-green-outline" href="/contact/">Apply for Distribution Partnership</a>
 </div>
-<div class="market-hero-actions"><a class="btn-green" href="/contact/">Request Technical Consultation</a><a class="btn-green-outline" href="/contact/">Apply for Distribution Partnership</a></div>
 </div>
-<div class="market-hero-media"><img src="/assets/images/markets-egypt-hero.jpg" alt="Egyptian poultry and feed production" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="market-photo-placeholder" style="display:none"><span>Egypt Market</span></div></div>
+<figure class="market-photo-placeholder" aria-label="Market Photo placeholder for Egypt">
+<span>Egypt Market</span>
+</figure>
 </div>
 </section>
 
@@ -90,11 +86,6 @@
 <h2>1. Market Overview</h2>
 <p>Egypt's poultry sector is the largest in North Africa, with annual production exceeding 1.4 billion birds. The industry operates across small-to-medium farms alongside large integrated complexes.</p>
 <p>Feed represents <strong>65–75% of total production cost</strong>, making feed efficiency and hygiene critical to profitability. Imported corn and soybean meal carry significant mycotoxin risk given storage conditions in the Suez Canal climate zone.</p>
-<div class="stats-row">
-<div class="stat-card"><div class="stat-num">1.4B+</div><div class="stat-label">Birds / Year</div></div>
-<div class="stat-card"><div class="stat-num">65–75%</div><div class="stat-label">Feed Cost Share</div></div>
-<div class="stat-card"><div class="stat-num">#1</div><div class="stat-label">N. Africa Market</div></div>
-</div>
 </div>
 </section>
 
@@ -147,17 +138,20 @@
 <div class="market-box">
 <h2>5. Product Pathways</h2>
 <div class="market-grid">
-<div style="border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem;background:#f8faf7">
-<p><strong>Mycotoxin Risk →</strong> <a href="/products/toxifix/">ToxyFix</a> or <a href="/products/toxifix-plus/">ToxyFix Plus</a> for multi-mycotoxin protection</p>
+<article class="market-card">
+<h3>Mycotoxin Risk →</h3>
+<p><a href="/products/toxifix/">ToxyFix</a> or <a href="/products/toxifix-plus/">ToxyFix Plus</a> for multi-mycotoxin protection</p>
+</article>
+<article class="market-card">
+<h3>Feed Hygiene →</h3>
+<p><a href="/products/versamold/">VersaMold</a> for storage stability and mold control</p>
+</article>
+<article class="market-card">
+<h3>Poultry Gut Health →</h3>
+<p><a href="/products/versapeg/">VersaPeg</a> for intestinal integrity during heat stress</p>
+</article>
 </div>
-<div style="border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem;background:#f8faf7">
-<p><strong>Feed Hygiene →</strong> <a href="/products/versamold/">VersaMold</a> for storage stability and mold control</p>
-</div>
-<div style="border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem;background:#f8faf7">
-<p><strong>Poultry Gut Health →</strong> <a href="/products/versapeg/">VersaPeg</a> for intestinal integrity during heat stress</p>
-</div>
-</div>
-<p style="margin-top:1rem">Full range available: <a href="/products/">All Products</a> · <a href="/premixes/">Premix Programs</a></p>
+<p>Full range available: <a href="/products/">All Products</a> · <a href="/premixes/">Premix Programs</a></p>
 </div>
 </section>
 
@@ -165,7 +159,10 @@
 <div class="market-cta">
 <h2>Build a Region-Specific Nutrition Plan for Egypt</h2>
 <p>Speak with our technical team to design an additive program aligned with your operation's production targets, feed ingredient profile, and distribution network.</p>
-<div class="market-hero-actions"><a class="btn-green" href="/contact/">Contact Technical Team</a><a class="btn-green-outline" href="/contact/">Become a Distribution Partner</a></div>
+<div class="market-hero-actions">
+<a class="btn-green" href="/contact/">Contact Technical Team</a>
+<a class="btn-green-outline" href="/contact/">Become a Distribution Partner</a>
+</div>
 </div>
 </section>
 </main>
