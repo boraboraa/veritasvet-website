@@ -228,6 +228,11 @@
       "source": "/contacts",
       "destination": "https://www.veritasvet.com/contact/",
       "permanent": true
+    },
+    {
+      "source": "/premixes",
+      "destination": "https://www.veritasvet.com/premixes/",
+      "permanent": true
     }
   ],
   "rewrites": [
