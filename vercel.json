@@ -4,6 +4,17 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "veritasvet.com"
+        }
+      ],
+      "destination": "https://www.veritasvet.com/$1",
+      "permanent": true
+    },
+    {
       "source": "/category/news/",
       "destination": "https://veritasvet.com/news/",
       "permanent": true
