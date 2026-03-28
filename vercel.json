@@ -1,7 +1,7 @@
 {
   "buildCommand": "node build.js",
   "outputDirectory": ".",
-  "trailingSlash": false,
+  "trailingSlash": true,
   "redirects": [
     {
       "source": "/category/news/",
