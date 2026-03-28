@@ -229,11 +229,6 @@
       "permanent": true
     },
     {
-      "source": "/premixes",
-      "destination": "https://www.veritasvet.com/premixes/",
-      "permanent": true
-    },
-    {
       "source": "/product-category/poultry",
       "destination": "/species/poultry/",
       "permanent": true
