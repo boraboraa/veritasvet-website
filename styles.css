@@ -1126,3 +1126,70 @@ background:var(--color-accent);color:#fff
 .market-grid{grid-template-columns:1fr}
 .market-cta{padding:2rem 1.3rem;margin-bottom:3rem}
 }
+
+
+/* =============================================
+   MARKET PAGES — MOBILE RESPONSIVE FIXES
+   ============================================= */
+
+@media (max-width: 900px) {
+  .market-hero-section {
+    padding: 1rem 1.25rem 3rem !important;
+  }
+  .market-hero-section h1 {
+    font-size: clamp(1.8rem, 5vw, 2.4rem) !important;
+  }
+  .market-hero-actions {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+  .market-hero-actions .btn {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .market-section {
+    padding: 0 1.25rem 2rem !important;
+  }
+  .market-box {
+    padding: 1.25rem !important;
+  }
+  .market-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+  .market-card {
+    padding: 1rem !important;
+  }
+  .market-cta {
+    padding: 1rem !important;
+  }
+  .market-main {
+    padding-top: 2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .market-hero-shell h1 {
+    font-size: 1.6rem !important;
+  }
+  .market-eyebrow {
+    font-size: 10px !important;
+  }
+  .market-box h2 {
+    font-size: 1.4rem !important;
+  }
+}
+
+/* Ensure market section headings don't overflow */
+.market-box h2,
+.market-section h2 {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Market tables — horizontal scroll on mobile */
+.market-box table {
+  overflow-x: auto;
+  display: block;
+}
+
