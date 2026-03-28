@@ -94,16 +94,6 @@
       "permanent": true
     },
     {
-      "source": "/feed-additives.html",
-      "destination": "/feed-additives/",
-      "permanent": true
-    },
-    {
-      "source": "/feed-additives",
-      "destination": "/feed-additives/",
-      "permanent": true
-    },
-    {
       "source": "/fr/aquaculture.html",
       "destination": "/fr/species/aquaculture/",
       "permanent": true
@@ -131,16 +121,6 @@
     {
       "source": "/fr/ruminant",
       "destination": "/fr/species/ruminant/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/feed-additives.html",
-      "destination": "/fr/feed-quality/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/feed-additives",
-      "destination": "/fr/feed-quality/",
       "permanent": true
     },
     {
@@ -347,6 +327,26 @@
       "source": "/versamold/",
       "destination": "/products/versamold/",
       "permanent": true
+    },
+    {
+      "source": "/feed-additives",
+      "destination": "/feed-quality/",
+      "permanent": true
+    },
+    {
+      "source": "/feed-additives.html",
+      "destination": "/feed-quality/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/feed-additives",
+      "destination": "/fr/feed-quality/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/feed-additives.html",
+      "destination": "/fr/feed-quality/",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -357,6 +357,10 @@
     {
       "source": "/premixes",
       "destination": "/premixes/index.html"
+    },
+    {
+      "source": "/feed-additives/",
+      "destination": "/feed-quality/"
     }
   ],
   "headers": [
