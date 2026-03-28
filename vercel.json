@@ -228,12 +228,6 @@
       "source": "/contacts",
       "destination": "https://www.veritasvet.com/contact/",
       "permanent": true
-    },
-    {
-      "source": "/((?!www\\.).*)",
-      "destination": "https://www.veritasvet.com/$1",
-      "permanent": true,
-      "regex": true
     }
   ],
   "rewrites": [
