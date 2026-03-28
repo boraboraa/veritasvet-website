@@ -233,6 +233,31 @@
       "source": "/premixes",
       "destination": "https://www.veritasvet.com/premixes/",
       "permanent": true
+    },
+    {
+      "source": "/product-category/poultry",
+      "destination": "/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/poultry/",
+      "destination": "/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/ruminant",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/ruminant/",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/aquatics",
+      "destination": "/species/aquaculture/",
+      "permanent": true
     }
   ],
   "rewrites": [
