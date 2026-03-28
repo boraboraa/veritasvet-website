@@ -287,6 +287,71 @@
       "source": "/category/aquaculture/",
       "destination": "/species/aquaculture/",
       "permanent": true
+    },
+    {
+      "source": "/boost-animal-performance",
+      "destination": "/markets/africa/",
+      "permanent": true
+    },
+    {
+      "source": "/boost-animal-performance/",
+      "destination": "/markets/africa/",
+      "permanent": true
+    },
+    {
+      "source": "/category/news",
+      "destination": "/news/",
+      "permanent": true
+    },
+    {
+      "source": "/veroxid-b2a",
+      "destination": "/products/veroxid-b2a/",
+      "permanent": true
+    },
+    {
+      "source": "/veroxid-b2a/",
+      "destination": "/products/veroxid-b2a/",
+      "permanent": true
+    },
+    {
+      "source": "/versacid-liquid",
+      "destination": "/products/versacid-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/versacid-liquid/",
+      "destination": "/products/versacid-liquid/",
+      "permanent": true
+    },
+    {
+      "source": "/versapeg",
+      "destination": "/products/versapeg/",
+      "permanent": true
+    },
+    {
+      "source": "/versapeg/",
+      "destination": "/products/versapeg/",
+      "permanent": true
+    },
+    {
+      "source": "/versamos",
+      "destination": "/products/versamos/",
+      "permanent": true
+    },
+    {
+      "source": "/versamos/",
+      "destination": "/products/versamos/",
+      "permanent": true
+    },
+    {
+      "source": "/versamold",
+      "destination": "/products/versamold/",
+      "permanent": true
+    },
+    {
+      "source": "/versamold/",
+      "destination": "/products/versamold/",
+      "permanent": true
     }
   ],
   "rewrites": [
