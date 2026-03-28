@@ -95,7 +95,7 @@
     },
     {
       "source": "/feed-additives.html",
-      "destination": "/products/",
+      "destination": "/feed-additives/",
       "permanent": true
     },
     {
@@ -135,7 +135,7 @@
     },
     {
       "source": "/fr/feed-additives.html",
-      "destination": "/fr/products/",
+      "destination": "/fr/feed-quality/",
       "permanent": true
     },
     {
