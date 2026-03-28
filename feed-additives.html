@@ -90,6 +90,101 @@
 <button class="filter-btn" data-category="nutrition" onclick="filterProducts('nutrition')">Nutrition</button>
 </div>
 <div class="prods-grid" id="prodsGrid"></div>
+
+<!-- Static product links for search engines and accessibility -->
+<noscript>
+<style>
+.prods-static-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;padding:2rem 0}
+.prods-static-card{display:flex;flex-direction:column;gap:.5rem;padding:1.25rem;border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-md);background:rgba(255,255,255,.06);transition:border-color .25s}
+.prods-static-card:hover{border-color:rgba(255,255,255,.28)}
+.prods-static-card h3{font-size:.9rem;font-weight:600;color:var(--white,white)}
+.prods-static-card p{font-size:.8rem;color:rgba(255,255,255,.62);line-height:1.5;margin:0}
+.prods-static-card .prods-static-link{font-size:.8rem;font-weight:500;color:#4e8a5e;text-decoration:none;margin-top:auto}
+.prods-static-card .prods-static-link:hover{color:#6aab7a}
+</style>
+</noscript>
+
+<!-- Static HTML product links (for Google discovery) -->
+<div class="prods-static-grid" id="prodsStaticLinks" style="display:none">
+<article class="prods-static-card">
+<h3>ToxyFix</h3>
+<p>Broad-spectrum mycotoxin binder for corn and soy-based feeds. Targets aflatoxin, fumonisin, and T-2 toxin.</p>
+<a class="prods-static-link" href="/products/toxifix/">View ToxyFix →</a>
+</article>
+<article class="prods-static-card">
+<h3>ToxyFix Plus</h3>
+<p>Enhanced mycotoxin protection for high-contamination scenarios and heat-stressed feed ingredients.</p>
+<a class="prods-static-link" href="/products/toxifix-plus/">View ToxyFix Plus →</a>
+</article>
+<article class="prods-static-card">
+<h3>ToxyFix Perfect</h3>
+<p>Premium multi-mycotoxin binder with advanced liver protection for integrator operations.</p>
+<a class="prods-static-link" href="/products/toxifix-perfect/">View ToxyFix Perfect →</a>
+</article>
+<article class="prods-static-card">
+<h3>VersaMold</h3>
+<p>Mold control and feed hygiene solution for humid storage conditions and warm-climate markets.</p>
+<a class="prods-static-link" href="/products/versamold/">View VersaMold →</a>
+</article>
+<article class="prods-static-card">
+<h3>VersaPeg</h3>
+<p>Intestinal integrity support during heat stress. Maintains gut barrier function in broilers and layers.</p>
+<a class="prods-static-link" href="/products/versapeg/">View VersaPeg →</a>
+</article>
+<article class="prods-static-card">
+<h3>GuarBind</h3>
+<p>Pellet binding agent for feed mill operations. Improves pellet durability index and reduces fines.</p>
+<a class="prods-static-link" href="/products/guarbind/">View GuarBind →</a>
+</article>
+<article class="prods-static-card">
+<h3>VersaMos</h3>
+<p>Direct-fed microbial (DFM) and prebiotic blend for stabilising gut flora in poultry and ruminants.</p>
+<a class="prods-static-link" href="/products/versamos/">View VersaMos →</a>
+</article>
+<article class="prods-static-card">
+<h3>VersaAcid FL Plus</h3>
+<p>Free-flowing acidifier blend for feed acidification and pathogen control in poultry feed.</p>
+<a class="prods-static-link" href="/products/versacid-fl-plus/">View VersaAcid FL Plus →</a>
+</article>
+<article class="prods-static-card">
+<h3>VersaAcid Liquid</h3>
+<p>Liquid acidifier for drinking water systems and feed mill liquid application programs.</p>
+<a class="prods-static-link" href="/products/versacid-liquid/">View VersaAcid Liquid →</a>
+</article>
+<article class="prods-static-card">
+<h3>Veroxid B2A</h3>
+<p>Synthetic antioxidant blend for feed fat protection. Prevents oxidation of tallow, oils, and vitamin premixes.</p>
+<a class="prods-static-link" href="/products/veroxid-b2a/">View Veroxid B2A →</a>
+</article>
+<article class="prods-static-card">
+<h3>Veroxid Phenols</h3>
+<p>Natural source antioxidant (tocopherol + rosemary) for premium feed quality and clean-label formulations.</p>
+<a class="prods-static-link" href="/products/veroxid-phenols/">View Veroxid Phenols →</a>
+</article>
+<article class="prods-static-card">
+<h3>VeriVit Hy-D3</h3>
+<p>High-bioavailability vitamin D3 supplement with enhanced absorption for poultry and swine operations.</p>
+<a class="prods-static-link" href="/products/verivit-hy-d3/">View VeriVit Hy-D3 →</a>
+</article>
+<article class="prods-static-card">
+<h3>ButyCal CCB94</h3>
+<p>Calcium butyrate gut health supplement for poultry, ruminants, and aquaculture species.</p>
+<a class="prods-static-link" href="/products/butycal-ccb94/">View ButyCal CCB94 →</a>
+</article>
+</div>
+
+<script>
+// Fallback: show static links if JS-rendered grid is empty after 1 second
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var grid = document.getElementById('prodsGrid');
+    var staticLinks = document.getElementById('prodsStaticLinks');
+    if (grid && grid.children.length === 0 && staticLinks) {
+      staticLinks.style.display = 'grid';
+    }
+  }, 1000);
+});
+</script>
 </div>
 </div>
 </div>
