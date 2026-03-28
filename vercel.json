@@ -1,8 +1,7 @@
 {
   "buildCommand": "node build.js",
   "outputDirectory": ".",
-  "cleanUrls": true,
-  "trailingSlash": true,
+  "trailingSlash": false,
   "redirects": [
     {
       "source": "/category/news/",
@@ -257,36 +256,6 @@
     {
       "source": "/product-category/aquatics",
       "destination": "/species/aquaculture/",
-      "permanent": true
-    },
-    {
-      "source": "/mycotoxin-binders",
-      "destination": "/mycotoxin-binders/",
-      "permanent": true
-    },
-    {
-      "source": "/gut-health",
-      "destination": "/gut-health/",
-      "permanent": true
-    },
-    {
-      "source": "/feed-quality",
-      "destination": "/feed-quality/",
-      "permanent": true
-    },
-    {
-      "source": "/mycotoxin-binders/",
-      "destination": "/mycotoxin-binders/",
-      "permanent": true
-    },
-    {
-      "source": "/gut-health/",
-      "destination": "/gut-health/",
-      "permanent": true
-    },
-    {
-      "source": "/feed-quality/",
-      "destination": "/feed-quality/",
       "permanent": true
     },
     {
