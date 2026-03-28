@@ -258,6 +258,66 @@
       "source": "/product-category/aquatics",
       "destination": "/species/aquaculture/",
       "permanent": true
+    },
+    {
+      "source": "/mycotoxin-binders",
+      "destination": "/mycotoxin-binders/",
+      "permanent": true
+    },
+    {
+      "source": "/gut-health",
+      "destination": "/gut-health/",
+      "permanent": true
+    },
+    {
+      "source": "/feed-quality",
+      "destination": "/feed-quality/",
+      "permanent": true
+    },
+    {
+      "source": "/mycotoxin-binders/",
+      "destination": "/mycotoxin-binders/",
+      "permanent": true
+    },
+    {
+      "source": "/gut-health/",
+      "destination": "/gut-health/",
+      "permanent": true
+    },
+    {
+      "source": "/feed-quality/",
+      "destination": "/feed-quality/",
+      "permanent": true
+    },
+    {
+      "source": "/category/poultry",
+      "destination": "/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/category/ruminant",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/category/aquaculture",
+      "destination": "/species/aquaculture/",
+      "permanent": true
+    },
+    {
+      "source": "/category/poultry/",
+      "destination": "/species/poultry/",
+      "permanent": true
+    },
+    {
+      "source": "/category/ruminant/",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/category/aquaculture/",
+      "destination": "/species/aquaculture/",
+      "permanent": true
     }
   ],
   "rewrites": [
