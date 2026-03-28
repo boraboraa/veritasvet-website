@@ -99,8 +99,32 @@
       <div class="product-cta-block">
         <h3>Interested in ToxyFix?</h3>
         <p>Request full technical documentation or schedule a meeting with our team.</p>
-        <a class="btn-primary" href="/contact/">Contact Our Team &rarr;</a>
       </div>
+
+        <div class="product-quote-form">
+          <h4>Request a Quote</h4>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6ad39115-6edb-458a-a82f-16e2b3f136e8">
+            <input type="hidden" name="subject" value="Quote Request - ToxyFix">
+            <input type="hidden" name="product" value="ToxyFix">
+            <div class="form-row">
+              <input type="text" name="company" placeholder="Company Name" required>
+              <input type="email" name="email" placeholder="Business Email" required>
+            </div>
+            <div class="form-row">
+              <select name="interest" required>
+                <option value="">Select Interest</option>
+                <option value="ToxyFix">ToxyFix (Standard)</option>
+                <option value="ToxyFix Plus">ToxyFix Plus</option>
+                <option value="ToxyFix Perfect">ToxyFix Perfect</option>
+                <option value="Multiple Products">Multiple Products</option>
+              </select>
+              <input type="text" name="country" placeholder="Country">
+            </div>
+            <textarea name="message" placeholder="Tell us about your requirements..." rows="2"></textarea>
+            <button type="submit" class="btn-primary">Send Quote Request →</button>
+          </form>
+        </div>
     </div>
   </div>
 </main>
