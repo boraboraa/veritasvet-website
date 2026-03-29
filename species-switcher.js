@@ -7,9 +7,9 @@
     {id:'versamos',n:'VersaMos',c:'gut-health',cn:'Gut Health',d:'MOS-based support for digestive balance and pathogen management.',s:['Poultry'],inc:'As directed in product documentation',out:'Supports stable digestive health programs'},
     {id:'versacid-fl-plus',n:'VersAcid FL Plus',c:'gut-health',cn:'Gut Health',d:'Acidifier blend for pH and digestive optimization.',s:['Poultry'],inc:'As directed in product documentation',out:'Supports digestive and feed acidification goals'},
     {id:'versacid-liquid',n:'VersAcid Liquid',c:'gut-health',cn:'Gut Health',d:'Liquid acidifier for practical water and feed programs.',s:['Poultry'],inc:'As directed in product documentation',out:'Supports daily acidification performance'},
-    {id:'toxifix',n:'ToxyFix',c:'mycotoxin-eliminator',cn:'Mycotoxin Eliminator',d:'Mycotoxin binder supporting contamination risk management.',s:['Poultry','Ruminant'],inc:'As directed in product documentation',out:'Supports mycotoxin management outcomes'},
-    {id:'toxifix-plus',n:'ToxyFix Plus',c:'mycotoxin-eliminator',cn:'Mycotoxin Eliminator',d:'Enhanced mycotoxin eliminator for broad-spectrum feed challenges.',s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports robust toxin control plans'},
-    {id:'toxifix-perfect',n:'ToxyFix Perfect',c:'mycotoxin-eliminator',cn:'Mycotoxin Eliminator',d:'Comprehensive toxin eliminator for high-risk feed scenarios.',s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports complete toxin elimination strategies'},
+    {id:'toxifix',n:'ToxyFix',c:'mycotoxin-management',cn:'Mycotoxin Management',d:'Mycotoxin binder supporting contamination risk management.',s:['Poultry','Ruminant'],inc:'As directed in product documentation',out:'Supports mycotoxin management outcomes'},
+    {id:'toxifix-plus',n:'ToxyFix Plus',c:'mycotoxin-management',cn:'Mycotoxin Management',d:'Enhanced mycotoxin eliminator for broad-spectrum feed challenges.',s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports robust toxin control plans'},
+    {id:'toxifix-perfect',n:'ToxyFix Perfect',c:'mycotoxin-management',cn:'Mycotoxin Management',d:'Comprehensive toxin eliminator for high-risk feed scenarios.',s:['Poultry','Ruminant','Aquaculture'],inc:'As directed in product documentation',out:'Supports complete toxin elimination strategies'},
     {id:'verivit-hy-d3',n:'VeriVit HY D3',c:'nutrition',cn:'Nutrition',d:'Vitamin-focused additive supporting nutritional completeness.',s:['Poultry'],inc:'As directed in product documentation',out:'Supports nutrition-focused feed outcomes'},
     {id:'versapeg',n:'VersaPeg',c:'nutrition',cn:'Nutrition',d:'Nutritional formulation support for balanced performance.',s:['Poultry'],inc:'As directed in product documentation',out:'Supports optimized nutrition design'},
     {id:'guarbind',n:'GuarBind',c:'feed-quality',cn:'Feed Quality',d:'Feed binding solution for pellet and texture consistency.',s:['Poultry'],inc:'As directed in product documentation',out:'Supports stable feed quality metrics'},
@@ -36,7 +36,7 @@
 
   var CATEGORIES = [
     { key: 'gut-health',  label: 'Gut Health', labelFr: 'Santé Intestinale' },
-    { key: 'mycotoxin',   label: 'Mycotoxin Eliminator', labelFr: 'Éliminateur de Mycotoxines' },
+    { key: 'mycotoxin-management', label: 'Mycotoxin Management', labelFr: 'Gestion des Mycotoxines' },
     { key: 'feed-quality', label: 'Feed Quality', labelFr: 'Qualité de l\'Aliment' },
     { key: 'nutrition',   label: 'Nutrition', labelFr: 'Nutrition' }
   ];
@@ -71,9 +71,9 @@
     'versamos': {cn:'Santé Intestinale',d:'Support à base de MOS pour l\'équilibre digestif et la gestion des pathogènes.',inc:'Selon la documentation produit',out:'Soutient des programmes de santé digestive stables'},
     'versacid-fl-plus': {cn:'Santé Intestinale',d:'Mélange acidifiant pour l\'optimisation du pH et de la digestion.',inc:'Selon la documentation produit',out:'Soutient les objectifs d\'acidification digestive et alimentaire'},
     'versacid-liquid': {cn:'Santé Intestinale',d:'Acidifiant liquide pour les programmes pratiques d\'eau et d\'alimentation.',inc:'Selon la documentation produit',out:'Soutient la performance d\'acidification quotidienne'},
-    'toxifix': {cn:'Éliminateur de Mycotoxines',d:'Liant de mycotoxines soutenant la gestion du risque de contamination.',inc:'Selon la documentation produit',out:'Soutient les résultats de gestion des mycotoxines'},
-    'toxifix-plus': {cn:'Éliminateur de Mycotoxines',d:'Éliminateur de mycotoxines amélioré pour les défis alimentaires à large spectre.',inc:'Selon la documentation produit',out:'Soutient des plans de contrôle robustes des toxines'},
-    'toxifix-perfect': {cn:'Éliminateur de Mycotoxines',d:'Éliminateur complet de toxines pour les scénarios alimentaires à haut risque.',inc:'Selon la documentation produit',out:'Soutient les stratégies complètes d\'élimination des toxines'},
+    'toxifix': {cn:'Gestion des Mycotoxines',d:'Liant de mycotoxines soutenant la gestion du risque de contamination.',inc:'Selon la documentation produit',out:'Soutient les résultats de gestion des mycotoxines'},
+    'toxifix-plus': {cn:'Gestion des Mycotoxines',d:'Éliminateur de mycotoxines amélioré pour les défis alimentaires à large spectre.',inc:'Selon la documentation produit',out:'Soutient des plans de contrôle robustes des toxines'},
+    'toxifix-perfect': {cn:'Gestion des Mycotoxines',d:'Éliminateur complet de toxines pour les scénarios alimentaires à haut risque.',inc:'Selon la documentation produit',out:'Soutient les stratégies complètes d\'élimination des toxines'},
     'verivit-hy-d3': {cn:'Nutrition',d:'Additif axé sur les vitamines soutenant la complétude nutritionnelle.',inc:'Selon la documentation produit',out:'Soutient les résultats alimentaires axés sur la nutrition'},
     'versapeg': {cn:'Nutrition',d:'Support de formulation nutritionnelle pour des performances équilibrées.',inc:'Selon la documentation produit',out:'Soutient la conception nutritionnelle optimisée'},
     'guarbind': {cn:'Qualité de l\'Aliment',d:'Solution de liaison alimentaire pour la cohérence des granulés et de la texture.',inc:'Selon la documentation produit',out:'Soutient des métriques de qualité alimentaire stables'},
@@ -100,7 +100,7 @@
   /* ── Helpers ───────────────────────────────────────────────── */
 
   function catKey(raw) {
-    return raw === 'mycotoxin-eliminator' ? 'mycotoxin' : raw;
+    return raw === 'mycotoxin-eliminator' ? 'mycotoxin-management' : raw;
   }
 
   function detectSpecies() {
