@@ -737,7 +737,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/emirats-arabes-unis/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/uae/"/>
   </url>
-</urlset>  <url><loc>https://www.veritasvet.com/fr/mycotoxin-binders/</loc></url>
+<url><loc>https://www.veritasvet.com/fr/mycotoxin-binders/</loc></url>
   <url>
     <loc>https://www.veritasvet.com/fr/feed-quality/</loc>
     <lastmod>2026-03-28</lastmod>
@@ -754,3 +754,4 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/gut-health/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/gut-health/"/>
   </url>
+</urlset>
