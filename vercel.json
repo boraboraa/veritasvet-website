@@ -341,22 +341,12 @@
     },
     {
       "source": "/feed-additives",
-      "destination": "/feed-quality/",
-      "permanent": true
-    },
-    {
-      "source": "/feed-additives.html",
-      "destination": "/feed-quality/",
+      "destination": "/feed-additives.html",
       "permanent": true
     },
     {
       "source": "/fr/feed-additives",
-      "destination": "/fr/feed-quality/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/feed-additives.html",
-      "destination": "/fr/feed-quality/",
+      "destination": "/fr/feed-additives.html",
       "permanent": true
     }
   ],
@@ -371,7 +361,11 @@
     },
     {
       "source": "/feed-additives/",
-      "destination": "/feed-quality/"
+      "destination": "/feed-additives.html"
+    },
+    {
+      "source": "/fr/feed-additives/",
+      "destination": "/fr/feed-additives.html"
     }
   ],
   "headers": [
