@@ -1,0 +1,29 @@
+{
+  "pages": [
+    { "lang": "en", "slug": "/feed-additives.html", "file": "feed-additives.html" },
+    { "lang": "en", "slug": "/mycotoxin-binders/", "file": "mycotoxin-binders/index.html" },
+    { "lang": "en", "slug": "/gut-health/", "file": "gut-health/index.html" },
+    { "lang": "en", "slug": "/feed-quality/", "file": "feed-quality/index.html" },
+    { "lang": "en", "slug": "/nutrition/", "file": "nutrition/index.html" },
+    { "lang": "en", "slug": "/markets/africa/", "file": "markets/africa/index.html" },
+    { "lang": "en", "slug": "/markets/middle-east/", "file": "markets/middle-east/index.html" },
+    { "lang": "en", "slug": "/markets/egypt/", "file": "markets/egypt/index.html" },
+    { "lang": "en", "slug": "/markets/saudi-arabia/", "file": "markets/saudi-arabia/index.html" },
+    { "lang": "en", "slug": "/markets/jordan/", "file": "markets/jordan/index.html" },
+    { "lang": "en", "slug": "/markets/iraq/", "file": "markets/iraq/index.html" },
+    { "lang": "en", "slug": "/markets/uae/", "file": "markets/uae/index.html" },
+
+    { "lang": "fr", "slug": "/fr/feed-additives.html", "file": "fr/feed-additives.html" },
+    { "lang": "fr", "slug": "/fr/mycotoxin-binders/", "file": "fr/mycotoxin-binders/index.html" },
+    { "lang": "fr", "slug": "/fr/gut-health/", "file": "fr/gut-health/index.html" },
+    { "lang": "fr", "slug": "/fr/feed-quality/", "file": "fr/feed-quality/index.html" },
+    { "lang": "fr", "slug": "/fr/nutrition/", "file": "fr/nutrition/index.html" },
+    { "lang": "fr", "slug": "/fr/markets/afrique/", "file": "fr/markets/afrique/index.html" },
+    { "lang": "fr", "slug": "/fr/markets/moyen-orient/", "file": "fr/markets/moyen-orient/index.html" },
+    { "lang": "fr", "slug": "/fr/markets/egypte/", "file": "fr/markets/egypte/index.html" },
+    { "lang": "fr", "slug": "/fr/markets/arabie-saoudite/", "file": "fr/markets/arabie-saoudite/index.html" },
+    { "lang": "fr", "slug": "/fr/markets/jordan/", "file": "fr/markets/jordan/index.html" },
+    { "lang": "fr", "slug": "/fr/markets/irak/", "file": "fr/markets/irak/index.html" },
+    { "lang": "fr", "slug": "/fr/markets/emirats-arabes-unis/", "file": "fr/markets/emirats-arabes-unis/index.html" }
+  ]
+}
