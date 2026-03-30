@@ -378,13 +378,14 @@ a.pc{text-decoration:none;color:inherit}
 }
 @media(max-width:768px){
 .hamburger{display:flex}
-.nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:#ffffff;flex-direction:column;justify-content:center;gap:2rem;opacity:0;pointer-events:none;transition:opacity .4s ease;z-index:10000;margin-right:0;margin-left:0}
+.nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:#ffffff;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:1rem;padding:6.25rem 1.5rem 2rem;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .4s ease;z-index:10000;margin-right:0;margin-left:0}
 .nav-links.open{opacity:1;pointer-events:all}
 .nav-social{display:none}
-.nav-links .nav-link{color:var(--text-primary)!important;font-size:1.25rem;background:transparent;box-shadow:none}
+.nav-links .nav-link{color:var(--text-primary)!important;font-size:1.1rem;background:transparent;box-shadow:none;padding:.35rem 0}
+.nav-dropdown{width:100%}
 .nav-dropdown-menu{position:static;transform:none;opacity:1;pointer-events:all;background:transparent;box-shadow:none;border:none;backdrop-filter:none;min-width:0;padding:0;margin:.5rem 0}
 .nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown.open .nav-dropdown-menu{transform:none}
-.nav-dropdown-menu a{font-size:1.1rem;padding:.4rem 1rem;color:var(--text-secondary)}
+.nav-dropdown-menu a{font-size:1rem;padding:.35rem 0;color:var(--text-secondary)}
 .nav{height:84px;padding:0 1.5rem}
 .nav-logo img{height:88%;max-height:74px}
 .section-pad{padding:4rem 1.5rem}
@@ -1121,6 +1122,8 @@ background:var(--color-accent);color:#fff
 .market-main{padding-top:2rem}
 .market-hero-section,.market-section{padding-left:1.5rem;padding-right:1.5rem}
 .market-hero-shell{padding:2rem 1.3rem;border-radius:var(--radius-lg)}
+.market-hero-media{display:block!important;width:100%}
+.market-hero-media img{display:block!important;width:100%;aspect-ratio:16/11;object-fit:cover}
 .market-hero-actions .btn-green,.market-hero-actions .btn-green-outline{width:100%;justify-content:center}
 .market-box{padding:1.5rem}
 .market-grid{grid-template-columns:1fr}
@@ -1192,4 +1195,3 @@ background:var(--color-accent);color:#fff
   overflow-x: auto;
   display: block;
 }
-
