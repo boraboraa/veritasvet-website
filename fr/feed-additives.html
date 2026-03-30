@@ -20,18 +20,6 @@
 .lang-sep{color:var(--text-secondary,#6b7280);font-weight:300}
 @media(max-width:900px){.lang-switch{margin:12px 0 0;justify-content:center}}
 </style>
-<link rel="alternate" hreflang="en" href="https://www.veritasvet.com/feed-additives.html">
-<link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/feed-additives.html">
-<link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/feed-additives.html">
-
-<style>
-.lang-switch{display:flex;align-items:center;gap:4px;margin-left:12px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500}
-.lang-btn{color:var(--text-secondary,#6b7280);text-decoration:none;padding:2px 6px;border-radius:4px;transition:color .2s,background .2s}
-.lang-btn:hover{color:var(--navy,#1a2332)}
-.lang-btn.lang-active{color:var(--navy,#1a2332);font-weight:700;background:rgba(26,35,50,.06)}
-.lang-sep{color:var(--text-secondary,#6b7280);font-weight:300}
-@media(max-width:900px){.lang-switch{margin:12px 0 0;justify-content:center}}
-</style>
 </head>
 <body>
 
@@ -55,7 +43,6 @@
 <a href="/fr/premixes/">Prémélanges</a>
 </div>
 </div>
-</div>
 <div class="nav-dropdown" onclick="this.classList.toggle('open')">
 <span class="nav-link">Marchés <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
 <div class="nav-dropdown-menu">
@@ -68,7 +55,6 @@
 <a href="/fr/markets/emirats-arabes-unis/">Émirats Arabes Unis</a>
 </div>
 </div>
-
 <a class="nav-link" href="/fr/news/">Actualités</a>
 <a class="nav-link" href="/fr/contact/">Contact</a>
 </div>
@@ -76,26 +62,21 @@
 <a href="https://www.linkedin.com/company/veritasvet-srl/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
 <a href="https://www.facebook.com/veritasvet.srl" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
 </div>
-
 <div class="lang-switch"><a href="/feed-additives.html" class="lang-btn">EN</a><span class="lang-sep">|</span><a href="/fr/feed-additives.html" class="lang-btn lang-active">FR</a></div>
 <div class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></div>
 </div>
 </nav>
 
-<!-- PRODUCTS LISTING -->
 <div id="productsListing">
-
-<!-- Hero Section -->
 <section class="pmx-hero">
 <img class="pmx-hero-img" src="/feed%20additives%20header.png" alt="Additifs Alimentaires Ciblés hero banner">
 <div class="pmx-hero-overlay"></div>
 <div class="pmx-hero-content">
-<h1 class="pmx-hero-title">Additifs Alimentaires Ciblés</h1>
+<h1>Additifs Alimentaires pour la Production Animale Moderne</h1>
 <p class="pmx-hero-sub">Chez VeritasVet, les additifs alimentaires ne sont pas des suppléments génériques &mdash; ce sont des solutions scientifiques sélectionnées pour votre espèce, vos défis et vos objectifs de production.</p>
 </div>
 </section>
 
-<!-- Intro Section -->
 <section class="pmx-intro reveal">
 <div class="container">
 <div class="pmx-intro-inner">
@@ -106,7 +87,6 @@
 </div>
 </section>
 
-<div class="section-pad" style="padding-top:2rem">
 <div class="section-pad" style="padding-top:2rem">
 <div class="container">
 <h2 class="sec-title" style="text-align:center;margin-bottom:2rem" id="productsTitle">Additifs Alimentaires</h2>
@@ -124,35 +104,49 @@
 .prods-static-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;padding:2rem 0}
 .prods-static-card{display:flex;flex-direction:column;gap:.5rem;padding:1.25rem;border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-md);background:rgba(255,255,255,.06);transition:border-color .25s}
 .prods-static-card:hover{border-color:rgba(255,255,255,.28)}
-.prods-static-card h3{color:#fff;font-size:1.1rem;margin:0}
-.prods-static-card p{color:rgba(255,255,255,.65);font-size:.9rem;margin:.25rem 0}
-.prods-static-link{color:#5cb85c;font-size:.85rem;font-weight:600;margin-top:.75rem;display:inline-block}
-.prods-static-link:hover{color:#fff}
+.prods-static-card h3{font-size:.9rem;font-weight:600;color:var(--white,white)}
+.prods-static-card p{font-size:.8rem;color:rgba(255,255,255,.62);line-height:1.5;margin:0}
+.prods-static-card .prods-static-link{font-size:.8rem;font-weight:500;color:#4e8a5e;text-decoration:none;margin-top:auto}
+.prods-static-card .prods-static-link:hover{color:#6aab7a}
 </style>
 </noscript>
-<div class="prods-static-grid">
-<article class="prods-static-card"><h3>ButyCal CCB94</h3><p><strong>Santé Intestinale:</strong> Solution de butyrate de calcium pour l'intégrité digestive.</p><a class="prods-static-link" href="/fr/products/butycal-ccb94/">Voir ButyCal CCB94 →</a></article>
-<article class="prods-static-card"><h3>VersaMos</h3><p><strong>Santé Intestinale:</strong> Support prébiotique MOS pour la stabilité du microbiome.</p><a class="prods-static-link" href="/fr/products/versamos/">Voir VersaMos →</a></article>
-<article class="prods-static-card"><h3>VersAcid FL Plus</h3><p><strong>Santé Intestinale:</strong> Mélange acidifiant pour l'équilibre du pH intestinal.</p><a class="prods-static-link" href="/fr/products/versacid-fl-plus/">Voir VersAcid FL Plus →</a></article>
-<article class="prods-static-card"><h3>VersAcid Liquid</h3><p><strong>Santé Intestinale:</strong> Acidifiant liquide pour l'eau et les systèmes d'alimentation.</p><a class="prods-static-link" href="/fr/products/versacid-liquid/">Voir VersAcid Liquid →</a></article>
-<article class="prods-static-card"><h3>ToxyFix</h3><p><strong>Gestion des Mycotoxines:</strong> Liant de mycotoxines à spectre large.</p><a class="prods-static-link" href="/fr/products/toxifix/">Voir ToxyFix →</a></article>
-<article class="prods-static-card"><h3>ToxyFix Plus</h3><p><strong>Gestion des Mycotoxines:</strong> Gestion améliorée des mycotoxines.</p><a class="prods-static-link" href="/fr/products/toxifix-plus/">Voir ToxyFix Plus →</a></article>
-<article class="prods-static-card"><h3>ToxyFix Perfect</h3><p><strong>Gestion des Mycotoxines:</strong> Contrôle multi-mycotoxines premium.</p><a class="prods-static-link" href="/fr/products/toxifix-perfect/">Voir ToxyFix Perfect →</a></article>
-<article class="prods-static-card"><h3>GuarBind</h3><p><strong>Qualité de l'Aliment:</strong> Liant de granulés pour la cohérence des granulés.</p><a class="prods-static-link" href="/fr/products/guarbind/">Voir GuarBind →</a></article>
-<article class="prods-static-card"><h3>VerOxid B2A</h3><p><strong>Qualité de l'Aliment:</strong> Mélange antioxydant synthétique.</p><a class="prods-static-link" href="/fr/products/veroxid-b2a/">Voir VerOxid B2A →</a></article>
-<article class="prods-static-card"><h3>VerOxid Phenols</h3><p><strong>Qualité de l'Aliment:</strong> Système antioxydant phénolique naturel.</p><a class="prods-static-link" href="/fr/products/veroxid-phenols/">Voir VerOxid Phenols →</a></article>
-<article class="prods-static-card"><h3>VersaMold</h3><p><strong>Qualité de l'Aliment:</strong> Inhibiteur de moisissures pour la préservation.</p><a class="prods-static-link" href="/fr/products/versamold/">Voir VersaMold →</a></article>
-<article class="prods-static-card"><h3>VeriVit HY D3</h3><p><strong>Nutrition:</strong> Vitamine D3 à haute biodisponibilité.</p><a class="prods-static-link" href="/fr/products/verivit-hy-d3/">Voir VeriVit HY D3 →</a></article>
-<article class="prods-static-card"><h3>VersaPeg</h3><p><strong>Nutrition:</strong> Émulsifiant nutritionnel pour une digestion améliorée.</p><a class="prods-static-link" href="/fr/products/versapeg/">Voir VersaPeg →</a></article>
+
+<div class="prods-static-grid" id="prodsStaticLinks" style="display:none">
+<article class="prods-static-card"><h3>ButyCal CCB94</h3><p><strong>Santé Intestinale :</strong> Solution de butyrate de calcium pour l'intégrité digestive et l'efficacité alimentaire en volaille, ruminants et aquaculture.</p><a class="prods-static-link" href="/fr/products/butycal-ccb94/">Voir ButyCal CCB94 →</a></article>
+<article class="prods-static-card"><h3>VersaMos</h3><p><strong>Santé Intestinale :</strong> Support prébiotique à base de MOS pour la stabilité du microbiome et la résilience intestinale.</p><a class="prods-static-link" href="/fr/products/versamos/">Voir VersaMos →</a></article>
+<article class="prods-static-card"><h3>VersAcid FL Plus</h3><p><strong>Santé Intestinale :</strong> Mélange acidifiant à écoulement libre pour l'équilibre du pH intestinal et l'hygiène de l'aliment.</p><a class="prods-static-link" href="/fr/products/versacid-fl-plus/">Voir VersAcid FL Plus →</a></article>
+<article class="prods-static-card"><h3>VersAcid Liquid</h3><p><strong>Santé Intestinale :</strong> Acidifiant liquide pour l'eau et les systèmes d'alimentation afin de soutenir la digestion et le contrôle des pathogènes.</p><a class="prods-static-link" href="/fr/products/versacid-liquid/">Voir VersAcid Liquid →</a></article>
+<article class="prods-static-card"><h3>ToxyFix</h3><p><strong>Gestion des Mycotoxines :</strong> Liant de mycotoxines à large spectre pour le contrôle courant du risque aflatoxines, fumonisines et toxine T-2.</p><a class="prods-static-link" href="/fr/products/toxifix/">Voir ToxyFix →</a></article>
+<article class="prods-static-card"><h3>ToxyFix Plus</h3><p><strong>Gestion des Mycotoxines :</strong> Gestion renforcée des mycotoxines pour des pressions de contamination élevées et des matières premières variables.</p><a class="prods-static-link" href="/fr/products/toxifix-plus/">Voir ToxyFix Plus →</a></article>
+<article class="prods-static-card"><h3>ToxyFix Perfect</h3><p><strong>Gestion des Mycotoxines :</strong> Contrôle premium multi-mycotoxines avec support avancé pour les scénarios alimentaires les plus exigeants.</p><a class="prods-static-link" href="/fr/products/toxifix-perfect/">Voir ToxyFix Perfect →</a></article>
+<article class="prods-static-card"><h3>GuarBind</h3><p><strong>Qualité de l'Aliment :</strong> Liant de granulés qui améliore la durabilité des pellets, réduit les fines et soutient la constance du process usine.</p><a class="prods-static-link" href="/fr/products/guarbind/">Voir GuarBind →</a></article>
+<article class="prods-static-card"><h3>VerOxid B2A</h3><p><strong>Qualité de l'Aliment :</strong> Mélange antioxydant synthétique qui protège les graisses et huiles de l'oxydation au stockage.</p><a class="prods-static-link" href="/fr/products/veroxid-b2a/">Voir VerOxid B2A →</a></article>
+<article class="prods-static-card"><h3>VerOxid Phenols</h3><p><strong>Qualité de l'Aliment :</strong> Système antioxydant naturel avec tocophérols et composés phénoliques pour préserver la fraîcheur.</p><a class="prods-static-link" href="/fr/products/veroxid-phenols/">Voir VerOxid Phenols →</a></article>
+<article class="prods-static-card"><h3>VersaMold</h3><p><strong>Qualité de l'Aliment :</strong> Solution de contrôle des moisissures pour l'hygiène et la stabilité de stockage en conditions chaudes ou humides.</p><a class="prods-static-link" href="/fr/products/versamold/">Voir VersaMold →</a></article>
+<article class="prods-static-card"><h3>VeriVit HY D3</h3><p><strong>Nutrition :</strong> Source de vitamine D3 à haute biodisponibilité pour une meilleure utilisation minérale et la performance nutritionnelle.</p><a class="prods-static-link" href="/fr/products/verivit-hy-d3/">Voir VeriVit HY D3 →</a></article>
+<article class="prods-static-card"><h3>VersaPeg</h3><p><strong>Nutrition :</strong> Support émulsifiant nutritionnel pour améliorer la digestion des graisses et l'efficacité d'absorption des nutriments.</p><a class="prods-static-link" href="/fr/products/versapeg/">Voir VersaPeg →</a></article>
 </div>
 
-<!-- PRODUCT DETAIL (hidden by default) -->
+<script>
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var grid = document.getElementById('prodsGrid');
+    var staticLinks = document.getElementById('prodsStaticLinks');
+    if (grid && grid.children.length === 0 && staticLinks) {
+      staticLinks.style.display = 'grid';
+    }
+  }, 1000);
+});
+</script>
+</div>
+</div>
+</div>
+
 <div id="productDetail" style="display:none">
 <div class="det-page"><div class="container">
 <a href="#" class="det-back" onclick="hideDetail();return false">&#8592; Retour aux Additifs Alimentaires</a>
 <div class="det-grid" id="detContent"></div>
 </div></div>
-</div>
 </div>
 
 <footer>
@@ -166,8 +160,6 @@
 </div>
 <div class="ft-col"><h5>Entreprise</h5><a href="/fr/about/">À Propos</a><a href="/fr/news/">Recherche</a><a href="/fr/contact/">Contact</a></div>
 <div class="ft-col"><h5>Produits</h5><a href="/fr/feed-additives.html">Additifs Alimentaires</a><a href="/fr/premixes/">Prémélanges</a></div>
-</div>
-</div>
 <div class="ft-col"><h5>Espèces</h5><a href="/fr/species/poultry/">Volaille</a><a href="/fr/species/ruminant/">Ruminants</a><a href="/fr/species/aquaculture/">Aquaculture</a></div>
 <div class="ft-col"><h5>Juridique</h5><a href="/fr/legal">Mentions Légales</a><a href="/fr/privacy">Politique de Confidentialité</a><a href="/fr/cookies">Politique des Cookies</a><a href="/fr/terms">Conditions Générales</a></div>
 </div>
@@ -178,19 +170,19 @@
 
 <script>
 const P=[
-{id:'butycal-ccb94',n:'ButyCal CCB94',c:'gut-health',cn:'Santé Intestinale',d:'Support de butyrate et calcium conçu pour la résilience digestive.',f:'Un additif de santé intestinale soutenant l'efficacité alimentaire et l'intégrité digestive dans les programmes alimentaires courants.',b:['Soutient l'intégrité intestinale','Aide à optimiser la conversion alimentaire','Conçu pour un usage quotidien stable'],s:['Volaille','Ruminant'],inc:'Selon la documentation produit',out:'Soutient une performance digestive résiliente'},
-{id:'versamos',n:'VersaMos',c:'gut-health',cn:'Santé Intestinale',d:'Support à base de MOS pour l'équilibre digestif et la gestion des pathogènes.',f:'Une option de soutien intestinal basée sur la science formulée pour renforcer la santé intestinale et la stabilité du microbiome.',b:['Support digestif MOS','Gestion de la pression pathogène','Support du microbiote intestinal'],s:['Volaille'],inc:'Selon la documentation produit',out:'Soutient des programmes de santé digestive stables'},
-{id:'versacid-fl-plus',n:'VersAcid FL Plus',c:'gut-health',cn:'Santé Intestinale',d:'Mélange acidifiant pour l'optimisation du pH et de la digestion.',f:'Une solution d'acidifiant liquide utilisée pour soutenir l'hygiène des aliments et la cohérence de l'environnement intestinal.',b:['Support du pH','Support de l'hygiène alimentaire','Conditionnement digestif'],s:['Volaille'],inc:'Selon la documentation produit',out:'Soutient les objectifs d'acidification digestive et alimentaire'},
-{id:'versacid-liquid',n:'VersAcid Liquid',c:'gut-health',cn:'Santé Intestinale',d:'Acidifiant liquide pour les programmes pratiques d'eau et d'alimentation.',f:'Support d'acidification flexible destiné aux systèmes opérationnels d'alimentation et d'eau potable.',b:['Flexibilité opérationnelle','Soutient un environnement intestinal acide','Usage quotidien compatible'],s:['Volaille'],inc:'Selon la documentation produit',out:'Soutient la performance d'acidification quotidienne'},
-{id:'toxifix',n:'ToxyFix',c:'mycotoxin-management',cn:'Gestion des Mycotoxines',d:'Liant de mycotoxines soutenant la gestion du risque de contamination.',f:'Une option de contrôle ciblé des mycotoxines conçue pour lier et gérer l'exposition aux toxines dans l'aliment.',b:['Liaison des mycotoxines','Support d'atténuation des risques','Soutient une consommation alimentaire plus sûre'],s:['Volaille','Ruminant'],inc:'Selon la documentation produit',out:'Soutient les résultats de gestion des mycotoxines'},
-{id:'toxifix-plus',n:'ToxyFix Plus',c:'mycotoxin-management',cn:'Gestion des Mycotoxines',d:'Éliminateur de mycotoxines amélioré pour les défis alimentaires à large spectre.',f:'Technologie avancée de liaison des toxines conçue pour des conditions de contamination exigeantes.',b:['Support à large spectre','Formule améliorée','Cohérence opérationnelle'],s:['Volaille','Ruminant','Aquaculture'],inc:'Selon la documentation produit',out:'Soutient des plans de contrôle robustes des toxines'},
-{id:'toxifix-perfect',n:'ToxyFix Perfect',c:'mycotoxin-management',cn:'Gestion des Mycotoxines',d:'Éliminateur complet de toxines pour les scénarios alimentaires à haut risque.',f:'Stratégie premium de mycotoxines avec une large application pour les programmes alimentaires préventifs et correctifs.',b:['Support complet','Plateforme de liant premium','Idéal pour les périodes à haut risque'],s:['Volaille','Ruminant','Aquaculture'],inc:'Selon la documentation produit',out:'Soutient les stratégies complètes d'élimination des toxines'},
-{id:'verivit-hy-d3',n:'VeriVit HY D3',c:'nutrition',cn:'Nutrition',d:'Additif axé sur les vitamines soutenant la complétude nutritionnelle.',f:'Solution de catégorie nutrition conçue pour renforcer la livraison et la cohérence des micronutriments dans l'alimentation.',b:['Support vitaminique','Cohérence nutritionnelle','Soutient les programmes de performance'],s:['Volaille'],inc:'Selon la documentation produit',out:'Soutient les résultats alimentaires axés sur la nutrition'},
-{id:'versapeg',n:'VersaPeg',c:'nutrition',cn:'Nutrition',d:'Support de formulation nutritionnelle pour des performances équilibrées.',f:'Ingrédient de soutien nutritionnel spécialisé utilisé dans les stratégies d'additifs et de prémélanges.',b:['Support nutritionnel équilibré','Intégration de programme','Orienté performance'],s:['Volaille'],inc:'Selon la documentation produit',out:'Soutient la conception nutritionnelle optimisée'},
-{id:'guarbind',n:'GuarBind',c:'feed-quality',cn:'Qualité de l'Aliment',d:'Solution de liaison alimentaire pour la cohérence des granulés et de la texture.',f:'Solution de qualité alimentaire soutenant la forme cohésive de l'aliment et la stabilité de manipulation.',b:['Cohérence de liaison','Manipulation améliorée','Soutient l'uniformité de l'aliment'],s:['Volaille'],inc:'Selon la documentation produit',out:'Soutient des métriques de qualité alimentaire stables'},
-{id:'veroxid-b2a',n:'VerOxid B2A',c:'feed-quality',cn:'Qualité de l'Aliment',d:'Support antioxydant pour préserver la fraîcheur de l'aliment.',f:'Additif de qualité alimentaire utilisé pour protéger la valeur de l'aliment contre la détérioration oxydative.',b:['Contrôle de l'oxydation','Préserve la fraîcheur','Améliore la stabilité de conservation'],s:['Volaille'],inc:'Selon la documentation produit',out:'Soutient la rétention prolongée de la qualité alimentaire'},
-{id:'veroxid-phenols',n:'VerOxid Phenols',c:'feed-quality',cn:'Qualité de l'Aliment',d:'Support antioxydant phénolique pour les programmes de préservation des aliments.',f:'Un composant antioxydant axé sur la qualité utilisé pour maintenir l'intégrité de l'aliment dans le temps.',b:['Support antioxydant phénolique','Préservation de l'intégrité','Support de stockage stable'],s:['Volaille'],inc:'Selon la documentation produit',out:'Soutient la protection alimentaire à base d'antioxydants'},
-{id:'versamold',n:'VersaMold',c:'feed-quality',cn:'Qualité de l'Aliment',d:'Inhibiteur de moisissures pour la préservation des aliments et la stabilité de stockage.',f:'Une solution de qualité alimentaire conçue pour contrôler la croissance des moisissures et maintenir l'intégrité de l'aliment pendant le stockage et la manipulation.',b:['Inhibition de la croissance des moisissures','Support de stabilité de stockage','Préservation de la fraîcheur alimentaire'],s:['Volaille'],inc:'Selon la documentation produit',out:'Soutient les programmes de stockage d'aliments sans moisissure'}
+{id:'butycal-ccb94',n:'ButyCal CCB94',c:'gut-health',cn:'Santé Intestinale',d:'Solution de butyrate de calcium pour l'intégrité digestive et l'efficacité alimentaire.'},
+{id:'versamos',n:'VersaMos',c:'gut-health',cn:'Santé Intestinale',d:'Support prébiotique à base de MOS pour la stabilité du microbiome et la résilience intestinale.'},
+{id:'versacid-fl-plus',n:'VersAcid FL Plus',c:'gut-health',cn:'Santé Intestinale',d:'Mélange acidifiant à écoulement libre qui aide à maintenir l'équilibre du pH intestinal et l'hygiène de l'aliment.'},
+{id:'versacid-liquid',n:'VersAcid Liquid',c:'gut-health',cn:'Santé Intestinale',d:'Acidifiant liquide pour l'eau et les systèmes d'alimentation afin de soutenir la digestion et le contrôle des pathogènes.'},
+{id:'toxifix',n:'ToxyFix',c:'mycotoxin-management',cn:'Gestion des Mycotoxines',d:'Liant de mycotoxines à large spectre pour le contrôle courant du risque aflatoxines, fumonisines et toxine T-2.'},
+{id:'toxifix-plus',n:'ToxyFix Plus',c:'mycotoxin-management',cn:'Gestion des Mycotoxines',d:'Gestion renforcée des mycotoxines pour des pressions de contamination élevées et des matières premières variables.'},
+{id:'toxifix-perfect',n:'ToxyFix Perfect',c:'mycotoxin-management',cn:'Gestion des Mycotoxines',d:'Contrôle premium multi-mycotoxines avec support avancé pour les scénarios alimentaires les plus exigeants.'},
+{id:'guarbind',n:'GuarBind',c:'feed-quality',cn:'Qualité de l'Aliment',d:'Liant de granulés qui améliore la durabilité des pellets, réduit les fines et soutient la constance du process usine.'},
+{id:'veroxid-b2a',n:'VerOxid B2A',c:'feed-quality',cn:'Qualité de l'Aliment',d:'Mélange antioxydant synthétique qui protège les graisses et huiles de l'oxydation au stockage.'},
+{id:'veroxid-phenols',n:'VerOxid Phenols',c:'feed-quality',cn:'Qualité de l'Aliment',d:'Système antioxydant naturel avec tocophérols et composés phénoliques pour préserver la fraîcheur.'},
+{id:'versamold',n:'VersaMold',c:'feed-quality',cn:'Qualité de l'Aliment',d:'Solution de contrôle des moisissures pour l'hygiène et la stabilité de stockage en conditions chaudes ou humides.'},
+{id:'verivit-hy-d3',n:'VeriVit HY D3',c:'nutrition',cn:'Nutrition',d:'Source de vitamine D3 à haute biodisponibilité pour une meilleure utilisation minérale et la performance nutritionnelle.'},
+{id:'versapeg',n:'VersaPeg',c:'nutrition',cn:'Nutrition',d:'Support émulsifiant nutritionnel pour améliorer la digestion des graisses et l'efficacité d'absorption des nutriments.'}
 ];
 const bgMap={'mycotoxin-management':'bg-m','feed-quality':'bg-f',nutrition:'bg-n','gut-health':'bg-g'};
 const imgMap={'butycal-ccb94':'/butycal_CCB94.jpg','versamos':'/versamos.jpg','versacid-fl-plus':'/veracid_fl_plus.jpg','versacid-liquid':'/veracid_liquid.jpg','toxifix':'/toxyfix.jpg','toxifix-plus':'/toxyfix_plus.jpg','toxifix-perfect':'/toxyfix_perfect.jpg','verivit-hy-d3':'/verivit_hy_d3.jpg','versapeg':'/versapeg.jpg','guarbind':'/guarbind.jpg','veroxid-b2a':'/veroxid_b2a.jpg','veroxid-phenols':'/veroxid_phenols.jpg','versamold':'/versamold.jpg'};
@@ -213,7 +205,6 @@ g.innerHTML=list.map((p,i)=>
 '<a class="pc" href="/fr/products/'+p.id+'/" style="animation:fadeUp .5s '+i*.06+'s both ease">'+
 '<div class="pc-vis product-card__media"><img class="product-card__img" src="'+(imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg')+'" alt="'+p.n+' — '+p.cn+' additif alimentaire par VeritasVet" onerror="this.style.display=\'none\'"><span class="pc-cat">'+p.cn+'</span></div>'+
 '<div class="pc-body"><h4>'+p.n+'</h4><p>'+p.d+'</p>'+
-'<div class="sol-proofs"><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span><strong>Incorporation :</strong> '+p.inc+'</span></div><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span>'+p.out+'</span></div></div>'+
 '<span class="btn-arrow" style="font-size:12px">Voir les Détails &#8594;</span></div>'+
 '</a>').join('');
 }
@@ -227,13 +218,10 @@ function showDet(id){
 const p=P.find(x=>x.id===id);if(!p)return;
 document.getElementById('detContent').innerHTML=
 '<div class="det-vis '+(bgMap[p.c]||'')+'"><img src="'+(imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg')+'" alt="'+p.n+' — '+p.cn+' détail produit par VeritasVet" onerror="this.style.display=\'none\'"></div>'+
-'<div class="det-info"><h1>'+p.n+'</h1><span class="det-badge">'+p.cn+'</span>'+
-'<p class="det-desc">'+p.f+'</p>'+
-'<div class="sol-proofs" style="margin-bottom:2rem;padding:1.25rem;background:var(--green-mist);border-radius:12px"><div class="sol-proof" style="margin-bottom:.4rem"><span class="sol-proof-icon">&#9670;</span><span><strong>Taux d'incorporation typique :</strong> '+p.inc+'</span></div><div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span><strong>Résultats visés :</strong> '+p.out+'</span></div></div>'+
-'<div class="det-benefits"><h3>Avantages Clés</h3><ul>'+p.b.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>'+
-'<div class="det-sp-box"><h4>Espèces Cibles</h4><div class="det-tags">'+p.s.map(x=>'<span class="det-tag">'+x+'</span>').join('')+'</div></div>'+
+'<div class="det-info"><h1>Additifs Alimentaires pour la Production Animale Moderne</h1><span class="det-badge">'+p.cn+'</span>'+
+'<p class="det-desc">'+p.d+'</p>'+
 '<div class="det-actions">'+
-'<a class="btn-green" href="/fr/contact/">&#128196; Demander la FT</a>'+
+'<a class="btn-green" href="/fr/contact/">&#128196; Demander la Fiche Technique</a>'+
 '<a class="btn-green-outline" href="/fr/contact/">&#128176; Demander un Devis</a>'+
 '<a class="btn-green-outline" href="/fr/contact/">&#9993;&#65039; Nous Contacter</a>'+
 '</div></div>';
@@ -250,7 +238,6 @@ window.scrollTo({top:0,behavior:'instant'});
 
 document.addEventListener('DOMContentLoaded',function(){
 renderP('all');
-// Scroll reveal
 var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.12,rootMargin:'0px 0px -50px 0px'});
 document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
 });
