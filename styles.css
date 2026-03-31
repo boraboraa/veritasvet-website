@@ -381,6 +381,14 @@ a.pc{text-decoration:none;color:inherit}
 .nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:#ffffff;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:1rem;padding:6.25rem 1.5rem 2rem;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .4s ease;z-index:10000;margin-right:0;margin-left:0}
 .nav-links.open{opacity:1;pointer-events:all}
 .nav-social{display:none}
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .nav-links .nav-link{color:var(--text-primary)!important;font-size:1.1rem;background:transparent;box-shadow:none;padding:.35rem 0}
 .nav-dropdown{width:100%}
 .nav-dropdown-menu{position:static;transform:none;opacity:1;pointer-events:all;background:transparent;box-shadow:none;border:none;backdrop-filter:none;min-width:0;padding:0;margin:.5rem 0}
