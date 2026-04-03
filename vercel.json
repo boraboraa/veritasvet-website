@@ -105,6 +105,16 @@
       "permanent": true
     },
     {
+      "source": "/ruminants",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
+      "source": "/ruminants/",
+      "destination": "/species/ruminant/",
+      "permanent": true
+    },
+    {
       "source": "/fr/aquaculture.html",
       "destination": "/fr/species/aquaculture/",
       "permanent": true

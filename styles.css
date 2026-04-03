@@ -1017,6 +1017,18 @@ text-decoration:none;display:inline-block;border-radius:4px;transition:backgroun
 background:var(--color-accent);color:#fff
 }
 
+/* TDS Available Upon Request */
+.tds-request-block{
+margin-top:1.4rem;padding:1rem 1.2rem;
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.15);
+border-radius:6px;display:flex;flex-direction:column;gap:6px
+}
+.tds-label{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;color:var(--color-accent);letter-spacing:.04em;text-transform:uppercase}
+.tds-available{font-family:'DM Sans',sans-serif;font-size:13px;color:rgba(255,255,255,0.7);line-height:1.4}
+.tds-cta{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:var(--color-accent);text-decoration:underline;text-underline-offset:3px;display:inline-block;margin-top:2px}
+.tds-cta:hover{color:#fff}
+
 @media(max-width:768px){
 .product-detail{flex-direction:column}
 .product-detail__left{width:100%}

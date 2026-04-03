@@ -6,9 +6,9 @@
 <title>Contact VeritasVet | Feed Additive Experts & Technical Consultation</title>
 <meta name="description" content="Get a free technical consultation on feed additives and premix solutions. Expert guidance for feed mills, distributors, and integrators across Europe, Middle East & Africa."
 <meta property="og:title" content="Contact VeritasVet | Feed Additive Experts & Technical Consultation">
-<meta property="og:description" content="Get a free technical consultation on feed additives and premix solutions. Expert guidance for feed mills, distributors, and integrators across Europe, Middle East & Africa.">
+<meta property="og:description" content="Get a free technical consultation on feed additives and premix solutions. Expert guidance for feed mills, distributors, and integrators across Europe, Middle East & Africa."
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:description" content="Get a free technical consultation on feed additives and premix solutions. Expert guidance for feed mills, distributors, and integrators across Europe, Middle East & Africa.">
+<meta name="twitter:description" content="Get a free technical consultation on feed additives and premix solutions. Expert guidance for feed mills, distributors, and integrators across Europe, Middle East & Africa."
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.veritasvet.com/contact/">
 <meta property="og:image" content="https://www.veritasvet.com/feed%20additives%20header.png">
@@ -30,9 +30,78 @@
 .lang-btn.lang-active{color:var(--navy,#1a2332);font-weight:700;background:rgba(26,35,50,.06)}
 .lang-sep{color:var(--text-secondary,#6b7280);font-weight:300}
 @media(max-width:900px){.lang-switch{margin:12px 0 0;justify-content:center}}
-</style>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.veritasvet.com/#organization", "name": "Veritasvet SRL", "alternateName": "VeritasVet", "url": "https://www.veritasvet.com", "logo": "https://www.veritasvet.com/image_logo_VERITASVET.png", "description": "VeritasVet is a specialized B2B distributor of feed additives and animal nutrition solutions. Products include mycotoxin binders, gut health products, feed quality solutions, acidifiers, antioxidants, and tailored premixes for poultry, ruminants, and aquaculture worldwide.", "email": "sales@veritasvet.com", "vatID": "BE 0633.747.322", "foundingDate": "2015", "legalName": "Veritasvet SRL", "numberOfEmployees": "0", "employeeClass": "Micro", "address": {"@type": "PostalAddress", "streetAddress": "Avenue de Broqueville 136/1", "addressLocality": "Woluwe-Saint-Lambert", "postalCode": "1200", "addressRegion": "Brussels-Capital", "addressCountry": {"@type": "Country", "name": "Belgium", "identifier": "BE"}}, "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "sales@veritasvet.com", "availableLanguage": ["English", "French", "Arabic", "Dutch"]}, "sameAs": ["https://www.companyweb.be/fr/0633747322/veritasvet", "https://www.linkedin.com/company/veritasvet", "https://www.facebook.com/veritasvet"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Feed Additives and Animal Nutrition", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Product", "name": "ToxyFix — Mycotoxin Binders"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "GuarBind — Pellet Binder & Gut Health"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "VersaAcid — Acidifiers"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "VersaMos — MOS & DFM Gut Health"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Veroxid — Antioxidants"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "VersaMixx — Premixes"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "VersaPeg — Emulsifiers"}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "VersaMold — Mold Inhibitors"}}]}, "identifiers": [{"@type": "PropertyValue", "name": "enterpriseNumber", "value": "BE 0633.747.322"}, {"@type": "PropertyValue", "name": "PEPPOL", "value": "0208:0633747322"}]}</script>
+/* ─── Contact Page ─── */
+.ct-page{padding:60px 0 80px}
+@media(max-width:768px){.ct-page{padding:40px 0 60px}}
+
+/* Trust bar above form */
+.ct-trust-bar{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:40px;padding:16px 24px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0}
+.ct-trust-item{display:flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:13px;color:#475569;font-weight:500}
+.ct-trust-item svg{flex-shrink:0;color:#16a34a}
+@media(max-width:600px){.ct-trust-bar{gap:12px;padding:14px 16px}.ct-trust-item{font-size:12px}}
+
+/* WhatsApp float */
+.ct-whatsapp-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;background:#25D366;color:#fff;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;text-decoration:none;transition:background .2s,transform .15s;cursor:pointer;border:none}
+.ct-whatsapp-btn:hover{background:#20bd5a;transform:translateY(-1px)}
+.ct-whatsapp-btn svg{flex-shrink:0}
+
+/* Path selector */
+.ct-path-selector{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px}
+@media(max-width:600px){.ct-path-selector{grid-template-columns:1fr}}
+.ct-path-card{display:flex;flex-direction:column;align-items:flex-start;padding:20px 22px;border:2px solid #e2e8f0;border-radius:14px;cursor:pointer;transition:border-color .2s,background .2s,box-shadow .2s;background:#fff;position:relative}
+.ct-path-card:hover{border-color:#94a3b8;background:#f8fafc}
+.ct-path-card.active{border-color:#1a2332;background:#f0f4ff}
+.ct-path-card input[type="radio"]{position:absolute;opacity:0;width:0;height:0}
+.ct-path-icon{margin-bottom:10px}
+.ct-path-title{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;color:#1a2332;margin-bottom:4px}
+.ct-path-desc{font-family:'DM Sans',sans-serif;font-size:13px;color:#64748b;line-height:1.4}
+.ct-path-fields{display:none;width:100%;margin-top:16px}
+.ct-path-card.active .ct-path-fields{display:block}
+@media(max-width:600px){.ct-path-card{padding:16px 18px}}
+
+/* Form sections */
+.ct-form-section{margin-bottom:28px}
+.ct-form-row{margin-bottom:18px}
+.ct-form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.ct-form-grid-2{grid-template-columns:1fr}}
+.ct-form-row label,.ct-section-label{display:block;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:#374151;margin-bottom:6px}
+.ct-section-label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#94a3b8;margin-bottom:10px;margin-top:20px}
+.ct-form-row input,.ct-form-row select,.ct-form-row textarea{width:100%;padding:11px 14px;border:1.5px solid #d1d5db;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:#1a2332;background:#fff;transition:border-color .2s,box-shadow .2s;box-sizing:border-box;appearance:none;-webkit-appearance:none}
+.ct-form-row input::placeholder,.ct-form-row textarea::placeholder{color:#9ca3af}
+.ct-form-row input:focus,.ct-form-row select:focus,.ct-form-row textarea:focus{outline:none;border-color:#1a2332;box-shadow:0 0 0 3px rgba(26,35,50,.08)}
+.ct-form-row textarea{resize:vertical;min-height:90px}
+.ct-form-row select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2364748b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+.ct-optional{font-weight:400;color:#94a3b8;font-size:12px}
+.ct-required{color:#dc2626}
+
+/* Divider */
+.ct-or-divider{display:flex;align-items:center;gap:12px;margin:24px 0;font-family:'DM Sans',sans-serif;font-size:13px;color:#94a3b8}
+.ct-or-divider::before,.ct-or-divider::after{content:'';flex:1;height:1px;background:#e2e8f0}
+
+/* Submit */
+.ct-submit-btn{width:100%;padding:14px 28px;background:#1a2332;color:#fff;border:none;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:background .2s,transform .15s;margin-top:8px}
+.ct-submit-btn:hover{background:#2d3a52;transform:translateY(-1px)}
+.ct-submit-btn:active{transform:translateY(0)}
+.ct-submit-btn:disabled{background:#94a3b8;cursor:not-allowed;transform:none}
+
+/* Status */
+#ctFormStatus{margin-top:16px;padding:14px 18px;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:14px;text-align:center;display:none}
+#ctFormStatus.success{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0}
+#ctFormStatus.error{background:#fef2f2;color:#991b1b;border:1px solid #fecaca}
+
+/* Bottom trust */
+.ct-form-footer{margin-top:20px;padding-top:20px;border-top:1px solid #e2e8f0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.ct-response-note{display:flex;align-items:center;gap:6px;font-family:'DM Sans',sans-serif;font-size:13px;color:#64748b}
+.ct-response-note strong{color:#1a2332}
+
+/* Contact info cards below form */
+.ct-contact-info{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:48px;padding-top:40px;border-top:1px solid #e2e8f0}
+.ct-contact-info-section{}
+.ct-contact-info-title{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;color:#1a2332;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+.ct-contact-info-text{font-family:'DM Sans',sans-serif;font-size:14px;color:#475569;margin-bottom:6px;line-height:1.5}
+.ct-contact-info-text a{color:#1a2332;text-decoration:underline;text-underline-offset:2px}
+</style>
 </head>
 <body>
 
@@ -83,167 +152,155 @@
 <main class="ct-page">
 <div class="container">
 
+<!-- Trust bar -->
+<div class="ct-trust-bar">
+<div class="ct-trust-item">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.854 3.756L14 5.523l-3 2.924.708 4.13L8 10.5l-3.708 2.077.708-4.13L2 5.523l4.146-.767L8 1z" fill="#16a34a" stroke="#16a34a" stroke-width="1" stroke-linejoin="round"/></svg>
+Same-business-day response
+</div>
+<div class="ct-trust-item">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.854 3.756L14 5.523l-3 2.924.708 4.13L8 10.5l-3.708 2.077.708-4.13L2 5.523l4.146-.767L8 1z" fill="#16a34a" stroke="#16a34a" stroke-width="1" stroke-linejoin="round"/></svg>
+ISO 22000 · GMP+ · HACCP · FAMI-QS
+</div>
+<div class="ct-trust-item">
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.854 3.756L14 5.523l-3 2.924.708 4.13L8 10.5l-3.708 2.077.708-4.13L2 5.523l4.146-.767L8 1z" fill="#16a34a" stroke="#16a34a" stroke-width="1" stroke-linejoin="round"/></svg>
+CIF shipments to MENA &amp; Africa
+</div>
+</div>
+
 <div class="ct-form-card" id="ctFormCard">
 
-<!-- Title Area -->
+<!-- Header -->
 <div class="ct-form-header">
 <h1 class="ct-form-title">Let's build the right solution together</h1>
-<p class="ct-form-subtitle">Every operation is different. Describe your needs — we will take care of the rest.</p>
-<p class="ct-form-response">Response time: 6–24 business hours</p>
+<p class="ct-form-subtitle">Every operation is different. Tell us what you need — we'll respond with options.</p>
 </div>
 
-<!-- Contact Form -->
-<form class="ct-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-<input type="hidden" name="access_key" value="6ad39115-6edb-458a-a82f-16e2b3f136e8">
-<input type="hidden" name="subject" value="New Inquiry — VeritasVet Website">
-<input type="hidden" name="from_name" value="VeritasVet Website">
-<input type="hidden" name="redirect" value="false">
-
-<div class="ct-form-row">
-<label for="ctCompany">Company Name <span class="ct-required">*</span></label>
-<input type="text" id="ctCompany" name="company" required placeholder="Your company name">
+<!-- WhatsApp Banner -->
+<div style="display:flex;justify-content:center;margin-bottom:28px">
+<a class="ct-whatsapp-btn" href="https://wa.me/32470954643?text=Hi%20VeritasVet%2C%20I%27d%20like%20to%20discuss%20feed%20additive%20solutions." target="_blank" rel="noopener">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+Message us on WhatsApp — fastest response
+</a>
 </div>
 
-<div class="ct-form-row">
-<label for="ctEmail">Professional Email <span class="ct-required">*</span></label>
-<input type="email" id="ctEmail" name="email" required placeholder="your.email@company.com">
+<!-- Path Selector -->
+<label class="ct-path-card active" id="cardQuote">
+<input type="radio" name="inquiry_path" value="quote" checked onchange="switchPath('quote')">
+<div class="ct-path-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1a2332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
 </div>
-
+<div class="ct-path-title">Quick Quote</div>
+<div class="ct-path-desc">Feed additives, product samples, or technical consultation</div>
+<div class="ct-path-fields" id="fieldsQuote">
 <div class="ct-form-row">
-<label for="ctPhone">Phone <span class="ct-optional">(Optional)</span></label>
-<input type="tel" id="ctPhone" name="phone" placeholder="+1 (555) 000-0000">
-</div>
-
-<div class="ct-form-row">
-<label for="ctActivity">Activity Type</label>
-<select id="ctActivity" name="activity">
-<option value="">Select your activity</option>
-<option value="feedmill">Feedmill</option>
-<option value="integrator">Integrator</option>
-<option value="distributor">Distributor</option>
-<option value="premix-manufacturer">Premix Manufacturer</option>
-<option value="nutrition-consultant">Nutrition Consultant</option>
-<option value="other">Other</option>
-</select>
-</div>
-
-<!-- Conditional Fields (revealed on activity selection) -->
-<div class="ct-conditional-wrap" id="ctConditionalWrap">
-<div class="ct-conditional-inner" id="ctConditionalInner">
-
-<div class="ct-conditional-section" id="ctFieldsFeedmill" hidden>
-<div class="ct-form-grid-2">
-<div class="ct-form-row">
-<label for="ctMills">Number of Feed Mills</label>
-<input type="text" id="ctMills" name="mills" placeholder="e.g. 3">
+<label for="qtCompany">Company Name <span class="ct-required">*</span></label>
+<input type="text" id="qtCompany" name="company" required placeholder="Your company name">
 </div>
 <div class="ct-form-row">
-<label for="ctVolume">Annual Production Volume</label>
-<input type="text" id="ctVolume" name="volume" placeholder="e.g. 50,000 MT/year">
-</div>
-</div>
-</div>
-
-<div class="ct-conditional-section" id="ctFieldsIntegrator" hidden>
-<div class="ct-form-grid-2">
-<div class="ct-form-row">
-<label for="ctSpeciesFocus">Species Focus</label>
-<input type="text" id="ctSpeciesFocus" name="species_focus" placeholder="e.g. Poultry, Ruminants">
+<label for="qtEmail">Professional Email <span class="ct-required">*</span></label>
+<input type="email" id="qtEmail" name="email" required placeholder="your.email@company.com">
 </div>
 <div class="ct-form-row">
-<label for="ctFarms">Number of Farms</label>
-<input type="text" id="ctFarms" name="farms" placeholder="e.g. 25">
-</div>
-</div>
-</div>
-
-<div class="ct-conditional-section" id="ctFieldsDistributor" hidden>
-<div class="ct-form-grid-2">
-<div class="ct-form-row">
-<label for="ctTerritory">Territory / Region</label>
-<input type="text" id="ctTerritory" name="territory" placeholder="e.g. Western Europe">
+<label for="qtPhone">Phone / WhatsApp <span class="ct-optional">(optional)</span></label>
+<input type="tel" id="qtPhone" name="phone" placeholder="Enter your phone or WhatsApp number">
 </div>
 <div class="ct-form-row">
-<label for="ctPortfolio">Current Portfolio</label>
-<input type="text" id="ctPortfolio" name="portfolio" placeholder="e.g. Feed additives, premixes">
-</div>
-</div>
-</div>
-
-<div class="ct-conditional-section" id="ctFieldsPremix" hidden>
-<div class="ct-form-grid-2">
-<div class="ct-form-row">
-<label for="ctSpecialization">Specialization</label>
-<input type="text" id="ctSpecialization" name="specialization" placeholder="e.g. Poultry premixes">
-</div>
-<div class="ct-form-row">
-<label for="ctCapacity">Production Capacity</label>
-<input type="text" id="ctCapacity" name="capacity" placeholder="e.g. 10,000 MT/year">
-</div>
-</div>
-</div>
-
-<div class="ct-conditional-section" id="ctFieldsConsultant" hidden>
-<div class="ct-form-grid-2">
-<div class="ct-form-row">
-<label for="ctConsultSpecies">Species Focus</label>
-<input type="text" id="ctConsultSpecies" name="consult_species" placeholder="e.g. Poultry, Aquaculture">
-</div>
-<div class="ct-form-row">
-<label for="ctClients">Number of Clients</label>
-<input type="text" id="ctClients" name="clients" placeholder="e.g. 15">
-</div>
-</div>
-</div>
-
-<div class="ct-conditional-section" id="ctFieldsOther" hidden>
-<div class="ct-form-row">
-<label for="ctOtherActivity">Please Specify</label>
-<input type="text" id="ctOtherActivity" name="other_activity" placeholder="Describe your activity">
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="ct-form-row">
-<label for="ctInterest">Area of Interest</label>
-<select id="ctInterest" name="interest">
-<option value="">Select area of interest</option>
-<option value="feed-additives">Feed Additives</option>
+<label for="qtProduct">Product Interest</label>
+<select id="qtProduct" name="product_interest">
+<option value="">Select a product or category</option>
+<option value="toxifix">ToxyFix — Mycotoxin Binders</option>
+<option value="guarbind">GuarBind — Pellet Binder &amp; Gut Health</option>
+<option value="versacid">VersaAcid — Acidifiers</option>
+<option value="veroxid">Veroxid — Antioxidants</option>
+<option value="versamos">VersaMos — MOS &amp; DFM</option>
 <option value="premixes">Premixes</option>
-<option value="technical-support">Technical Support</option>
-<option value="partnership">Distribution Partnership</option>
-<option value="regulatory">Regulatory Questions</option>
-<option value="other">Other</option>
+<option value="other">Other / Multiple Products</option>
 </select>
 </div>
-
 <div class="ct-form-row">
-<label for="ctMessage">Message <span class="ct-required">*</span></label>
-<textarea id="ctMessage" name="message" required placeholder="Describe your needs, volumes, species, or any specific requirements..."></textarea>
+<label for="qtMessage">Message <span class="ct-required">*</span></label>
+<textarea id="qtMessage" name="message" required placeholder="Tell us about your operation — species, volumes, current challenge..."></textarea>
+</div>
+</div>
+</label>
+
+<label class="ct-path-card" id="cardDistributor">
+<input type="radio" name="inquiry_path" value="distributor" onchange="switchPath('distributor')">
+<div class="ct-path-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1a2332" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+</div>
+<div class="ct-path-title">Distributor Inquiry</div>
+<div class="ct-path-desc">Territory partnerships, distribution agreements, volume pricing</div>
+<div class="ct-path-fields" id="fieldsDistributor">
+<div class="ct-form-row">
+<label for="diCompany">Company Name <span class="ct-required">*</span></label>
+<input type="text" id="diCompany" name="company" required placeholder="Your company name">
+</div>
+<div class="ct-form-row">
+<label for="diEmail">Professional Email <span class="ct-required">*</span></label>
+<input type="email" id="diEmail" name="email" required placeholder="your.email@company.com">
+</div>
+<div class="ct-form-row">
+<label for="diTerritory">Territory / Region <span class="ct-required">*</span></label>
+<input type="text" id="diTerritory" name="territory" required placeholder="e.g. North Egypt, Saudi Arabia, West Africa">
+</div>
+<div class="ct-form-row">
+<label for="diPortfolio">Current Product Portfolio</label>
+<input type="text" id="diPortfolio" name="portfolio" placeholder="e.g. Feed additives, premixes, veterinary products">
+</div>
+<div class="ct-form-row">
+<label for="diVolume">Estimated Annual Volume</label>
+<input type="text" id="diVolume" name="volume" placeholder="e.g. 500–2,000 MT">
+</div>
+<div class="ct-form-row">
+<label for="diMessage">Tell Us About Your Network <span class="ct-required">*</span></label>
+<textarea id="diMessage" name="message" required placeholder="Describe your market presence, customer base, and what you're looking for in a partnership..."></textarea>
+</div>
+</div>
+</label>
+
+<!-- Submit -->
+<div id="quoteFields">
+<button type="button" class="ct-submit-btn" onclick="submitForm('quote')">Send Quote Request →</button>
+</div>
+<div id="distributorFields" style="display:none">
+<button type="button" class="ct-submit-btn" onclick="submitForm('distributor')">Submit Distributor Inquiry →</button>
 </div>
 
-<button type="submit" class="ct-submit-btn" id="ctSubmitBtn">Send Message</button>
-<div id="ctFormStatus" style="display:none;margin-top:16px;padding:16px 20px;border-radius:12px;font-family:'DM Sans',sans-serif;font-size:15px;text-align:center"></div>
+<div id="ctFormStatus"></div>
 
-</form>
+<!-- Footer -->
+<div class="ct-form-footer">
+<div class="ct-response-note">
+<svg width="14" height="14" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#16a34a" stroke-width="1.5"/><path d="M8 5v3l2 2" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round"/></svg>
+<strong>Same business day</strong> — email or WhatsApp
+</div>
+<div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#94a3b8">
+<a href="mailto:sales@veritasvet.com" style="color:#64748b;text-decoration:underline;text-underline-offset:2px">sales@veritasvet.com</a>
+</div>
+</div>
 
-<!-- Direct Contact & Corporate Offices -->
+</div>
+
+<!-- Corporate info cards -->
 <div class="ct-contact-info">
 <div class="ct-contact-info-section">
-<h4 class="ct-contact-info-title">Direct Contact</h4>
-<p class="ct-contact-info-text">Email: <a href="mailto:sales@veritasvet.com">sales@veritasvet.com</a></p>
-<p class="ct-contact-info-text">Response time: 6–24 business hours</p>
+<h4 class="ct-contact-info-title">Belgium (HQ)</h4>
+<p class="ct-contact-info-text">VeritasVet SRL</p>
+<p class="ct-contact-info-text">Avenue de Broqueville 136/1<br>1200 Woluwe-Saint-Lambert</p>
+<p class="ct-contact-info-text">VAT: BE 0633.747.322</p>
 </div>
 <div class="ct-contact-info-section">
-<h4 class="ct-contact-info-title">Corporate Offices</h4>
-<p class="ct-contact-info-text">VeritasVet SRL — Brussels, Belgium</p>
-<p class="ct-contact-info-text">VeritasVet LLC — Dubai, United Arab Emirates</p>
-<p class="ct-contact-info-text">Veritas Veteriner ve Tarım İlaçları Sanayi Ticaret Ltd. Şti. — İzmir, Türkiye</p>
+<h4 class="ct-contact-info-title">Middle East Hub</h4>
+<p class="ct-contact-info-text">VeritasVet LLC</p>
+<p class="ct-contact-info-text">Dubai, United Arab Emirates</p>
 </div>
+<div class="ct-contact-info-section">
+<h4 class="ct-contact-info-title">Türkiye Office</h4>
+<p class="ct-contact-info-text">Veritas Veteriner ve Tarım İlaçları Sanayi Ticaret Ltd. Şti.</p>
+<p class="ct-contact-info-text">İzmir, Türkiye</p>
 </div>
-
 </div>
 
 </div>
@@ -272,91 +329,104 @@
 function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
 function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
 
-/* Conditional Fields Logic */
-(function(){
-  var activitySelect = document.getElementById('ctActivity');
-  var wrap = document.getElementById('ctConditionalWrap');
-  var sections = document.querySelectorAll('.ct-conditional-section');
+function switchPath(path){
+  var cardQ=document.getElementById('cardQuote');
+  var cardD=document.getElementById('cardDistributor');
+  var fieldsQ=document.getElementById('quoteFields');
+  var fieldsD=document.getElementById('distributorFields');
+  if(path==='quote'){
+    cardQ.classList.add('active');cardD.classList.remove('active');
+    document.getElementById('cardQuote').querySelector('input').checked=true;
+    fieldsQ.style.display='block';fieldsD.style.display='none';
+  } else {
+    cardD.classList.add('active');cardQ.classList.remove('active');
+    document.getElementById('cardDistributor').querySelector('input').checked=true;
+    fieldsD.style.display='block';fieldsQ.style.display='none';
+  }
+}
 
-  var fieldMap = {
-    'feedmill': 'ctFieldsFeedmill',
-    'integrator': 'ctFieldsIntegrator',
-    'distributor': 'ctFieldsDistributor',
-    'premix-manufacturer': 'ctFieldsPremix',
-    'nutrition-consultant': 'ctFieldsConsultant',
-    'other': 'ctFieldsOther'
-  };
+function submitForm(path){
+  var prefix=path==='quote'?'qt':'di';
+  var requiredFields=['company','email','message'];
+  if(path==='distributor') requiredFields.push('territory');
+  var btn=path==='quote'
+    ?document.querySelector('#quoteFields .ct-submit-btn')
+    :document.querySelector('#distributorFields .ct-submit-btn');
+  var status=document.getElementById('ctFormStatus');
 
-  activitySelect.addEventListener('change', function(){
-    var val = this.value;
-
-    /* Hide all sections first */
-    for(var i = 0; i < sections.length; i++){
-      sections[i].classList.remove('ct-active');
-      sections[i].hidden = true;
+  // Validate required fields for this path
+  for(var i=0;i<requiredFields.length;i++){
+    var el=document.getElementById(prefix+requiredFields[i]);
+    if(el&&!el.value.trim()){
+      el.focus();
+      el.style.borderColor='#dc2626';
+      el.addEventListener('input',function(){this.style.borderColor='#d1d5db';},{once:true});
+      return;
     }
+  }
 
-    if(val && fieldMap[val]){
-      /* Show the matching section */
-      var target = document.getElementById(fieldMap[val]);
-      target.hidden = false;
-      target.classList.add('ct-active');
+  btn.disabled=true;
+  btn.textContent='Sending...';
+  status.style.display='none';
 
-      /* Reveal the wrapper with animation */
-      wrap.classList.add('ct-revealed');
+  // Build Web3Forms payload
+  var formData=new FormData();
+  var pathLabel=path==='quote'?'Quick Quote':'Distributor Inquiry';
+  formData.append('access_key','6ad39115-6edb-458a-a82f-16e2b3f136e8');
+  formData.append('subject','[VeritasVet] '+pathLabel+' — '+document.getElementById(prefix+'Company').value);
+  formData.append('from_name','VeritasVet Website');
+  formData.append('redirect','false');
+  formData.append('inquiry_path',pathLabel);
 
-      /* Measure actual content height for smooth transition */
-      var inner = document.getElementById('ctConditionalInner');
-      var h = inner.scrollHeight;
-      wrap.style.maxHeight = h + 'px';
-    } else {
-      /* Collapse the wrapper */
-      wrap.style.maxHeight = '0px';
-      wrap.classList.remove('ct-revealed');
-    }
-  });
-})();
+  var fields=[
+    ['company',document.getElementById(prefix+'Company').value],
+    ['email',document.getElementById(prefix+'Email').value],
+    ['phone',document.getElementById(prefix+'Phone')?document.getElementById(prefix+'Phone').value:''],
+    ['product_interest',document.getElementById(prefix+'Product')?document.getElementById(prefix+'Product').value:''],
+    ['territory',document.getElementById(prefix+'Territory')?document.getElementById(prefix+'Territory').value:''],
+    ['portfolio',document.getElementById(prefix+'Portfolio')?document.getElementById(prefix+'Portfolio').value:''],
+    ['volume',document.getElementById(prefix+'Volume')?document.getElementById(prefix+'Volume').value:''],
+    ['message',document.getElementById(prefix+'Message').value]
+  ];
+  for(var j=0;j<fields.length;j++){
+    if(fields[j][1]) formData.append(fields[j][0],fields[j][1]);
+  }
 
-/* Web3Forms Submission */
-(function(){
-  var form = document.getElementById('contactForm');
-  var btn = document.getElementById('ctSubmitBtn');
-  var status = document.getElementById('ctFormStatus');
-
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    btn.disabled = true;
-    btn.textContent = 'Sending...';
-    status.style.display = 'none';
-
-    fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: new FormData(form)
-    })
-    .then(function(res){ return res.json(); })
+  fetch('https://api.web3forms.com/submit',{method:'POST',body:formData})
+    .then(function(res){return res.json();})
     .then(function(data){
       if(data.success){
-        status.style.display = 'block';
-        status.style.background = '#f0fdf4';
-        status.style.color = '#166534';
-        status.textContent = 'Thank you for your message. Our team will get back to you shortly.';
-        form.reset();
+        status.className='success';
+        status.textContent='Thank you. Our team will review your inquiry and respond within one business day.';
+        status.style.display='block';
+        if(path==='quote'){
+          document.getElementById('qtCompany').value='';
+          document.getElementById('qtEmail').value='';
+          document.getElementById('qtPhone').value='';
+          document.getElementById('qtProduct').value='';
+          document.getElementById('qtMessage').value='';
+        } else {
+          document.getElementById('diCompany').value='';
+          document.getElementById('diEmail').value='';
+          document.getElementById('diTerritory').value='';
+          document.getElementById('diPortfolio').value='';
+          document.getElementById('diVolume').value='';
+          document.getElementById('diMessage').value='';
+        }
       } else {
         throw new Error('Submission failed');
       }
     })
     .catch(function(){
-      status.style.display = 'block';
-      status.style.background = '#fef2f2';
-      status.style.color = '#991b1b';
-      status.textContent = 'Something went wrong. Please try again or email us at bora.dogrul@veritasvet.com';
+      status.className='error';
+      status.innerHTML='Something went wrong. Please try again or <a href="mailto:sales@veritasvet.com" style="color:#991b1b;text-decoration:underline">email us directly</a>.';
+      status.style.display='block';
     })
     .finally(function(){
-      btn.disabled = false;
-      btn.textContent = 'Send Message';
+      btn.disabled=false;
+      btn.textContent=path==='quote'?'Send Quote Request →':'Submit Distributor Inquiry →';
     });
-  });
-})();
+}
 </script>
 </body>
 </html>
