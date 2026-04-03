@@ -50,6 +50,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/contact/"/>
   </url>
   <url>
+    <loc>https://www.veritasvet.com/become-distributor/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/become-distributor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/become-distributor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/become-distributor/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/become-distributor/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/become-distributor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/become-distributor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/become-distributor/"/>
+  </url>
+  <url>
     <loc>https://www.veritasvet.com/cookies/</loc>
     <lastmod>2026-03-09</lastmod>
     <priority>0.3</priority>
