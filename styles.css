@@ -88,6 +88,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hero-cta-primary:hover{background:var(--green-dark);border-color:var(--green-dark);transform:translateY(-2px);box-shadow:0 4px 16px rgba(140,191,46,.35)}
 .hero-cta-outline{background:transparent;color:#fff;border:2px solid #fff}
 .hero-cta-outline:hover{background:#fff;color:var(--green-dark);border-color:#fff;transform:translateY(-2px);box-shadow:0 4px 16px rgba(255,255,255,.2)}
+.hero-badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.25rem;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .4s forwards}
+.hero-badge{padding:.3rem .75rem;background:rgba(140,191,46,.18);border:1px solid rgba(140,191,46,.45);color:#c8e6a0;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:.04em;backdrop-filter:blur(4px)}
+.hero-stats{display:flex;gap:2rem;margin-bottom:2rem;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .6s forwards}
+.hero-stat{display:flex;flex-direction:column;gap:.15rem}
+.hero-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--green-light);line-height:1}
+.hero-stat-label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(247,248,243,.6);font-weight:500}
 .hero-scroll{position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);z-index:10;display:flex;flex-direction:column;align-items:center;gap:.75rem;opacity:0;animation:hFade 1s var(--ease-out-expo) 1.5s forwards}
 .hero-scroll span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--navy);opacity:.4;font-weight:500}
 .scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,rgba(106,154,26,.6),transparent);animation:sPulse 2s ease-in-out infinite}
@@ -433,6 +439,7 @@ a.pc{text-decoration:none;color:inherit}
 .cta-card-btn{background:var(--green);color:#fff;padding:.6rem 1.5rem;border-radius:8px;font-weight:600;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;transition:.3s;display:inline-block}
 .cta-card:hover .cta-card-btn{background:var(--green-dark);box-shadow:0 4px 15px rgba(140,191,46,.3)}
 @media(max-width:768px){.cta-triple{grid-template-columns:1fr;max-width:400px}}
+@media(max-width:768px){.hero-badges{gap:.4rem}.hero-badge{font-size:11px;padding:.25rem .6rem}.hero-stats{gap:1.25rem}.hero-stat-num{font-size:1.6rem}}
 
 /* SOLUTION CARD PROOFS */
 .sol-proofs{margin-top:1rem;display:flex;flex-direction:column;gap:.5rem}
