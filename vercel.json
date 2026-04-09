@@ -220,6 +220,16 @@
       "permanent": true
     },
     {
+      "source": "/middle-east",
+      "destination": "/markets/middle-east/",
+      "permanent": true
+    },
+    {
+      "source": "/middle-east/",
+      "destination": "/markets/middle-east/",
+      "permanent": true
+    },
+    {
       "source": "/about-us",
       "destination": "https://www.veritasvet.com/about/",
       "permanent": true
