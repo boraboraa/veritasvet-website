@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
 
-# Block legacy URLs that cause duplicate content
-Disallow: /about-us
-Disallow: /about-us/
-
 Sitemap: https://www.veritasvet.com/sitemap.xml

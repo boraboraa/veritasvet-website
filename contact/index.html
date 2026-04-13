@@ -18,11 +18,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
-<link rel="canonical" href="https://www.veritasvet.com/contact/">
+
+
+
+
 <link rel="alternate" hreflang="en" href="https://www.veritasvet.com/contact/">
 <link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/contact/">
 <link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/contact/">
-
+<link rel="canonical" href="https://www.veritasvet.com/contact/">
 <style>
 .lang-switch{display:flex;align-items:center;gap:4px;margin-left:12px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500}
 .lang-btn{color:var(--text-secondary,#6b7280);text-decoration:none;padding:2px 6px;border-radius:4px;transition:color .2s,background .2s}
@@ -30,77 +33,6 @@
 .lang-btn.lang-active{color:var(--navy,#1a2332);font-weight:700;background:rgba(26,35,50,.06)}
 .lang-sep{color:var(--text-secondary,#6b7280);font-weight:300}
 @media(max-width:900px){.lang-switch{margin:12px 0 0;justify-content:center}}
-
-/* ─── Contact Page ─── */
-.ct-page{padding:60px 0 80px}
-@media(max-width:768px){.ct-page{padding:40px 0 60px}}
-
-/* Trust bar above form */
-.ct-trust-bar{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:40px;padding:16px 24px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0}
-.ct-trust-item{display:flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:13px;color:#475569;font-weight:500}
-.ct-trust-item svg{flex-shrink:0;color:#16a34a}
-@media(max-width:600px){.ct-trust-bar{gap:12px;padding:14px 16px}.ct-trust-item{font-size:12px}}
-
-/* WhatsApp float */
-.ct-whatsapp-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;background:#25D366;color:#fff;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;text-decoration:none;transition:background .2s,transform .15s;cursor:pointer;border:none}
-.ct-whatsapp-btn:hover{background:#20bd5a;transform:translateY(-1px)}
-.ct-whatsapp-btn svg{flex-shrink:0}
-
-/* Path selector */
-.ct-path-selector{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px}
-@media(max-width:600px){.ct-path-selector{grid-template-columns:1fr}}
-.ct-path-card{display:flex;flex-direction:column;align-items:flex-start;padding:20px 22px;border:2px solid #e2e8f0;border-radius:14px;cursor:pointer;transition:border-color .2s,background .2s,box-shadow .2s;background:#fff;position:relative}
-.ct-path-card:hover{border-color:#94a3b8;background:#f8fafc}
-.ct-path-card.active{border-color:#1a2332;background:#f0f4ff}
-.ct-path-card input[type="radio"]{position:absolute;opacity:0;width:0;height:0}
-.ct-path-icon{margin-bottom:10px}
-.ct-path-title{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;color:#1a2332;margin-bottom:4px}
-.ct-path-desc{font-family:'DM Sans',sans-serif;font-size:13px;color:#64748b;line-height:1.4}
-.ct-path-fields{display:none;width:100%;margin-top:16px}
-.ct-path-card.active .ct-path-fields{display:block}
-@media(max-width:600px){.ct-path-card{padding:16px 18px}}
-
-/* Form sections */
-.ct-form-section{margin-bottom:28px}
-.ct-form-row{margin-bottom:18px}
-.ct-form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:600px){.ct-form-grid-2{grid-template-columns:1fr}}
-.ct-form-row label,.ct-section-label{display:block;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:#374151;margin-bottom:6px}
-.ct-section-label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#94a3b8;margin-bottom:10px;margin-top:20px}
-.ct-form-row input,.ct-form-row select,.ct-form-row textarea{width:100%;padding:11px 14px;border:1.5px solid #d1d5db;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:#1a2332;background:#fff;transition:border-color .2s,box-shadow .2s;box-sizing:border-box;appearance:none;-webkit-appearance:none}
-.ct-form-row input::placeholder,.ct-form-row textarea::placeholder{color:#9ca3af}
-.ct-form-row input:focus,.ct-form-row select:focus,.ct-form-row textarea:focus{outline:none;border-color:#1a2332;box-shadow:0 0 0 3px rgba(26,35,50,.08)}
-.ct-form-row textarea{resize:vertical;min-height:90px}
-.ct-form-row select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2364748b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
-.ct-optional{font-weight:400;color:#94a3b8;font-size:12px}
-.ct-required{color:#dc2626}
-
-/* Divider */
-.ct-or-divider{display:flex;align-items:center;gap:12px;margin:24px 0;font-family:'DM Sans',sans-serif;font-size:13px;color:#94a3b8}
-.ct-or-divider::before,.ct-or-divider::after{content:'';flex:1;height:1px;background:#e2e8f0}
-
-/* Submit */
-.ct-submit-btn{width:100%;padding:14px 28px;background:#1a2332;color:#fff;border:none;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:background .2s,transform .15s;margin-top:8px}
-.ct-submit-btn:hover{background:#2d3a52;transform:translateY(-1px)}
-.ct-submit-btn:active{transform:translateY(0)}
-.ct-submit-btn:disabled{background:#94a3b8;cursor:not-allowed;transform:none}
-
-/* Status */
-#ctFormStatus{margin-top:16px;padding:14px 18px;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:14px;text-align:center;display:none}
-#ctFormStatus.success{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0}
-#ctFormStatus.error{background:#fef2f2;color:#991b1b;border:1px solid #fecaca}
-
-/* Bottom trust */
-.ct-form-footer{margin-top:20px;padding-top:20px;border-top:1px solid #e2e8f0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.ct-response-note{display:flex;align-items:center;gap:6px;font-family:'DM Sans',sans-serif;font-size:13px;color:#64748b}
-.ct-response-note strong{color:#1a2332}
-
-/* Contact info cards below form */
-.ct-contact-info{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:48px;padding-top:40px;border-top:1px solid #e2e8f0}
-.ct-contact-info-section{}
-.ct-contact-info-title{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;color:#1a2332;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
-.ct-contact-info-text{font-family:'DM Sans',sans-serif;font-size:14px;color:#475569;margin-bottom:6px;line-height:1.5}
-.ct-contact-info-text a{color:#1a2332;text-decoration:underline;text-underline-offset:2px}
 </style>
 </head>
 <body>

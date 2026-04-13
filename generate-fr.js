@@ -509,13 +509,28 @@ const langSwitcherCSS = `
 const langSwitcherStyleRegex = /<style>\s*\.lang-switch\{[\s\S]*?@media\(max-width:900px\)\{\.lang-switch\{[\s\S]*?\}\}\s*<\/style>\s*/g;
 const hreflangTagsRegex = /\s*<link rel=["']alternate["']\s+hreflang=["'](?:en|fr|x-default)["']\s+href=["'][^"']*["']>\s*/g;
 const langSwitcherRegex = /\s*<div[^>]*class=["'][^"']*\blang-switch\b[^"']*["'][^>]*>[\s\S]*?<\/div>\s*/g;
+// Matches <link rel="canonical" href="..."> in any order/format
+const canonicalRegex = /<link\s+rel=["']canonical["']\s+href=["'][^"']*["'][^>]*>/gi;
 
-function upsertHeadTags(html, enPath) {
+function upsertCanonical(url) {
+  return `<link rel="canonical" href="${url}">`;
+}
+
+function upsertHeadTags(html, enPath, isFrench) {
   const hreflangTags = getHreflangTags(enPath);
+  const enUrl = SITE_URL + enPath;
+  const frUrl = SITE_URL + '/fr' + enPath;
   const cleanedHead = html
     .replace(hreflangTagsRegex, '\n')
-    .replace(langSwitcherStyleRegex, '\n');
-  return cleanedHead.replace('</head>', `${hreflangTags}\n${langSwitcherCSS}</head>`);
+    .replace(langSwitcherStyleRegex, '\n')
+    .replace(canonicalRegex, '');  // Remove existing canonical
+  let canonical = '';
+  if (isFrench) {
+    canonical = upsertCanonical(frUrl);  // FR: self-referential
+  } else {
+    canonical = upsertCanonical(enUrl);  // EN: keep self-referential
+  }
+  return cleanedHead.replace('</head>', `${hreflangTags}\n${canonical}${langSwitcherCSS}</head>`);
 }
 
 function upsertLangSwitcher(html, isfrench, enPath, frPath) {
@@ -554,8 +569,8 @@ function main() {
     // 3. Rewrite internal links to /fr/ prefix
     frHtml = rewriteLinksToFr(frHtml);
 
-    // 4. Upsert hreflang tags + language switcher CSS in <head>
-    frHtml = upsertHeadTags(frHtml, enPath);
+    // 4. Upsert hreflang tags + canonical + language switcher CSS in <head>
+    frHtml = upsertHeadTags(frHtml, enPath, true);
 
     // 5. Upsert language switcher in nav (after nav-social div, before hamburger)
     frHtml = upsertLangSwitcher(frHtml, true, enPath, frPath);
@@ -575,8 +590,9 @@ function main() {
     const srcPath = path.join(ROOT, relFile);
     let html = fs.readFileSync(srcPath, 'utf8');
 
-    // Upsert hreflang tags + language switcher CSS
-    html = upsertHeadTags(html, enPath);
+    // Upsert hreflang tags + canonical + language switcher CSS
+    // EN pages: keep existing self-referential canonical intact
+    html = upsertHeadTags(html, enPath, false);
 
     // Upsert language switcher in nav
     html = upsertLangSwitcher(html, false, enPath, frPath);
