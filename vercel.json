@@ -363,6 +363,16 @@
       "source": "/fr/feed-additives.html",
       "destination": "/fr/feed-additives/",
       "permanent": true
+    },
+    {
+      "source": "/product-category/pets/",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/pets",
+      "destination": "/products/",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -373,14 +383,6 @@
     {
       "source": "/premixes",
       "destination": "/premixes/index.html"
-    },
-    {
-      "source": "/feed-additives/",
-      "destination": "/feed-additives.html"
-    },
-    {
-      "source": "/fr/feed-additives/",
-      "destination": "/fr/feed-additives.html"
     }
   ],
   "headers": [
