@@ -890,11 +890,19 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/terms/"/>
   </url>
   <url>
-    <loc>https://www.veritasvet.com/fr/terms/</loc>
+    <loc>https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/</loc>
     <lastmod>2026-04-15</lastmod>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/terms/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/terms/"/>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/rumen-mycotoxin-protection-limits/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/mycoreal-pillar/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycoreal-pillar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/mycoreal-pillar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycoreal-pillar/"/>
   </url>
 </urlset>
