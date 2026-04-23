@@ -105,13 +105,12 @@ Same-business-day response
 </div>
 <div class="ct-trust-item">
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.854 3.756L14 5.523l-3 2.924.708 4.13L8 10.5l-3.708 2.077.708-4.13L2 5.523l4.146-.767L8 1z" fill="#16a34a" stroke="#16a34a" stroke-width="1" stroke-linejoin="round"/></svg>
-ISO 22000 · GMP+ · HACCP · FAMI-QS
-</div>
-<div class="ct-trust-item">
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.854 3.756L14 5.523l-3 2.924.708 4.13L8 10.5l-3.708 2.077.708-4.13L2 5.523l4.146-.767L8 1z" fill="#16a34a" stroke="#16a34a" stroke-width="1" stroke-linejoin="round"/></svg>
-CIF shipments to MENA &amp; Africa
-</div>
-</div>
+<form action="https://api.web3forms.com/submit" method="POST" id="contactForm" novalidate>
+  <input type="hidden" name="access_key" value="6ad39115-6edb-458a-a82f-16e2b3f136e8">
+  <input type="hidden" name="subject" id="formSubject" value="[VeritasVet] Quick Quote">
+  <input type="hidden" name="from_name" value="VeritasVet Website">
+  <input type="hidden" name="redirect" value="https://www.veritasvet.com/thank-you/">
+  <input type="text" name="honeypot" style="display:none" tabindex="-1" autocomplete="off">
 
 <div class="ct-form-card" id="ctFormCard">
 
@@ -155,10 +154,10 @@ Message us on WhatsApp — fastest response
 <select id="qtProduct" name="product_interest">
 <option value="">Select a product or category</option>
 <option value="toxifix">ToxyFix — Mycotoxin Binders</option>
-<option value="guarbind">GuarBind — Pellet Binder &amp; Gut Health</option>
+<option value="guarbind">GuarBind — Pellet Binder & Gut Health</option>
 <option value="versacid">VersaAcid — Acidifiers</option>
 <option value="veroxid">Veroxid — Antioxidants</option>
-<option value="versamos">VersaMos — MOS &amp; DFM</option>
+<option value="versamos">VersaMos — MOS & DFM</option>
 <option value="premixes">Premixes</option>
 <option value="other">Other / Multiple Products</option>
 </select>
@@ -207,10 +206,10 @@ Message us on WhatsApp — fastest response
 
 <!-- Submit -->
 <div id="quoteFields">
-<button type="button" class="ct-submit-btn" onclick="submitForm('quote')">Send Quote Request →</button>
+<button type="submit" class="ct-submit-btn">Send Quote Request →</button>
 </div>
 <div id="distributorFields" style="display:none">
-<button type="button" class="ct-submit-btn" onclick="submitForm('distributor')">Submit Distributor Inquiry →</button>
+<button type="submit" class="ct-submit-btn">Submit Distributor Inquiry →</button>
 </div>
 
 <div id="ctFormStatus"></div>
@@ -227,6 +226,7 @@ Message us on WhatsApp — fastest response
 </div>
 
 </div>
+</form>
 
 <!-- Corporate info cards -->
 <div class="ct-contact-info">
@@ -273,105 +273,30 @@ Message us on WhatsApp — fastest response
 <script>
 function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
 function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+document.querySelectorAll('.nav-link,.nav-dropdown-menu a').forEach(el=>el.addEventListener('click',closeMob));
+document.querySelectorAll('.nav-link,.nav-dropdown-menu a').forEach(el=>el.addEventListener('click',closeMob));
+
 
 function switchPath(path){
   var cardQ=document.getElementById('cardQuote');
   var cardD=document.getElementById('cardDistributor');
   var fieldsQ=document.getElementById('quoteFields');
   var fieldsD=document.getElementById('distributorFields');
+  var subjectField=document.getElementById('formSubject');
   if(path==='quote'){
     cardQ.classList.add('active');cardD.classList.remove('active');
     document.getElementById('cardQuote').querySelector('input').checked=true;
     fieldsQ.style.display='block';fieldsD.style.display='none';
+    subjectField.value='[VeritasVet] Quick Quote';
   } else {
     cardD.classList.add('active');cardQ.classList.remove('active');
     document.getElementById('cardDistributor').querySelector('input').checked=true;
     fieldsD.style.display='block';fieldsQ.style.display='none';
+    subjectField.value='[VeritasVet] Distributor Inquiry';
   }
 }
 
-function submitForm(path){
-  var prefix=path==='quote'?'qt':'di';
-  var requiredFields=['company','email','message'];
-  if(path==='distributor') requiredFields.push('territory');
-  var btn=path==='quote'
-    ?document.querySelector('#quoteFields .ct-submit-btn')
-    :document.querySelector('#distributorFields .ct-submit-btn');
-  var status=document.getElementById('ctFormStatus');
-
-  // Validate required fields for this path
-  for(var i=0;i<requiredFields.length;i++){
-    var el=document.getElementById(prefix+requiredFields[i]);
-    if(el&&!el.value.trim()){
-      el.focus();
-      el.style.borderColor='#dc2626';
-      el.addEventListener('input',function(){this.style.borderColor='#d1d5db';},{once:true});
-      return;
-    }
-  }
-
-  btn.disabled=true;
-  btn.textContent='Sending...';
-  status.style.display='none';
-
-  // Build Web3Forms payload
-  var formData=new FormData();
-  var pathLabel=path==='quote'?'Quick Quote':'Distributor Inquiry';
-  formData.append('access_key','6ad39115-6edb-458a-a82f-16e2b3f136e8');
-  formData.append('subject','[VeritasVet] '+pathLabel+' — '+document.getElementById(prefix+'Company').value);
-  formData.append('from_name','VeritasVet Website');
-  formData.append('redirect','false');
-  formData.append('inquiry_path',pathLabel);
-
-  var fields=[
-    ['company',document.getElementById(prefix+'Company').value],
-    ['email',document.getElementById(prefix+'Email').value],
-    ['phone',document.getElementById(prefix+'Phone')?document.getElementById(prefix+'Phone').value:''],
-    ['product_interest',document.getElementById(prefix+'Product')?document.getElementById(prefix+'Product').value:''],
-    ['territory',document.getElementById(prefix+'Territory')?document.getElementById(prefix+'Territory').value:''],
-    ['portfolio',document.getElementById(prefix+'Portfolio')?document.getElementById(prefix+'Portfolio').value:''],
-    ['volume',document.getElementById(prefix+'Volume')?document.getElementById(prefix+'Volume').value:''],
-    ['message',document.getElementById(prefix+'Message').value]
-  ];
-  for(var j=0;j<fields.length;j++){
-    if(fields[j][1]) formData.append(fields[j][0],fields[j][1]);
-  }
-
-  fetch('https://api.web3forms.com/submit',{method:'POST',body:formData})
-    .then(function(res){return res.json();})
-    .then(function(data){
-      if(data.success){
-        status.className='success';
-        status.textContent='Thank you. Our team will review your inquiry and respond within one business day.';
-        status.style.display='block';
-        if(path==='quote'){
-          document.getElementById('qtCompany').value='';
-          document.getElementById('qtEmail').value='';
-          document.getElementById('qtPhone').value='';
-          document.getElementById('qtProduct').value='';
-          document.getElementById('qtMessage').value='';
-        } else {
-          document.getElementById('diCompany').value='';
-          document.getElementById('diEmail').value='';
-          document.getElementById('diTerritory').value='';
-          document.getElementById('diPortfolio').value='';
-          document.getElementById('diVolume').value='';
-          document.getElementById('diMessage').value='';
-        }
-      } else {
-        throw new Error('Submission failed');
-      }
-    })
-    .catch(function(){
-      status.className='error';
-      status.innerHTML='Something went wrong. Please try again or <a href="mailto:sales@veritasvet.com" style="color:#991b1b;text-decoration:underline">email us directly</a>.';
-      status.style.display='block';
-    })
-    .finally(function(){
-      btn.disabled=false;
-      btn.textContent=path==='quote'?'Send Quote Request →':'Submit Distributor Inquiry →';
-    });
-}
 </script>
+
 </body>
 </html>

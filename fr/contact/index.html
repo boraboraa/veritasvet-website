@@ -113,12 +113,19 @@ CIF shipments to MENA &amp; Africa
 </div>
 </div>
 
+<form action="https://api.web3forms.com/submit" method="POST" id="contactForm" novalidate>
+  <input type="hidden" name="access_key" value="6ad39115-6edb-458a-a82f-16e2b3f136e8">
+  <input type="hidden" name="subject" id="formSubject" value="[VeritasVet] Demande de Devis">
+  <input type="hidden" name="from_name" value="VeritasVet Website">
+  <input type="hidden" name="redirect" value="https://www.veritasvet.com/fr/merci/">
+  <input type="text" name="honeypot" style="display:none" tabindex="-1" autocomplete="off">
+
 <div class="ct-form-card" id="ctFormCard">
 
 <!-- Header -->
 <div class="ct-form-header">
 <h1 class="ct-form-title">Construisons ensemble la bonne solution</h1>
-<p class="ct-form-subtitle">Every operation is different. Tell us what you need — we'll respond with options.</p>
+<p class="ct-form-subtitle">Chaque opération est différente. Dites-nous ce dont vous avez besoin — nous vous répondrons avec des options.</p>
 </div>
 
 <!-- WhatsApp Banner -->
@@ -207,10 +214,10 @@ Message us on WhatsApp — fastest response
 
 <!-- Submit -->
 <div id="quoteFields">
-<button type="button" class="ct-submit-btn" onclick="submitForm('quote')">Send Quote Request →</button>
+<button type="submit" class="ct-submit-btn">Send Quote Request →</button>
 </div>
 <div id="distributorFields" style="display:none">
-<button type="button" class="ct-submit-btn" onclick="submitForm('distributor')">Submit Distributor Inquiry →</button>
+<button type="submit" class="ct-submit-btn">Submit Distributor Inquiry →</button>
 </div>
 
 <div id="ctFormStatus"></div>
@@ -245,6 +252,7 @@ Message us on WhatsApp — fastest response
 <h4 class="ct-contact-info-title">Türkiye Office</h4>
 <p class="ct-contact-info-text">Veritas Veteriner ve Tarım İlaçları Sanayi Ticaret Ltd. Şti.</p>
 <p class="ct-contact-info-text">İzmir, Türkiye</p>
+</form>
 </div>
 </div>
 
@@ -273,104 +281,27 @@ Message us on WhatsApp — fastest response
 <script>
 function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
 function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+document.querySelectorAll('.nav-link,.nav-dropdown-menu a').forEach(el=>el.addEventListener('click',closeMob));
+document.querySelectorAll('.nav-link,.nav-dropdown-menu a').forEach(el=>el.addEventListener('click',closeMob));
+
 
 function switchPath(path){
   var cardQ=document.getElementById('cardQuote');
   var cardD=document.getElementById('cardDistributor');
   var fieldsQ=document.getElementById('quoteFields');
   var fieldsD=document.getElementById('distributorFields');
+  var subjectField=document.getElementById('formSubject');
   if(path==='quote'){
     cardQ.classList.add('active');cardD.classList.remove('active');
     document.getElementById('cardQuote').querySelector('input').checked=true;
     fieldsQ.style.display='block';fieldsD.style.display='none';
+    subjectField.value='[VeritasVet] Demande de Devis';
   } else {
     cardD.classList.add('active');cardQ.classList.remove('active');
     document.getElementById('cardDistributor').querySelector('input').checked=true;
     fieldsD.style.display='block';fieldsQ.style.display='none';
+    subjectField.value='[VeritasVet] Demande de Partenariat';
   }
-}
-
-function submitForm(path){
-  var prefix=path==='quote'?'qt':'di';
-  var requiredFields=['company','email','message'];
-  if(path==='distributor') requiredFields.push('territory');
-  var btn=path==='quote'
-    ?document.querySelector('#quoteFields .ct-submit-btn')
-    :document.querySelector('#distributorFields .ct-submit-btn');
-  var status=document.getElementById('ctFormStatus');
-
-  // Validate required fields for this path
-  for(var i=0;i<requiredFields.length;i++){
-    var el=document.getElementById(prefix+requiredFields[i]);
-    if(el&&!el.value.trim()){
-      el.focus();
-      el.style.borderColor='#dc2626';
-      el.addEventListener('input',function(){this.style.borderColor='#d1d5db';},{once:true});
-      return;
-    }
-  }
-
-  btn.disabled=true;
-  btn.textContent='Sending...';
-  status.style.display='none';
-
-  // Build Web3Forms payload
-  var formData=new FormData();
-  var pathLabel=path==='quote'?'Quick Quote':'Distributor Inquiry';
-  formData.append('access_key','6ad39115-6edb-458a-a82f-16e2b3f136e8');
-  formData.append('subject','[VeritasVet] '+pathLabel+' — '+document.getElementById(prefix+'Company').value);
-  formData.append('from_name','VeritasVet Website');
-  formData.append('redirect','false');
-  formData.append('inquiry_path',pathLabel);
-
-  var fields=[
-    ['company',document.getElementById(prefix+'Company').value],
-    ['email',document.getElementById(prefix+'Email').value],
-    ['phone',document.getElementById(prefix+'Téléphone')?document.getElementById(prefix+'Téléphone').value:''],
-    ['product_interest',document.getElementById(prefix+'Product')?document.getElementById(prefix+'Product').value:''],
-    ['territory',document.getElementById(prefix+'Territory')?document.getElementById(prefix+'Territory').value:''],
-    ['portfolio',document.getElementById(prefix+'Portfolio')?document.getElementById(prefix+'Portfolio').value:''],
-    ['volume',document.getElementById(prefix+'Volume')?document.getElementById(prefix+'Volume').value:''],
-    ['message',document.getElementById(prefix+'Message').value]
-  ];
-  for(var j=0;j<fields.length;j++){
-    if(fields[j][1]) formData.append(fields[j][0],fields[j][1]);
-  }
-
-  fetch('https://api.web3forms.com/submit',{method:'POST',body:formData})
-    .then(function(res){return res.json();})
-    .then(function(data){
-      if(data.success){
-        status.className='success';
-        status.textContent='Thank you. Our team will review your inquiry and respond within one business day.';
-        status.style.display='block';
-        if(path==='quote'){
-          document.getElementById('qtCompany').value='';
-          document.getElementById('qtEmail').value='';
-          document.getElementById('qtTéléphone').value='';
-          document.getElementById('qtProduct').value='';
-          document.getElementById('qtMessage').value='';
-        } else {
-          document.getElementById('diCompany').value='';
-          document.getElementById('diEmail').value='';
-          document.getElementById('diTerritory').value='';
-          document.getElementById('diPortfolio').value='';
-          document.getElementById('diVolume').value='';
-          document.getElementById('diMessage').value='';
-        }
-      } else {
-        throw new Error('Submission failed');
-      }
-    })
-    .catch(function(){
-      status.className='error';
-      status.innerHTML='Something went wrong. Please try again or <a href="mailto:sales@veritasvet.com" style="color:#991b1b;text-decoration:underline">email us directly</a>.';
-      status.style.display='block';
-    })
-    .finally(function(){
-      btn.disabled=false;
-      btn.textContent=path==='quote'?'Send Quote Request →':'Submit Distributor Inquiry →';
-    });
 }
 </script>
 </body>

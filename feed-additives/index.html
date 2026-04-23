@@ -327,6 +327,9 @@ const imgMap={'butycal-ccb94':'/butycal_CCB94.jpg','versamos':'/versamos.jpg','v
 
 function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
 function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+document.querySelectorAll('.nav-link,.nav-dropdown-menu a').forEach(el=>el.addEventListener('click',closeMob));
+document.querySelectorAll('.nav-link,.nav-dropdown-menu a').forEach(el=>el.addEventListener('click',closeMob));
+
 
 function setActiveCategory(cat){
 document.querySelectorAll('#filterBar .filter-btn').forEach(btn=>{

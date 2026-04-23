@@ -152,6 +152,7 @@ document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').fo
 }
 function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
 function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+document.querySelectorAll('.nav-link,.nav-dropdown-menu a').forEach(el=>el.addEventListener('click',closeMob));
 document.addEventListener('DOMContentLoaded',initReveal);
 </script>
 </body>

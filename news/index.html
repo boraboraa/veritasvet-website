@@ -312,6 +312,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 function toggleMob(){document.getElementById('navLinks').classList.toggle('open');document.getElementById('hamburger').classList.toggle('active')}
 function closeMob(){document.getElementById('navLinks').classList.remove('open');document.getElementById('hamburger').classList.remove('active')}
+document.querySelectorAll('.nav-link,.nav-dropdown-menu a').forEach(el=>el.addEventListener('click',closeMob));
+document.querySelectorAll('.nav-link,.nav-dropdown-menu a').forEach(el=>el.addEventListener('click',closeMob));
+
 
 /* Scroll fade-in animation */
 (function(){
