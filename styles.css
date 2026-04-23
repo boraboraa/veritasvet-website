@@ -1,9 +1,13 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 /* Mobile touch fixes */
-a,button,.filter-btn,.cta-card,.sp-tab,.sp-cat-card,.pc,.prod-card,.species-card,.ins-card,.abt-card,.nav-dropdown,.hamburger{ touch-action:manipulation; -webkit-tap-highlight-color:transparent; cursor:pointer }
-/* Ensure interactive elements show pointer on desktop too */
+/* ONLY real interactive elements get cursor:pointer and touch-action:manipulation */
+a,button,.filter-btn,.cta-card,.sp-tab,.sp-cat-card,.pc,.prod-card,.hamburger,.nav-dropdown,.nav-dropdown-menu a,.nav-link{ touch-action:manipulation; -webkit-tap-highlight-color:transparent; cursor:pointer }
+/* Species/insight cards are wrapped in <a> — overflow:hidden prevents oversized tap targets */
+.species-card,a.species-card,a.ins-card,a.abt-card{overflow:hidden}
+/* Remove cursor:pointer from decorative elements that merely have cursor styles but aren't links */
+.species-card,.ins-card,.abt-card,.hero-badge,.hero-stat,.hero-stat-num,.hero-stat-label,.hero-scroll,.hero-scroll span,.scroll-line{ cursor:default; touch-action:auto; -webkit-tap-highlight-color:auto }
+/* Ensure hamburger spans are pointer */
 .hamburger span{cursor:pointer}
-.nav-dropdown .nav-link{cursor:pointer}
 :root{
 --navy:#162d50;--navy-deep:#0c1e38;--navy-rich:#1a3a5c;
 --green:#8cbf2e;--green-light:#a4d444;--green-dark:#6a9a1a;
