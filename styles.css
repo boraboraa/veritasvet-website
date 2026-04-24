@@ -1,10 +1,9 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 /* Mobile touch fixes */
 /* ONLY real interactive elements get cursor:pointer and touch-action:manipulation */
-a,button,.filter-btn,.cta-card,.sp-tab,.sp-cat-card,.prod-card,.hamburger,.nav-dropdown,.nav-dropdown-menu a,.nav-link{ touch-action:manipulation; -webkit-tap-highlight-color:transparent; cursor:pointer }
+a,button,.filter-btn,.cta-card,.sp-tab,.sp-cat-card,.hamburger,.nav-dropdown,.nav-dropdown-menu a,.nav-link{ touch-action:manipulation; -webkit-tap-highlight-color:transparent; cursor:pointer }
 /* Species/insight cards are wrapped in <a> — overflow:hidden prevents oversized tap targets */
-.species-card,a.species-card,a.ins-card,a.abt-card{overflow:hidden}
-a.species-card,a.ins-card,a.abt-card{display:flex;flex-direction:column;position:relative;width:100%}
+.species-card,.ins-card,a.abt-card{overflow:hidden}
 /* Remove cursor:pointer from decorative elements that merely have cursor styles but aren't links */
 .species-card,.ins-card,.abt-card,.hero-badge,.hero-stat,.hero-stat-num,.hero-stat-label,.hero-scroll,.hero-scroll span,.scroll-line{ cursor:default; touch-action:auto; -webkit-tap-highlight-color:auto }
 /* Ensure hamburger spans are pointer */
@@ -128,13 +127,15 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 }
 /* SPECIES CARDS */
 .species-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
-.species-card{display:flex;flex-direction:column;background:#fff;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border-subtle);transition:transform .4s var(--ease-out-expo),box-shadow .4s var(--ease-out-expo);cursor:pointer;color:inherit}
+.species-card{display:flex;flex-direction:column;background:#fff;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border-subtle);transition:transform .4s var(--ease-out-expo),box-shadow .4s var(--ease-out-expo);color:inherit}
 .species-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-medium)}
 .species-card-img{width:100%;aspect-ratio:16/10;overflow:hidden;flex-shrink:0}
 .species-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease-out-expo)}
 .species-card:hover .species-card-img img{transform:scale(1.04)}
 .species-card-body{padding:1.25rem 1.5rem 1.5rem;display:flex;flex-direction:column;flex-grow:1}
 .species-card-title{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:.5rem}
+.species-card-title-link{color:inherit;text-decoration:none}
+.species-card-title-link:hover{color:var(--green-dark)}
 .species-card-desc{font-size:.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:.25rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .species-card-sub{font-size:.82rem;color:var(--text-muted);line-height:1.5;margin-bottom:1rem}
 .species-card-cta{display:inline-flex;align-items:center;gap:.4rem;font-size:12.5px;font-weight:600;color:#fff;background:var(--green);padding:.5rem 1.15rem;border-radius:6px;letter-spacing:.03em;text-transform:uppercase;transition:background .25s ease;margin-top:auto;width:fit-content}
@@ -227,7 +228,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* INSIGHTS */
 .insights-section{background:#fff}
 .ins-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:1.5rem;margin-top:3.5rem}
-.ins-card{border-radius:var(--radius-lg);overflow:hidden;background:var(--cream);border:1px solid var(--border-subtle);transition:.5s var(--ease-out-expo);cursor:pointer}
+.ins-card{border-radius:var(--radius-lg);overflow:hidden;background:var(--cream);border:1px solid var(--border-subtle);transition:.5s var(--ease-out-expo)}
 .ins-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-medium)}
 .ins-card.featured{grid-row:span 2;position:relative}
 .ins-card.featured .ins-img{height:100%;min-height:300px}
@@ -238,6 +239,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .ins-body{padding:1.75rem}
 .ins-body h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--navy);margin-bottom:.6rem;line-height:1.25}
 .ins-body p{font-size:.92rem;color:var(--text-muted);line-height:1.6}
+.ins-title-link{color:inherit;text-decoration:none}
+.ins-title-link:hover{color:var(--green-dark)}
+.ins-card-cta{display:inline-flex;align-items:center;margin-top:1rem;font-size:12.5px;font-weight:600;color:var(--green-dark);text-transform:uppercase;letter-spacing:.03em}
 .ins-card.featured .ins-body{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(12,30,56,.9),transparent);padding:3rem 2rem 2rem}
 .ins-card.featured .ins-body h3{color:#fff;font-size:1.6rem}
 .ins-card.featured .ins-body p{color:rgba(255,255,255,.6)}
@@ -308,13 +312,15 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 /* PRODUCTS PAGE V2 — CARDS */
 .prod-cards-section{background:var(--cream);padding:6rem 3rem 7rem}
 .prod-cards-row{display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:1100px;margin:0 auto}
-.prod-card{display:flex;flex-direction:column;background:#fff;border-radius:var(--radius-xl);overflow:hidden;border:1px solid var(--border-subtle);transition:transform .5s var(--ease-out-expo),box-shadow .5s var(--ease-out-expo);cursor:pointer;color:inherit;text-decoration:none}
+.prod-card{display:flex;flex-direction:column;background:#fff;border-radius:var(--radius-xl);overflow:hidden;border:1px solid var(--border-subtle);transition:transform .5s var(--ease-out-expo),box-shadow .5s var(--ease-out-expo);color:inherit;text-decoration:none}
 .prod-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-dramatic)}
 .prod-card-img{width:100%;aspect-ratio:16/10;background-size:cover;background-position:center;position:relative;overflow:hidden;transition:background-size .6s var(--ease-out-expo)}
 .prod-card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(22,45,80,.08) 100%);pointer-events:none}
 .prod-card:hover .prod-card-img{background-size:106%}
 .prod-card-content{padding:2rem 2.25rem 2.5rem;display:flex;flex-direction:column;flex-grow:1}
 .prod-card-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.5vw,2rem);font-weight:700;color:var(--navy);line-height:1.15;margin-bottom:1rem}
+.prod-card-title-link{color:inherit;text-decoration:none}
+.prod-card-title-link:hover{color:var(--green-dark)}
 .prod-card-desc{font-size:.94rem;color:var(--text-secondary);line-height:1.75;margin-bottom:1.75rem;flex-grow:1}
 .prod-card-cta{display:inline-flex;align-items:center;gap:.5rem;font-size:14px;font-weight:600;color:#fff;background:var(--green);padding:.7rem 1.6rem;border-radius:8px;letter-spacing:.03em;text-transform:uppercase;transition:background .3s ease,gap .3s ease,box-shadow .3s ease;width:fit-content;margin-top:auto}
 .prod-card-cta span{transition:transform .3s ease}
@@ -1114,6 +1120,8 @@ border-radius:6px;display:flex;flex-direction:column;gap:6px
 .pmx-card-img span{font-size:.82rem;color:rgba(255,255,255,.5);font-weight:500;letter-spacing:.06em;text-transform:uppercase}
 .pmx-card-body{padding:1.75rem 1.75rem 2rem;display:flex;flex-direction:column;flex-grow:1}
 .pmx-card-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--navy);margin-bottom:.75rem;line-height:1.2}
+.pmx-card-title-link{color:inherit;text-decoration:none}
+.pmx-card-title-link:hover{color:var(--green-dark)}
 .pmx-card-desc{font-size:.92rem;color:var(--text-secondary);line-height:1.7;margin-bottom:1.5rem;flex-grow:1}
 .pmx-card-cta{display:inline-flex;align-items:center;gap:.5rem;font-size:13px;font-weight:600;color:#fff;background:var(--green);padding:.7rem 1.5rem;border-radius:8px;letter-spacing:.03em;text-transform:uppercase;transition:background .3s ease,box-shadow .3s ease;width:fit-content;margin-top:auto}
 .pmx-card:hover .pmx-card-cta{background:var(--green-dark);box-shadow:0 4px 16px rgba(140,191,46,.25)}
