@@ -307,11 +307,11 @@ function renderP(cat){
 const g=document.getElementById('prodsGrid');
 const list=cat==='all'?P:P.filter(p=>p.c===cat);
 g.innerHTML=list.map((p,i)=>
-'<a class="pc" href="/fr/products/'+p.id+'/" style="animation:fadeUp .5s '+i*.06+'s both ease">'+
+'<article class="pc" style="animation:fadeUp .5s '+i*.06+'s both ease">'+
 '<div class="pc-vis product-card__media"><img class="product-card__img" src="'+(imgMap[p.id]||'/assets/images/products/'+p.id+'.jpg')+'" alt="'+p.n+' — '+p.cn+' additif alimentaire par VeritasVet" onerror="this.style.display=\'none\'"><span class="pc-cat">'+p.cn+'</span></div>'+
-'<div class="pc-body"><h4>'+p.n+'</h4><p>'+p.d+'</p>'+
-'<span class="btn-arrow" style="font-size:12px">Voir les Détails &#8594;</span></div>'+
-'</a>').join('');
+'<div class="pc-body"><h4><a class="pc-title-link" href="/fr/products/'+p.id+'/">'+p.n+'</a></h4><p>'+p.d+'</p>'+
+'<a class="btn-arrow pc-cta-link" href="/fr/products/'+p.id+'/" style="font-size:12px">Voir les Détails &#8594;</a></div>'+
+'</article>').join('');
 }
 
 function filterProducts(cat){

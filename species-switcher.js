@@ -123,21 +123,21 @@
     var prefix = isFr ? '/fr' : '';
     var inclLabel = isFr ? 'Incorporation :' : 'Inclusion:';
     var viewLabel = isFr ? 'Voir les Détails' : 'View Details';
-    return '<a class="pc" href="' + prefix + '/products/' + p.id + '/" data-category="' + catKey(p.c) + '">' +
+    return '<article class="pc" data-category="' + catKey(p.c) + '">' +
       '<div class="pc-vis">' +
         '<img src="' + img + '" alt="' + p.n + '" onerror="this.style.display=\'none\'">' +
         '<span class="pc-cat">' + cn + '</span>' +
       '</div>' +
       '<div class="pc-body">' +
-        '<h4>' + p.n + '</h4>' +
+        '<h4><a class="pc-title-link" href="' + prefix + '/products/' + p.id + '/">' + p.n + '</a></h4>' +
         '<p>' + desc + '</p>' +
         '<div class="sol-proofs">' +
           '<div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span><strong>' + inclLabel + '</strong> ' + inc + '</span></div>' +
           '<div class="sol-proof"><span class="sol-proof-icon">&#9670;</span><span>' + out + '</span></div>' +
         '</div>' +
-        '<span class="btn-arrow">' + viewLabel + ' &#8594;</span>' +
+        '<a class="btn-arrow pc-cta-link" href="' + prefix + '/products/' + p.id + '/">' + viewLabel + ' &#8594;</a>' +
       '</div>' +
-    '</a>';
+    '</article>';
   }
 
   /* ── Init ───────────────────────────────────────────────────── */
@@ -193,17 +193,17 @@
     var pmxViewLabel = isFr ? 'Voir les Détails' : 'View Details';
     premix.innerHTML =
       '<div class="sp-products-list" style="padding:2rem 0">' +
-        '<a class="pc" href="' + pmxHref + '">' +
+        '<article class="pc">' +
           '<div class="pc-vis">' +
             '<img src="' + pmxData.img + '" alt="' + pmxName + '" onerror="this.style.display=\'none\'">' +
             '<span class="pc-cat">' + pmxCatLabel + '</span>' +
           '</div>' +
           '<div class="pc-body">' +
-            '<h4>' + pmxName + '</h4>' +
+            '<h4><a class="pc-title-link" href="' + pmxHref + '">' + pmxName + '</a></h4>' +
             '<p>' + pmxDesc + '</p>' +
-            '<span class="btn-arrow">' + pmxViewLabel + ' &#8594;</span>' +
+            '<a class="btn-arrow pc-cta-link" href="' + pmxHref + '">' + pmxViewLabel + ' &#8594;</a>' +
           '</div>' +
-        '</a>' +
+        '</article>' +
       '</div>';
     categorySection.parentNode.insertBefore(premix, categorySection.nextSibling);
 
