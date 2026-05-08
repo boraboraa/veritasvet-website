@@ -662,3 +662,31 @@ document.addEventListener('DOMContentLoaded',function(){initReveal();});
 </script>
 </body>
 </html>
+
+<!-- MOBILE MARKETS ACCORDION FIX -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  // Toggle .open on .nav-market-group when label is clicked
+  document.querySelectorAll('.nav-market-label').forEach(function(label){
+    label.addEventListener('click',function(e){
+      if(window.innerWidth<=768){
+        e.preventDefault();
+        e.stopPropagation();
+        var group=label.closest('.nav-market-group');
+        var wasOpen=group.classList.contains('open');
+        // Close all groups
+        document.querySelectorAll('.nav-market-group').forEach(function(g){g.classList.remove('open');});
+        // Re-open clicked one if it wasn't open
+        if(!wasOpen){group.classList.add('open');}
+      }
+    });
+  });
+
+  // Close mobile menu when clicking country links inside Markets
+  document.querySelectorAll('.nav-market-group a').forEach(function(a){
+    a.addEventListener('click',function(){
+      closeMob();
+    });
+  });
+});
+</script>

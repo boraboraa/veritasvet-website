@@ -592,6 +592,58 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .nav-market-group.open > a{display:block}
 .nav-market-divider{display:none}
 
+/* ============================================
+   MOBILE MARKETS ACCORDION — override desktop grid
+   ============================================ */
+@media(max-width:768px){
+  /* Markets dropdown body: accordion (not grid) on mobile */
+  .nav-dropdown-menu--markets{
+    display:none !important;
+    background:#f8f9fa;
+    padding:0;
+  }
+  .nav-dropdown.open .nav-dropdown-menu--markets{
+    display:block !important;
+  }
+
+  /* Each region group */
+  .nav-market-group{position:relative;border-bottom:1px solid var(--border-subtle)}
+  .nav-market-group:last-child{border-bottom:none}
+
+  /* Region label — visible, acts as accordion toggle */
+  .nav-market-label{
+    display:flex;align-items:center;justify-content:space-between;
+    font-size:10.5px;font-weight:700;
+    letter-spacing:.12em;text-transform:uppercase;
+    color:var(--text-muted);
+    padding:.85rem 1.5rem;
+    cursor:pointer;
+    border-bottom:1px solid var(--border-subtle);
+    transition:background .15s;
+  }
+  .nav-market-label:hover{background:#f0f4f0;color:var(--green-dark)}
+  .nav-market-label::after{
+    content:'+';font-size:13px;font-weight:700;transition:transform .2s ease
+  }
+  .nav-market-group.open > .nav-market-label::after{content:'−'}
+  .nav-market-group.open > .nav-market-label{color:var(--green-dark)}
+
+  /* Country links — hidden until parent group is open */
+  .nav-market-group a:not(.nav-market-label){
+    display:none;
+    padding:.6rem 1.5rem .6rem 2.5rem;
+    font-size:.95rem;
+    color:var(--text-secondary);
+    text-decoration:none;
+    border-bottom:1px solid rgba(0,0,0,.04);
+  }
+  .nav-market-group a:not(.nav-market-label):hover{background:var(--green-pale);color:var(--green-dark)}
+  .nav-market-group.open > a{display:block}
+
+  /* Divider hidden on mobile */
+  .nav-market-divider{display:none}
+}
+
 /* General mobile overrides */
 .nav{height:84px;padding:0 1.5rem}
 .nav-logo img{height:88%;max-height:74px}
