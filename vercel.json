@@ -145,18 +145,8 @@
       "permanent": true
     },
     {
-      "source": "/fr/markets/middle-east",
-      "destination": "/fr/markets/moyen-orient/",
-      "permanent": true
-    },
-    {
       "source": "/fr/markets/middle-east/",
       "destination": "/fr/markets/moyen-orient/",
-      "permanent": true
-    },
-    {
-      "source": "/fr/markets/africa",
-      "destination": "/fr/markets/afrique/",
       "permanent": true
     },
     {
@@ -365,13 +355,113 @@
       "permanent": true
     },
     {
-      "source": "/product-category/pets/",
+      "source": "/product-category/pets",
       "destination": "/products/",
       "permanent": true
     },
     {
-      "source": "/product-category/pets",
-      "destination": "/products/",
+      "source": "/markets/saudi-arabia/",
+      "destination": "/markets/gcc/saudi-arabia/",
+      "permanent": true
+    },
+    {
+      "source": "/markets/uae/",
+      "destination": "/markets/gcc/uae/",
+      "permanent": true
+    },
+    {
+      "source": "/markets/egypt/",
+      "destination": "/markets/mena/egypt/",
+      "permanent": true
+    },
+    {
+      "source": "/markets/middle-east/",
+      "destination": "/markets/mena/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/saudi-arabia/",
+      "destination": "/fr/markets/gcc/saudi-arabia/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/uae/",
+      "destination": "/fr/markets/gcc/uae/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/egypt/",
+      "destination": "/fr/markets/mena/egypt/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/jordan/",
+      "destination": "/fr/markets/mena/jordan/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/iraq/",
+      "destination": "/fr/markets/mena/iraq/",
+      "permanent": true
+    },
+    {
+      "source": "/markets/jordan/",
+      "destination": "/markets/mena/jordan/",
+      "permanent": true
+    },
+    {
+      "source": "/markets/iraq/",
+      "destination": "/markets/mena/iraq/",
+      "permanent": true
+    },
+    {
+      "source": "/markets/africa/",
+      "destination": "/markets/west-africa/",
+      "permanent": true
+    },
+    {
+      "source": "/markets/north-africa/",
+      "destination": "/markets/mena/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/north-africa/",
+      "destination": "/fr/markets/mena/",
+      "permanent": true
+    },
+    {
+      "source": "/markets/bahrain/",
+      "destination": "/markets/gcc/",
+      "permanent": true
+    },
+    {
+      "source": "/markets/gulf/",
+      "destination": "/markets/gcc/",
+      "permanent": true
+    },
+    {
+      "source": "/markets/kuwait/",
+      "destination": "/markets/gcc/",
+      "permanent": true
+    },
+    {
+      "source": "/markets/oman/",
+      "destination": "/markets/gcc/",
+      "permanent": true
+    },
+    {
+      "source": "/markets/qatar/",
+      "destination": "/markets/gcc/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/arabie-saoudite/",
+      "destination": "/fr/markets/gcc/saudi-arabia/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/emirats-arabes-unis/",
+      "destination": "/fr/markets/gcc/uae/",
       "permanent": true
     }
   ],
@@ -379,6 +469,10 @@
     {
       "source": "/sitemap.xml",
       "destination": "/api/sitemap"
+    },
+    {
+      "source": "/api/contact/",
+      "destination": "/api/contact.js"
     },
     {
       "source": "/premixes",
@@ -403,7 +497,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self' https://www.googletagmanager.com https://bid.g.doubleclick.net; frame-ancestors 'self' https://www.googletagmanager.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com"
+          "value": "default-src 'self'; img-src 'self' data: https://www.google.com https://www.google-analytics.com https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self' https://www.googletagmanager.com https://bid.g.doubleclick.net; frame-ancestors 'self' https://www.googletagmanager.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://api.web3forms.com https://www.google.com https://stats.g.doubleclick.net"
         }
       ]
     },

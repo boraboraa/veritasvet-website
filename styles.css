@@ -1,4 +1,13 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+/* Mobile touch fixes */
+/* ONLY real interactive elements get cursor:pointer and touch-action:manipulation */
+a,button,.filter-btn,.cta-card,.sp-tab,.sp-cat-card,.hamburger,.nav-dropdown,.nav-dropdown-menu a,.nav-link{ touch-action:manipulation; -webkit-tap-highlight-color:transparent; cursor:pointer }
+/* Species/insight cards are wrapped in <a> — overflow:hidden prevents oversized tap targets */
+.species-card,.ins-card,a.abt-card{overflow:hidden}
+/* Remove cursor:pointer from decorative elements that merely have cursor styles but aren't links */
+.species-card,.ins-card,.abt-card,.hero-badge,.hero-stat,.hero-stat-num,.hero-stat-label,.hero-scroll,.hero-scroll span,.scroll-line{ cursor:default; touch-action:auto; -webkit-tap-highlight-color:auto }
+/* Ensure hamburger spans are pointer */
+.hamburger span{cursor:pointer}
 :root{
 --navy:#162d50;--navy-deep:#0c1e38;--navy-rich:#1a3a5c;
 --green:#8cbf2e;--green-light:#a4d444;--green-dark:#6a9a1a;
@@ -61,6 +70,45 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hamburger.active span:nth-child(2){opacity:0}
 .hamburger.active span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
 
+/* Desktop nav chevron animation */
+.nav-dropdown:hover .nav-chevron{transform:rotate(180deg)}
+.nav-chevron{transition:transform .2s ease}
+
+/* Desktop CTA button in nav */
+.nav-link--cta{
+  background:#163420;
+  color:#fff;
+  padding:7px 16px;
+  border-radius:6px;
+  transition:background .2s;
+  white-space:nowrap;
+}
+.nav-link--cta:hover{background:var(--green-dark);color:#fff}
+
+/* Desktop Markets dropdown — multi-column layout */
+.nav-dropdown-menu--markets{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  min-width:520px;
+  padding:1rem 0;
+}
+.nav-dropdown-menu--markets .nav-market-group{padding:0}
+.nav-dropdown-menu--markets .nav-market-label{
+  padding:.4rem 1.25rem .3rem;
+  font-size:10.5px;
+}
+.nav-dropdown-menu--markets a{
+  padding:.45rem 1.25rem;
+}
+.nav-market-divider{display:none}
+
+/* Desktop nav dropdown link hover */
+.nav-dropdown-menu a:hover{background:var(--green-pale);color:var(--green-dark)}
+
+/* Mobile: hide mobile contact shortcuts and desktop CTA by default */
+.nav-mobile-contact{display:none}
+.nav-link--cta{display:none}
+
 /* PAGE SYSTEM */
 .page-view{display:none}.page-view.active{display:block}
 
@@ -69,18 +117,18 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hero-media{position:absolute;inset:0;z-index:1}
 .hero-media-img{width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:1;transform:scale(1.02);animation:heroZoom 25s ease-in-out infinite alternate}
 @keyframes heroZoom{0%{transform:scale(1.02)}100%{transform:scale(1.06)}}
-.hero-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(100deg,rgba(12,30,56,.30) 0%,rgba(12,30,56,.10) 50%,transparent 75%);pointer-events:none}
+.hero-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(100deg,rgba(12,30,56,.55) 0%,rgba(12,30,56,.30) 50%,rgba(12,30,56,.15) 75%);pointer-events:none}
 .hero-particles{position:absolute;inset:0;z-index:3;pointer-events:none;overflow:hidden}
 .hero-particle{position:absolute;width:3px;height:3px;background:var(--green);border-radius:50%;opacity:0;animation:pDrift 12s ease-in-out infinite}
 @keyframes pDrift{0%{opacity:0;transform:translateY(100vh) translateX(0)}10%{opacity:.2}90%{opacity:.2}100%{opacity:0;transform:translateY(-20vh) translateX(40px)}}
-.hero-content{position:relative;z-index:10;max-width:1440px;margin:0 auto;padding:0 3rem;width:100%}
+.hero-content{position:relative;z-index:10;max-width:1440px;margin:0 auto;padding:7.5rem 3rem 3rem;width:100%}
 .hero-copy{max-width:760px;padding:2rem 2.1rem 2.2rem;border-radius:var(--radius-lg);background:linear-gradient(102deg,rgba(12,30,56,.72),rgba(12,30,56,.38) 58%,rgba(12,30,56,.08));backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:2rem;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .3s forwards}
 .hero-eyebrow-line{width:40px;height:1px;background:var(--green-light)}
 .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6.5vw,5.8rem);font-weight:600;line-height:1.05;max-width:800px;margin-bottom:1.75rem;opacity:0;transform:translateY(40px);animation:hFade 1s var(--ease-out-expo) .5s forwards}
-.hero-title .hero-title-navy{color:#f3f6ff;text-shadow:0 4px 18px rgba(12,30,56,.28)}
-.hero-title em{font-style:italic;color:var(--green-light);text-shadow:0 4px 18px rgba(12,30,56,.3)}
-.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,1.9vw,1.45rem);line-height:1.82;color:rgba(247,248,243,.94);max-width:580px;margin-bottom:3rem;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .7s forwards;text-shadow:0 2px 10px rgba(12,30,56,.32)}
+.hero-title .hero-title-navy{color:#f3f6ff;text-shadow:0 2px 10px rgba(0,0,0,.25)}
+.hero-title em{font-style:italic;color:var(--green-light);text-shadow:0 2px 10px rgba(0,0,0,.25)}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,1.9vw,1.45rem);line-height:1.82;color:rgba(247,248,243,.94);max-width:580px;margin-bottom:3rem;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .7s forwards;text-shadow:0 2px 10px rgba(0,0,0,.25)}
 .hero-actions{display:flex;gap:2rem;flex-wrap:wrap;opacity:0;transform:translateY(30px);animation:hFade 1s var(--ease-out-expo) .9s forwards}
 @keyframes hFade{to{opacity:1;transform:translateY(0)}}
 .hero-cta{display:inline-block;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:18px;letter-spacing:.03em;text-decoration:none;cursor:pointer;padding:.75rem 2rem;border-radius:10px;transition:background .3s ease,color .3s ease,border-color .3s ease,transform .2s ease,box-shadow .3s ease;text-shadow:none}
@@ -118,13 +166,15 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 }
 /* SPECIES CARDS */
 .species-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
-.species-card{display:flex;flex-direction:column;background:#fff;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border-subtle);transition:transform .4s var(--ease-out-expo),box-shadow .4s var(--ease-out-expo);cursor:pointer;color:inherit}
+.species-card{display:flex;flex-direction:column;background:#fff;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border-subtle);transition:transform .4s var(--ease-out-expo),box-shadow .4s var(--ease-out-expo);color:inherit}
 .species-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-medium)}
 .species-card-img{width:100%;aspect-ratio:16/10;overflow:hidden;flex-shrink:0}
 .species-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease-out-expo)}
 .species-card:hover .species-card-img img{transform:scale(1.04)}
 .species-card-body{padding:1.25rem 1.5rem 1.5rem;display:flex;flex-direction:column;flex-grow:1}
 .species-card-title{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:.5rem}
+.species-card-title-link{color:inherit;text-decoration:none}
+.species-card-title-link:hover{color:var(--green-dark)}
 .species-card-desc{font-size:.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:.25rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .species-card-sub{font-size:.82rem;color:var(--text-muted);line-height:1.5;margin-bottom:1rem}
 .species-card-cta{display:inline-flex;align-items:center;gap:.4rem;font-size:12.5px;font-weight:600;color:#fff;background:var(--green);padding:.5rem 1.15rem;border-radius:6px;letter-spacing:.03em;text-transform:uppercase;transition:background .25s ease;margin-top:auto;width:fit-content}
@@ -217,7 +267,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* INSIGHTS */
 .insights-section{background:#fff}
 .ins-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:1.5rem;margin-top:3.5rem}
-.ins-card{border-radius:var(--radius-lg);overflow:hidden;background:var(--cream);border:1px solid var(--border-subtle);transition:.5s var(--ease-out-expo);cursor:pointer}
+.ins-card{border-radius:var(--radius-lg);overflow:hidden;background:var(--cream);border:1px solid var(--border-subtle);transition:.5s var(--ease-out-expo)}
 .ins-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-medium)}
 .ins-card.featured{grid-row:span 2;position:relative}
 .ins-card.featured .ins-img{height:100%;min-height:300px}
@@ -228,6 +278,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .ins-body{padding:1.75rem}
 .ins-body h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--navy);margin-bottom:.6rem;line-height:1.25}
 .ins-body p{font-size:.92rem;color:var(--text-muted);line-height:1.6}
+.ins-title-link{color:inherit;text-decoration:none}
+.ins-title-link:hover{color:var(--green-dark)}
+.ins-card-cta{display:inline-flex;align-items:center;margin-top:1rem;font-size:12.5px;font-weight:600;color:var(--green-dark);text-transform:uppercase;letter-spacing:.03em}
 .ins-card.featured .ins-body{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(12,30,56,.9),transparent);padding:3rem 2rem 2rem}
 .ins-card.featured .ins-body h3{color:#fff;font-size:1.6rem}
 .ins-card.featured .ins-body p{color:rgba(255,255,255,.6)}
@@ -298,13 +351,15 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 /* PRODUCTS PAGE V2 — CARDS */
 .prod-cards-section{background:var(--cream);padding:6rem 3rem 7rem}
 .prod-cards-row{display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:1100px;margin:0 auto}
-.prod-card{display:flex;flex-direction:column;background:#fff;border-radius:var(--radius-xl);overflow:hidden;border:1px solid var(--border-subtle);transition:transform .5s var(--ease-out-expo),box-shadow .5s var(--ease-out-expo);cursor:pointer;color:inherit;text-decoration:none}
+.prod-card{display:flex;flex-direction:column;background:#fff;border-radius:var(--radius-xl);overflow:hidden;border:1px solid var(--border-subtle);transition:transform .5s var(--ease-out-expo),box-shadow .5s var(--ease-out-expo);color:inherit;text-decoration:none}
 .prod-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-dramatic)}
 .prod-card-img{width:100%;aspect-ratio:16/10;background-size:cover;background-position:center;position:relative;overflow:hidden;transition:background-size .6s var(--ease-out-expo)}
 .prod-card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(22,45,80,.08) 100%);pointer-events:none}
 .prod-card:hover .prod-card-img{background-size:106%}
 .prod-card-content{padding:2rem 2.25rem 2.5rem;display:flex;flex-direction:column;flex-grow:1}
 .prod-card-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.5vw,2rem);font-weight:700;color:var(--navy);line-height:1.15;margin-bottom:1rem}
+.prod-card-title-link{color:inherit;text-decoration:none}
+.prod-card-title-link:hover{color:var(--green-dark)}
 .prod-card-desc{font-size:.94rem;color:var(--text-secondary);line-height:1.75;margin-bottom:1.75rem;flex-grow:1}
 .prod-card-cta{display:inline-flex;align-items:center;gap:.5rem;font-size:14px;font-weight:600;color:#fff;background:var(--green);padding:.7rem 1.6rem;border-radius:8px;letter-spacing:.03em;text-transform:uppercase;transition:background .3s ease,gap .3s ease,box-shadow .3s ease;width:fit-content;margin-top:auto}
 .prod-card-cta span{transition:transform .3s ease}
@@ -317,8 +372,7 @@ footer{background:var(--navy-deep);color:#fff;padding:5rem 3rem 2.5rem}
 .prods-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2rem;padding:1rem 0 4rem}
 
 /* PRODUCT CARD */
-a.pc{text-decoration:none;color:inherit}
-.pc{background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;transition:.5s var(--ease-out-expo);cursor:pointer;display:flex;flex-direction:column}
+.pc{background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;transition:.5s var(--ease-out-expo);cursor:default;display:flex;flex-direction:column}
 .pc:hover{transform:translateY(-6px);box-shadow:var(--shadow-dramatic);border-color:transparent}
 .pc-vis,.product-card__media{width:100%;aspect-ratio:4/5;position:relative;overflow:hidden;border-top-left-radius:inherit;border-top-right-radius:inherit;border-bottom:1px solid var(--border-subtle)}
 .pc-vis img,.product-card__img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s var(--ease-out-expo)}
@@ -326,9 +380,12 @@ a.pc{text-decoration:none;color:inherit}
 .pc-cat{position:absolute;top:.75rem;right:.75rem;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);padding:.3rem .85rem;border-radius:50px;font-size:10.5px;font-weight:700;color:var(--navy);letter-spacing:.05em;text-transform:uppercase}
 .pc-body{padding:1.85rem 1.75rem 2.15rem;flex:1;display:flex;flex-direction:column}
 .pc-body h4{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:.9rem}
+.pc-title-link{color:inherit;text-decoration:none}
+.pc-title-link:hover{color:var(--green-dark)}
 .pc-body p{font-size:.9rem;color:var(--text-muted);line-height:1.6;margin-bottom:1.35rem}
 .pc-body .sol-proofs{margin-top:auto}
 .pc-body .btn-arrow{margin-top:1.35rem}
+.pc-cta-link{width:fit-content}
 
 /* DETAIL PAGE */
 .det-page{padding:8rem 3rem 4rem;min-height:100vh;background:var(--cream)}
@@ -382,24 +439,160 @@ a.pc{text-decoration:none;color:inherit}
 .det-grid{grid-template-columns:1fr;gap:2rem}
 .det-vis{height:280px}
 }
+/* MOBILE NAV — Accordion Style (≤768px)
+   3-level: top dropdowns → Market region sub-groups → country links
+   ============================================================= */
 @media(max-width:768px){
+
 .hamburger{display:flex}
-.nav-links{position:fixed;top:0;left:0;right:0;bottom:0;background:#ffffff;flex-direction:column;justify-content:flex-start;align-items:flex-start;gap:1rem;padding:6.25rem 1.5rem 2rem;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .4s ease;z-index:10000;margin-right:0;margin-left:0}
+
+/* Full-screen mobile menu */
+.nav-links{
+  position:fixed;top:0;left:0;right:0;bottom:0;
+  background:#ffffff;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:stretch;
+  gap:0;
+  padding:6.25rem 0 4rem;
+  overflow-y:auto;
+  opacity:0;pointer-events:none;
+  transition:opacity .35s ease;
+  z-index:10000;
+  border-top:1px solid var(--border-subtle);
+}
 .nav-links.open{opacity:1;pointer-events:all}
 .nav-social{display:none}
-.nav {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+
+/* Nav wrapper */
+.nav{display:flex;align-items:center;width:100%;max-width:1440px;margin:0 auto;height:84px;padding:0 1.5rem}
+
+/* Top-level nav links (plain links: News, Contact) */
+.nav-links .nav-link{
+  display:flex;align-items:center;justify-content:space-between;
+  color:var(--text-primary)!important;
+  font-size:1.05rem;
+  background:transparent;box-shadow:none;
+  padding:.9rem 1.5rem;
+  border-bottom:1px solid var(--border-subtle);
+  font-weight:600;
+}
+.nav-links .nav-link:hover{background:transparent;color:var(--green-dark)!important}
+.nav-links .nav-link::after{display:none}
+
+/* Mobile CTA — "Become a Distributor" button */
+.nav-link--cta{
+  display:block!important;
+  background:var(--green-dark)!important;
+  color:#fff!important;
+  text-align:center;
+  border-radius:8px!important;
+  margin:1rem 1.5rem;
+  padding:.85rem 1.5rem!important;
+  font-weight:600;
+  border-bottom:none!important;
+}
+.nav-link--cta:hover{background:var(--green)!important;color:#fff!important}
+
+/* Dropdown wrappers — full width, position:static for accordion */
+.nav-dropdown{width:100%;position:static}
+
+/* Chevron animation */
+.nav-dropdown .nav-chevron{transition:transform .25s ease}
+.nav-dropdown.open .nav-chevron{transform:rotate(180deg)}
+
+/* Dropdown toggle button (span.nav-link inside .nav-dropdown) */
+.nav-dropdown > .nav-link{
+  width:100%;
+  display:flex;align-items:center;justify-content:space-between;
+  background:transparent;
+  color:var(--text-primary)!important;
+  font-size:1.05rem;
+  padding:.9rem 1.5rem;
+  border-bottom:1px solid var(--border-subtle);
+  font-weight:600;
+  cursor:pointer;
+  border-radius:0;
+}
+.nav-dropdown > .nav-link:hover{background:transparent;color:var(--green-dark)!important}
+
+/* Dropdown menus — hidden by default, shown when open */
+.nav-dropdown-menu{
+  position:static;
+  transform:none!important;
+  opacity:1;pointer-events:none;
+  background:#f8f9fa;
+  box-shadow:none;border:none;
+  min-width:0;padding:0;margin:0;
+  border-bottom:1px solid var(--border-subtle);
+  display:none;
+}
+.nav-dropdown.open > .nav-dropdown-menu{
+  display:block;
+  pointer-events:all;
 }
 
-.nav-links .nav-link{color:var(--text-primary)!important;font-size:1.1rem;background:transparent;box-shadow:none;padding:.35rem 0}
-.nav-dropdown{width:100%}
-.nav-dropdown-menu{position:static;transform:none;opacity:1;pointer-events:all;background:transparent;box-shadow:none;border:none;backdrop-filter:none;min-width:0;padding:0;margin:.5rem 0}
-.nav-dropdown:hover .nav-dropdown-menu,.nav-dropdown.open .nav-dropdown-menu{transform:none}
-.nav-dropdown-menu a{font-size:1rem;padding:.35rem 0;color:var(--text-secondary)}
+/* Plain dropdown links (Products, Species, Company sub-items) */
+.nav-dropdown-menu a{
+  display:block;
+  padding:.6rem 1.5rem;
+  font-size:.95rem;
+  color:var(--text-secondary);
+  border-bottom:1px solid rgba(0,0,0,.04);
+}
+.nav-dropdown-menu a:last-child{border-bottom:none}
+.nav-dropdown-menu a:hover{background:var(--green-pale);color:var(--green-dark)}
+
+/* MARKETS ACCORDION — 3-level: group label → country links
+   Markets dropdown shows 3 collapsible region groups */
+.nav-dropdown-menu--markets{
+  display:none;
+  background:#f8f9fa;
+  padding:0;
+}
+.nav-dropdown.open .nav-dropdown-menu--markets{display:block}
+
+/* Each region group (West Africa / MENA / GCC) */
+.nav-market-group{position:relative}
+
+/* Region label — acts as sub-dropdown toggle */
+.nav-market-label{
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:10.5px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--text-muted);
+  padding:.75rem 1.5rem;
+  cursor:pointer;
+  border-bottom:1px solid var(--border-subtle);
+  transition:background .15s;
+}
+.nav-market-label:hover{background:#f0f4f0;color:var(--green-dark)}
+.nav-market-label::after{
+  content:'+';
+  font-size:13px;
+  font-weight:700;
+  transition:transform .2s ease;
+}
+.nav-market-group.open > .nav-market-label::after{content:'−'}
+.nav-market-group.open > .nav-market-label{color:var(--green-dark)}
+
+/* Country links — hidden until parent group is open */
+.nav-market-group a{
+  display:none;
+  padding:.5rem 1.5rem .5rem 2.25rem;
+  font-size:.9rem;
+  color:var(--text-secondary);
+  text-decoration:none;
+  border-bottom:1px solid rgba(0,0,0,.04);
+}
+.nav-market-group a:hover{background:var(--green-pale);color:var(--green-dark)}
+.nav-market-group.open > a{display:block}
+
+/* West Africa group: Nigeria + West Africa links */
+.nav-market-group.open > a{display:block}
+.nav-market-divider{display:none}
+
+/* General mobile overrides */
 .nav{height:84px;padding:0 1.5rem}
 .nav-logo img{height:88%;max-height:74px}
 .section-pad{padding:4rem 1.5rem}
@@ -423,7 +616,6 @@ a.pc{text-decoration:none;color:inherit}
 .prod-cards-row{grid-template-columns:1fr;gap:2rem;max-width:520px}
 .prod-card-content{padding:1.5rem 1.75rem 2rem}
 .prods-grid{grid-template-columns:1fr}
-
 .cert-grid{grid-template-columns:1fr}
 .cert-page{padding:6rem 1.5rem 4rem}
 }
@@ -439,7 +631,7 @@ a.pc{text-decoration:none;color:inherit}
 .cta-card-btn{background:var(--green);color:#fff;padding:.6rem 1.5rem;border-radius:8px;font-weight:600;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;transition:.3s;display:inline-block}
 .cta-card:hover .cta-card-btn{background:var(--green-dark);box-shadow:0 4px 15px rgba(140,191,46,.3)}
 @media(max-width:768px){.cta-triple{grid-template-columns:1fr;max-width:400px}}
-@media(max-width:768px){.hero-badges{gap:.4rem}.hero-badge{font-size:11px;padding:.25rem .6rem}.hero-stats{gap:1.25rem}.hero-stat-num{font-size:1.6rem}}
+@media(max-width:768px){.hero-badges{gap:.4rem}.hero-badge{font-size:11px;padding:.25rem .6rem}.hero-stats{gap:1.25rem}.hero-stat-num{font-size:1.6rem}.hero-content{padding-top:6rem}}
 
 /* SOLUTION CARD PROOFS */
 .sol-proofs{margin-top:1rem;display:flex;flex-direction:column;gap:.5rem}
@@ -1102,6 +1294,8 @@ border-radius:6px;display:flex;flex-direction:column;gap:6px
 .pmx-card-img span{font-size:.82rem;color:rgba(255,255,255,.5);font-weight:500;letter-spacing:.06em;text-transform:uppercase}
 .pmx-card-body{padding:1.75rem 1.75rem 2rem;display:flex;flex-direction:column;flex-grow:1}
 .pmx-card-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--navy);margin-bottom:.75rem;line-height:1.2}
+.pmx-card-title-link{color:inherit;text-decoration:none}
+.pmx-card-title-link:hover{color:var(--green-dark)}
 .pmx-card-desc{font-size:.92rem;color:var(--text-secondary);line-height:1.7;margin-bottom:1.5rem;flex-grow:1}
 .pmx-card-cta{display:inline-flex;align-items:center;gap:.5rem;font-size:13px;font-weight:600;color:#fff;background:var(--green);padding:.7rem 1.5rem;border-radius:8px;letter-spacing:.03em;text-transform:uppercase;transition:background .3s ease,box-shadow .3s ease;width:fit-content;margin-top:auto}
 .pmx-card:hover .pmx-card-cta{background:var(--green-dark);box-shadow:0 4px 16px rgba(140,191,46,.25)}
