@@ -23,17 +23,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="build-id" content="mocq9xdy-qm0w54" data-built="2026-04-24T09:48:33.478Z">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <script>
-(function(){
-  try{
-    if(window.location.pathname !== '/') return;
-    if(sessionStorage.getItem('lang-checked')) return;
-    var lang=(navigator.language||navigator.userLanguage||'').toLowerCase();
-    sessionStorage.setItem('lang-checked','1');
-    if(lang.indexOf('fr')===0){
-      window.location.replace('/fr/');
-    }
-  }catch(e){}
-})();
+// Lang redirect removed — caused /fr/ canonical loop and SEO dilution
+// French users should land on /fr/ via hreflang, not JS redirect
 </script>
     <title>EU-Manufactured Feed Additives &amp; Premixes | VeritasVet | ME, Africa &amp; Asia</title>
 <meta name="description" content="European feed additive supplier for feed mills and integrators. Mycotoxin binders, gut health additives, pellet binders and premixes. GMP+, FAMI-QS certified. Serving Middle East, Africa & Asia.">
