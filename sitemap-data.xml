@@ -769,4 +769,152 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/fr/news/rumen-mycotoxin-protection-limits/"/>
   </url>
+
+
+  <!-- Added missing pages -->
+  <url>
+    <loc>https://www.veritasvet.com/become-distributor/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/become-distributor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/become-distributor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/become-distributor/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/feed-additives/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/feed-additives/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/feed-additives/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/feed-additives/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/feed-quality/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/feed-quality/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/feed-quality/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/feed-quality/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/become-distributor/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/become-distributor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/become-distributor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/become-distributor/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/feed-additives/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/feed-additives/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/feed-additives/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/feed-additives/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/feed-quality/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/feed-quality/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/feed-quality/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/feed-quality/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/gut-health/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/gut-health/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/gut-health/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/gut-health/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/mycotoxin-binders/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/mycotoxin-binders/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/mycotoxin-binders/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/mycotoxin-binders/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/news/emerging-mycotoxins-feed-mills-guide/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/emerging-mycotoxins-feed-mills-guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/emerging-mycotoxins-feed-mills-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/emerging-mycotoxins-feed-mills-guide/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/news/mycotoxins-enteric-nervous-system-livestock/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/mycotoxins-enteric-nervous-system-livestock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/nutrition/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/nutrition/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/nutrition/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/nutrition/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/gut-health/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/gut-health/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/gut-health/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/gut-health/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/mycotoxin-binders/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/mycotoxin-binders/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/mycotoxin-binders/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/mycotoxin-binders/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/emerging-mycotoxins-feed-mills-guide/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/emerging-mycotoxins-feed-mills-guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/emerging-mycotoxins-feed-mills-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/emerging-mycotoxins-feed-mills-guide/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/mycoreal-pillar/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycoreal-pillar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/mycoreal-pillar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycoreal-pillar/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/mycotoxins-enteric-nervous-system-livestock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/rumen-mycotoxin-protection-limits/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/nutrition/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/nutrition/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/nutrition/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/nutrition/"/>
+  </url>
+
 </urlset>
