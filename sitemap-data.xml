@@ -626,68 +626,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/terms/"/>
   </url>
   <url>
-    <loc>https://www.veritasvet.com/markets/middle-east/</loc>
-    <lastmod>2026-03-24</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/middle-east/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/moyen-orient/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/middle-east/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/markets/moyen-orient/</loc>
-    <lastmod>2026-03-24</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/middle-east/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/moyen-orient/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/middle-east/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/markets/africa/</loc>
-    <lastmod>2026-03-24</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/africa/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/afrique/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/africa/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/markets/afrique/</loc>
-    <lastmod>2026-03-24</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/africa/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/afrique/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/africa/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/markets/egypt/</loc>
-    <lastmod>2026-03-27</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/egypt/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/egypte/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/egypt/"/>
-  </url>
-  <url>
     <loc>https://www.veritasvet.com/fr/markets/egypte/</loc>
     <lastmod>2026-03-27</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/egypt/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/egypte/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/egypt/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/markets/saudi-arabia/</loc>
-    <lastmod>2026-03-27</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/saudi-arabia/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/arabie-saoudite/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/saudi-arabia/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/markets/arabie-saoudite/</loc>
-    <lastmod>2026-03-27</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/saudi-arabia/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/arabie-saoudite/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/saudi-arabia/"/>
   </url>
   <url>
     <loc>https://www.veritasvet.com/markets/jordan/</loc>
@@ -704,30 +648,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/jordan/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/jordan/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/jordan/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/markets/iraq/</loc>
-    <lastmod>2026-03-27</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/iraq/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/irak/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/iraq/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/markets/irak/</loc>
-    <lastmod>2026-03-27</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/iraq/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/irak/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/iraq/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/markets/uae/</loc>
-    <lastmod>2026-03-27</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/uae/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/emirats-arabes-unis/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/uae/"/>
   </url>
   <url>
     <loc>https://www.veritasvet.com/fr/markets/emirats-arabes-unis/</loc>
@@ -900,14 +820,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/mycotoxins-enteric-nervous-system-livestock/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/"/>
   </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/rumen-mycotoxin-protection-limits/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
-  </url>
+  
   <url>
     <loc>https://www.veritasvet.com/nutrition/</loc>
     <lastmod>2026-04-15</lastmod>
@@ -917,4 +830,133 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/nutrition/"/>
   </url>
 
+
+  <url>
+    <loc>https://www.veritasvet.com/markets/west-africa/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/west-africa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/west-africa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/west-africa/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/mena/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/mena/egypt/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/egypt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/egypt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/egypt/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/mena/jordan/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/jordan/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/jordan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/jordan/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/mena/iraq/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/iraq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/iraq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/iraq/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/gcc/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/gcc/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/gcc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/gcc/saudi-arabia/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/gcc/saudi-arabia/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/gcc/saudi-arabia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/saudi-arabia/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/markets/gcc/uae/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/gcc/uae/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/gcc/uae/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/uae/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/west-africa/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/west-africa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/west-africa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/west-africa/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/mena/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/mena/egypt/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/egypt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/egypt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/egypt/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/mena/jordan/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/jordan/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/jordan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/jordan/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/mena/iraq/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/iraq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/iraq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/iraq/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/gcc/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/gcc/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/gcc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/gcc/saudi-arabia/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/gcc/saudi-arabia/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/gcc/saudi-arabia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/saudi-arabia/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/gcc/uae/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/gcc/uae/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/gcc/uae/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/uae/"/>
+  </url>
 </urlset>
