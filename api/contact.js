@@ -1,15 +1,28 @@
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
-  const { access_key, subject, from_name, redirect, inquiry_path, company, email, phone, product_interest, territory, portfolio, volume, message } = await req.body;
+  const {
+    access_key,
+    subject,
+    from_name,
+    redirect,
+    inquiry_path,
+    company,
+    email,
+    phone,
+    product_interest,
+    territory,
+    portfolio,
+    volume,
+    message,
+  } = req.body || {};
 
   if (!access_key || !email || !message) {
     return res.status(400).json({ message: 'Missing required fields' });
   }
 
-  // Build FormData to forward to Web3Forms
   const formData = new FormData();
   formData.append('access_key', access_key);
   if (subject) formData.append('subject', subject);
@@ -32,8 +45,8 @@ export default async function handler(req, res) {
     });
 
     const data = await response.json();
-    res.status(response.ok ? 200 : 400).json(data);
+    return res.status(response.ok ? 200 : 400).json(data);
   } catch (error) {
-    res.status(500).json({ message: 'Proxy error', error: error.message });
+    return res.status(500).json({ message: 'Proxy error', error: error.message });
   }
-}
+};
