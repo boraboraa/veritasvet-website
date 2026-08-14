@@ -15,6 +15,26 @@
       "permanent": true
     },
     {
+      "source": "/news/gut-health-and-animal-performance-strengthening-immunity-with-proper-nutrition",
+      "destination": "/news/gut-health-and-animal-performance/",
+      "permanent": true
+    },
+    {
+      "source": "/news/gut-health-and-animal-performance-strengthening-immunity-with-proper-nutrition/",
+      "destination": "/news/gut-health-and-animal-performance/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/news/gut-health-and-animal-performance-strengthening-immunity-with-proper-nutrition",
+      "destination": "/fr/news/gut-health-and-animal-performance/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/news/gut-health-and-animal-performance-strengthening-immunity-with-proper-nutrition/",
+      "destination": "/fr/news/gut-health-and-animal-performance/",
+      "permanent": true
+    },
+    {
       "source": "/category/news/",
       "destination": "https://www.veritasvet.com/news/",
       "permanent": true
