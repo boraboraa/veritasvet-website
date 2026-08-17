@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.veritasvet.com/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/"/>
+  </url>
+  <url>
     <loc>https://www.veritasvet.com/about/</loc>
     <lastmod>2026-04-10</lastmod>
     <priority>0.6</priority>
@@ -10,23 +18,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/about/"/>
   </url>
   <url>
-    <loc>https://www.veritasvet.com/fr/about/</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://www.veritasvet.com/become-distributor/</loc>
+    <lastmod>2026-04-15</lastmod>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/about/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/about/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/become-distributor/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/become-distributor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/become-distributor/"/>
   </url>
   <url>
     <loc>https://www.veritasvet.com/certifications/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/certifications/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/certifications/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/certifications/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/certifications/</loc>
     <lastmod>2026-04-10</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/certifications/"/>
@@ -42,647 +42,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/contact/"/>
   </url>
   <url>
-    <loc>https://www.veritasvet.com/fr/contact/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/contact/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/contact/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/contact/"/>
-  </url>
-  <url>
     <loc>https://www.veritasvet.com/cookies/</loc>
     <lastmod>2026-04-10</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/cookies/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/cookies/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/cookies/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/cookies/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/cookies/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/cookies/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/cookies/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/legal/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/legal/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/legal/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/legal/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/legal/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/legal/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/legal/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/legal/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/aquaculture-feed-innovation/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/aquaculture-feed-innovation/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/aquaculture-feed-innovation/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/aquaculture-feed-innovation/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/news/aquaculture-feed-innovation/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/aquaculture-feed-innovation/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/aquaculture-feed-innovation/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/aquaculture-feed-innovation/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/feed-quality-and-durability/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/feed-quality-and-durability/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/feed-quality-and-durability/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/feed-quality-and-durability/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/news/feed-quality-and-durability/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/feed-quality-and-durability/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/feed-quality-and-durability/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/feed-quality-and-durability/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/gut-health-and-animal-performance/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/gut-health-and-animal-performance/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/gut-health-and-animal-performance/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/gut-health-and-animal-performance/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/news/gut-health-and-animal-performance/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/gut-health-and-animal-performance/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/gut-health-and-animal-performance/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/gut-health-and-animal-performance/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/gut-health-sustainable-production/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/gut-health-sustainable-production/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/gut-health-sustainable-production/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/gut-health-sustainable-production/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/news/gut-health-sustainable-production/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/gut-health-sustainable-production/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/gut-health-sustainable-production/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/gut-health-sustainable-production/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/high-bioavailability-vitamin-d3/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/high-bioavailability-vitamin-d3/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/high-bioavailability-vitamin-d3/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/high-bioavailability-vitamin-d3/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/news/high-bioavailability-vitamin-d3/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/high-bioavailability-vitamin-d3/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/high-bioavailability-vitamin-d3/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/high-bioavailability-vitamin-d3/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/news/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/mycotoxin-risk-management/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycotoxin-risk-management/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/mycotoxin-risk-management/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycotoxin-risk-management/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/news/mycotoxin-risk-management/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycotoxin-risk-management/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/mycotoxin-risk-management/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycotoxin-risk-management/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/reduce-mycotoxin-risk/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/reduce-mycotoxin-risk/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/reduce-mycotoxin-risk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/reduce-mycotoxin-risk/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/news/reduce-mycotoxin-risk/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/reduce-mycotoxin-risk/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/reduce-mycotoxin-risk/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/reduce-mycotoxin-risk/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/smart-feeding-stronger-animals/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/smart-feeding-stronger-animals/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/smart-feeding-stronger-animals/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/smart-feeding-stronger-animals/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/news/smart-feeding-stronger-animals/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/smart-feeding-stronger-animals/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/smart-feeding-stronger-animals/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/smart-feeding-stronger-animals/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/premixes/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/premixes/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/premixes/versamixx-aqua/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/versamixx-aqua/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/versamixx-aqua/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/versamixx-aqua/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/premixes/versamixx-aqua/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/versamixx-aqua/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/versamixx-aqua/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/versamixx-aqua/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/premixes/versamixx-dairy/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/versamixx-dairy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/versamixx-dairy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/versamixx-dairy/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/premixes/versamixx-dairy/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/versamixx-dairy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/versamixx-dairy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/versamixx-dairy/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/premixes/versamixx-poultry/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/versamixx-poultry/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/versamixx-poultry/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/versamixx-poultry/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/premixes/versamixx-poultry/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/versamixx-poultry/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/versamixx-poultry/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/versamixx-poultry/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/privacy/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/privacy/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/privacy/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/privacy/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/butycal-ccb94/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/butycal-ccb94/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/butycal-ccb94/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/butycal-ccb94/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/butycal-ccb94/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/butycal-ccb94/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/butycal-ccb94/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/butycal-ccb94/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/guarbind/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/guarbind/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/guarbind/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/guarbind/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/guarbind/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/guarbind/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/guarbind/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/guarbind/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/toxifix/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/toxifix/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/toxifix/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/toxifix/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/toxifix/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/toxifix/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/toxifix/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/toxifix/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/toxifix-perfect/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/toxifix-perfect/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/toxifix-perfect/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/toxifix-perfect/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/toxifix-perfect/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/toxifix-perfect/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/toxifix-perfect/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/toxifix-perfect/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/toxifix-plus/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/toxifix-plus/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/toxifix-plus/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/toxifix-plus/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/toxifix-plus/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/toxifix-plus/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/toxifix-plus/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/toxifix-plus/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/verivit-hy-d3/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/verivit-hy-d3/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/verivit-hy-d3/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/verivit-hy-d3/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/verivit-hy-d3/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/verivit-hy-d3/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/verivit-hy-d3/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/verivit-hy-d3/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/veroxid-b2a/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/veroxid-b2a/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/veroxid-b2a/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/veroxid-b2a/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/veroxid-b2a/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/veroxid-b2a/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/veroxid-b2a/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/veroxid-b2a/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/veroxid-phenols/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/veroxid-phenols/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/veroxid-phenols/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/veroxid-phenols/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/veroxid-phenols/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/veroxid-phenols/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/veroxid-phenols/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/veroxid-phenols/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/versacid-fl-plus/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versacid-fl-plus/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versacid-fl-plus/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versacid-fl-plus/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/versacid-fl-plus/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versacid-fl-plus/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versacid-fl-plus/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versacid-fl-plus/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/versacid-liquid/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versacid-liquid/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versacid-liquid/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versacid-liquid/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/versacid-liquid/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versacid-liquid/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versacid-liquid/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versacid-liquid/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/versamold/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versamold/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versamold/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versamold/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/versamold/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versamold/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versamold/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versamold/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/versamos/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versamos/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versamos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versamos/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/versamos/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versamos/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versamos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versamos/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/products/versapeg/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versapeg/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versapeg/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versapeg/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/products/versapeg/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versapeg/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versapeg/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versapeg/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/species/aquaculture/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/species/aquaculture/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/species/aquaculture/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/species/aquaculture/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/species/aquaculture/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/species/aquaculture/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/species/aquaculture/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/species/aquaculture/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/species/poultry/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/species/poultry/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/species/poultry/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/species/poultry/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/species/poultry/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/species/poultry/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/species/poultry/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/species/poultry/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/species/ruminant/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/species/ruminant/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/species/ruminant/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/species/ruminant/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/species/ruminant/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/species/ruminant/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/species/ruminant/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/species/ruminant/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/terms/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/terms/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/terms/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/terms/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/terms/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/terms/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/markets/egypte/</loc>
-    <lastmod>2026-03-27</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/egypt/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/egypte/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/egypt/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/markets/jordan/</loc>
-    <lastmod>2026-03-27</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/jordan/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/jordan/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/jordan/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/markets/jordan/</loc>
-    <lastmod>2026-03-27</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/jordan/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/jordan/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/jordan/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/markets/emirats-arabes-unis/</loc>
-    <lastmod>2026-03-27</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/uae/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/emirats-arabes-unis/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/uae/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/fusarium-mycotoxins-dairy-cattle/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/fusarium-mycotoxins-dairy-cattle/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/news/fusarium-mycotoxins-dairy-cattle/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/fusarium-mycotoxins-dairy-cattle/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/news/fusarium-mycotoxins-dairy-cattle/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/fusarium-mycotoxins-dairy-cattle/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/fusarium-mycotoxins-dairy-cattle/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/fr/news/fusarium-mycotoxins-dairy-cattle/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/news/rumen-mycotoxin-protection-limits/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/rumen-mycotoxin-protection-limits/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/fr/news/rumen-mycotoxin-protection-limits/"/>
-  </url>
-
-
-  <!-- Added missing pages -->
-  <url>
-    <loc>https://www.veritasvet.com/become-distributor/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/become-distributor/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/become-distributor/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/become-distributor/"/>
   </url>
   <url>
     <loc>https://www.veritasvet.com/feed-additives/</loc>
@@ -701,12 +66,52 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/feed-quality/"/>
   </url>
   <url>
+    <loc>https://www.veritasvet.com/fr/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/about/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/about/"/>
+  </url>
+  <url>
     <loc>https://www.veritasvet.com/fr/become-distributor/</loc>
     <lastmod>2026-04-15</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/become-distributor/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/become-distributor/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/become-distributor/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/certifications/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/certifications/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/certifications/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/certifications/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/contact/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/contact/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/cookies/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/cookies/"/>
   </url>
   <url>
     <loc>https://www.veritasvet.com/fr/feed-additives/</loc>
@@ -733,12 +138,116 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/gut-health/"/>
   </url>
   <url>
+    <loc>https://www.veritasvet.com/fr/legal/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/legal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/legal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/legal/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/gcc/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/gcc/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/gcc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/gcc/saudi-arabia/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/gcc/saudi-arabia/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/gcc/saudi-arabia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/saudi-arabia/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/gcc/uae/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/gcc/uae/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/gcc/uae/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/uae/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/mena/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/mena/egypt/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/egypt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/egypt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/egypt/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/mena/iraq/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/iraq/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/iraq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/iraq/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/mena/jordan/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/jordan/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/jordan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/jordan/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/west-africa/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/west-africa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/west-africa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/west-africa/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/markets/west-africa/nigeria/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/west-africa/nigeria/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/west-africa/nigeria/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/west-africa/nigeria/"/>
+  </url>
+  <url>
     <loc>https://www.veritasvet.com/fr/mycotoxin-binders/</loc>
     <lastmod>2026-04-15</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/mycotoxin-binders/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/mycotoxin-binders/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/mycotoxin-binders/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/news/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/news/aquaculture-feed-innovation/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/aquaculture-feed-innovation/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/aquaculture-feed-innovation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/aquaculture-feed-innovation/"/>
   </url>
   <url>
     <loc>https://www.veritasvet.com/fr/news/emerging-mycotoxins-feed-mills-guide/</loc>
@@ -749,12 +258,84 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/emerging-mycotoxins-feed-mills-guide/"/>
   </url>
   <url>
+    <loc>https://www.veritasvet.com/fr/news/feed-quality-and-durability/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/feed-quality-and-durability/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/feed-quality-and-durability/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/feed-quality-and-durability/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/news/fusarium-mycotoxins-dairy-cattle/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/fusarium-mycotoxins-dairy-cattle/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/fusarium-mycotoxins-dairy-cattle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/fusarium-mycotoxins-dairy-cattle/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/news/gut-health-and-animal-performance/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/gut-health-and-animal-performance/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/gut-health-and-animal-performance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/gut-health-and-animal-performance/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/news/gut-health-sustainable-production/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/gut-health-sustainable-production/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/gut-health-sustainable-production/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/gut-health-sustainable-production/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/news/high-bioavailability-vitamin-d3/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/high-bioavailability-vitamin-d3/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/high-bioavailability-vitamin-d3/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/high-bioavailability-vitamin-d3/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/news/mycotoxin-risk-management/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycotoxin-risk-management/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/mycotoxin-risk-management/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycotoxin-risk-management/"/>
+  </url>
+  <url>
     <loc>https://www.veritasvet.com/fr/news/mycotoxins-enteric-nervous-system-livestock/</loc>
     <lastmod>2026-04-15</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/mycotoxins-enteric-nervous-system-livestock/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/news/reduce-mycotoxin-risk/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/reduce-mycotoxin-risk/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/reduce-mycotoxin-risk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/reduce-mycotoxin-risk/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/news/rumen-mycotoxin-protection-limits/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/rumen-mycotoxin-protection-limits/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/news/smart-feeding-stronger-animals/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/smart-feeding-stronger-animals/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/smart-feeding-stronger-animals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/smart-feeding-stronger-animals/"/>
   </url>
   <url>
     <loc>https://www.veritasvet.com/fr/nutrition/</loc>
@@ -765,6 +346,190 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/nutrition/"/>
   </url>
   <url>
+    <loc>https://www.veritasvet.com/fr/premixes/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/premixes/versamixx-aqua/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/versamixx-aqua/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/versamixx-aqua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/versamixx-aqua/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/premixes/versamixx-dairy/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/versamixx-dairy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/versamixx-dairy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/versamixx-dairy/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/premixes/versamixx-poultry/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/versamixx-poultry/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/versamixx-poultry/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/versamixx-poultry/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/privacy/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/butycal-ccb94/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/butycal-ccb94/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/butycal-ccb94/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/butycal-ccb94/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/guarbind/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/guarbind/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/guarbind/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/guarbind/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/toxifix-perfect/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/toxifix-perfect/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/toxifix-perfect/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/toxifix-perfect/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/toxifix-plus/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/toxifix-plus/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/toxifix-plus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/toxifix-plus/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/toxifix/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/toxifix/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/toxifix/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/toxifix/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/verivit-hy-d3/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/verivit-hy-d3/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/verivit-hy-d3/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/verivit-hy-d3/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/veroxid-b2a/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/veroxid-b2a/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/veroxid-b2a/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/veroxid-b2a/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/veroxid-phenols/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/veroxid-phenols/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/veroxid-phenols/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/veroxid-phenols/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/versacid-fl-plus/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versacid-fl-plus/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versacid-fl-plus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versacid-fl-plus/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/versacid-liquid/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versacid-liquid/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versacid-liquid/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versacid-liquid/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/versamold/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versamold/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versamold/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versamold/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/versamos/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versamos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versamos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versamos/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/products/versapeg/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versapeg/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versapeg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versapeg/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/species/aquaculture/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/species/aquaculture/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/species/aquaculture/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/species/aquaculture/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/species/poultry/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/species/poultry/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/species/poultry/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/species/poultry/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/species/ruminant/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/species/ruminant/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/species/ruminant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/species/ruminant/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/fr/terms/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/terms/"/>
+  </url>
+  <url>
     <loc>https://www.veritasvet.com/gut-health/</loc>
     <lastmod>2026-04-15</lastmod>
     <priority>0.5</priority>
@@ -773,86 +538,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/gut-health/"/>
   </url>
   <url>
-    <loc>https://www.veritasvet.com/mycotoxin-binders/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/mycotoxin-binders/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/mycotoxin-binders/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/mycotoxin-binders/"/>
+    <loc>https://www.veritasvet.com/legal/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/legal/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/legal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/legal/"/>
   </url>
   <url>
-    <loc>https://www.veritasvet.com/news/emerging-mycotoxins-feed-mills-guide/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/emerging-mycotoxins-feed-mills-guide/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/emerging-mycotoxins-feed-mills-guide/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/emerging-mycotoxins-feed-mills-guide/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/mycoreal-pillar/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycoreal-pillar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycoreal-pillar/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/mycotoxins-enteric-nervous-system-livestock/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/"/>
-  </url>
-  
-  <url>
-    <loc>https://www.veritasvet.com/nutrition/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/nutrition/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/nutrition/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/nutrition/"/>
-  </url>
-
-
-  <url>
-    <loc>https://www.veritasvet.com/markets/west-africa/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/west-africa/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/west-africa/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/west-africa/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/markets/mena/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/markets/mena/egypt/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/egypt/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/egypt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/egypt/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/markets/mena/jordan/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/jordan/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/jordan/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/jordan/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/markets/mena/iraq/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/iraq/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/iraq/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/iraq/"/>
+    <loc>https://www.veritasvet.com/markets/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/"/>
   </url>
   <url>
     <loc>https://www.veritasvet.com/markets/gcc/</loc>
@@ -879,15 +578,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/uae/"/>
   </url>
   <url>
-    <loc>https://www.veritasvet.com/fr/markets/west-africa/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/west-africa/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/west-africa/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/west-africa/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/markets/mena/</loc>
+    <loc>https://www.veritasvet.com/markets/mena/</loc>
     <lastmod>2026-04-16</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/"/>
@@ -895,7 +586,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/"/>
   </url>
   <url>
-    <loc>https://www.veritasvet.com/fr/markets/mena/egypt/</loc>
+    <loc>https://www.veritasvet.com/markets/mena/egypt/</loc>
     <lastmod>2026-04-16</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/egypt/"/>
@@ -903,15 +594,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/egypt/"/>
   </url>
   <url>
-    <loc>https://www.veritasvet.com/fr/markets/mena/jordan/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/jordan/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/jordan/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/jordan/"/>
-  </url>
-  <url>
-    <loc>https://www.veritasvet.com/fr/markets/mena/iraq/</loc>
+    <loc>https://www.veritasvet.com/markets/mena/iraq/</loc>
     <lastmod>2026-04-16</lastmod>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/iraq/"/>
@@ -919,27 +602,338 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/iraq/"/>
   </url>
   <url>
-    <loc>https://www.veritasvet.com/fr/markets/gcc/</loc>
+    <loc>https://www.veritasvet.com/markets/mena/jordan/</loc>
     <lastmod>2026-04-16</lastmod>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/gcc/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/gcc/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/mena/jordan/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/mena/jordan/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/mena/jordan/"/>
   </url>
   <url>
-    <loc>https://www.veritasvet.com/fr/markets/gcc/saudi-arabia/</loc>
+    <loc>https://www.veritasvet.com/markets/west-africa/</loc>
     <lastmod>2026-04-16</lastmod>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/gcc/saudi-arabia/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/gcc/saudi-arabia/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/saudi-arabia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/west-africa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/west-africa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/west-africa/"/>
   </url>
   <url>
-    <loc>https://www.veritasvet.com/fr/markets/gcc/uae/</loc>
-    <lastmod>2026-04-16</lastmod>
+    <loc>https://www.veritasvet.com/markets/west-africa/nigeria/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/west-africa/nigeria/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/west-africa/nigeria/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/west-africa/nigeria/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/mycotoxin-binders/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/mycotoxin-binders/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/mycotoxin-binders/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/mycotoxin-binders/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/aquaculture-feed-innovation/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/aquaculture-feed-innovation/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/aquaculture-feed-innovation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/aquaculture-feed-innovation/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/emerging-mycotoxins-feed-mills-guide/</loc>
+    <lastmod>2026-04-15</lastmod>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/markets/gcc/uae/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/markets/gcc/uae/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/markets/gcc/uae/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/emerging-mycotoxins-feed-mills-guide/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/emerging-mycotoxins-feed-mills-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/emerging-mycotoxins-feed-mills-guide/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/feed-quality-and-durability/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/feed-quality-and-durability/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/feed-quality-and-durability/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/feed-quality-and-durability/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/fusarium-mycotoxins-dairy-cattle/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/fusarium-mycotoxins-dairy-cattle/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/fusarium-mycotoxins-dairy-cattle/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/fusarium-mycotoxins-dairy-cattle/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/gut-health-and-animal-performance/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/gut-health-and-animal-performance/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/gut-health-and-animal-performance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/gut-health-and-animal-performance/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/gut-health-sustainable-production/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/gut-health-sustainable-production/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/gut-health-sustainable-production/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/gut-health-sustainable-production/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/high-bioavailability-vitamin-d3/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/high-bioavailability-vitamin-d3/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/high-bioavailability-vitamin-d3/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/high-bioavailability-vitamin-d3/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/mycoreal-pillar/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycoreal-pillar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycoreal-pillar/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/mycotoxin-risk-management/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycotoxin-risk-management/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/mycotoxin-risk-management/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycotoxin-risk-management/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/mycotoxins-enteric-nervous-system-livestock/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/mycotoxins-enteric-nervous-system-livestock/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/reduce-mycotoxin-risk/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/reduce-mycotoxin-risk/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/reduce-mycotoxin-risk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/reduce-mycotoxin-risk/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/rumen-mycotoxin-protection-limits/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/rumen-mycotoxin-protection-limits/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/news/smart-feeding-stronger-animals/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/news/smart-feeding-stronger-animals/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/news/smart-feeding-stronger-animals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/news/smart-feeding-stronger-animals/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/nutrition/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/nutrition/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/nutrition/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/nutrition/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/premixes/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/premixes/versamixx-aqua/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/versamixx-aqua/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/versamixx-aqua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/versamixx-aqua/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/premixes/versamixx-dairy/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/versamixx-dairy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/versamixx-dairy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/versamixx-dairy/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/premixes/versamixx-poultry/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/premixes/versamixx-poultry/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/premixes/versamixx-poultry/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/premixes/versamixx-poultry/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/privacy/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/butycal-ccb94/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/butycal-ccb94/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/butycal-ccb94/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/butycal-ccb94/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/guarbind/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/guarbind/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/guarbind/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/guarbind/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/toxifix-perfect/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/toxifix-perfect/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/toxifix-perfect/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/toxifix-perfect/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/toxifix-plus/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/toxifix-plus/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/toxifix-plus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/toxifix-plus/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/toxifix/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/toxifix/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/toxifix/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/toxifix/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/verivit-hy-d3/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/verivit-hy-d3/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/verivit-hy-d3/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/verivit-hy-d3/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/veroxid-b2a/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/veroxid-b2a/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/veroxid-b2a/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/veroxid-b2a/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/veroxid-phenols/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/veroxid-phenols/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/veroxid-phenols/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/veroxid-phenols/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/versacid-fl-plus/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versacid-fl-plus/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versacid-fl-plus/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versacid-fl-plus/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/versacid-liquid/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versacid-liquid/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versacid-liquid/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versacid-liquid/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/versamold/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versamold/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versamold/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versamold/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/versamos/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versamos/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versamos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versamos/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/products/versapeg/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/products/versapeg/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/products/versapeg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/products/versapeg/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/species/aquaculture/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/species/aquaculture/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/species/aquaculture/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/species/aquaculture/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/species/poultry/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/species/poultry/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/species/poultry/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/species/poultry/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/species/ruminant/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/species/ruminant/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/species/ruminant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/species/ruminant/"/>
+  </url>
+  <url>
+    <loc>https://www.veritasvet.com/terms/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.veritasvet.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.veritasvet.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.veritasvet.com/terms/"/>
   </url>
 </urlset>

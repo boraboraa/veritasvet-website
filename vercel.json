@@ -166,12 +166,12 @@
     },
     {
       "source": "/fr/markets/middle-east/",
-      "destination": "/fr/markets/moyen-orient/",
+      "destination": "/fr/markets/mena/",
       "permanent": true
     },
     {
       "source": "/fr/markets/africa/",
-      "destination": "/fr/markets/afrique/",
+      "destination": "/fr/markets/west-africa/",
       "permanent": true
     },
     {
@@ -226,12 +226,12 @@
     },
     {
       "source": "/middle-east",
-      "destination": "/markets/middle-east/",
+      "destination": "/markets/mena/",
       "permanent": true
     },
     {
       "source": "/middle-east/",
-      "destination": "/markets/middle-east/",
+      "destination": "/markets/mena/",
       "permanent": true
     },
     {
@@ -301,12 +301,12 @@
     },
     {
       "source": "/boost-animal-performance",
-      "destination": "/markets/africa/",
+      "destination": "/markets/west-africa/",
       "permanent": true
     },
     {
       "source": "/boost-animal-performance/",
-      "destination": "/markets/africa/",
+      "destination": "/markets/west-africa/",
       "permanent": true
     },
     {
@@ -482,6 +482,31 @@
     {
       "source": "/fr/markets/emirats-arabes-unis/",
       "destination": "/fr/markets/gcc/uae/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/afrique/",
+      "destination": "/fr/markets/west-africa/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/irak/",
+      "destination": "/fr/markets/mena/iraq/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/moyen-orient/",
+      "destination": "/fr/markets/mena/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/egypte/",
+      "destination": "/fr/markets/mena/egypt/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/markets/north-africa/egypt/",
+      "destination": "/fr/markets/mena/egypt/",
       "permanent": true
     }
   ],
